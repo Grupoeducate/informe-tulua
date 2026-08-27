@@ -1,0 +1,2765 @@
+{
+  "schema_version": "1.0",
+  "tipo_archivo": "consolidado_grado_10",
+  "municipio": "Tuluá",
+  "departamento": "Valle del Cauca",
+  "anio_informe": 2026,
+  "grado": 10,
+  "prueba": {
+    "id": "sigma10",
+    "nombre": "2-02 SIGMA 10 SABER"
+  },
+  "cohorte": {
+    "etiqueta": "Cohorte Saber 11 — 2027",
+    "presenta_saber_11": 2027,
+    "prioridad_estrategica": true
+  },
+  "fuente_calculo": {
+    "manifest": "./data/resultados/manifest.json",
+    "cantidad_archivos_resultados_esperados": 18,
+    "cantidad_informes_validados": 18,
+    "criterio_promedios_municipales": "Promedio ponderado por el número real de evaluados en cada área. No se utiliza promedio simple de promedios institucionales.",
+    "criterio_competencias_componentes": "Promedio ponderado por el total de evaluados del área en cada institución.",
+    "criterio_niveles": "Suma directa de estudiantes reportados en cada nivel de desempeño por institución.",
+    "criterio_desviacion": "No se calcula una desviación estándar municipal agregada a partir de las desviaciones institucionales. Se conservan las desviaciones institucionales como datos descriptivos."
+  },
+  "resumen": {
+    "instituciones_evaluadas": 18,
+    "instituciones_urbanas": 9,
+    "instituciones_rurales": 9,
+    "cantidad_grupos": 55,
+    "total_estudiantes_grado": 1528,
+    "areas_evaluadas": 5
+  },
+  "lectura_ejecutiva_descriptiva": {
+    "nota": "Este bloque ordena resultados observados. No clasifica fortalezas, prioridades ni niveles de necesidad; esas categorías dependen del módulo metodológico pendiente.",
+    "orden_areas_por_promedio_municipal": [
+      {
+        "id": "sociales_ciudadanas",
+        "nombre": "Sociales y Ciudadanas",
+        "promedio_municipal_ponderado": 50.65
+      },
+      {
+        "id": "ingles",
+        "nombre": "Inglés",
+        "promedio_municipal_ponderado": 46.84
+      },
+      {
+        "id": "ciencias_naturales",
+        "nombre": "Ciencias Naturales",
+        "promedio_municipal_ponderado": 41.91
+      },
+      {
+        "id": "lectura_critica",
+        "nombre": "Lectura Crítica",
+        "promedio_municipal_ponderado": 41.85
+      },
+      {
+        "id": "matematicas",
+        "nombre": "Matemáticas",
+        "promedio_municipal_ponderado": 38.63
+      }
+    ],
+    "mayor_promedio_observado": {
+      "id": "sociales_ciudadanas",
+      "nombre": "Sociales y Ciudadanas",
+      "promedio_municipal_ponderado": 50.65
+    },
+    "menor_promedio_observado": {
+      "id": "matematicas",
+      "nombre": "Matemáticas",
+      "promedio_municipal_ponderado": 38.63
+    },
+    "brechas_promedio_urbana_menos_rural": [
+      {
+        "area": "Matemáticas",
+        "diferencia": 5.52
+      },
+      {
+        "area": "Lectura Crítica",
+        "diferencia": 4.04
+      },
+      {
+        "area": "Sociales y Ciudadanas",
+        "diferencia": 3.31
+      },
+      {
+        "area": "Ciencias Naturales",
+        "diferencia": 3.9
+      },
+      {
+        "area": "Inglés",
+        "diferencia": 4.35
+      }
+    ]
+  },
+  "areas": {
+    "matematicas": {
+      "nombre": "Matemáticas",
+      "promedio_municipal_ponderado": 38.63,
+      "total_evaluados_area": 1528,
+      "faltantes_respecto_total_grado": 0,
+      "cobertura_sobre_total_grado_porcentaje": 100.0,
+      "niveles_desempeno": {
+        "nivel_1": {
+          "cantidad": 673,
+          "porcentaje": 44.04
+        },
+        "nivel_2": {
+          "cantidad": 583,
+          "porcentaje": 38.15
+        },
+        "nivel_3": {
+          "cantidad": 238,
+          "porcentaje": 15.58
+        },
+        "nivel_4": {
+          "cantidad": 34,
+          "porcentaje": 2.23
+        }
+      },
+      "competencias": [
+        {
+          "nombre": "Interpretación y representación",
+          "promedio_municipal_ponderado": 44.95,
+          "total_evaluados_usados": 1528
+        },
+        {
+          "nombre": "Formulación y ejecución",
+          "promedio_municipal_ponderado": 34.63,
+          "total_evaluados_usados": 1528
+        },
+        {
+          "nombre": "Argumentación",
+          "promedio_municipal_ponderado": 39.69,
+          "total_evaluados_usados": 1528
+        }
+      ],
+      "componentes": [
+        {
+          "nombre": "Aleatorio",
+          "promedio_municipal_ponderado": 43.74,
+          "total_evaluados_usados": 1528
+        },
+        {
+          "nombre": "Numérico - variacional",
+          "promedio_municipal_ponderado": 34.49,
+          "total_evaluados_usados": 1528
+        },
+        {
+          "nombre": "Geométrico - métrico",
+          "promedio_municipal_ponderado": 41.99,
+          "total_evaluados_usados": 1528
+        }
+      ],
+      "comparacion_urbano_rural": {
+        "urbana": {
+          "instituciones": 9,
+          "promedio_ponderado": 39.54,
+          "total_evaluados_area": 1276,
+          "niveles_desempeno": {
+            "nivel_1": {
+              "cantidad": 532,
+              "porcentaje": 41.69
+            },
+            "nivel_2": {
+              "cantidad": 492,
+              "porcentaje": 38.56
+            },
+            "nivel_3": {
+              "cantidad": 218,
+              "porcentaje": 17.08
+            },
+            "nivel_4": {
+              "cantidad": 34,
+              "porcentaje": 2.66
+            }
+          }
+        },
+        "rural": {
+          "instituciones": 9,
+          "promedio_ponderado": 34.02,
+          "total_evaluados_area": 252,
+          "niveles_desempeno": {
+            "nivel_1": {
+              "cantidad": 141,
+              "porcentaje": 55.95
+            },
+            "nivel_2": {
+              "cantidad": 91,
+              "porcentaje": 36.11
+            },
+            "nivel_3": {
+              "cantidad": 20,
+              "porcentaje": 7.94
+            },
+            "nivel_4": {
+              "cantidad": 0,
+              "porcentaje": 0.0
+            }
+          }
+        },
+        "diferencia_promedio_urbana_menos_rural": 5.52
+      },
+      "instituciones_ordenadas_por_promedio": [
+        {
+          "numero": 2,
+          "nombre": "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+          "dane": "176834000394",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 49.7,
+          "desviacion_estandar": 15.9,
+          "total_evaluados_area": 195,
+          "niveles_desempeno": {
+            "nivel_1": 41,
+            "nivel_2": 67,
+            "nivel_3": 65,
+            "nivel_4": 22
+          }
+        },
+        {
+          "numero": 4,
+          "nombre": "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+          "dane": "176834003946",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 46.9,
+          "desviacion_estandar": 14.6,
+          "total_evaluados_area": 121,
+          "niveles_desempeno": {
+            "nivel_1": 25,
+            "nivel_2": 47,
+            "nivel_3": 44,
+            "nivel_4": 5
+          }
+        },
+        {
+          "numero": 7,
+          "nombre": "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+          "dane": "176834000084",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 42.0,
+          "desviacion_estandar": 11.6,
+          "total_evaluados_area": 131,
+          "niveles_desempeno": {
+            "nivel_1": 40,
+            "nivel_2": 61,
+            "nivel_3": 29,
+            "nivel_4": 1
+          }
+        },
+        {
+          "numero": 5,
+          "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+          "dane": "276834000941",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 41.7,
+          "desviacion_estandar": 4.8,
+          "total_evaluados_area": 6,
+          "niveles_desempeno": {
+            "nivel_1": 0,
+            "nivel_2": 6,
+            "nivel_3": 0,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 8,
+          "nombre": "I.E. JOVITA SANTA COLOMA",
+          "dane": "276834000666",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 39.9,
+          "desviacion_estandar": 9.5,
+          "total_evaluados_area": 26,
+          "niveles_desempeno": {
+            "nivel_1": 9,
+            "nivel_2": 14,
+            "nivel_3": 3,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 11,
+          "nombre": "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+          "dane": "276834002626",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 39.7,
+          "desviacion_estandar": 11.7,
+          "total_evaluados_area": 23,
+          "niveles_desempeno": {
+            "nivel_1": 11,
+            "nivel_2": 9,
+            "nivel_3": 3,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 13,
+          "nombre": "INSTITUCION EDUCATIVA MONTELORO",
+          "dane": "276834000917",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 38.6,
+          "desviacion_estandar": 5.2,
+          "total_evaluados_area": 10,
+          "niveles_desempeno": {
+            "nivel_1": 2,
+            "nivel_2": 7,
+            "nivel_3": 1,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 15,
+          "nombre": "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+          "dane": "176834000289",
+          "zona": "urbana",
+          "cantidad_grupos": 4,
+          "promedio": 36.8,
+          "desviacion_estandar": 11.5,
+          "total_evaluados_area": 99,
+          "niveles_desempeno": {
+            "nivel_1": 46,
+            "nivel_2": 39,
+            "nivel_3": 14,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 6,
+          "nombre": "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+          "dane": "176834000351",
+          "zona": "urbana",
+          "cantidad_grupos": 4,
+          "promedio": 36.7,
+          "desviacion_estandar": 12.8,
+          "total_evaluados_area": 108,
+          "niveles_desempeno": {
+            "nivel_1": 53,
+            "nivel_2": 42,
+            "nivel_3": 11,
+            "nivel_4": 2
+          }
+        },
+        {
+          "numero": 9,
+          "nombre": "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+          "dane": "176834002559",
+          "zona": "urbana",
+          "cantidad_grupos": 4,
+          "promedio": 36.5,
+          "desviacion_estandar": 12.1,
+          "total_evaluados_area": 154,
+          "niveles_desempeno": {
+            "nivel_1": 72,
+            "nivel_2": 62,
+            "nivel_3": 19,
+            "nivel_4": 1
+          }
+        },
+        {
+          "numero": 12,
+          "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+          "dane": "176834000106",
+          "zona": "urbana",
+          "cantidad_grupos": 3,
+          "promedio": 35.9,
+          "desviacion_estandar": 12.5,
+          "total_evaluados_area": 84,
+          "niveles_desempeno": {
+            "nivel_1": 44,
+            "nivel_2": 29,
+            "nivel_3": 10,
+            "nivel_4": 1
+          }
+        },
+        {
+          "numero": 10,
+          "nombre": "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+          "dane": "176834000092",
+          "zona": "urbana",
+          "cantidad_grupos": 7,
+          "promedio": 35.3,
+          "desviacion_estandar": 10.5,
+          "total_evaluados_area": 243,
+          "niveles_desempeno": {
+            "nivel_1": 124,
+            "nivel_2": 102,
+            "nivel_3": 15,
+            "nivel_4": 2
+          }
+        },
+        {
+          "numero": 17,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+          "dane": "176834003989",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 33.8,
+          "desviacion_estandar": 11.9,
+          "total_evaluados_area": 141,
+          "niveles_desempeno": {
+            "nivel_1": 87,
+            "nivel_2": 43,
+            "nivel_3": 11,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 3,
+          "nombre": "INSTITUCION EDUCATIVA AGUACLARA",
+          "dane": "276834001778",
+          "zona": "rural",
+          "cantidad_grupos": 4,
+          "promedio": 33.6,
+          "desviacion_estandar": 13.3,
+          "total_evaluados_area": 88,
+          "niveles_desempeno": {
+            "nivel_1": 47,
+            "nivel_2": 33,
+            "nivel_3": 8,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 14,
+          "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+          "dane": "276834000852",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 32.3,
+          "desviacion_estandar": 8.4,
+          "total_evaluados_area": 23,
+          "niveles_desempeno": {
+            "nivel_1": 14,
+            "nivel_2": 9,
+            "nivel_3": 0,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 16,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+          "dane": "276834002243",
+          "zona": "rural",
+          "cantidad_grupos": 2,
+          "promedio": 31.0,
+          "desviacion_estandar": 12.0,
+          "total_evaluados_area": 50,
+          "niveles_desempeno": {
+            "nivel_1": 38,
+            "nivel_2": 8,
+            "nivel_3": 4,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 18,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+          "dane": "276834000704",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 28.7,
+          "desviacion_estandar": 7.2,
+          "total_evaluados_area": 12,
+          "niveles_desempeno": {
+            "nivel_1": 9,
+            "nivel_2": 3,
+            "nivel_3": 0,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 1,
+          "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+          "dane": "27683400123901",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 28.0,
+          "desviacion_estandar": 10.3,
+          "total_evaluados_area": 14,
+          "niveles_desempeno": {
+            "nivel_1": 11,
+            "nivel_2": 2,
+            "nivel_3": 1,
+            "nivel_4": 0
+          }
+        }
+      ]
+    },
+    "lectura_critica": {
+      "nombre": "Lectura Crítica",
+      "promedio_municipal_ponderado": 41.85,
+      "total_evaluados_area": 1509,
+      "faltantes_respecto_total_grado": 19,
+      "cobertura_sobre_total_grado_porcentaje": 98.76,
+      "niveles_desempeno": {
+        "nivel_1": {
+          "cantidad": 500,
+          "porcentaje": 33.13
+        },
+        "nivel_2": {
+          "cantidad": 579,
+          "porcentaje": 38.37
+        },
+        "nivel_3": {
+          "cantidad": 388,
+          "porcentaje": 25.71
+        },
+        "nivel_4": {
+          "cantidad": 42,
+          "porcentaje": 2.78
+        }
+      },
+      "competencias": [
+        {
+          "nombre": "Identificar y entender los contenidos locales que conforman un texto",
+          "promedio_municipal_ponderado": 44.16,
+          "total_evaluados_usados": 1509
+        },
+        {
+          "nombre": "Comprender cómo se articulan las partes de un texto para darle un sentido global",
+          "promedio_municipal_ponderado": 40.29,
+          "total_evaluados_usados": 1509
+        },
+        {
+          "nombre": "Reflexionar a partir de un texto y evaluar su contenido",
+          "promedio_municipal_ponderado": 41.34,
+          "total_evaluados_usados": 1509
+        }
+      ],
+      "componentes": [
+        {
+          "nombre": "Semántico",
+          "promedio_municipal_ponderado": 39.24,
+          "total_evaluados_usados": 1509
+        },
+        {
+          "nombre": "Pragmático",
+          "promedio_municipal_ponderado": 41.34,
+          "total_evaluados_usados": 1509
+        },
+        {
+          "nombre": "Sintáctico",
+          "promedio_municipal_ponderado": 47.21,
+          "total_evaluados_usados": 1509
+        }
+      ],
+      "comparacion_urbano_rural": {
+        "urbana": {
+          "instituciones": 9,
+          "promedio_ponderado": 42.51,
+          "total_evaluados_area": 1260,
+          "niveles_desempeno": {
+            "nivel_1": {
+              "cantidad": 393,
+              "porcentaje": 31.19
+            },
+            "nivel_2": {
+              "cantidad": 487,
+              "porcentaje": 38.65
+            },
+            "nivel_3": {
+              "cantidad": 340,
+              "porcentaje": 26.98
+            },
+            "nivel_4": {
+              "cantidad": 40,
+              "porcentaje": 3.17
+            }
+          }
+        },
+        "rural": {
+          "instituciones": 9,
+          "promedio_ponderado": 38.47,
+          "total_evaluados_area": 249,
+          "niveles_desempeno": {
+            "nivel_1": {
+              "cantidad": 107,
+              "porcentaje": 42.97
+            },
+            "nivel_2": {
+              "cantidad": 92,
+              "porcentaje": 36.95
+            },
+            "nivel_3": {
+              "cantidad": 48,
+              "porcentaje": 19.28
+            },
+            "nivel_4": {
+              "cantidad": 2,
+              "porcentaje": 0.8
+            }
+          }
+        },
+        "diferencia_promedio_urbana_menos_rural": 4.04
+      },
+      "instituciones_ordenadas_por_promedio": [
+        {
+          "numero": 5,
+          "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+          "dane": "276834000941",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 54.9,
+          "desviacion_estandar": 9.2,
+          "total_evaluados_area": 6,
+          "niveles_desempeno": {
+            "nivel_1": 0,
+            "nivel_2": 2,
+            "nivel_3": 3,
+            "nivel_4": 1
+          }
+        },
+        {
+          "numero": 11,
+          "nombre": "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+          "dane": "276834002626",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 46.3,
+          "desviacion_estandar": 11.3,
+          "total_evaluados_area": 23,
+          "niveles_desempeno": {
+            "nivel_1": 3,
+            "nivel_2": 11,
+            "nivel_3": 9,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 2,
+          "nombre": "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+          "dane": "176834000394",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 45.1,
+          "desviacion_estandar": 12.1,
+          "total_evaluados_area": 195,
+          "niveles_desempeno": {
+            "nivel_1": 43,
+            "nivel_2": 84,
+            "nivel_3": 64,
+            "nivel_4": 4
+          }
+        },
+        {
+          "numero": 10,
+          "nombre": "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+          "dane": "176834000092",
+          "zona": "urbana",
+          "cantidad_grupos": 7,
+          "promedio": 44.2,
+          "desviacion_estandar": 12.2,
+          "total_evaluados_area": 243,
+          "niveles_desempeno": {
+            "nivel_1": 56,
+            "nivel_2": 109,
+            "nivel_3": 68,
+            "nivel_4": 10
+          }
+        },
+        {
+          "numero": 15,
+          "nombre": "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+          "dane": "176834000289",
+          "zona": "urbana",
+          "cantidad_grupos": 4,
+          "promedio": 43.5,
+          "desviacion_estandar": 12.5,
+          "total_evaluados_area": 99,
+          "niveles_desempeno": {
+            "nivel_1": 26,
+            "nivel_2": 37,
+            "nivel_3": 34,
+            "nivel_4": 2
+          }
+        },
+        {
+          "numero": 7,
+          "nombre": "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+          "dane": "176834000084",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 43.2,
+          "desviacion_estandar": 15.1,
+          "total_evaluados_area": 130,
+          "niveles_desempeno": {
+            "nivel_1": 48,
+            "nivel_2": 33,
+            "nivel_3": 42,
+            "nivel_4": 7
+          }
+        },
+        {
+          "numero": 13,
+          "nombre": "INSTITUCION EDUCATIVA MONTELORO",
+          "dane": "276834000917",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 42.7,
+          "desviacion_estandar": 9.5,
+          "total_evaluados_area": 10,
+          "niveles_desempeno": {
+            "nivel_1": 3,
+            "nivel_2": 3,
+            "nivel_3": 4,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 4,
+          "nombre": "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+          "dane": "176834003946",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 42.5,
+          "desviacion_estandar": 12.6,
+          "total_evaluados_area": 115,
+          "niveles_desempeno": {
+            "nivel_1": 34,
+            "nivel_2": 43,
+            "nivel_3": 36,
+            "nivel_4": 2
+          }
+        },
+        {
+          "numero": 9,
+          "nombre": "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+          "dane": "176834002559",
+          "zona": "urbana",
+          "cantidad_grupos": 4,
+          "promedio": 42.4,
+          "desviacion_estandar": 12.5,
+          "total_evaluados_area": 149,
+          "niveles_desempeno": {
+            "nivel_1": 43,
+            "nivel_2": 67,
+            "nivel_3": 34,
+            "nivel_4": 5
+          }
+        },
+        {
+          "numero": 6,
+          "nombre": "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+          "dane": "176834000351",
+          "zona": "urbana",
+          "cantidad_grupos": 4,
+          "promedio": 40.2,
+          "desviacion_estandar": 12.5,
+          "total_evaluados_area": 107,
+          "niveles_desempeno": {
+            "nivel_1": 40,
+            "nivel_2": 40,
+            "nivel_3": 26,
+            "nivel_4": 1
+          }
+        },
+        {
+          "numero": 14,
+          "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+          "dane": "276834000852",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 39.7,
+          "desviacion_estandar": 12.3,
+          "total_evaluados_area": 23,
+          "niveles_desempeno": {
+            "nivel_1": 9,
+            "nivel_2": 10,
+            "nivel_3": 3,
+            "nivel_4": 1
+          }
+        },
+        {
+          "numero": 17,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+          "dane": "176834003989",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 39.1,
+          "desviacion_estandar": 13.5,
+          "total_evaluados_area": 138,
+          "niveles_desempeno": {
+            "nivel_1": 63,
+            "nivel_2": 47,
+            "nivel_3": 22,
+            "nivel_4": 6
+          }
+        },
+        {
+          "numero": 1,
+          "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+          "dane": "27683400123901",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 39.0,
+          "desviacion_estandar": 8.0,
+          "total_evaluados_area": 14,
+          "niveles_desempeno": {
+            "nivel_1": 5,
+            "nivel_2": 7,
+            "nivel_3": 2,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 8,
+          "nombre": "I.E. JOVITA SANTA COLOMA",
+          "dane": "276834000666",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 38.9,
+          "desviacion_estandar": 14.0,
+          "total_evaluados_area": 26,
+          "niveles_desempeno": {
+            "nivel_1": 12,
+            "nivel_2": 7,
+            "nivel_3": 7,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 12,
+          "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+          "dane": "176834000106",
+          "zona": "urbana",
+          "cantidad_grupos": 3,
+          "promedio": 38.2,
+          "desviacion_estandar": 12.7,
+          "total_evaluados_area": 84,
+          "niveles_desempeno": {
+            "nivel_1": 40,
+            "nivel_2": 27,
+            "nivel_3": 14,
+            "nivel_4": 3
+          }
+        },
+        {
+          "numero": 3,
+          "nombre": "INSTITUCION EDUCATIVA AGUACLARA",
+          "dane": "276834001778",
+          "zona": "rural",
+          "cantidad_grupos": 4,
+          "promedio": 36.5,
+          "desviacion_estandar": 11.7,
+          "total_evaluados_area": 85,
+          "niveles_desempeno": {
+            "nivel_1": 42,
+            "nivel_2": 30,
+            "nivel_3": 13,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 16,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+          "dane": "276834002243",
+          "zona": "rural",
+          "cantidad_grupos": 2,
+          "promedio": 35.8,
+          "desviacion_estandar": 11.9,
+          "total_evaluados_area": 50,
+          "niveles_desempeno": {
+            "nivel_1": 25,
+            "nivel_2": 18,
+            "nivel_3": 7,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 18,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+          "dane": "276834000704",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 32.9,
+          "desviacion_estandar": 8.0,
+          "total_evaluados_area": 12,
+          "niveles_desempeno": {
+            "nivel_1": 8,
+            "nivel_2": 4,
+            "nivel_3": 0,
+            "nivel_4": 0
+          }
+        }
+      ]
+    },
+    "sociales_ciudadanas": {
+      "nombre": "Sociales y Ciudadanas",
+      "promedio_municipal_ponderado": 50.65,
+      "total_evaluados_area": 1528,
+      "faltantes_respecto_total_grado": 0,
+      "cobertura_sobre_total_grado_porcentaje": 100.0,
+      "niveles_desempeno": {
+        "nivel_1": {
+          "cantidad": 428,
+          "porcentaje": 28.01
+        },
+        "nivel_2": {
+          "cantidad": 468,
+          "porcentaje": 30.63
+        },
+        "nivel_3": {
+          "cantidad": 483,
+          "porcentaje": 31.61
+        },
+        "nivel_4": {
+          "cantidad": 149,
+          "porcentaje": 9.75
+        }
+      },
+      "competencias": [
+        {
+          "nombre": "Pensamiento social",
+          "promedio_municipal_ponderado": 47.04,
+          "total_evaluados_usados": 1528
+        },
+        {
+          "nombre": "Interpretación y análisis de perspectivas",
+          "promedio_municipal_ponderado": 53.24,
+          "total_evaluados_usados": 1528
+        },
+        {
+          "nombre": "Pensamiento reflexivo y sistémico",
+          "promedio_municipal_ponderado": 53.6,
+          "total_evaluados_usados": 1528
+        }
+      ],
+      "componentes": [
+        {
+          "nombre": "Ético / político",
+          "promedio_municipal_ponderado": 51.53,
+          "total_evaluados_usados": 1528
+        },
+        {
+          "nombre": "Competencias ciudadanas",
+          "promedio_municipal_ponderado": 53.67,
+          "total_evaluados_usados": 1528
+        },
+        {
+          "nombre": "Espacio y ambiente",
+          "promedio_municipal_ponderado": 49.69,
+          "total_evaluados_usados": 1528
+        },
+        {
+          "nombre": "Historia y cultura",
+          "promedio_municipal_ponderado": 49.66,
+          "total_evaluados_usados": 1528
+        }
+      ],
+      "comparacion_urbano_rural": {
+        "urbana": {
+          "instituciones": 9,
+          "promedio_ponderado": 51.19,
+          "total_evaluados_area": 1276,
+          "niveles_desempeno": {
+            "nivel_1": {
+              "cantidad": 342,
+              "porcentaje": 26.8
+            },
+            "nivel_2": {
+              "cantidad": 394,
+              "porcentaje": 30.88
+            },
+            "nivel_3": {
+              "cantidad": 406,
+              "porcentaje": 31.82
+            },
+            "nivel_4": {
+              "cantidad": 134,
+              "porcentaje": 10.5
+            }
+          }
+        },
+        "rural": {
+          "instituciones": 9,
+          "promedio_ponderado": 47.88,
+          "total_evaluados_area": 252,
+          "niveles_desempeno": {
+            "nivel_1": {
+              "cantidad": 86,
+              "porcentaje": 34.13
+            },
+            "nivel_2": {
+              "cantidad": 74,
+              "porcentaje": 29.37
+            },
+            "nivel_3": {
+              "cantidad": 77,
+              "porcentaje": 30.56
+            },
+            "nivel_4": {
+              "cantidad": 15,
+              "porcentaje": 5.95
+            }
+          }
+        },
+        "diferencia_promedio_urbana_menos_rural": 3.31
+      },
+      "instituciones_ordenadas_por_promedio": [
+        {
+          "numero": 11,
+          "nombre": "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+          "dane": "276834002626",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 56.7,
+          "desviacion_estandar": 9.3,
+          "total_evaluados_area": 23,
+          "niveles_desempeno": {
+            "nivel_1": 0,
+            "nivel_2": 8,
+            "nivel_3": 14,
+            "nivel_4": 1
+          }
+        },
+        {
+          "numero": 4,
+          "nombre": "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+          "dane": "176834003946",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 55.8,
+          "desviacion_estandar": 17.7,
+          "total_evaluados_area": 121,
+          "niveles_desempeno": {
+            "nivel_1": 25,
+            "nivel_2": 35,
+            "nivel_3": 27,
+            "nivel_4": 34
+          }
+        },
+        {
+          "numero": 7,
+          "nombre": "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+          "dane": "176834000084",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 55.0,
+          "desviacion_estandar": 12.6,
+          "total_evaluados_area": 131,
+          "niveles_desempeno": {
+            "nivel_1": 21,
+            "nivel_2": 39,
+            "nivel_3": 57,
+            "nivel_4": 14
+          }
+        },
+        {
+          "numero": 10,
+          "nombre": "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+          "dane": "176834000092",
+          "zona": "urbana",
+          "cantidad_grupos": 7,
+          "promedio": 54.2,
+          "desviacion_estandar": 14.1,
+          "total_evaluados_area": 243,
+          "niveles_desempeno": {
+            "nivel_1": 56,
+            "nivel_2": 61,
+            "nivel_3": 94,
+            "nivel_4": 32
+          }
+        },
+        {
+          "numero": 2,
+          "nombre": "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+          "dane": "176834000394",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 53.7,
+          "desviacion_estandar": 14.5,
+          "total_evaluados_area": 195,
+          "niveles_desempeno": {
+            "nivel_1": 40,
+            "nivel_2": 59,
+            "nivel_3": 73,
+            "nivel_4": 23
+          }
+        },
+        {
+          "numero": 14,
+          "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+          "dane": "276834000852",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 51.2,
+          "desviacion_estandar": 12.9,
+          "total_evaluados_area": 23,
+          "niveles_desempeno": {
+            "nivel_1": 5,
+            "nivel_2": 9,
+            "nivel_3": 6,
+            "nivel_4": 3
+          }
+        },
+        {
+          "numero": 15,
+          "nombre": "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+          "dane": "176834000289",
+          "zona": "urbana",
+          "cantidad_grupos": 4,
+          "promedio": 50.4,
+          "desviacion_estandar": 14.3,
+          "total_evaluados_area": 99,
+          "niveles_desempeno": {
+            "nivel_1": 29,
+            "nivel_2": 29,
+            "nivel_3": 33,
+            "nivel_4": 8
+          }
+        },
+        {
+          "numero": 9,
+          "nombre": "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+          "dane": "176834002559",
+          "zona": "urbana",
+          "cantidad_grupos": 4,
+          "promedio": 49.9,
+          "desviacion_estandar": 14.4,
+          "total_evaluados_area": 154,
+          "niveles_desempeno": {
+            "nivel_1": 38,
+            "nivel_2": 56,
+            "nivel_3": 53,
+            "nivel_4": 7
+          }
+        },
+        {
+          "numero": 3,
+          "nombre": "INSTITUCION EDUCATIVA AGUACLARA",
+          "dane": "276834001778",
+          "zona": "rural",
+          "cantidad_grupos": 4,
+          "promedio": 48.8,
+          "desviacion_estandar": 18.2,
+          "total_evaluados_area": 88,
+          "niveles_desempeno": {
+            "nivel_1": 30,
+            "nivel_2": 21,
+            "nivel_3": 28,
+            "nivel_4": 9
+          }
+        },
+        {
+          "numero": 1,
+          "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+          "dane": "27683400123901",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 46.4,
+          "desviacion_estandar": 12.9,
+          "total_evaluados_area": 14,
+          "niveles_desempeno": {
+            "nivel_1": 4,
+            "nivel_2": 5,
+            "nivel_3": 5,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 16,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+          "dane": "276834002243",
+          "zona": "rural",
+          "cantidad_grupos": 2,
+          "promedio": 46.4,
+          "desviacion_estandar": 15.1,
+          "total_evaluados_area": 50,
+          "niveles_desempeno": {
+            "nivel_1": 19,
+            "nivel_2": 16,
+            "nivel_3": 13,
+            "nivel_4": 2
+          }
+        },
+        {
+          "numero": 6,
+          "nombre": "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+          "dane": "176834000351",
+          "zona": "urbana",
+          "cantidad_grupos": 4,
+          "promedio": 45.8,
+          "desviacion_estandar": 14.6,
+          "total_evaluados_area": 108,
+          "niveles_desempeno": {
+            "nivel_1": 41,
+            "nivel_2": 37,
+            "nivel_3": 25,
+            "nivel_4": 5
+          }
+        },
+        {
+          "numero": 13,
+          "nombre": "INSTITUCION EDUCATIVA MONTELORO",
+          "dane": "276834000917",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 45.6,
+          "desviacion_estandar": 11.3,
+          "total_evaluados_area": 10,
+          "niveles_desempeno": {
+            "nivel_1": 5,
+            "nivel_2": 2,
+            "nivel_3": 3,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 17,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+          "dane": "176834003989",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 45.3,
+          "desviacion_estandar": 14.8,
+          "total_evaluados_area": 141,
+          "niveles_desempeno": {
+            "nivel_1": 57,
+            "nivel_2": 50,
+            "nivel_3": 26,
+            "nivel_4": 8
+          }
+        },
+        {
+          "numero": 5,
+          "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+          "dane": "276834000941",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 45.0,
+          "desviacion_estandar": 11.6,
+          "total_evaluados_area": 6,
+          "niveles_desempeno": {
+            "nivel_1": 3,
+            "nivel_2": 1,
+            "nivel_3": 2,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 12,
+          "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+          "dane": "176834000106",
+          "zona": "urbana",
+          "cantidad_grupos": 3,
+          "promedio": 44.2,
+          "desviacion_estandar": 14.8,
+          "total_evaluados_area": 84,
+          "niveles_desempeno": {
+            "nivel_1": 35,
+            "nivel_2": 28,
+            "nivel_3": 18,
+            "nivel_4": 3
+          }
+        },
+        {
+          "numero": 8,
+          "nombre": "I.E. JOVITA SANTA COLOMA",
+          "dane": "276834000666",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 43.8,
+          "desviacion_estandar": 10.6,
+          "total_evaluados_area": 26,
+          "niveles_desempeno": {
+            "nivel_1": 12,
+            "nivel_2": 10,
+            "nivel_3": 4,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 18,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+          "dane": "276834000704",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 38.0,
+          "desviacion_estandar": 12.1,
+          "total_evaluados_area": 12,
+          "niveles_desempeno": {
+            "nivel_1": 8,
+            "nivel_2": 2,
+            "nivel_3": 2,
+            "nivel_4": 0
+          }
+        }
+      ]
+    },
+    "ciencias_naturales": {
+      "nombre": "Ciencias Naturales",
+      "promedio_municipal_ponderado": 41.91,
+      "total_evaluados_area": 1528,
+      "faltantes_respecto_total_grado": 0,
+      "cobertura_sobre_total_grado_porcentaje": 100.0,
+      "niveles_desempeno": {
+        "nivel_1": {
+          "cantidad": 735,
+          "porcentaje": 48.1
+        },
+        "nivel_2": {
+          "cantidad": 554,
+          "porcentaje": 36.26
+        },
+        "nivel_3": {
+          "cantidad": 196,
+          "porcentaje": 12.83
+        },
+        "nivel_4": {
+          "cantidad": 43,
+          "porcentaje": 2.81
+        }
+      },
+      "competencias": [
+        {
+          "nombre": "Uso comprensivo del conocimiento científico",
+          "promedio_municipal_ponderado": 45.37,
+          "total_evaluados_usados": 1528
+        },
+        {
+          "nombre": "Explicación de fenómenos",
+          "promedio_municipal_ponderado": 44.91,
+          "total_evaluados_usados": 1528
+        },
+        {
+          "nombre": "Indagación",
+          "promedio_municipal_ponderado": 39.26,
+          "total_evaluados_usados": 1528
+        }
+      ],
+      "componentes": [
+        {
+          "nombre": "Entorno químico",
+          "promedio_municipal_ponderado": 41.05,
+          "total_evaluados_usados": 1528
+        },
+        {
+          "nombre": "Entorno de ciencia, tecnología y sociedad",
+          "promedio_municipal_ponderado": 49.56,
+          "total_evaluados_usados": 1528
+        },
+        {
+          "nombre": "Entorno físico",
+          "promedio_municipal_ponderado": 42.33,
+          "total_evaluados_usados": 1528
+        },
+        {
+          "nombre": "Entorno biológico",
+          "promedio_municipal_ponderado": 42.02,
+          "total_evaluados_usados": 1528
+        }
+      ],
+      "comparacion_urbano_rural": {
+        "urbana": {
+          "instituciones": 9,
+          "promedio_ponderado": 42.55,
+          "total_evaluados_area": 1276,
+          "niveles_desempeno": {
+            "nivel_1": {
+              "cantidad": 582,
+              "porcentaje": 45.61
+            },
+            "nivel_2": {
+              "cantidad": 485,
+              "porcentaje": 38.01
+            },
+            "nivel_3": {
+              "cantidad": 167,
+              "porcentaje": 13.09
+            },
+            "nivel_4": {
+              "cantidad": 42,
+              "porcentaje": 3.29
+            }
+          }
+        },
+        "rural": {
+          "instituciones": 9,
+          "promedio_ponderado": 38.65,
+          "total_evaluados_area": 252,
+          "niveles_desempeno": {
+            "nivel_1": {
+              "cantidad": 153,
+              "porcentaje": 60.71
+            },
+            "nivel_2": {
+              "cantidad": 69,
+              "porcentaje": 27.38
+            },
+            "nivel_3": {
+              "cantidad": 29,
+              "porcentaje": 11.51
+            },
+            "nivel_4": {
+              "cantidad": 1,
+              "porcentaje": 0.4
+            }
+          }
+        },
+        "diferencia_promedio_urbana_menos_rural": 3.9
+      },
+      "instituciones_ordenadas_por_promedio": [
+        {
+          "numero": 4,
+          "nombre": "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+          "dane": "176834003946",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 50.5,
+          "desviacion_estandar": 17.9,
+          "total_evaluados_area": 121,
+          "niveles_desempeno": {
+            "nivel_1": 33,
+            "nivel_2": 48,
+            "nivel_3": 25,
+            "nivel_4": 15
+          }
+        },
+        {
+          "numero": 11,
+          "nombre": "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+          "dane": "276834002626",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 47.5,
+          "desviacion_estandar": 9.0,
+          "total_evaluados_area": 23,
+          "niveles_desempeno": {
+            "nivel_1": 6,
+            "nivel_2": 14,
+            "nivel_3": 3,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 7,
+          "nombre": "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+          "dane": "176834000084",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 47.4,
+          "desviacion_estandar": 12.8,
+          "total_evaluados_area": 131,
+          "niveles_desempeno": {
+            "nivel_1": 35,
+            "nivel_2": 66,
+            "nivel_3": 26,
+            "nivel_4": 4
+          }
+        },
+        {
+          "numero": 2,
+          "nombre": "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+          "dane": "176834000394",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 47.0,
+          "desviacion_estandar": 15.1,
+          "total_evaluados_area": 195,
+          "niveles_desempeno": {
+            "nivel_1": 63,
+            "nivel_2": 82,
+            "nivel_3": 37,
+            "nivel_4": 13
+          }
+        },
+        {
+          "numero": 8,
+          "nombre": "I.E. JOVITA SANTA COLOMA",
+          "dane": "276834000666",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 42.0,
+          "desviacion_estandar": 11.7,
+          "total_evaluados_area": 26,
+          "niveles_desempeno": {
+            "nivel_1": 11,
+            "nivel_2": 10,
+            "nivel_3": 5,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 3,
+          "nombre": "INSTITUCION EDUCATIVA AGUACLARA",
+          "dane": "276834001778",
+          "zona": "rural",
+          "cantidad_grupos": 4,
+          "promedio": 41.9,
+          "desviacion_estandar": 15.7,
+          "total_evaluados_area": 88,
+          "niveles_desempeno": {
+            "nivel_1": 43,
+            "nivel_2": 25,
+            "nivel_3": 19,
+            "nivel_4": 1
+          }
+        },
+        {
+          "numero": 10,
+          "nombre": "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+          "dane": "176834000092",
+          "zona": "urbana",
+          "cantidad_grupos": 7,
+          "promedio": 41.7,
+          "desviacion_estandar": 12.1,
+          "total_evaluados_area": 243,
+          "niveles_desempeno": {
+            "nivel_1": 110,
+            "nivel_2": 107,
+            "nivel_3": 26,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 9,
+          "nombre": "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+          "dane": "176834002559",
+          "zona": "urbana",
+          "cantidad_grupos": 4,
+          "promedio": 41.5,
+          "desviacion_estandar": 15.5,
+          "total_evaluados_area": 154,
+          "niveles_desempeno": {
+            "nivel_1": 78,
+            "nivel_2": 51,
+            "nivel_3": 19,
+            "nivel_4": 6
+          }
+        },
+        {
+          "numero": 15,
+          "nombre": "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+          "dane": "176834000289",
+          "zona": "urbana",
+          "cantidad_grupos": 4,
+          "promedio": 41.5,
+          "desviacion_estandar": 14.6,
+          "total_evaluados_area": 99,
+          "niveles_desempeno": {
+            "nivel_1": 49,
+            "nivel_2": 29,
+            "nivel_3": 20,
+            "nivel_4": 1
+          }
+        },
+        {
+          "numero": 5,
+          "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+          "dane": "276834000941",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 37.6,
+          "desviacion_estandar": 12.6,
+          "total_evaluados_area": 6,
+          "niveles_desempeno": {
+            "nivel_1": 3,
+            "nivel_2": 3,
+            "nivel_3": 0,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 14,
+          "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+          "dane": "276834000852",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 37.6,
+          "desviacion_estandar": 8.8,
+          "total_evaluados_area": 23,
+          "niveles_desempeno": {
+            "nivel_1": 15,
+            "nivel_2": 7,
+            "nivel_3": 1,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 6,
+          "nombre": "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+          "dane": "176834000351",
+          "zona": "urbana",
+          "cantidad_grupos": 4,
+          "promedio": 37.3,
+          "desviacion_estandar": 13.5,
+          "total_evaluados_area": 108,
+          "niveles_desempeno": {
+            "nivel_1": 65,
+            "nivel_2": 38,
+            "nivel_3": 3,
+            "nivel_4": 2
+          }
+        },
+        {
+          "numero": 12,
+          "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+          "dane": "176834000106",
+          "zona": "urbana",
+          "cantidad_grupos": 3,
+          "promedio": 36.3,
+          "desviacion_estandar": 12.3,
+          "total_evaluados_area": 84,
+          "niveles_desempeno": {
+            "nivel_1": 57,
+            "nivel_2": 22,
+            "nivel_3": 4,
+            "nivel_4": 1
+          }
+        },
+        {
+          "numero": 17,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+          "dane": "176834003989",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 36.2,
+          "desviacion_estandar": 12.0,
+          "total_evaluados_area": 141,
+          "niveles_desempeno": {
+            "nivel_1": 92,
+            "nivel_2": 42,
+            "nivel_3": 7,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 13,
+          "nombre": "INSTITUCION EDUCATIVA MONTELORO",
+          "dane": "276834000917",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 34.0,
+          "desviacion_estandar": 11.4,
+          "total_evaluados_area": 10,
+          "niveles_desempeno": {
+            "nivel_1": 7,
+            "nivel_2": 3,
+            "nivel_3": 0,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 16,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+          "dane": "276834002243",
+          "zona": "rural",
+          "cantidad_grupos": 2,
+          "promedio": 32.3,
+          "desviacion_estandar": 10.3,
+          "total_evaluados_area": 50,
+          "niveles_desempeno": {
+            "nivel_1": 43,
+            "nivel_2": 6,
+            "nivel_3": 1,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 1,
+          "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+          "dane": "27683400123901",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 31.7,
+          "desviacion_estandar": 5.2,
+          "total_evaluados_area": 14,
+          "niveles_desempeno": {
+            "nivel_1": 13,
+            "nivel_2": 1,
+            "nivel_3": 0,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 18,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+          "dane": "276834000704",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 31.5,
+          "desviacion_estandar": 7.2,
+          "total_evaluados_area": 12,
+          "niveles_desempeno": {
+            "nivel_1": 12,
+            "nivel_2": 0,
+            "nivel_3": 0,
+            "nivel_4": 0
+          }
+        }
+      ]
+    },
+    "ingles": {
+      "nombre": "Inglés",
+      "promedio_municipal_ponderado": 46.84,
+      "total_evaluados_area": 1499,
+      "faltantes_respecto_total_grado": 29,
+      "cobertura_sobre_total_grado_porcentaje": 98.1,
+      "niveles_desempeno": {
+        "nivel_1": {
+          "cantidad": 619,
+          "porcentaje": 41.29
+        },
+        "nivel_2": {
+          "cantidad": 407,
+          "porcentaje": 27.15
+        },
+        "nivel_3": {
+          "cantidad": 253,
+          "porcentaje": 16.88
+        },
+        "nivel_4": {
+          "cantidad": 220,
+          "porcentaje": 14.68
+        }
+      },
+      "competencias": [
+        {
+          "nombre": "Lingüística",
+          "promedio_municipal_ponderado": 46.52,
+          "total_evaluados_usados": 1499
+        },
+        {
+          "nombre": "Sociolingüístico",
+          "promedio_municipal_ponderado": 49.76,
+          "total_evaluados_usados": 1499
+        },
+        {
+          "nombre": "Pragmática",
+          "promedio_municipal_ponderado": 46.18,
+          "total_evaluados_usados": 1499
+        }
+      ],
+      "componentes": [
+        {
+          "nombre": "Lexical",
+          "promedio_municipal_ponderado": 52.98,
+          "total_evaluados_usados": 1499
+        },
+        {
+          "nombre": "Lectura",
+          "promedio_municipal_ponderado": 48.77,
+          "total_evaluados_usados": 1499
+        },
+        {
+          "nombre": "Conversacional",
+          "promedio_municipal_ponderado": 49.76,
+          "total_evaluados_usados": 1499
+        },
+        {
+          "nombre": "Gramatical",
+          "promedio_municipal_ponderado": 40.99,
+          "total_evaluados_usados": 1499
+        }
+      ],
+      "comparacion_urbano_rural": {
+        "urbana": {
+          "instituciones": 9,
+          "promedio_ponderado": 47.55,
+          "total_evaluados_area": 1255,
+          "niveles_desempeno": {
+            "nivel_1": {
+              "cantidad": 496,
+              "porcentaje": 39.52
+            },
+            "nivel_2": {
+              "cantidad": 348,
+              "porcentaje": 27.73
+            },
+            "nivel_3": {
+              "cantidad": 226,
+              "porcentaje": 18.01
+            },
+            "nivel_4": {
+              "cantidad": 185,
+              "porcentaje": 14.74
+            }
+          }
+        },
+        "rural": {
+          "instituciones": 9,
+          "promedio_ponderado": 43.2,
+          "total_evaluados_area": 244,
+          "niveles_desempeno": {
+            "nivel_1": {
+              "cantidad": 123,
+              "porcentaje": 50.41
+            },
+            "nivel_2": {
+              "cantidad": 59,
+              "porcentaje": 24.18
+            },
+            "nivel_3": {
+              "cantidad": 27,
+              "porcentaje": 11.07
+            },
+            "nivel_4": {
+              "cantidad": 35,
+              "porcentaje": 14.34
+            }
+          }
+        },
+        "diferencia_promedio_urbana_menos_rural": 4.35
+      },
+      "instituciones_ordenadas_por_promedio": [
+        {
+          "numero": 4,
+          "nombre": "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+          "dane": "176834003946",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 65.0,
+          "desviacion_estandar": 21.7,
+          "total_evaluados_area": 115,
+          "niveles_desempeno": {
+            "nivel_1": 21,
+            "nivel_2": 12,
+            "nivel_3": 34,
+            "nivel_4": 48
+          }
+        },
+        {
+          "numero": 3,
+          "nombre": "INSTITUCION EDUCATIVA AGUACLARA",
+          "dane": "276834001778",
+          "zona": "rural",
+          "cantidad_grupos": 4,
+          "promedio": 57.5,
+          "desviacion_estandar": 20.4,
+          "total_evaluados_area": 81,
+          "niveles_desempeno": {
+            "nivel_1": 17,
+            "nivel_2": 20,
+            "nivel_3": 19,
+            "nivel_4": 25
+          }
+        },
+        {
+          "numero": 7,
+          "nombre": "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+          "dane": "176834000084",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 57.2,
+          "desviacion_estandar": 15.6,
+          "total_evaluados_area": 131,
+          "niveles_desempeno": {
+            "nivel_1": 21,
+            "nivel_2": 33,
+            "nivel_3": 57,
+            "nivel_4": 20
+          }
+        },
+        {
+          "numero": 2,
+          "nombre": "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+          "dane": "176834000394",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 53.1,
+          "desviacion_estandar": 19.1,
+          "total_evaluados_area": 194,
+          "niveles_desempeno": {
+            "nivel_1": 51,
+            "nivel_2": 61,
+            "nivel_3": 40,
+            "nivel_4": 42
+          }
+        },
+        {
+          "numero": 8,
+          "nombre": "I.E. JOVITA SANTA COLOMA",
+          "dane": "276834000666",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 50.7,
+          "desviacion_estandar": 22.2,
+          "total_evaluados_area": 26,
+          "niveles_desempeno": {
+            "nivel_1": 11,
+            "nivel_2": 5,
+            "nivel_3": 2,
+            "nivel_4": 8
+          }
+        },
+        {
+          "numero": 9,
+          "nombre": "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+          "dane": "176834002559",
+          "zona": "urbana",
+          "cantidad_grupos": 4,
+          "promedio": 47.5,
+          "desviacion_estandar": 18.9,
+          "total_evaluados_area": 147,
+          "niveles_desempeno": {
+            "nivel_1": 52,
+            "nivel_2": 51,
+            "nivel_3": 25,
+            "nivel_4": 19
+          }
+        },
+        {
+          "numero": 5,
+          "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+          "dane": "276834000941",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 43.0,
+          "desviacion_estandar": 2.3,
+          "total_evaluados_area": 6,
+          "niveles_desempeno": {
+            "nivel_1": 0,
+            "nivel_2": 6,
+            "nivel_3": 0,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 10,
+          "nombre": "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+          "dane": "176834000092",
+          "zona": "urbana",
+          "cantidad_grupos": 7,
+          "promedio": 42.8,
+          "desviacion_estandar": 16.3,
+          "total_evaluados_area": 242,
+          "niveles_desempeno": {
+            "nivel_1": 117,
+            "nivel_2": 73,
+            "nivel_3": 34,
+            "nivel_4": 18
+          }
+        },
+        {
+          "numero": 15,
+          "nombre": "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+          "dane": "176834000289",
+          "zona": "urbana",
+          "cantidad_grupos": 4,
+          "promedio": 42.5,
+          "desviacion_estandar": 20.0,
+          "total_evaluados_area": 99,
+          "niveles_desempeno": {
+            "nivel_1": 52,
+            "nivel_2": 26,
+            "nivel_3": 7,
+            "nivel_4": 14
+          }
+        },
+        {
+          "numero": 11,
+          "nombre": "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+          "dane": "276834002626",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 42.1,
+          "desviacion_estandar": 15.0,
+          "total_evaluados_area": 23,
+          "niveles_desempeno": {
+            "nivel_1": 11,
+            "nivel_2": 8,
+            "nivel_3": 3,
+            "nivel_4": 1
+          }
+        },
+        {
+          "numero": 6,
+          "nombre": "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+          "dane": "176834000351",
+          "zona": "urbana",
+          "cantidad_grupos": 4,
+          "promedio": 41.1,
+          "desviacion_estandar": 18.8,
+          "total_evaluados_area": 105,
+          "niveles_desempeno": {
+            "nivel_1": 57,
+            "nivel_2": 29,
+            "nivel_3": 8,
+            "nivel_4": 11
+          }
+        },
+        {
+          "numero": 17,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+          "dane": "176834003989",
+          "zona": "urbana",
+          "cantidad_grupos": 5,
+          "promedio": 39.0,
+          "desviacion_estandar": 17.2,
+          "total_evaluados_area": 139,
+          "niveles_desempeno": {
+            "nivel_1": 74,
+            "nivel_2": 41,
+            "nivel_3": 17,
+            "nivel_4": 7
+          }
+        },
+        {
+          "numero": 13,
+          "nombre": "INSTITUCION EDUCATIVA MONTELORO",
+          "dane": "276834000917",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 38.7,
+          "desviacion_estandar": 13.5,
+          "total_evaluados_area": 10,
+          "niveles_desempeno": {
+            "nivel_1": 6,
+            "nivel_2": 2,
+            "nivel_3": 2,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 12,
+          "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+          "dane": "176834000106",
+          "zona": "urbana",
+          "cantidad_grupos": 3,
+          "promedio": 37.6,
+          "desviacion_estandar": 17.4,
+          "total_evaluados_area": 83,
+          "niveles_desempeno": {
+            "nivel_1": 51,
+            "nivel_2": 22,
+            "nivel_3": 4,
+            "nivel_4": 6
+          }
+        },
+        {
+          "numero": 16,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+          "dane": "276834002243",
+          "zona": "rural",
+          "cantidad_grupos": 2,
+          "promedio": 31.2,
+          "desviacion_estandar": 13.6,
+          "total_evaluados_area": 49,
+          "niveles_desempeno": {
+            "nivel_1": 37,
+            "nivel_2": 10,
+            "nivel_3": 1,
+            "nivel_4": 1
+          }
+        },
+        {
+          "numero": 18,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+          "dane": "276834000704",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 30.3,
+          "desviacion_estandar": 7.8,
+          "total_evaluados_area": 12,
+          "niveles_desempeno": {
+            "nivel_1": 9,
+            "nivel_2": 3,
+            "nivel_3": 0,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 14,
+          "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+          "dane": "276834000852",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 29.7,
+          "desviacion_estandar": 8.0,
+          "total_evaluados_area": 23,
+          "niveles_desempeno": {
+            "nivel_1": 19,
+            "nivel_2": 4,
+            "nivel_3": 0,
+            "nivel_4": 0
+          }
+        },
+        {
+          "numero": 1,
+          "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+          "dane": "27683400123901",
+          "zona": "rural",
+          "cantidad_grupos": 1,
+          "promedio": 26.9,
+          "desviacion_estandar": 9.3,
+          "total_evaluados_area": 14,
+          "niveles_desempeno": {
+            "nivel_1": 13,
+            "nivel_2": 1,
+            "nivel_3": 0,
+            "nivel_4": 0
+          }
+        }
+      ]
+    }
+  },
+  "instituciones": [
+    {
+      "numero": 1,
+      "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+      "dane": "27683400123901",
+      "zona": "rural",
+      "cantidad_grupos": 1,
+      "total_estudiantes_grado": 14,
+      "archivo_resultado": "01_institucion_educativa_la_moralia__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 28.0,
+          "desviacion_estandar": 10.3,
+          "total_evaluados_area": 14
+        },
+        "lectura_critica": {
+          "promedio": 39.0,
+          "desviacion_estandar": 8.0,
+          "total_evaluados_area": 14
+        },
+        "sociales_ciudadanas": {
+          "promedio": 46.4,
+          "desviacion_estandar": 12.9,
+          "total_evaluados_area": 14
+        },
+        "ciencias_naturales": {
+          "promedio": 31.7,
+          "desviacion_estandar": 5.2,
+          "total_evaluados_area": 14
+        },
+        "ingles": {
+          "promedio": 26.9,
+          "desviacion_estandar": 9.3,
+          "total_evaluados_area": 14
+        }
+      }
+    },
+    {
+      "numero": 2,
+      "nombre": "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+      "dane": "176834000394",
+      "zona": "urbana",
+      "cantidad_grupos": 5,
+      "total_estudiantes_grado": 195,
+      "archivo_resultado": "02_sede_principal_no_7_maria_antonia_ruiz__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 49.7,
+          "desviacion_estandar": 15.9,
+          "total_evaluados_area": 195
+        },
+        "lectura_critica": {
+          "promedio": 45.1,
+          "desviacion_estandar": 12.1,
+          "total_evaluados_area": 195
+        },
+        "sociales_ciudadanas": {
+          "promedio": 53.7,
+          "desviacion_estandar": 14.5,
+          "total_evaluados_area": 195
+        },
+        "ciencias_naturales": {
+          "promedio": 47.0,
+          "desviacion_estandar": 15.1,
+          "total_evaluados_area": 195
+        },
+        "ingles": {
+          "promedio": 53.1,
+          "desviacion_estandar": 19.1,
+          "total_evaluados_area": 194
+        }
+      }
+    },
+    {
+      "numero": 3,
+      "nombre": "INSTITUCION EDUCATIVA AGUACLARA",
+      "dane": "276834001778",
+      "zona": "rural",
+      "cantidad_grupos": 4,
+      "total_estudiantes_grado": 88,
+      "archivo_resultado": "03_institucion_educativa_aguaclara__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 33.6,
+          "desviacion_estandar": 13.3,
+          "total_evaluados_area": 88
+        },
+        "lectura_critica": {
+          "promedio": 36.5,
+          "desviacion_estandar": 11.7,
+          "total_evaluados_area": 85
+        },
+        "sociales_ciudadanas": {
+          "promedio": 48.8,
+          "desviacion_estandar": 18.2,
+          "total_evaluados_area": 88
+        },
+        "ciencias_naturales": {
+          "promedio": 41.9,
+          "desviacion_estandar": 15.7,
+          "total_evaluados_area": 88
+        },
+        "ingles": {
+          "promedio": 57.5,
+          "desviacion_estandar": 20.4,
+          "total_evaluados_area": 81
+        }
+      }
+    },
+    {
+      "numero": 4,
+      "nombre": "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+      "dane": "176834003946",
+      "zona": "urbana",
+      "cantidad_grupos": 5,
+      "total_estudiantes_grado": 121,
+      "archivo_resultado": "04_institucion_educativa_alfonso_lopez_pumarejo__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 46.9,
+          "desviacion_estandar": 14.6,
+          "total_evaluados_area": 121
+        },
+        "lectura_critica": {
+          "promedio": 42.5,
+          "desviacion_estandar": 12.6,
+          "total_evaluados_area": 115
+        },
+        "sociales_ciudadanas": {
+          "promedio": 55.8,
+          "desviacion_estandar": 17.7,
+          "total_evaluados_area": 121
+        },
+        "ciencias_naturales": {
+          "promedio": 50.5,
+          "desviacion_estandar": 17.9,
+          "total_evaluados_area": 121
+        },
+        "ingles": {
+          "promedio": 65.0,
+          "desviacion_estandar": 21.7,
+          "total_evaluados_area": 115
+        }
+      }
+    },
+    {
+      "numero": 5,
+      "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+      "dane": "276834000941",
+      "zona": "rural",
+      "cantidad_grupos": 1,
+      "total_estudiantes_grado": 6,
+      "archivo_resultado": "05_institucion_educativa_alto_rocio__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 41.7,
+          "desviacion_estandar": 4.8,
+          "total_evaluados_area": 6
+        },
+        "lectura_critica": {
+          "promedio": 54.9,
+          "desviacion_estandar": 9.2,
+          "total_evaluados_area": 6
+        },
+        "sociales_ciudadanas": {
+          "promedio": 45.0,
+          "desviacion_estandar": 11.6,
+          "total_evaluados_area": 6
+        },
+        "ciencias_naturales": {
+          "promedio": 37.6,
+          "desviacion_estandar": 12.6,
+          "total_evaluados_area": 6
+        },
+        "ingles": {
+          "promedio": 43.0,
+          "desviacion_estandar": 2.3,
+          "total_evaluados_area": 6
+        }
+      }
+    },
+    {
+      "numero": 6,
+      "nombre": "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+      "dane": "176834000351",
+      "zona": "urbana",
+      "cantidad_grupos": 4,
+      "total_estudiantes_grado": 108,
+      "archivo_resultado": "06_institucion_educativa_corazon_del_valle__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 36.7,
+          "desviacion_estandar": 12.8,
+          "total_evaluados_area": 108
+        },
+        "lectura_critica": {
+          "promedio": 40.2,
+          "desviacion_estandar": 12.5,
+          "total_evaluados_area": 107
+        },
+        "sociales_ciudadanas": {
+          "promedio": 45.8,
+          "desviacion_estandar": 14.6,
+          "total_evaluados_area": 108
+        },
+        "ciencias_naturales": {
+          "promedio": 37.3,
+          "desviacion_estandar": 13.5,
+          "total_evaluados_area": 108
+        },
+        "ingles": {
+          "promedio": 41.1,
+          "desviacion_estandar": 18.8,
+          "total_evaluados_area": 105
+        }
+      }
+    },
+    {
+      "numero": 7,
+      "nombre": "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+      "dane": "176834000084",
+      "zona": "urbana",
+      "cantidad_grupos": 5,
+      "total_estudiantes_grado": 131,
+      "archivo_resultado": "07_institucion_educativa_gimnasio_del_pacifico__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 42.0,
+          "desviacion_estandar": 11.6,
+          "total_evaluados_area": 131
+        },
+        "lectura_critica": {
+          "promedio": 43.2,
+          "desviacion_estandar": 15.1,
+          "total_evaluados_area": 130
+        },
+        "sociales_ciudadanas": {
+          "promedio": 55.0,
+          "desviacion_estandar": 12.6,
+          "total_evaluados_area": 131
+        },
+        "ciencias_naturales": {
+          "promedio": 47.4,
+          "desviacion_estandar": 12.8,
+          "total_evaluados_area": 131
+        },
+        "ingles": {
+          "promedio": 57.2,
+          "desviacion_estandar": 15.6,
+          "total_evaluados_area": 131
+        }
+      }
+    },
+    {
+      "numero": 8,
+      "nombre": "I.E. JOVITA SANTA COLOMA",
+      "dane": "276834000666",
+      "zona": "rural",
+      "cantidad_grupos": 1,
+      "total_estudiantes_grado": 26,
+      "archivo_resultado": "08_i_e_jovita_santa_coloma__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 39.9,
+          "desviacion_estandar": 9.5,
+          "total_evaluados_area": 26
+        },
+        "lectura_critica": {
+          "promedio": 38.9,
+          "desviacion_estandar": 14.0,
+          "total_evaluados_area": 26
+        },
+        "sociales_ciudadanas": {
+          "promedio": 43.8,
+          "desviacion_estandar": 10.6,
+          "total_evaluados_area": 26
+        },
+        "ciencias_naturales": {
+          "promedio": 42.0,
+          "desviacion_estandar": 11.7,
+          "total_evaluados_area": 26
+        },
+        "ingles": {
+          "promedio": 50.7,
+          "desviacion_estandar": 22.2,
+          "total_evaluados_area": 26
+        }
+      }
+    },
+    {
+      "numero": 9,
+      "nombre": "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+      "dane": "176834002559",
+      "zona": "urbana",
+      "cantidad_grupos": 4,
+      "total_estudiantes_grado": 154,
+      "archivo_resultado": "09_institucion_educativa_juan_maria_cespedes__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 36.5,
+          "desviacion_estandar": 12.1,
+          "total_evaluados_area": 154
+        },
+        "lectura_critica": {
+          "promedio": 42.4,
+          "desviacion_estandar": 12.5,
+          "total_evaluados_area": 149
+        },
+        "sociales_ciudadanas": {
+          "promedio": 49.9,
+          "desviacion_estandar": 14.4,
+          "total_evaluados_area": 154
+        },
+        "ciencias_naturales": {
+          "promedio": 41.5,
+          "desviacion_estandar": 15.5,
+          "total_evaluados_area": 154
+        },
+        "ingles": {
+          "promedio": 47.5,
+          "desviacion_estandar": 18.9,
+          "total_evaluados_area": 147
+        }
+      }
+    },
+    {
+      "numero": 10,
+      "nombre": "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+      "dane": "176834000092",
+      "zona": "urbana",
+      "cantidad_grupos": 7,
+      "total_estudiantes_grado": 243,
+      "archivo_resultado": "10_sede_principal_instituto_julia_restrepo__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 35.3,
+          "desviacion_estandar": 10.5,
+          "total_evaluados_area": 243
+        },
+        "lectura_critica": {
+          "promedio": 44.2,
+          "desviacion_estandar": 12.2,
+          "total_evaluados_area": 243
+        },
+        "sociales_ciudadanas": {
+          "promedio": 54.2,
+          "desviacion_estandar": 14.1,
+          "total_evaluados_area": 243
+        },
+        "ciencias_naturales": {
+          "promedio": 41.7,
+          "desviacion_estandar": 12.1,
+          "total_evaluados_area": 243
+        },
+        "ingles": {
+          "promedio": 42.8,
+          "desviacion_estandar": 16.3,
+          "total_evaluados_area": 242
+        }
+      }
+    },
+    {
+      "numero": 11,
+      "nombre": "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+      "dane": "276834002626",
+      "zona": "rural",
+      "cantidad_grupos": 1,
+      "total_estudiantes_grado": 23,
+      "archivo_resultado": "11_institucion_educativa_julio_cesar_zuluaga__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 39.7,
+          "desviacion_estandar": 11.7,
+          "total_evaluados_area": 23
+        },
+        "lectura_critica": {
+          "promedio": 46.3,
+          "desviacion_estandar": 11.3,
+          "total_evaluados_area": 23
+        },
+        "sociales_ciudadanas": {
+          "promedio": 56.7,
+          "desviacion_estandar": 9.3,
+          "total_evaluados_area": 23
+        },
+        "ciencias_naturales": {
+          "promedio": 47.5,
+          "desviacion_estandar": 9.0,
+          "total_evaluados_area": 23
+        },
+        "ingles": {
+          "promedio": 42.1,
+          "desviacion_estandar": 15.0,
+          "total_evaluados_area": 23
+        }
+      }
+    },
+    {
+      "numero": 12,
+      "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+      "dane": "176834000106",
+      "zona": "urbana",
+      "cantidad_grupos": 3,
+      "total_estudiantes_grado": 84,
+      "archivo_resultado": "12_institucion_educativa_moderna_de_tulua__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 35.9,
+          "desviacion_estandar": 12.5,
+          "total_evaluados_area": 84
+        },
+        "lectura_critica": {
+          "promedio": 38.2,
+          "desviacion_estandar": 12.7,
+          "total_evaluados_area": 84
+        },
+        "sociales_ciudadanas": {
+          "promedio": 44.2,
+          "desviacion_estandar": 14.8,
+          "total_evaluados_area": 84
+        },
+        "ciencias_naturales": {
+          "promedio": 36.3,
+          "desviacion_estandar": 12.3,
+          "total_evaluados_area": 84
+        },
+        "ingles": {
+          "promedio": 37.6,
+          "desviacion_estandar": 17.4,
+          "total_evaluados_area": 83
+        }
+      }
+    },
+    {
+      "numero": 13,
+      "nombre": "INSTITUCION EDUCATIVA MONTELORO",
+      "dane": "276834000917",
+      "zona": "rural",
+      "cantidad_grupos": 1,
+      "total_estudiantes_grado": 10,
+      "archivo_resultado": "13_institucion_educativa_monteloro__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 38.6,
+          "desviacion_estandar": 5.2,
+          "total_evaluados_area": 10
+        },
+        "lectura_critica": {
+          "promedio": 42.7,
+          "desviacion_estandar": 9.5,
+          "total_evaluados_area": 10
+        },
+        "sociales_ciudadanas": {
+          "promedio": 45.6,
+          "desviacion_estandar": 11.3,
+          "total_evaluados_area": 10
+        },
+        "ciencias_naturales": {
+          "promedio": 34.0,
+          "desviacion_estandar": 11.4,
+          "total_evaluados_area": 10
+        },
+        "ingles": {
+          "promedio": 38.7,
+          "desviacion_estandar": 13.5,
+          "total_evaluados_area": 10
+        }
+      }
+    },
+    {
+      "numero": 14,
+      "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+      "dane": "276834000852",
+      "zona": "rural",
+      "cantidad_grupos": 1,
+      "total_estudiantes_grado": 23,
+      "archivo_resultado": "14_institucion_educativa_san_rafael__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 32.3,
+          "desviacion_estandar": 8.4,
+          "total_evaluados_area": 23
+        },
+        "lectura_critica": {
+          "promedio": 39.7,
+          "desviacion_estandar": 12.3,
+          "total_evaluados_area": 23
+        },
+        "sociales_ciudadanas": {
+          "promedio": 51.2,
+          "desviacion_estandar": 12.9,
+          "total_evaluados_area": 23
+        },
+        "ciencias_naturales": {
+          "promedio": 37.6,
+          "desviacion_estandar": 8.8,
+          "total_evaluados_area": 23
+        },
+        "ingles": {
+          "promedio": 29.7,
+          "desviacion_estandar": 8.0,
+          "total_evaluados_area": 23
+        }
+      }
+    },
+    {
+      "numero": 15,
+      "nombre": "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+      "dane": "176834000289",
+      "zona": "urbana",
+      "cantidad_grupos": 4,
+      "total_estudiantes_grado": 99,
+      "archivo_resultado": "15_institucion_educativa_tecnico_industrial_carlos_sarmiento_lora__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 36.8,
+          "desviacion_estandar": 11.5,
+          "total_evaluados_area": 99
+        },
+        "lectura_critica": {
+          "promedio": 43.5,
+          "desviacion_estandar": 12.5,
+          "total_evaluados_area": 99
+        },
+        "sociales_ciudadanas": {
+          "promedio": 50.4,
+          "desviacion_estandar": 14.3,
+          "total_evaluados_area": 99
+        },
+        "ciencias_naturales": {
+          "promedio": 41.5,
+          "desviacion_estandar": 14.6,
+          "total_evaluados_area": 99
+        },
+        "ingles": {
+          "promedio": 42.5,
+          "desviacion_estandar": 20.0,
+          "total_evaluados_area": 99
+        }
+      }
+    },
+    {
+      "numero": 16,
+      "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+      "dane": "276834002243",
+      "zona": "rural",
+      "cantidad_grupos": 2,
+      "total_estudiantes_grado": 50,
+      "archivo_resultado": "16_institucion_educativa_tecnica_la_marina__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 31.0,
+          "desviacion_estandar": 12.0,
+          "total_evaluados_area": 50
+        },
+        "lectura_critica": {
+          "promedio": 35.8,
+          "desviacion_estandar": 11.9,
+          "total_evaluados_area": 50
+        },
+        "sociales_ciudadanas": {
+          "promedio": 46.4,
+          "desviacion_estandar": 15.1,
+          "total_evaluados_area": 50
+        },
+        "ciencias_naturales": {
+          "promedio": 32.3,
+          "desviacion_estandar": 10.3,
+          "total_evaluados_area": 50
+        },
+        "ingles": {
+          "promedio": 31.2,
+          "desviacion_estandar": 13.6,
+          "total_evaluados_area": 49
+        }
+      }
+    },
+    {
+      "numero": 17,
+      "nombre": "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+      "dane": "176834003989",
+      "zona": "urbana",
+      "cantidad_grupos": 5,
+      "total_estudiantes_grado": 141,
+      "archivo_resultado": "17_institucion_educativa_tecnica_occidente__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 33.8,
+          "desviacion_estandar": 11.9,
+          "total_evaluados_area": 141
+        },
+        "lectura_critica": {
+          "promedio": 39.1,
+          "desviacion_estandar": 13.5,
+          "total_evaluados_area": 138
+        },
+        "sociales_ciudadanas": {
+          "promedio": 45.3,
+          "desviacion_estandar": 14.8,
+          "total_evaluados_area": 141
+        },
+        "ciencias_naturales": {
+          "promedio": 36.2,
+          "desviacion_estandar": 12.0,
+          "total_evaluados_area": 141
+        },
+        "ingles": {
+          "promedio": 39.0,
+          "desviacion_estandar": 17.2,
+          "total_evaluados_area": 139
+        }
+      }
+    },
+    {
+      "numero": 18,
+      "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+      "dane": "276834000704",
+      "zona": "rural",
+      "cantidad_grupos": 1,
+      "total_estudiantes_grado": 12,
+      "archivo_resultado": "18_institucion_educativa_tecnica_san_juan_de_barragan__sigma10.json",
+      "areas": {
+        "matematicas": {
+          "promedio": 28.7,
+          "desviacion_estandar": 7.2,
+          "total_evaluados_area": 12
+        },
+        "lectura_critica": {
+          "promedio": 32.9,
+          "desviacion_estandar": 8.0,
+          "total_evaluados_area": 12
+        },
+        "sociales_ciudadanas": {
+          "promedio": 38.0,
+          "desviacion_estandar": 12.1,
+          "total_evaluados_area": 12
+        },
+        "ciencias_naturales": {
+          "promedio": 31.5,
+          "desviacion_estandar": 7.2,
+          "total_evaluados_area": 12
+        },
+        "ingles": {
+          "promedio": 30.3,
+          "desviacion_estandar": 7.8,
+          "total_evaluados_area": 12
+        }
+      }
+    }
+  ],
+  "integridad": {
+    "instituciones_esperadas": 18,
+    "instituciones_procesadas": 18,
+    "archivos_con_error": 0,
+    "reglas": [
+      "No se sustituyen valores faltantes por cero.",
+      "El total evaluado por área puede ser menor que el total de estudiantes del grado.",
+      "Los DANE se conservan como texto.",
+      "Los promedios municipales se ponderan por evaluados.",
+      "No se crean categorías de prioridad con cortes arbitrarios."
+    ]
+  }
+}
