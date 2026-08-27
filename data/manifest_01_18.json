@@ -1,0 +1,421 @@
+{
+  "municipio": "Tuluá",
+  "departamento": "Valle del Cauca",
+  "schema_version": "1.0",
+  "instituciones": [
+    {
+      "numero": 1,
+      "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+      "dane": "27683400123901",
+      "zona": "rural",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "01_institucion_educativa_la_moralia__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "01_institucion_educativa_la_moralia__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "01_institucion_educativa_la_moralia__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "nombre": "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+      "dane": "176834000394",
+      "zona": "urbana",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "02_sede_principal_no_7_maria_antonia_ruiz__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "02_sede_principal_no_7_maria_antonia_ruiz__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "02_sede_principal_no_7_maria_antonia_ruiz__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "nombre": "INSTITUCION EDUCATIVA AGUACLARA",
+      "dane": "276834001778",
+      "zona": "rural",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "03_institucion_educativa_aguaclara__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "03_institucion_educativa_aguaclara__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "03_institucion_educativa_aguaclara__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "nombre": "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+      "dane": "176834003946",
+      "zona": "urbana",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "04_institucion_educativa_alfonso_lopez_pumarejo__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "04_institucion_educativa_alfonso_lopez_pumarejo__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "04_institucion_educativa_alfonso_lopez_pumarejo__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+      "dane": "276834000941",
+      "zona": "rural",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "05_institucion_educativa_alto_rocio__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "05_institucion_educativa_alto_rocio__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "05_institucion_educativa_alto_rocio__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "nombre": "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+      "dane": "176834000351",
+      "zona": "urbana",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "06_institucion_educativa_corazon_del_valle__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "06_institucion_educativa_corazon_del_valle__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "06_institucion_educativa_corazon_del_valle__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "nombre": "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+      "dane": "176834000084",
+      "zona": "urbana",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "07_institucion_educativa_gimnasio_del_pacifico__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "07_institucion_educativa_gimnasio_del_pacifico__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "07_institucion_educativa_gimnasio_del_pacifico__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "nombre": "I.E. JOVITA SANTA COLOMA",
+      "dane": "276834000666",
+      "zona": "rural",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "08_i_e_jovita_santa_coloma__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "08_i_e_jovita_santa_coloma__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "08_i_e_jovita_santa_coloma__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "nombre": "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+      "dane": "176834002559",
+      "zona": "urbana",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "09_institucion_educativa_juan_maria_cespedes__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "09_institucion_educativa_juan_maria_cespedes__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "09_institucion_educativa_juan_maria_cespedes__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "nombre": "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+      "dane": "176834000092",
+      "zona": "urbana",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "10_sede_principal_instituto_julia_restrepo__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "10_sede_principal_instituto_julia_restrepo__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "10_sede_principal_instituto_julia_restrepo__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "nombre": "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+      "dane": "276834002626",
+      "zona": "rural",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "11_institucion_educativa_julio_cesar_zuluaga__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "11_institucion_educativa_julio_cesar_zuluaga__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "11_institucion_educativa_julio_cesar_zuluaga__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 12,
+      "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+      "dane": "176834000106",
+      "zona": "urbana",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "12_institucion_educativa_moderna_de_tulua__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "12_institucion_educativa_moderna_de_tulua__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "12_institucion_educativa_moderna_de_tulua__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 13,
+      "nombre": "INSTITUCION EDUCATIVA MONTELORO",
+      "dane": "276834000917",
+      "zona": "rural",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "13_institucion_educativa_monteloro__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "13_institucion_educativa_monteloro__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "13_institucion_educativa_monteloro__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 14,
+      "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+      "dane": "276834000852",
+      "zona": "rural",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "14_institucion_educativa_san_rafael__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "14_institucion_educativa_san_rafael__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "14_institucion_educativa_san_rafael__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 15,
+      "nombre": "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+      "dane": "176834000289",
+      "zona": "urbana",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "15_institucion_educativa_tecnico_industrial_carlos_sarmiento_lora__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "15_institucion_educativa_tecnico_industrial_carlos_sarmiento_lora__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "15_institucion_educativa_tecnico_industrial_carlos_sarmiento_lora__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 16,
+      "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+      "dane": "276834002243",
+      "zona": "rural",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "16_institucion_educativa_tecnica_la_marina__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "16_institucion_educativa_tecnica_la_marina__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "16_institucion_educativa_tecnica_la_marina__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 17,
+      "nombre": "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+      "dane": "176834003989",
+      "zona": "urbana",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "17_institucion_educativa_tecnica_occidente__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "17_institucion_educativa_tecnica_occidente__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "17_institucion_educativa_tecnica_occidente__masterpro11.json"
+        }
+      ]
+    },
+    {
+      "numero": 18,
+      "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+      "dane": "276834000704",
+      "zona": "rural",
+      "pruebas": [
+        {
+          "grado": 10,
+          "nombre": "2-02 SIGMA 10 SABER",
+          "archivo": "18_institucion_educativa_tecnica_san_juan_de_barragan__sigma10.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-02 SIGMA 11 SABER",
+          "archivo": "18_institucion_educativa_tecnica_san_juan_de_barragan__sigma11.json"
+        },
+        {
+          "grado": 11,
+          "nombre": "2-11 MASTER PRO 11",
+          "archivo": "18_institucion_educativa_tecnica_san_juan_de_barragan__masterpro11.json"
+        }
+      ]
+    }
+  ]
+}

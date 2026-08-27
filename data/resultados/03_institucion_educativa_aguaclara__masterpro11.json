@@ -1,0 +1,352 @@
+{
+  "schema_version": "1.0",
+  "id": "institucion-educativa-aguaclara__2-11-master-pro-11",
+  "institucion": {
+    "nombre": "INSTITUCION EDUCATIVA AGUACLARA",
+    "dane": "276834001778",
+    "zona": "rural",
+    "municipio": "TULUÁ"
+  },
+  "prueba": {
+    "nombre": "2-11 MASTER PRO 11",
+    "grado": 11,
+    "cantidad_grupos": 3
+  },
+  "total_estudiantes_grado": 57,
+  "top_5": [
+    {
+      "puesto": 1,
+      "estudiante": "JUAN JOSE PEREZ LOPEZ",
+      "puntaje_global": 364.6,
+      "puntajes_area": {
+        "lectura_critica": 85.4,
+        "matematicas": 42.0,
+        "sociales_ciudadanas": 82.0,
+        "ciencias_naturales": 79.3,
+        "ingles": 81.8
+      }
+    },
+    {
+      "puesto": 2,
+      "estudiante": "HECTOR DANIEL VELA LOPEZ",
+      "puntaje_global": 359.2,
+      "puntajes_area": {
+        "lectura_critica": 87.8,
+        "matematicas": 44.0,
+        "sociales_ciudadanas": 80.0,
+        "ciencias_naturales": 75.9,
+        "ingles": 70.9
+      }
+    },
+    {
+      "puesto": 3,
+      "estudiante": "IVAN ANDRES SILVA PLAZAS",
+      "puntaje_global": 342.9,
+      "puntajes_area": {
+        "lectura_critica": 70.7,
+        "matematicas": 46.0,
+        "sociales_ciudadanas": 76.0,
+        "ciencias_naturales": 84.5,
+        "ingles": 60.0
+      }
+    },
+    {
+      "puesto": 4,
+      "estudiante": "CRISTIAN DAVID FLOREZ LOAIZA",
+      "puntaje_global": 341.6,
+      "puntajes_area": {
+        "lectura_critica": 70.7,
+        "matematicas": 50.0,
+        "sociales_ciudadanas": 88.0,
+        "ciencias_naturales": 65.5,
+        "ingles": 65.5
+      }
+    },
+    {
+      "puesto": 5,
+      "estudiante": "SEBASTIAN DAVID DIAZ VALENCIA",
+      "puntaje_global": 332.6,
+      "puntajes_area": {
+        "lectura_critica": 70.7,
+        "matematicas": 52.0,
+        "sociales_ciudadanas": 74.0,
+        "ciencias_naturales": 67.2,
+        "ingles": 72.7
+      }
+    }
+  ],
+  "areas": {
+    "matematicas": {
+      "nombre": "Matemáticas",
+      "promedio": 36.4,
+      "desviacion_estandar": 10.2,
+      "competencias": [
+        {
+          "nombre": "Interpretación y representación",
+          "puntaje": 50.1
+        },
+        {
+          "nombre": "Formulación y ejecución",
+          "puntaje": 31.9
+        },
+        {
+          "nombre": "Argumentación",
+          "puntaje": 33.4
+        }
+      ],
+      "componentes": [
+        {
+          "nombre": "Aleatorio",
+          "puntaje": 41.3
+        },
+        {
+          "nombre": "Numérico - variacional",
+          "puntaje": 35.7
+        },
+        {
+          "nombre": "Geométrico - métrico",
+          "puntaje": 31.7
+        }
+      ],
+      "niveles_desempeno": [
+        {
+          "nivel": 1,
+          "cantidad": 25
+        },
+        {
+          "nivel": 2,
+          "cantidad": 29
+        },
+        {
+          "nivel": 3,
+          "cantidad": 3
+        },
+        {
+          "nivel": 4,
+          "cantidad": 0
+        }
+      ],
+      "total_evaluados_area": 57
+    },
+    "lectura_critica": {
+      "nombre": "Lectura Crítica",
+      "promedio": 53.0,
+      "desviacion_estandar": 16.8,
+      "competencias": [
+        {
+          "nombre": "Evaluar y reflexionar sobre la forma ...",
+          "puntaje": 52.7
+        },
+        {
+          "nombre": "Relacionar e interpretar información",
+          "puntaje": 49.3
+        },
+        {
+          "nombre": "Identificar y ubicar información local...",
+          "puntaje": 61.6
+        }
+      ],
+      "componentes": [
+        {
+          "nombre": "Semántico",
+          "puntaje": 59.3
+        },
+        {
+          "nombre": "Sintáctico",
+          "puntaje": 48.0
+        },
+        {
+          "nombre": "Pragmático",
+          "puntaje": 48.1
+        }
+      ],
+      "niveles_desempeno": [
+        {
+          "nivel": 1,
+          "cantidad": 12
+        },
+        {
+          "nivel": 2,
+          "cantidad": 15
+        },
+        {
+          "nivel": 3,
+          "cantidad": 13
+        },
+        {
+          "nivel": 4,
+          "cantidad": 16
+        }
+      ],
+      "total_evaluados_area": 56
+    },
+    "sociales_ciudadanas": {
+      "nombre": "Sociales y Ciudadanas",
+      "promedio": 53.0,
+      "desviacion_estandar": 18.1,
+      "competencias": [
+        {
+          "nombre": "Pensamiento social",
+          "puntaje": 41.7
+        },
+        {
+          "nombre": "Pensamiento reflexivo y sistémico",
+          "puntaje": 57.0
+        },
+        {
+          "nombre": "Interpretación y análisis de perspectivas",
+          "puntaje": 55.2
+        }
+      ],
+      "componentes": [
+        {
+          "nombre": "Ético / político",
+          "puntaje": 54.1
+        },
+        {
+          "nombre": "Espacio y ambiente",
+          "puntaje": 61.0
+        },
+        {
+          "nombre": "Historia y cultura",
+          "puntaje": 50.4
+        },
+        {
+          "nombre": "Competencias ciudadanas",
+          "puntaje": 43.8
+        }
+      ],
+      "niveles_desempeno": [
+        {
+          "nivel": 1,
+          "cantidad": 18
+        },
+        {
+          "nivel": 2,
+          "cantidad": 13
+        },
+        {
+          "nivel": 3,
+          "cantidad": 15
+        },
+        {
+          "nivel": 4,
+          "cantidad": 11
+        }
+      ],
+      "total_evaluados_area": 57
+    },
+    "ciencias_naturales": {
+      "nombre": "Ciencias Naturales",
+      "promedio": 48.4,
+      "desviacion_estandar": 16.5,
+      "competencias": [
+        {
+          "nombre": "Explicación de fenómenos",
+          "puntaje": 47.6
+        },
+        {
+          "nombre": "Uso comprensivo del conocimiento científico",
+          "puntaje": 49.4
+        },
+        {
+          "nombre": "Indagación",
+          "puntaje": 50.7
+        }
+      ],
+      "componentes": [
+        {
+          "nombre": "Entorno biológico",
+          "puntaje": 48.4
+        },
+        {
+          "nombre": "Entorno de ciencia, tecnología y sociedad",
+          "puntaje": 57.0
+        },
+        {
+          "nombre": "Entorno físico",
+          "puntaje": 48.3
+        },
+        {
+          "nombre": "Entorno químico",
+          "puntaje": 44.4
+        }
+      ],
+      "niveles_desempeno": [
+        {
+          "nivel": 1,
+          "cantidad": 19
+        },
+        {
+          "nivel": 2,
+          "cantidad": 20
+        },
+        {
+          "nivel": 3,
+          "cantidad": 14
+        },
+        {
+          "nivel": 4,
+          "cantidad": 4
+        }
+      ],
+      "total_evaluados_area": 57
+    },
+    "ingles": {
+      "nombre": "Inglés",
+      "promedio": 45.7,
+      "desviacion_estandar": 14.2,
+      "competencias": [
+        {
+          "nombre": "Lingüística",
+          "puntaje": 38.6
+        },
+        {
+          "nombre": "Pragmática",
+          "puntaje": 46.9
+        },
+        {
+          "nombre": "Sociolingüístico",
+          "puntaje": 52.6
+        }
+      ],
+      "componentes": [
+        {
+          "nombre": "Lexical",
+          "puntaje": 43.9
+        },
+        {
+          "nombre": "Gramatical",
+          "puntaje": 46.9
+        },
+        {
+          "nombre": "Conversacional",
+          "puntaje": 52.6
+        },
+        {
+          "nombre": "Lectura",
+          "puntaje": 33.3
+        }
+      ],
+      "niveles_desempeno": [
+        {
+          "nivel": 1,
+          "cantidad": 17
+        },
+        {
+          "nivel": 2,
+          "cantidad": 27
+        },
+        {
+          "nivel": 3,
+          "cantidad": 9
+        },
+        {
+          "nivel": 4,
+          "cantidad": 4
+        }
+      ],
+      "total_evaluados_area": 57
+    }
+  }
+}
