@@ -1,0 +1,668 @@
+{
+  "schema_version": "1.0",
+  "tipo_archivo": "motor_recomendaciones_pedagogicas_por_area",
+  "area": {
+    "id": "matematicas",
+    "nombre": "Matemáticas",
+    "proposito": "Convertir resultados de la prueba en orientaciones metodológicas concretas, diferenciadas por competencia, componente y grado, para apoyar decisiones de mejoramiento institucional."
+  },
+  "alcance": {
+    "poblacion": [
+      "grado_10",
+      "grado_11"
+    ],
+    "uso_principal": [
+      "Informe municipal para Secretaría de Educación",
+      "Lectura institucional de resultados",
+      "Orientación a coordinaciones académicas",
+      "Planeación de acciones de aula y seguimiento"
+    ],
+    "nota_psicometrica": "Este archivo no define puntos de corte para clasificar un resultado como crítico, alto, medio o satisfactorio. El nivel de necesidad debe ser calculado por un módulo estadístico común a todas las áreas. Este JSON define la respuesta pedagógica una vez identificada la necesidad.",
+    "principio_de_interpretacion": "Un puntaje bajo en una competencia o componente orienta una hipótesis de necesidad pedagógica, pero no demuestra por sí solo una causa específica. Las recomendaciones deben contrastarse con evidencias de aula, resultados de otras evaluaciones y observación docente."
+  },
+  "fundamento_evaluativo": {
+    "fuentes": [
+      {
+        "institucion": "Icfes",
+        "documento": "Guía de orientación del Examen Saber 11.º 2026-2",
+        "seccion": "Especificaciones de la prueba de Matemáticas, pp. 30-38",
+        "uso_en_este_json": "Competencias evaluadas, categorías de contenido, contextos de la prueba y distribución porcentual por competencia."
+      },
+      {
+        "institucion": "Icfes",
+        "documento": "Marco de referencia de la prueba de Matemáticas Saber 11.º",
+        "uso_en_este_json": "Constructo general y relación entre competencia matemática, resolución de problemas, representación, modelación y argumentación."
+      }
+    ],
+    "competencias_icfes": [
+      {
+        "id": "interpretacion_representacion",
+        "nombre": "Interpretación y representación",
+        "peso_referencial_icfes_2026": 34,
+        "descripcion_operativa": "Comprender información cuantitativa o esquemática presentada en distintos registros y transformar una representación en otra para identificar relaciones, tendencias, patrones o información relevante.",
+        "focos_de_evidencia": [
+          "Reconocer características de información presentada en tablas, gráficas, series, diagramas y otros formatos.",
+          "Transformar una o varias piezas de información entre representaciones equivalentes.",
+          "Relacionar registros verbal, numérico, algebraico, gráfico y geométrico cuando la situación lo requiera."
+        ]
+      },
+      {
+        "id": "formulacion_ejecucion",
+        "nombre": "Formulación y ejecución",
+        "peso_referencial_icfes_2026": 43,
+        "descripcion_operativa": "Plantear, seleccionar, ejecutar y revisar estrategias de solución frente a problemas que involucran información cuantitativa o esquemática.",
+        "focos_de_evidencia": [
+          "Diseñar un plan de solución pertinente.",
+          "Ejecutar procedimientos de manera controlada.",
+          "Resolver problemas verificando la coherencia del resultado con las condiciones del contexto."
+        ]
+      },
+      {
+        "id": "argumentacion",
+        "nombre": "Argumentación",
+        "peso_referencial_icfes_2026": 23,
+        "descripcion_operativa": "Validar o refutar afirmaciones, procedimientos, representaciones y estrategias matemáticas utilizando propiedades, relaciones, ejemplos, contraejemplos y criterios de consistencia.",
+        "focos_de_evidencia": [
+          "Sustentar o refutar interpretaciones a partir de la información disponible.",
+          "Evaluar procedimientos de solución con criterios matemáticos explícitos.",
+          "Establecer la validez o pertinencia de una solución propuesta."
+        ]
+      }
+    ],
+    "categorias_icfes_2026": [
+      "Estadística",
+      "Geometría",
+      "Álgebra y cálculo"
+    ],
+    "mapeo_componentes_del_informe": [
+      {
+        "componente_informe": "Aleatorio",
+        "categoria_icfes_relacionada": "Estadística",
+        "nota": "Equivalencia pedagógica para el motor de recomendaciones; se conserva la denominación 'Aleatorio' en la interfaz cuando provenga del informe."
+      },
+      {
+        "componente_informe": "Numérico - variacional",
+        "categoria_icfes_relacionada": "Álgebra y cálculo",
+        "nota": "Equivalencia pedagógica orientativa entre el componente reportado y la categoría de contenidos usada por la guía 2026."
+      },
+      {
+        "componente_informe": "Geométrico - métrico",
+        "categoria_icfes_relacionada": "Geometría",
+        "nota": "Equivalencia pedagógica orientativa entre el componente reportado y la categoría de contenidos usada por la guía 2026."
+      }
+    ],
+    "contextos_icfes_2026": [
+      "Familiares o personales",
+      "Laborales u ocupacionales",
+      "Comunitarios o sociales",
+      "Matemáticos o científicos"
+    ],
+    "principio_didactico": "El entrenamiento debe combinar competencias y contenidos dentro de situaciones contextualizadas. No se recomienda reducir la preparación a repetición de algoritmos o bancos de preguntas sin análisis de estrategias, representaciones y justificaciones."
+  },
+  "recomendaciones_transversales": {
+    "para_todos_los_grados": [
+      {
+        "id": "resolucion_problemas_como_eje",
+        "nombre": "Usar la resolución de problemas como eje de la enseñanza",
+        "descripcion": "Organizar parte de la práctica matemática alrededor de situaciones que obliguen a comprender información, elegir una estrategia, ejecutar procedimientos y justificar decisiones. La respuesta final debe ser solo una parte del proceso evaluado.",
+        "acciones": [
+          "Solicitar que el estudiante explicite qué información usa y cuál descarta.",
+          "Pedir al menos dos rutas de solución en problemas seleccionados.",
+          "Incluir una fase de verificación del resultado frente al contexto.",
+          "Comparar procedimientos correctos, parcialmente correctos e incorrectos."
+        ]
+      },
+      {
+        "id": "multiples_representaciones",
+        "nombre": "Trabajar con múltiples representaciones",
+        "descripcion": "Diseñar actividades en las que una misma relación matemática se exprese mediante lenguaje verbal, tabla, gráfica, expresión simbólica, diagrama o representación geométrica.",
+        "acciones": [
+          "Transformar información de una tabla a una gráfica y explicar qué se conserva y qué cambia.",
+          "Relacionar una expresión algebraica con una situación y con su representación gráfica.",
+          "Interpretar escalas, unidades, convenciones y ejes antes de operar.",
+          "Pedir al estudiante que detecte representaciones incompatibles con la misma información."
+        ]
+      },
+      {
+        "id": "error_como_evidencia",
+        "nombre": "Analizar errores como evidencia de razonamiento",
+        "descripcion": "Clasificar errores por tipo para diferenciar fallas de lectura, modelación, procedimiento, representación, cálculo o validación.",
+        "acciones": [
+          "Registrar semanalmente los errores más frecuentes por competencia.",
+          "Diseñar una pregunta de corrección de error después de cada bloque de práctica.",
+          "Pedir que el estudiante explique por qué una opción distractora parece plausible.",
+          "Usar ejemplos de soluciones incompletas para discutir qué información falta."
+        ]
+      },
+      {
+        "id": "practica_espaciada",
+        "nombre": "Implementar práctica espaciada y acumulativa",
+        "descripcion": "Evitar bloques aislados que desaparecen después de ser enseñados. Reincorporar periódicamente problemas de estadística, geometría y álgebra/cálculo en nuevas situaciones.",
+        "acciones": [
+          "Mantener una rutina semanal con problemas de contenidos ya trabajados.",
+          "Combinar preguntas de distinta competencia en una misma sesión.",
+          "Incluir problemas de transferencia a contextos no usados en la explicación inicial."
+        ]
+      }
+    ],
+    "uso_exclusivo_grado_10": [
+      {
+        "id": "ruta_cohorte_2027",
+        "titulo": "Ruta de fortalecimiento de la cohorte Saber 11 de 2027",
+        "observacion": "El resultado de grado 10 debe interpretarse como una línea base para una intervención prolongada, no como un resultado terminal.",
+        "acciones": [
+          "Definir una línea base por competencia y componente para cada institución.",
+          "Priorizar durante 2026-2027 las dos competencias y el componente con menor desempeño relativo.",
+          "Programar ciclos de intervención de 6 a 8 semanas con mini-evaluación al cierre.",
+          "Realizar al menos tres mediciones comparables antes de la aplicación Saber 11 de 2027.",
+          "Mantener registro de movilidad de estudiantes desde niveles inferiores hacia niveles superiores de desempeño."
+        ],
+        "criterio_de_exito": "La prioridad es demostrar crecimiento sostenido y reducción de debilidades específicas antes de 2027, no solamente aumentar el número de simulacros."
+      }
+    ],
+    "uso_exclusivo_grado_11": [
+      {
+        "id": "retroalimentacion_cierre",
+        "titulo": "Uso institucional de los resultados de grado 11",
+        "observacion": "Los resultados de grado 11 deben utilizarse para identificar fortalezas y vacíos que permitan ajustar la enseñanza de los grados anteriores y consolidar aprendizajes matemáticos de cierre.",
+        "acciones": [
+          "Comparar Sigma 11 y Master Pro 11 por competencia y componente.",
+          "Identificar competencias que se mantienen bajas entre aplicaciones.",
+          "Documentar prácticas que coinciden con mejoras observadas.",
+          "Transferir hallazgos a la planeación de grado 10 y a la malla curricular institucional.",
+          "Usar los resultados como insumo de cierre para planes de área y comunidades de aprendizaje docente."
+        ],
+        "criterio_de_exito": "Convertir el resultado de 11.º en conocimiento institucional que modifique la planeación del siguiente ciclo."
+      }
+    ]
+  },
+  "competencias": {
+    "interpretacion_representacion": {
+      "nombre": "Interpretación y representación",
+      "diagnostico_pedagogico": "Cuando esta competencia aparece como una de las más débiles, es probable que el estudiante tenga dificultades para leer, conectar o transformar información antes de iniciar el procedimiento matemático. El problema puede manifestarse incluso cuando domina operaciones aisladas.",
+      "objetivo_de_mejoramiento": "Fortalecer la capacidad para extraer información relevante, reconocer relaciones entre variables y cambiar de representación sin perder el significado matemático.",
+      "estrategias_metodologicas": [
+        {
+          "nombre": "Traducción entre representaciones",
+          "proposito": "Hacer visible la equivalencia entre registros matemáticos.",
+          "metodologia": [
+            "Presentar una situación en un formato inicial: texto, tabla, gráfica o diagrama.",
+            "Solicitar dos representaciones alternativas.",
+            "Comparar qué información se hace más visible en cada formato.",
+            "Cerrar con una pregunta que exija decidir cuál representación es más útil para resolver el problema."
+          ],
+          "frecuencia_sugerida": "2 veces por semana",
+          "duracion_sugerida": "20 a 30 minutos"
+        },
+        {
+          "nombre": "Lectura matemática antes de calcular",
+          "proposito": "Separar comprensión de información y ejecución de operaciones.",
+          "metodologia": [
+            "Prohibir inicialmente el uso de operaciones durante los primeros minutos.",
+            "Identificar variables, unidades, escalas, restricciones y relaciones.",
+            "Formular verbalmente qué pregunta debe responderse.",
+            "Solo después permitir el cálculo."
+          ],
+          "frecuencia_sugerida": "Rutina corta en problemas seleccionados"
+        },
+        {
+          "nombre": "Detección de representaciones incompatibles",
+          "proposito": "Fortalecer control semántico y lectura crítica de datos.",
+          "metodologia": [
+            "Presentar varias gráficas o tablas asociadas a una misma situación.",
+            "Pedir identificar cuál no puede corresponder a la información.",
+            "Exigir justificación basada en tendencia, escala, proporción o valor específico."
+          ]
+        }
+      ],
+      "actividades_aula": [
+        {
+          "nombre": "La misma historia en cuatro lenguajes",
+          "descripcion": "A partir de una situación de crecimiento, variación de precio, movimiento o consumo, los estudiantes construyen una descripción verbal, una tabla, una gráfica y una expresión matemática.",
+          "producto_evaluable": "Cuadro de equivalencias y explicación de la relación entre las cuatro representaciones."
+        },
+        {
+          "nombre": "Gráfica con trampa",
+          "descripcion": "Comparar dos gráficas que representan los mismos datos con escalas distintas y discutir cómo la escala modifica la percepción visual sin cambiar los datos.",
+          "producto_evaluable": "Justificación escrita sobre cuál interpretación es válida y por qué."
+        },
+        {
+          "nombre": "Información suficiente o insuficiente",
+          "descripcion": "Entregar problemas con datos pertinentes, irrelevantes o faltantes y pedir al estudiante decidir si pueden resolverse.",
+          "producto_evaluable": "Clasificación de datos y justificación de suficiencia."
+        }
+      ],
+      "errores_a_observar": [
+        "Empieza a operar sin identificar qué representa cada dato.",
+        "Confunde frecuencia con porcentaje o valor absoluto con tasa.",
+        "Lee una gráfica sin considerar escala, unidad o intervalo.",
+        "Transforma una representación pero cambia inadvertidamente la relación matemática.",
+        "Selecciona una respuesta porque contiene números presentes en el enunciado sin verificar su significado."
+      ],
+      "preguntas_a_priorizar": [
+        "Interpretación de tablas y gráficas con más de una variable.",
+        "Conversión entre porcentaje, razón, fracción y representación gráfica.",
+        "Identificación de tendencias, máximos, mínimos, cambios y relaciones.",
+        "Selección de la representación que modela adecuadamente una situación.",
+        "Lectura de diagramas geométricos o esquemas con medidas y restricciones."
+      ],
+      "seguimiento": {
+        "indicadores": [
+          "Porcentaje de aciertos en tareas de lectura y transformación de representaciones.",
+          "Porcentaje de estudiantes que identifica correctamente unidades, escalas y variables antes del cálculo.",
+          "Reducción de errores atribuibles a lectura incorrecta de tablas o gráficas."
+        ],
+        "evidencias": [
+          "Mini-pruebas de 5 a 8 ítems",
+          "Portafolio de transformaciones entre representaciones",
+          "Protocolos breves de explicación escrita"
+        ],
+        "periodicidad_sugerida": "Cada 4 semanas"
+      },
+      "uso_exclusivo_grado_10": {
+        "prioridad": "alta para la cohorte 2027 cuando el desempeño sea débil",
+        "observacion": "En grado 10 conviene construir progresivamente automatismos de lectura matemática antes de intensificar simulacros completos.",
+        "acciones_especificas": [
+          "Crear una rutina semanal fija de lectura de datos y representaciones.",
+          "Iniciar con contextos familiares/sociales y avanzar hacia situaciones matemáticas o científicas.",
+          "Registrar por estudiante el tipo de representación que genera mayor dificultad.",
+          "Reevaluar la competencia al finalizar cada ciclo de 6 a 8 semanas."
+        ]
+      },
+      "uso_exclusivo_grado_11": {
+        "observacion": "En grado 11 conviene concentrar la intervención en errores recurrentes de interpretación que persisten entre aplicaciones.",
+        "acciones_especificas": [
+          "Comparar los errores de Sigma 11 y Master Pro 11.",
+          "Usar talleres cortos de corrección de lectura gráfica y transformación de información.",
+          "Priorizar transferencia a preguntas mixtas donde interpretar sea condición previa para formular o argumentar."
+        ]
+      }
+    },
+    "formulacion_ejecucion": {
+      "nombre": "Formulación y ejecución",
+      "diagnostico_pedagogico": "Una debilidad en esta competencia sugiere dificultad para pasar de la comprensión del problema a una estrategia de solución viable, seleccionar herramientas pertinentes, ejecutar el plan o verificar si la respuesta satisface las condiciones iniciales.",
+      "objetivo_de_mejoramiento": "Desarrollar flexibilidad para diseñar, ejecutar y revisar estrategias de solución, evitando la aplicación mecánica de fórmulas sin modelación previa.",
+      "estrategias_metodologicas": [
+        {
+          "nombre": "Plan antes de procedimiento",
+          "proposito": "Obligar a tomar decisiones antes de operar.",
+          "metodologia": [
+            "Identificar qué se conoce y qué se busca.",
+            "Proponer una estrategia sin efectuar cálculos.",
+            "Explicar por qué la estrategia podría funcionar.",
+            "Ejecutar el plan.",
+            "Verificar si el resultado responde al problema."
+          ]
+        },
+        {
+          "nombre": "Dos rutas, una decisión",
+          "proposito": "Fortalecer flexibilidad estratégica.",
+          "metodologia": [
+            "Resolver un mismo problema por dos procedimientos.",
+            "Comparar eficiencia, claridad y riesgo de error.",
+            "Decidir cuál estrategia conviene según el contexto."
+          ]
+        },
+        {
+          "nombre": "Modelación de situaciones reales",
+          "proposito": "Conectar relaciones cuantitativas con decisiones.",
+          "metodologia": [
+            "Usar situaciones de tarifas, presupuestos, consumo, tasas, medición, probabilidad o crecimiento.",
+            "Definir variables y restricciones.",
+            "Construir el modelo.",
+            "Resolver e interpretar el resultado."
+          ]
+        }
+      ],
+      "actividades_aula": [
+        {
+          "nombre": "Presupuesto con restricciones",
+          "descripcion": "Resolver una situación de compra, transporte o distribución con presupuesto limitado y varias condiciones.",
+          "producto_evaluable": "Plan de solución, cálculos y justificación de la decisión."
+        },
+        {
+          "nombre": "¿Qué procedimiento conviene?",
+          "descripcion": "Presentar tres procedimientos posibles para un problema; el estudiante debe elegir, completar o corregir el más pertinente.",
+          "producto_evaluable": "Selección argumentada y ejecución."
+        },
+        {
+          "nombre": "Problema inverso",
+          "descripcion": "Entregar una respuesta o condición final y pedir construir los datos o el modelo que podrían producirla.",
+          "producto_evaluable": "Modelo coherente y explicación de restricciones."
+        }
+      ],
+      "errores_a_observar": [
+        "Busca una fórmula antes de comprender la estructura del problema.",
+        "Selecciona operaciones por palabras clave.",
+        "No identifica restricciones o condiciones.",
+        "Obtiene un resultado numérico pero no verifica su sentido.",
+        "Abandona el problema si la estrategia inicial no funciona.",
+        "Confunde procedimiento correcto con respuesta correcta por coincidencia."
+      ],
+      "preguntas_a_priorizar": [
+        "Problemas que exijan seleccionar una estrategia entre varias.",
+        "Situaciones de proporcionalidad, porcentaje, razones de cambio y relaciones lineales.",
+        "Problemas de conteo, probabilidad y análisis de datos.",
+        "Situaciones geométricas de medida, semejanza, áreas, volúmenes o coordenadas.",
+        "Problemas donde el resultado deba interpretarse dentro de una restricción contextual."
+      ],
+      "seguimiento": {
+        "indicadores": [
+          "Porcentaje de estudiantes que formula un plan pertinente antes del cálculo.",
+          "Porcentaje de soluciones que incluyen verificación del resultado.",
+          "Porcentaje de estudiantes que puede resolver el mismo problema con una estrategia alternativa."
+        ],
+        "evidencias": [
+          "Rúbricas de resolución de problemas",
+          "Cuadernos de estrategias",
+          "Mini-pruebas con ítems de selección de procedimientos"
+        ],
+        "periodicidad_sugerida": "Cada 4 a 6 semanas"
+      },
+      "uso_exclusivo_grado_10": {
+        "prioridad": "muy alta cuando sea una debilidad, por su peso referencial en la prueba",
+        "observacion": "Grado 10 dispone del tiempo necesario para desarrollar hábitos de modelación y verificación antes de 2027.",
+        "acciones_especificas": [
+          "Implementar un problema no rutinario semanal por área de contenido.",
+          "Construir banco institucional de estrategias, no solo de respuestas.",
+          "Hacer seguimiento separado a formulación, ejecución y verificación.",
+          "Incrementar gradualmente la complejidad de contextos y restricciones durante el año."
+        ]
+      },
+      "uso_exclusivo_grado_11": {
+        "observacion": "En grado 11 debe identificarse rápidamente si el error principal ocurre al formular, ejecutar o verificar.",
+        "acciones_especificas": [
+          "Usar diagnósticos breves con solución escrita.",
+          "Agrupar estudiantes temporalmente según tipo de error.",
+          "Priorizar problemas de alta transferencia y evitar sobrecarga de ejercicios rutinarios."
+        ]
+      }
+    },
+    "argumentacion": {
+      "nombre": "Argumentación",
+      "diagnostico_pedagogico": "Una debilidad en argumentación suele evidenciar que el estudiante puede ejecutar procedimientos, pero presenta dificultades para decidir si una afirmación, estrategia o resultado es válido, identificar una inconsistencia o sustentar por qué una solución funciona.",
+      "objetivo_de_mejoramiento": "Fortalecer la validación de procedimientos y conclusiones mediante propiedades matemáticas, relaciones lógicas, ejemplos, contraejemplos y análisis de condiciones.",
+      "estrategias_metodologicas": [
+        {
+          "nombre": "Verdadero, falso y depende",
+          "proposito": "Desarrollar validación basada en condiciones.",
+          "metodologia": [
+            "Presentar afirmaciones matemáticas plausibles.",
+            "Clasificarlas como verdaderas, falsas o dependientes de condiciones.",
+            "Exigir evidencia, ejemplo o contraejemplo."
+          ]
+        },
+        {
+          "nombre": "Auditoría de soluciones",
+          "proposito": "Evaluar procedimientos ajenos.",
+          "metodologia": [
+            "Presentar una solución completa con uno o dos errores.",
+            "Localizar el primer paso inválido.",
+            "Explicar por qué es inválido.",
+            "Corregirlo y decidir si cambia la conclusión."
+          ]
+        },
+        {
+          "nombre": "Defensa de estrategia",
+          "proposito": "Vincular argumentación con formulación y ejecución.",
+          "metodologia": [
+            "Dos grupos resuelven el mismo problema con métodos diferentes.",
+            "Cada grupo expone su estrategia.",
+            "El otro grupo identifica supuestos, fortalezas y limitaciones.",
+            "Se establece cuál solución es válida o más pertinente."
+          ]
+        }
+      ],
+      "actividades_aula": [
+        {
+          "nombre": "Contraejemplo mínimo",
+          "descripcion": "Ante una generalización incorrecta, encontrar el ejemplo más simple que la contradiga.",
+          "producto_evaluable": "Contraejemplo y explicación de por qué invalida la afirmación."
+        },
+        {
+          "nombre": "Solución aparentemente correcta",
+          "descripcion": "Analizar una solución cuyo resultado final coincide con la respuesta correcta, pero contiene un procedimiento inválido.",
+          "producto_evaluable": "Identificación y explicación del error lógico."
+        },
+        {
+          "nombre": "Debate de modelos",
+          "descripcion": "Comparar dos modelos que representan una situación y determinar cuál respeta mejor las condiciones.",
+          "producto_evaluable": "Justificación basada en propiedades y datos."
+        }
+      ],
+      "errores_a_observar": [
+        "Confunde obtener el resultado esperado con demostrar que el procedimiento es válido.",
+        "Justifica con expresiones vagas como 'porque sí da'.",
+        "Usa un ejemplo particular como prueba universal.",
+        "No identifica qué condición invalida una afirmación.",
+        "Acepta una gráfica o cálculo sin contrastarlo con propiedades matemáticas."
+      ],
+      "preguntas_a_priorizar": [
+        "Validación o refutación de afirmaciones.",
+        "Selección de justificaciones correctas.",
+        "Identificación de errores en procedimientos.",
+        "Comparación de estrategias.",
+        "Uso de ejemplos y contraejemplos.",
+        "Evaluación de pertinencia de una solución frente a restricciones."
+      ],
+      "seguimiento": {
+        "indicadores": [
+          "Porcentaje de estudiantes que justifica una decisión con una propiedad o relación matemática explícita.",
+          "Porcentaje de estudiantes que identifica el primer paso inválido en una solución.",
+          "Porcentaje de estudiantes que produce contraejemplos pertinentes."
+        ],
+        "evidencias": [
+          "Respuestas abiertas breves",
+          "Rúbrica de argumentación",
+          "Debates matemáticos estructurados",
+          "Ítems de validación de procedimientos"
+        ],
+        "periodicidad_sugerida": "Mensual"
+      },
+      "uso_exclusivo_grado_10": {
+        "observacion": "La argumentación debe desarrollarse desde 10.º como práctica cotidiana, porque requiere tiempo para superar respuestas basadas exclusivamente en intuición o autoridad del procedimiento.",
+        "acciones_especificas": [
+          "Incluir una justificación escrita semanal.",
+          "Trabajar contraejemplos en estadística, geometría y álgebra.",
+          "Valorar en rúbricas la calidad de la explicación, no solo el resultado."
+        ]
+      },
+      "uso_exclusivo_grado_11": {
+        "observacion": "En 11.º conviene focalizar argumentación en evaluación de opciones, procedimientos y conclusiones, integrándola con problemas de selección múltiple.",
+        "acciones_especificas": [
+          "Analizar distractores como afirmaciones que deben validarse o refutarse.",
+          "Exigir una razón matemática para descartar cada opción en preguntas seleccionadas.",
+          "Comparar resultados entre Sigma 11 y Master Pro 11 para comprobar persistencia de la dificultad."
+        ]
+      }
+    }
+  },
+  "componentes": {
+    "aleatorio": {
+      "nombre_en_informe": "Aleatorio",
+      "categoria_icfes_relacionada": "Estadística",
+      "diagnostico_pedagogico": "Una debilidad en este componente puede relacionarse con dificultades para leer y producir representaciones de datos, interpretar medidas resumen, razonar sobre conteo y probabilidad o comprender población, muestra e inferencia básica.",
+      "focos_de_trabajo": [
+        "Tablas, gráficas y diferentes representaciones de datos.",
+        "Promedio, rango y otras medidas de resumen.",
+        "Razones, porcentajes y comparación de distribuciones.",
+        "Conteo simple y principios de suma y multiplicación.",
+        "Probabilidad en situaciones elementales.",
+        "Población, muestra e interpretación de conclusiones basadas en datos."
+      ],
+      "estrategias": [
+        "Trabajar con datos reales del colegio o del municipio.",
+        "Pedir decisiones basadas en evidencia y no solo cálculos.",
+        "Comparar representaciones que pueden inducir interpretaciones diferentes.",
+        "Distinguir variabilidad, tendencia y tamaño de muestra."
+      ],
+      "actividades": [
+        "Diseñar una encuesta, seleccionar muestra, resumir resultados y discutir límites de la conclusión.",
+        "Comparar dos grupos mediante tablas y gráficas y justificar cuál afirmación está respaldada.",
+        "Analizar titulares basados en porcentajes y determinar si la conclusión es razonable."
+      ],
+      "errores_a_observar": [
+        "Confundir porcentaje con cantidad.",
+        "Interpretar promedio como valor que necesariamente tiene un individuo.",
+        "Ignorar tamaño de muestra.",
+        "Sumar probabilidades sin considerar condiciones.",
+        "Leer gráficas sin controlar escala."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Construir una secuencia anual de alfabetización de datos que culmine en problemas integrados de probabilidad, muestreo e interpretación."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Priorizar lectura crítica de datos y selección de conclusiones válidas, especialmente en preguntas con tablas o gráficos múltiples."
+      }
+    },
+    "numerico_variacional": {
+      "nombre_en_informe": "Numérico - variacional",
+      "categoria_icfes_relacionada": "Álgebra y cálculo",
+      "diagnostico_pedagogico": "Una debilidad puede asociarse a dificultades con proporcionalidad, porcentajes, operaciones con racionales, relaciones lineales, tasas de cambio, expresiones algebraicas o interpretación de funciones.",
+      "focos_de_trabajo": [
+        "Fracciones, razones, decimales y porcentajes.",
+        "Propiedades de operaciones y estimación.",
+        "Relaciones lineales y afines.",
+        "Tasas de cambio en contextos.",
+        "Expresiones algebraicas y relaciones entre variables.",
+        "Lectura gráfica y algebraica de funciones."
+      ],
+      "estrategias": [
+        "Vincular cada expresión con significado contextual.",
+        "Usar tablas y gráficas para introducir relaciones antes de formalizar algebraicamente.",
+        "Trabajar estimación previa para detectar resultados imposibles.",
+        "Comparar crecimiento aditivo, multiplicativo y porcentual."
+      ],
+      "actividades": [
+        "Comparar planes tarifarios y determinar punto de conveniencia.",
+        "Modelar descuentos sucesivos y discutir por qué no se suman directamente los porcentajes.",
+        "Relacionar tablas, gráficas y ecuaciones de situaciones de cambio."
+      ],
+      "errores_a_observar": [
+        "Aplicar regla de tres en relaciones no proporcionales.",
+        "Confundir cambio absoluto con cambio porcentual.",
+        "Operar símbolos sin interpretar variables.",
+        "No reconocer pendiente o tasa como razón de cambio.",
+        "Aceptar resultados incompatibles con una estimación razonable."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Fortalecer durante todo el ciclo 2026-2027 proporcionalidad, variación y modelación funcional, con práctica espaciada."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Concentrar la práctica en problemas contextualizados que combinen porcentaje, tasa, función y decisión."
+      }
+    },
+    "geometrico_metrico": {
+      "nombre_en_informe": "Geométrico - métrico",
+      "categoria_icfes_relacionada": "Geometría",
+      "diagnostico_pedagogico": "Una debilidad puede reflejar problemas para interpretar configuraciones espaciales, relacionar medidas, usar coordenadas, aplicar propiedades geométricas o modelar transformaciones y semejanza.",
+      "focos_de_trabajo": [
+        "Medidas de figuras y sólidos.",
+        "Relaciones de paralelismo y perpendicularidad.",
+        "Coordenadas cartesianas.",
+        "Congruencia y semejanza.",
+        "Teoremas y relaciones métricas.",
+        "Transformaciones en el plano."
+      ],
+      "estrategias": [
+        "Priorizar diagramas que deban interpretarse antes de calcular.",
+        "Combinar representación gráfica, verbal y algebraica.",
+        "Pedir estimación de medida antes del procedimiento exacto.",
+        "Usar problemas de escala, planos, trayectorias, áreas y volúmenes."
+      ],
+      "actividades": [
+        "Analizar un plano a escala y justificar distancias o áreas.",
+        "Comparar diseños semejantes y determinar factores de escala.",
+        "Resolver problemas de optimización geométrica sencilla con restricciones."
+      ],
+      "errores_a_observar": [
+        "Usar fórmulas sin identificar qué magnitud representan.",
+        "Confundir perímetro, área y volumen.",
+        "Aplicar proporcionalidad lineal a magnitudes cuadráticas o cúbicas.",
+        "Ignorar unidades.",
+        "Interpretar incorrectamente orientación o escala en un diagrama."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Integrar geometría y medición con modelación y argumentación, evitando que el componente quede reducido a memorización de fórmulas."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Priorizar problemas de transferencia con escalas, coordenadas, semejanza, áreas y volúmenes dentro de situaciones contextualizadas."
+      }
+    }
+  },
+  "combinaciones_diagnosticas": [
+    {
+      "si": [
+        "interpretacion_representacion_baja",
+        "aleatorio_bajo"
+      ],
+      "interpretacion": "La prioridad debe centrarse en alfabetización de datos: lectura de tablas y gráficas, porcentajes, escalas, tendencias y transformación entre representaciones.",
+      "accion_prioritaria": "Implementar dos rutinas semanales de lectura de datos antes de aumentar el volumen de preguntas completas."
+    },
+    {
+      "si": [
+        "formulacion_ejecucion_baja",
+        "numerico_variacional_bajo"
+      ],
+      "interpretacion": "Puede existir dificultad para modelar relaciones cuantitativas y seleccionar procedimientos en situaciones de cambio, proporcionalidad o funciones.",
+      "accion_prioritaria": "Trabajar secuencias de modelación que pasen de contexto a tabla, gráfica, expresión y decisión."
+    },
+    {
+      "si": [
+        "argumentacion_baja",
+        "geometrico_metrico_bajo"
+      ],
+      "interpretacion": "Conviene fortalecer el uso de propiedades geométricas para validar relaciones y procedimientos, no solo aplicar fórmulas.",
+      "accion_prioritaria": "Usar tareas de verdadero/falso, contraejemplos y auditoría de soluciones geométricas."
+    },
+    {
+      "si": [
+        "tres_competencias_bajas"
+      ],
+      "interpretacion": "La dificultad parece transversal y no debería abordarse con entrenamiento aislado por tipo de pregunta.",
+      "accion_prioritaria": "Diseñar un plan integral de resolución de problemas con ciclos de interpretación, formulación, ejecución, verificación y argumentación."
+    }
+  ],
+  "reglas_para_motor_html": {
+    "entrada_esperada": [
+      "grado",
+      "promedio_area",
+      "puntaje_competencia",
+      "puntaje_componente",
+      "niveles_desempeno",
+      "nivel_necesidad_calculado_por_modulo_estadistico"
+    ],
+    "logica_recomendada": [
+      "Mostrar primero la competencia con mayor necesidad.",
+      "Añadir como complemento el componente con mayor necesidad.",
+      "Si coinciden una combinación diagnóstica definida, mostrar la acción prioritaria conjunta.",
+      "Para grado 10, añadir siempre el bloque 'uso_exclusivo_grado_10' y destacar la cohorte Saber 11 2027.",
+      "Para grado 11, añadir el bloque 'uso_exclusivo_grado_11' y, cuando existan dos aplicaciones, sugerir comparación Sigma 11 vs. Master Pro 11.",
+      "No afirmar causalidad a partir de un único puntaje.",
+      "No recomendar únicamente 'hacer más simulacros'; toda recomendación debe incluir una acción metodológica y una evidencia de seguimiento."
+    ],
+    "orden_visual_sugerido": [
+      "Hallazgo",
+      "Qué puede significar",
+      "Qué fortalecer",
+      "Cómo trabajarlo",
+      "Actividad sugerida",
+      "Qué observar",
+      "Cómo hacer seguimiento",
+      "Observación específica del grado"
+    ]
+  },
+  "orientaciones_para_secretaria": {
+    "grado_10": [
+      "Priorizar acompañamiento a instituciones con debilidades persistentes en Formulación y ejecución o con múltiples competencias comprometidas.",
+      "Solicitar planes de intervención de 6 a 8 semanas con indicador verificable.",
+      "Realizar seguimiento municipal por competencia y componente, no solo por promedio global.",
+      "Comparar crecimiento entre mediciones de la misma cohorte durante 2026-2027."
+    ],
+    "grado_11": [
+      "Usar las dos aplicaciones como evidencia de tendencias y no como eventos aislados.",
+      "Identificar prácticas institucionales asociadas a mejoras y documentarlas para transferencia a grado 10.",
+      "Incorporar los hallazgos al plan de asistencia técnica y formación docente del siguiente ciclo."
+    ]
+  }
+}

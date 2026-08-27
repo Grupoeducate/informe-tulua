@@ -1,0 +1,972 @@
+{
+  "schema_version": "1.0",
+  "tipo_archivo": "motor_recomendaciones_pedagogicas_por_area",
+  "area": {
+    "id": "ciencias_naturales",
+    "nombre": "Ciencias Naturales",
+    "proposito": "Convertir los resultados de Ciencias Naturales en orientaciones metodológicas concretas, diferenciadas por competencia, componente y grado, para fortalecer el uso del conocimiento científico, la explicación de fenómenos y la indagación."
+  },
+  "alcance": {
+    "poblacion": [
+      "grado_10",
+      "grado_11"
+    ],
+    "uso_principal": [
+      "Informe municipal para Secretaría de Educación",
+      "Lectura institucional de resultados",
+      "Orientación a coordinaciones académicas y docentes de Ciencias Naturales",
+      "Planeación de acciones de aula y seguimiento",
+      "Preparación de la cohorte de grado 10 que presentará Saber 11 en 2027"
+    ],
+    "nota_psicometrica": "Este archivo no establece puntos de corte para clasificar un resultado como crítico, alto, medio o satisfactorio. El nivel de necesidad debe ser calculado por un módulo estadístico común a todas las áreas. Este JSON define la respuesta pedagógica una vez identificada la necesidad.",
+    "principio_de_interpretacion": "Un puntaje bajo en una competencia o componente orienta una hipótesis de necesidad pedagógica, pero no demuestra por sí solo una causa específica. Las decisiones deben contrastarse con evidencias de aula, producciones de estudiantes, análisis de errores y mediciones posteriores.",
+    "principio_de_no_reduccion": "La preparación no debe reducirse a memorizar definiciones, fórmulas o taxonomías. La prueba exige usar conceptos para resolver problemas, explicar fenómenos, analizar modelos, interpretar evidencia y tomar decisiones fundamentadas.",
+    "principio_de_practica_cientifica": "La enseñanza debe aproximar al estudiante a prácticas científicas: formular preguntas, analizar variables, interpretar datos, construir explicaciones, contrastar modelos, evaluar evidencia y comunicar conclusiones."
+  },
+  "fundamento_evaluativo": {
+    "fuentes": [
+      {
+        "institucion": "Icfes",
+        "documento": "Guía de orientación del Examen Saber 11.º 2026-2",
+        "seccion": "Ciencias Naturales, pp. 53-61",
+        "url": "https://www.icfes.gov.co/wp-content/uploads/2026/03/17-marzo-guia-de-orientacion-saber-11-2026-2.pdf",
+        "uso_en_este_json": "Propósito de la prueba, competencias, afirmaciones y evidencias, componentes y distribución aproximada de preguntas."
+      },
+      {
+        "institucion": "Icfes",
+        "documento": "Marco de referencia de la prueba de Ciencias Naturales Saber 11.º",
+        "url": "https://www.icfes.gov.co/evaluaciones-icfes/saber-11/marcos-de-referencia-examen-saber-11/",
+        "uso_en_este_json": "Constructo general de alfabetización científica y especificaciones de las competencias y componentes."
+      }
+    ],
+    "proposito_oficial_sintetizado": "La prueba evalúa la capacidad para comprender y usar nociones, conceptos y teorías de las ciencias naturales en la solución de problemas; explicar fenómenos a partir de observaciones, patrones, conceptos y modelos; y desarrollar procesos de indagación mediante análisis de datos, evidencia y conclusiones.",
+    "principio_oficial_relevante": "La prueba no pretende evaluar conocimientos científicos en sentido estrictamente memorístico, sino la capacidad para reconstruir y usar significativamente el conocimiento, razonar, resolver problemas, tomar decisiones y valorar críticamente el conocimiento científico y sus consecuencias sociales y ambientales.",
+    "competencias_icfes_2026": [
+      {
+        "id": "uso_comprensivo_conocimiento_cientifico",
+        "nombre": "Uso comprensivo del conocimiento científico",
+        "peso_referencial_icfes_2026": 30,
+        "descripcion_operativa": "Comprender y usar nociones, conceptos y teorías de las ciencias naturales para resolver problemas y establecer relaciones entre conocimientos científicos y fenómenos observables.",
+        "focos_de_evidencia_sintetizados": [
+          "Asociar fenómenos naturales con conceptos científicos pertinentes.",
+          "Identificar características de fenómenos mediante información y conceptos científicos.",
+          "Relacionar propiedades, variables, estructuras, interacciones y procesos.",
+          "Usar conocimiento científico en situaciones nuevas, evitando la repetición puramente definicional."
+        ]
+      },
+      {
+        "id": "explicacion_fenomenos",
+        "nombre": "Explicación de fenómenos",
+        "peso_referencial_icfes_2026": 30,
+        "descripcion_operativa": "Construir y comprender explicaciones, argumentos y modelos que den razón de fenómenos naturales y establecer la validez o coherencia de afirmaciones relacionadas con problemas científicos.",
+        "focos_de_evidencia_sintetizados": [
+          "Explicar fenómenos a partir de observaciones, patrones y conceptos.",
+          "Relacionar variables mediante modelos científicos.",
+          "Justificar afirmaciones usando principios, leyes, relaciones y evidencia.",
+          "Analizar implicaciones del uso de recursos naturales, tecnologías o artefactos."
+        ]
+      },
+      {
+        "id": "indagacion",
+        "nombre": "Indagación",
+        "peso_referencial_icfes_2026": 40,
+        "descripcion_operativa": "Comprender cómo se construye conocimiento mediante investigación, formular y reconocer preguntas investigables, interpretar datos y patrones, evaluar procedimientos, hacer predicciones y derivar conclusiones sustentadas.",
+        "focos_de_evidencia_sintetizados": [
+          "Reconocer preguntas que pueden responderse mediante investigación científica.",
+          "Comprender el papel de la evidencia.",
+          "Interpretar y representar datos.",
+          "Determinar suficiencia y pertinencia de resultados.",
+          "Elaborar conclusiones respaldadas por evidencia.",
+          "Hacer predicciones a partir de patrones y regularidades.",
+          "Evaluar procedimientos y relaciones entre variables."
+        ]
+      }
+    ],
+    "componentes_icfes_2026": [
+      {
+        "id": "biologico",
+        "nombre_oficial": "Componente biológico",
+        "nombre_en_informe_gec": "Entorno biológico",
+        "peso_referencial_icfes_2026": 30,
+        "descripcion": "Procesos de los seres vivos, funcionamiento de organismos, herencia, evolución, relaciones ecológicas e interacciones entre componentes bióticos y abióticos."
+      },
+      {
+        "id": "fisico",
+        "nombre_oficial": "Componente físico",
+        "nombre_en_informe_gec": "Entorno físico",
+        "peso_referencial_icfes_2026": 30,
+        "descripcion": "Conceptos, principios, modelos y teorías para describir fenómenos físicos: movimiento, fuerzas, energía, ondas, termodinámica, electricidad y relaciones entre variables."
+      },
+      {
+        "id": "quimico",
+        "nombre_oficial": "Componente químico",
+        "nombre_en_informe_gec": "Entorno químico",
+        "peso_referencial_icfes_2026": 30,
+        "descripcion": "Estructura y propiedades de la materia, mezclas, transformaciones, reacciones, conservación, interacciones y relaciones entre estructura microscópica y comportamiento macroscópico."
+      },
+      {
+        "id": "cts",
+        "nombre_oficial": "Ciencia, tecnología y sociedad",
+        "nombre_en_informe_gec": "Entorno de ciencia, tecnología y sociedad",
+        "peso_referencial_icfes_2026": 10,
+        "descripcion": "Relaciones entre conocimiento científico, tecnologías, recursos, decisiones humanas y consecuencias sociales y ambientales."
+      }
+    ],
+    "matriz_distribucion_referencial": {
+      "uso_comprensivo_conocimiento_cientifico": {
+        "biologico": 9,
+        "fisico": 9,
+        "quimico": 9,
+        "cts": 3,
+        "total": 30
+      },
+      "explicacion_fenomenos": {
+        "biologico": 9,
+        "fisico": 9,
+        "quimico": 9,
+        "cts": 3,
+        "total": 30
+      },
+      "indagacion": {
+        "biologico": 12,
+        "fisico": 12,
+        "quimico": 12,
+        "cts": 4,
+        "total": 40
+      }
+    }
+  },
+  "recomendaciones_transversales": {
+    "para_todos_los_grados": [
+      {
+        "id": "fenomenos_antes_que_definiciones",
+        "nombre": "Partir de fenómenos antes que de definiciones",
+        "descripcion": "Introducir conceptos mediante situaciones observables, datos, experimentos, modelos o problemas, y formalizar después.",
+        "acciones": [
+          "Presentar primero un fenómeno que requiera explicación.",
+          "Solicitar predicciones iniciales.",
+          "Identificar variables y relaciones.",
+          "Introducir o recuperar el concepto que permite explicar.",
+          "Volver al fenómeno y contrastar la explicación inicial."
+        ]
+      },
+      {
+        "id": "evidencia_como_eje",
+        "nombre": "Exigir evidencia para las afirmaciones científicas",
+        "descripcion": "Toda conclusión relevante debe estar vinculada con datos, observaciones, modelos o principios científicos.",
+        "acciones": [
+          "Usar la estructura afirmación–evidencia–razonamiento.",
+          "Preguntar qué dato sustenta cada conclusión.",
+          "Comparar conclusiones apoyadas y no apoyadas por los mismos datos.",
+          "Analizar si la cantidad y calidad de la evidencia es suficiente."
+        ]
+      },
+      {
+        "id": "modelos_cientificos",
+        "nombre": "Trabajar explícitamente con modelos",
+        "descripcion": "Usar diagramas, representaciones, ecuaciones y modelos conceptuales como herramientas explicativas y no como dibujos decorativos.",
+        "acciones": [
+          "Pedir identificar qué representa cada elemento del modelo.",
+          "Explicar qué predice el modelo.",
+          "Señalar sus límites.",
+          "Comparar dos modelos de un mismo fenómeno.",
+          "Modificar una variable y anticipar el efecto."
+        ]
+      },
+      {
+        "id": "lectura_de_datos",
+        "nombre": "Fortalecer lectura e interpretación de datos científicos",
+        "descripcion": "Integrar sistemáticamente tablas, gráficas, diagramas y resultados experimentales.",
+        "acciones": [
+          "Identificar variables, unidades y escalas.",
+          "Describir patrones antes de explicar sus causas.",
+          "Diferenciar correlación de causalidad.",
+          "Detectar valores atípicos.",
+          "Construir conclusiones ajustadas a lo que los datos permiten afirmar."
+        ]
+      },
+      {
+        "id": "error_experimental_y_validez",
+        "nombre": "Analizar calidad de procedimientos",
+        "descripcion": "Enseñar a reconocer controles, variables, repetición, tamaño de muestra y fuentes de error.",
+        "acciones": [
+          "Comparar diseños experimentales.",
+          "Identificar variable independiente, dependiente y controles.",
+          "Proponer mejoras a procedimientos incompletos.",
+          "Discutir qué resultados permiten una conclusión y cuáles no."
+        ]
+      },
+      {
+        "id": "interdisciplinariedad",
+        "nombre": "Conectar Biología, Física, Química y CTS",
+        "descripcion": "Evitar que las ciencias aparezcan como asignaturas completamente aisladas cuando un fenómeno requiere varias perspectivas.",
+        "acciones": [
+          "Usar problemas de energía, ambiente, salud, materiales o tecnología.",
+          "Identificar qué aporta cada disciplina.",
+          "Construir explicaciones integradas.",
+          "Relacionar decisiones tecnológicas con consecuencias ambientales y sociales."
+        ]
+      }
+    ],
+    "uso_exclusivo_grado_10": [
+      {
+        "id": "ruta_ciencias_cohorte_2027",
+        "titulo": "Ruta científica de la cohorte Saber 11 de 2027",
+        "observacion": "El resultado de grado 10 debe funcionar como línea base de una intervención prolongada. Existe tiempo para fortalecer hábitos de indagación, modelación, análisis de evidencia y transferencia conceptual antes de Saber 11 de 2027.",
+        "acciones": [
+          "Establecer línea base por competencia y componente.",
+          "Priorizar Indagación cuando aparezca comprometida, dado su peso referencial del 40 %.",
+          "Seleccionar la competencia y el componente de menor desempeño para cada ciclo.",
+          "Diseñar ciclos de intervención de 6 a 8 semanas.",
+          "Aplicar mini-investigaciones y problemas contextualizados durante todo el ciclo.",
+          "Realizar mediciones comparables al final de cada intervención.",
+          "Construir un portafolio de gráficas, modelos, explicaciones y análisis experimentales.",
+          "Realizar al menos tres mediciones de progreso antes de Saber 11 de 2027."
+        ],
+        "criterio_de_exito": "Mostrar crecimiento sostenido en el uso de evidencia, modelación, interpretación de datos y transferencia del conocimiento científico, además del aumento del promedio."
+      }
+    ],
+    "uso_exclusivo_grado_11": [
+      {
+        "id": "intervencion_focalizada_11",
+        "titulo": "Intervención focalizada y transferencia institucional",
+        "observacion": "En grado 11 conviene comparar Sigma 11 y Master Pro 11 para determinar si la dificultad persiste en una competencia o componente y concentrar la intervención en errores modificables.",
+        "acciones": [
+          "Comparar las dos aplicaciones por competencia y componente.",
+          "Distinguir errores conceptuales de errores de interpretación de datos, modelación o diseño experimental.",
+          "Priorizar máximo dos focos de intervención.",
+          "Usar sesiones cortas de análisis de evidencia y distractores.",
+          "Documentar prácticas asociadas a mejora.",
+          "Transferir los hallazgos a la planeación de grado 10."
+        ],
+        "criterio_de_exito": "Corregir patrones de error persistentes y convertir los resultados de 11.º en conocimiento institucional para la siguiente cohorte."
+      }
+    ]
+  },
+  "competencias": {
+    "uso_comprensivo_conocimiento_cientifico": {
+      "nombre": "Uso comprensivo del conocimiento científico",
+      "peso_referencial_icfes_2026": 30,
+      "diagnostico_pedagogico": "Una debilidad puede indicar que el estudiante reconoce definiciones aisladas, pero presenta dificultad para seleccionar y aplicar conceptos o relaciones científicas pertinentes frente a fenómenos nuevos. También puede reflejar fragmentación del conocimiento entre temas.",
+      "objetivo_de_mejoramiento": "Fortalecer la transferencia de conceptos y teorías científicas a situaciones nuevas, estableciendo relaciones entre variables, estructuras, propiedades y procesos.",
+      "estrategias_metodologicas": [
+        {
+          "nombre": "Concepto que explica",
+          "proposito": "Pasar de recordar definiciones a seleccionar conceptos pertinentes.",
+          "metodologia": [
+            "Presentar un fenómeno cotidiano o experimental.",
+            "Proponer varios conceptos posibles.",
+            "Seleccionar el que mejor permite comprenderlo.",
+            "Explicar qué rasgos del fenómeno justifican la elección.",
+            "Transferir el concepto a un segundo caso."
+          ],
+          "frecuencia_sugerida": "2 veces por semana"
+        },
+        {
+          "nombre": "Relaciones antes que listas",
+          "proposito": "Organizar conocimientos como redes.",
+          "metodologia": [
+            "Seleccionar variables, estructuras o procesos.",
+            "Construir relaciones causales o funcionales.",
+            "Explicar qué ocurre si una variable aumenta, disminuye o desaparece.",
+            "Contrastar el mapa con un caso real."
+          ]
+        },
+        {
+          "nombre": "Clasificación con criterio",
+          "proposito": "Evitar clasificaciones memorísticas.",
+          "metodologia": [
+            "Presentar objetos, sustancias, organismos o fenómenos.",
+            "Definir el criterio de clasificación.",
+            "Justificar cada ubicación.",
+            "Cambiar el criterio y reorganizar.",
+            "Analizar casos frontera."
+          ]
+        }
+      ],
+      "actividades_aula": [
+        {
+          "nombre": "¿Qué concepto necesito?",
+          "descripcion": "Resolver situaciones breves donde el primer reto es elegir el principio científico pertinente antes de hacer cálculos o explicar.",
+          "producto_evaluable": "Concepto seleccionado, evidencia del caso y justificación."
+        },
+        {
+          "nombre": "Una variable cambia",
+          "descripcion": "Modificar una variable de un sistema y predecir cambios en las demás usando conocimiento científico.",
+          "producto_evaluable": "Predicción y cadena de relaciones."
+        },
+        {
+          "nombre": "Modelo incompleto",
+          "descripcion": "Completar un diagrama o modelo al que le faltan componentes o relaciones.",
+          "producto_evaluable": "Modelo corregido y explicación."
+        }
+      ],
+      "errores_a_observar": [
+        "Selecciona un concepto porque aparece una palabra asociada en el enunciado.",
+        "Recuerda la definición pero no la aplica.",
+        "Confunde correlación entre variables con mecanismo explicativo.",
+        "Trata procesos biológicos, físicos o químicos como listas independientes.",
+        "No reconoce condiciones de aplicación de una ley o modelo.",
+        "Ignora unidades, escalas o propiedades relevantes."
+      ],
+      "preguntas_a_priorizar": [
+        "Aplicación de conceptos a fenómenos nuevos.",
+        "Relación entre variables.",
+        "Identificación de propiedades y estructuras.",
+        "Uso de modelos científicos.",
+        "Predicción cualitativa a partir de conceptos.",
+        "Selección del conocimiento pertinente para resolver un problema."
+      ],
+      "seguimiento": {
+        "indicadores": [
+          "Porcentaje de estudiantes que selecciona el concepto pertinente en casos nuevos.",
+          "Porcentaje que establece relaciones correctas entre variables.",
+          "Porcentaje que transfiere un concepto a un contexto distinto del usado en clase.",
+          "Reducción de respuestas basadas solo en coincidencias verbales."
+        ],
+        "evidencias": [
+          "Mini-pruebas de transferencia",
+          "Mapas de relaciones científicas",
+          "Modelos comentados",
+          "Problemas conceptuales breves"
+        ],
+        "periodicidad_sugerida": "Cada 4 semanas"
+      },
+      "uso_exclusivo_grado_10": {
+        "observacion": "En grado 10 debe priorizarse la consolidación de redes conceptuales transferibles antes de intensificar simulacros de Saber 11.",
+        "acciones_especificas": [
+          "Diseñar una rutina semanal de transferencia conceptual.",
+          "Trabajar el mismo principio en al menos dos contextos.",
+          "Registrar los conceptos que el estudiante reconoce pero no logra aplicar.",
+          "Reevaluar con situaciones nuevas cada 6 a 8 semanas."
+        ]
+      },
+      "uso_exclusivo_grado_11": {
+        "observacion": "En 11.º conviene focalizar la práctica en conceptos cuya aplicación continúe fallando entre las dos pruebas.",
+        "acciones_especificas": [
+          "Clasificar errores por concepto y condición de aplicación.",
+          "Usar problemas breves de transferencia.",
+          "Evitar repetir definiciones ya dominadas si el problema está en el uso."
+        ]
+      }
+    },
+    "explicacion_fenomenos": {
+      "nombre": "Explicación de fenómenos",
+      "peso_referencial_icfes_2026": 30,
+      "diagnostico_pedagogico": "Una debilidad puede reflejar dificultad para conectar observaciones con mecanismos, construir cadenas causales, usar modelos, justificar relaciones cuantitativas o evaluar si una explicación es coherente con principios científicos.",
+      "objetivo_de_mejoramiento": "Desarrollar explicaciones científicas que vinculen fenómeno, mecanismo, modelo, evidencia y principio, diferenciando descripción de explicación.",
+      "estrategias_metodologicas": [
+        {
+          "nombre": "De observar a explicar",
+          "proposito": "Distinguir descripción, patrón y mecanismo.",
+          "metodologia": [
+            "Describir qué se observa sin explicar.",
+            "Identificar patrón o relación.",
+            "Proponer el mecanismo científico.",
+            "Vincularlo con conceptos o modelos.",
+            "Comprobar si explica todas las observaciones relevantes."
+          ]
+        },
+        {
+          "nombre": "Afirmación–evidencia–razonamiento",
+          "proposito": "Estructurar explicaciones sustentadas.",
+          "metodologia": [
+            "Formular una afirmación sobre el fenómeno.",
+            "Seleccionar evidencia pertinente.",
+            "Explicar mediante qué principio la evidencia sustenta la afirmación.",
+            "Identificar qué evidencia adicional fortalecería la explicación."
+          ]
+        },
+        {
+          "nombre": "Comparación de modelos",
+          "proposito": "Evaluar capacidad explicativa.",
+          "metodologia": [
+            "Presentar dos modelos posibles.",
+            "Identificar predicciones de cada uno.",
+            "Contrastar con datos.",
+            "Decidir cuál explica mejor y señalar límites."
+          ]
+        },
+        {
+          "nombre": "Explicación multivariable",
+          "proposito": "Evitar cadenas causales simplistas.",
+          "metodologia": [
+            "Identificar varias variables relevantes.",
+            "Establecer relaciones entre ellas.",
+            "Diferenciar causa, condición y consecuencia.",
+            "Construir una explicación integrada."
+          ]
+        }
+      ],
+      "actividades_aula": [
+        {
+          "nombre": "Fenómeno sin nombre",
+          "descripcion": "Presentar observaciones sin indicar el tema y pedir construir una explicación usando evidencia.",
+          "producto_evaluable": "Explicación estructurada."
+        },
+        {
+          "nombre": "Dos explicaciones compiten",
+          "descripcion": "Comparar dos explicaciones plausibles y decidir cuál concuerda mejor con los datos.",
+          "producto_evaluable": "Evaluación de coherencia y evidencia."
+        },
+        {
+          "nombre": "Completar el mecanismo",
+          "descripcion": "Entregar una cadena causal incompleta y pedir identificar relaciones faltantes.",
+          "producto_evaluable": "Modelo causal corregido."
+        }
+      ],
+      "errores_a_observar": [
+        "Describe lo que ocurre pero no explica por qué.",
+        "Invoca un concepto sin relacionarlo con la evidencia.",
+        "Confunde secuencia temporal con causalidad.",
+        "Usa explicaciones teleológicas como 'ocurre para que...'.",
+        "Acepta un modelo aunque contradiga datos.",
+        "Ignora variables relevantes.",
+        "Supone que una relación cuantitativa implica por sí sola una explicación causal."
+      ],
+      "preguntas_a_priorizar": [
+        "Justificación de mecanismos.",
+        "Evaluación de explicaciones.",
+        "Relación entre variables y modelos.",
+        "Validez de afirmaciones científicas.",
+        "Predicciones derivadas de modelos.",
+        "Explicación de cambios en sistemas biológicos, físicos y químicos."
+      ],
+      "seguimiento": {
+        "indicadores": [
+          "Porcentaje de explicaciones que incluyen mecanismo y evidencia.",
+          "Porcentaje de estudiantes que diferencia descripción de explicación.",
+          "Porcentaje que identifica explicaciones incompatibles con los datos.",
+          "Calidad de cadenas causales construidas."
+        ],
+        "evidencias": [
+          "Respuestas abiertas breves",
+          "Rúbrica de explicación científica",
+          "Modelos causales",
+          "Preguntas de evaluación de argumentos"
+        ],
+        "periodicidad_sugerida": "Cada 4 a 6 semanas"
+      },
+      "uso_exclusivo_grado_10": {
+        "observacion": "La explicación científica se construye progresivamente y debe practicarse de forma sostenida durante el ciclo 2026-2027.",
+        "acciones_especificas": [
+          "Solicitar una explicación científica corta cada semana.",
+          "Usar rúbrica común: fenómeno, evidencia, mecanismo, principio y coherencia.",
+          "Alternar fenómenos biológicos, físicos y químicos.",
+          "Revisar evolución de explicaciones durante el año."
+        ]
+      },
+      "uso_exclusivo_grado_11": {
+        "observacion": "En 11.º conviene focalizar en explicaciones y modelos que continúan generando errores y entrenar el descarte de argumentos incompatibles con la evidencia.",
+        "acciones_especificas": [
+          "Comparar explicaciones correctas y distractores.",
+          "Trabajar preguntas de coherencia de modelos.",
+          "Usar retroalimentación breve basada en el primer error causal."
+        ]
+      }
+    },
+    "indagacion": {
+      "nombre": "Indagación",
+      "peso_referencial_icfes_2026": 40,
+      "diagnostico_pedagogico": "Una debilidad en Indagación puede manifestarse en dificultad para formular preguntas investigables, identificar variables, analizar diseños experimentales, interpretar datos, reconocer patrones, hacer predicciones o derivar conclusiones sustentadas. Dado su peso referencial, debe recibir especial atención cuando aparece comprometida.",
+      "objetivo_de_mejoramiento": "Fortalecer el razonamiento basado en evidencia mediante preguntas investigables, diseño y evaluación de procedimientos, análisis de datos, predicción y elaboración de conclusiones válidas.",
+      "estrategias_metodologicas": [
+        {
+          "nombre": "Pregunta investigable o no investigable",
+          "proposito": "Diferenciar preguntas científicamente abordables.",
+          "metodologia": [
+            "Presentar diversas preguntas.",
+            "Clasificarlas según puedan responderse con datos u observaciones.",
+            "Identificar variables necesarias.",
+            "Reformular preguntas demasiado amplias o valorativas."
+          ]
+        },
+        {
+          "nombre": "Auditoría experimental",
+          "proposito": "Evaluar diseños de investigación.",
+          "metodologia": [
+            "Identificar pregunta e hipótesis.",
+            "Reconocer variable independiente, dependiente y controles.",
+            "Evaluar muestra, repeticiones e instrumentos.",
+            "Detectar fuente de sesgo o confusión.",
+            "Proponer una mejora concreta."
+          ]
+        },
+        {
+          "nombre": "Dato–patrón–conclusión",
+          "proposito": "Separar observación de interpretación.",
+          "metodologia": [
+            "Describir los datos sin explicación.",
+            "Identificar patrón.",
+            "Proponer una conclusión.",
+            "Verificar si la conclusión excede la evidencia.",
+            "Formular una predicción."
+          ]
+        },
+        {
+          "nombre": "Evidencia suficiente",
+          "proposito": "Desarrollar criterios de validez.",
+          "metodologia": [
+            "Presentar una conclusión y un conjunto de resultados.",
+            "Decidir si son suficientes.",
+            "Identificar información faltante.",
+            "Proponer qué resultado adicional fortalecería o debilitaría la conclusión."
+          ]
+        }
+      ],
+      "actividades_aula": [
+        {
+          "nombre": "Miniinvestigación de una clase",
+          "descripcion": "Diseñar y ejecutar una investigación sencilla con una pregunta clara, variables definidas y registro de datos.",
+          "producto_evaluable": "Pregunta, diseño, datos, gráfica, conclusión y limitaciones."
+        },
+        {
+          "nombre": "Experimento defectuoso",
+          "descripcion": "Analizar un diseño con errores de control, tamaño de muestra o variables confundidas.",
+          "producto_evaluable": "Diagnóstico y propuesta de mejora."
+        },
+        {
+          "nombre": "¿Qué concluyen realmente los datos?",
+          "descripcion": "Entregar una tabla o gráfica y varias conclusiones de distinto alcance.",
+          "producto_evaluable": "Selección y justificación de la conclusión válida."
+        },
+        {
+          "nombre": "Predicción verificable",
+          "descripcion": "Usar un patrón para anticipar un resultado y definir cómo comprobarlo.",
+          "producto_evaluable": "Predicción, fundamento y procedimiento de comprobación."
+        }
+      ],
+      "errores_a_observar": [
+        "Formula preguntas imposibles de responder con el procedimiento planteado.",
+        "Confunde variable independiente y dependiente.",
+        "Cambia varias variables simultáneamente sin control.",
+        "Concluye causalidad a partir de una correlación.",
+        "Generaliza desde muestras insuficientes.",
+        "Ignora variabilidad o valores atípicos.",
+        "Describe la gráfica sin derivar una conclusión.",
+        "Formula una conclusión más amplia que la evidencia.",
+        "No identifica qué evidencia refutaría su hipótesis."
+      ],
+      "preguntas_a_priorizar": [
+        "Preguntas investigables.",
+        "Variables y controles.",
+        "Evaluación de procedimientos.",
+        "Interpretación de tablas y gráficas.",
+        "Reconocimiento de patrones.",
+        "Predicciones.",
+        "Suficiencia de evidencia.",
+        "Conclusiones y limitaciones de investigaciones."
+      ],
+      "seguimiento": {
+        "indicadores": [
+          "Porcentaje de estudiantes que identifica correctamente variables y controles.",
+          "Porcentaje que deriva conclusiones compatibles con la evidencia.",
+          "Porcentaje que interpreta datos antes de explicar.",
+          "Porcentaje que detecta limitaciones en un diseño experimental.",
+          "Porcentaje que formula predicciones verificables."
+        ],
+        "evidencias": [
+          "Miniinvestigaciones",
+          "Análisis de experimentos",
+          "Gráficas comentadas",
+          "Mini-pruebas de indagación",
+          "Portafolio de conclusiones y predicciones"
+        ],
+        "periodicidad_sugerida": "Cada 4 semanas"
+      },
+      "uso_exclusivo_grado_10": {
+        "prioridad": "muy alta cuando sea una debilidad principal",
+        "observacion": "Por su peso referencial del 40 % y su carácter transversal, Indagación debe trabajarse sostenidamente en grado 10, no como unidad aislada de método científico.",
+        "acciones_especificas": [
+          "Implementar al menos una miniinvestigación o análisis experimental cada dos semanas.",
+          "Usar datos reales y simulados de Biología, Física y Química.",
+          "Registrar errores por variables, datos, evidencia y conclusión.",
+          "Aplicar mediciones comparables cada 6 a 8 semanas.",
+          "Aumentar gradualmente complejidad de diseños y conjuntos de datos."
+        ]
+      },
+      "uso_exclusivo_grado_11": {
+        "observacion": "En 11.º la práctica debe concentrarse en lectura eficiente de diseños, variables, datos y conclusiones, especialmente en patrones persistentes entre Sigma 11 y Master Pro 11.",
+        "acciones_especificas": [
+          "Analizar experimentos breves bajo tiempo.",
+          "Trabajar distractores que confunden correlación, causalidad y generalización.",
+          "Priorizar preguntas de evidencia y conclusión."
+        ]
+      }
+    }
+  },
+  "componentes": {
+    "biologico": {
+      "nombre_en_informe": "Entorno biológico",
+      "nombre_oficial_icfes": "Componente biológico",
+      "peso_referencial_icfes_2026": 30,
+      "diagnostico_pedagogico": "Una debilidad puede relacionarse con dificultades para comprender funcionamiento de organismos, relaciones entre estructuras y funciones, genética, evolución, ecosistemas e interacciones bióticas y abióticas.",
+      "focos_de_trabajo": [
+        "Célula, organismo y niveles de organización.",
+        "Homeostasis y funciones vitales.",
+        "Genética y herencia.",
+        "Evolución y adaptación.",
+        "Ecosistemas, poblaciones y comunidades.",
+        "Flujo de materia y energía.",
+        "Relaciones entre factores bióticos y abióticos."
+      ],
+      "estrategias": [
+        "Trabajar relaciones estructura–función.",
+        "Usar modelos de sistemas biológicos.",
+        "Analizar cambios en una variable y consecuencias en el sistema.",
+        "Interpretar datos de poblaciones, herencia y ecosistemas.",
+        "Evitar estudiar procesos biológicos como listas aisladas."
+      ],
+      "actividades": [
+        "Predecir efectos de modificar una variable en un ecosistema.",
+        "Analizar datos de herencia o variación.",
+        "Construir un modelo de regulación u homeostasis.",
+        "Comparar explicaciones evolutivas correctas y teleológicas."
+      ],
+      "errores_a_observar": [
+        "Explicaciones teleológicas.",
+        "Confusión entre adaptación individual y evolución poblacional.",
+        "Confusión entre gen, alelo, cromosoma y rasgo.",
+        "Interpretación lineal de redes ecológicas.",
+        "Separación entre estructura y función."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Consolidar sistemas biológicos mediante modelos, datos e indagación durante el ciclo de preparación 2027."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Priorizar fenómenos integradores y análisis de datos biológicos en lugar de repaso enciclopédico."
+      }
+    },
+    "fisico": {
+      "nombre_en_informe": "Entorno físico",
+      "nombre_oficial_icfes": "Componente físico",
+      "peso_referencial_icfes_2026": 30,
+      "diagnostico_pedagogico": "Una debilidad puede reflejar dificultades para relacionar variables, interpretar modelos físicos y usar principios de movimiento, fuerzas, energía, ondas, electricidad o termodinámica en situaciones nuevas.",
+      "focos_de_trabajo": [
+        "Movimiento y representación de variables.",
+        "Fuerzas e interacción.",
+        "Energía y transformaciones.",
+        "Ondas.",
+        "Electricidad y circuitos.",
+        "Variables de estado y termodinámica.",
+        "Modelación cuantitativa y cualitativa."
+      ],
+      "estrategias": [
+        "Usar diagramas y gráficas antes de fórmulas.",
+        "Distinguir variables y unidades.",
+        "Hacer predicciones cualitativas antes del cálculo.",
+        "Comparar modelos físicos.",
+        "Relacionar ecuaciones con significado."
+      ],
+      "actividades": [
+        "Interpretar gráficas de movimiento.",
+        "Auditar diagramas de fuerzas.",
+        "Predecir cambios en un circuito.",
+        "Analizar transferencias de energía."
+      ],
+      "errores_a_observar": [
+        "Aplicar fórmulas por coincidencia de variables.",
+        "Confundir velocidad con aceleración.",
+        "Tratar fuerza como propiedad permanente del objeto.",
+        "Ignorar conservación o transferencia de energía.",
+        "No interpretar signos, unidades o pendientes."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Fortalecer comprensión de relaciones entre variables y modelos físicos antes de aumentar carga procedimental."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Focalizar en interpretación de modelos, gráficas y situaciones físicas contextualizadas."
+      }
+    },
+    "quimico": {
+      "nombre_en_informe": "Entorno químico",
+      "nombre_oficial_icfes": "Componente químico",
+      "peso_referencial_icfes_2026": 30,
+      "diagnostico_pedagogico": "Una debilidad puede asociarse con dificultades para relacionar niveles macroscópico y microscópico, interpretar estructura y propiedades de la materia, diferenciar sustancias y mezclas, comprender transformaciones y aplicar conservación en reacciones.",
+      "focos_de_trabajo": [
+        "Estructura y propiedades de la materia.",
+        "Elementos, compuestos y mezclas.",
+        "Separación de mezclas.",
+        "Solubilidad.",
+        "Gases.",
+        "Reacciones químicas.",
+        "Conservación de masa y carga.",
+        "Relación entre partículas y propiedades macroscópicas."
+      ],
+      "estrategias": [
+        "Conectar fenómeno observable, representación de partículas y símbolos químicos.",
+        "Usar modelos de partículas.",
+        "Trabajar conservación antes de cálculos rutinarios.",
+        "Comparar transformaciones físicas y químicas.",
+        "Interpretar datos experimentales de propiedades y reacciones."
+      ],
+      "actividades": [
+        "Representar una reacción a nivel macroscópico, submicroscópico y simbólico.",
+        "Seleccionar método de separación según propiedades.",
+        "Analizar conservación de masa en sistemas.",
+        "Relacionar estructura con solubilidad o propiedades."
+      ],
+      "errores_a_observar": [
+        "Confundir átomo, molécula, elemento y compuesto.",
+        "Creer que la materia desaparece durante una reacción.",
+        "Balancear sin comprender conservación.",
+        "Elegir métodos de separación sin considerar propiedades.",
+        "Confundir cambio físico con químico por apariencia."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Consolidar progresivamente la conexión entre representaciones macro, submicro y simbólicas durante la cohorte 2027."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Priorizar problemas donde conceptos químicos deban explicar fenómenos o interpretar datos."
+      }
+    },
+    "cts": {
+      "nombre_en_informe": "Entorno de ciencia, tecnología y sociedad",
+      "nombre_oficial_icfes": "Ciencia, tecnología y sociedad",
+      "peso_referencial_icfes_2026": 10,
+      "diagnostico_pedagogico": "Una debilidad puede reflejar dificultad para analizar consecuencias sociales y ambientales del conocimiento científico y las tecnologías, valorar alternativas con evidencia o reconocer relaciones entre recursos, decisiones y transformaciones del entorno.",
+      "focos_de_trabajo": [
+        "Uso de recursos naturales.",
+        "Impacto de tecnologías.",
+        "Riesgo y beneficio.",
+        "Decisiones informadas.",
+        "Sostenibilidad.",
+        "Relación ciencia-sociedad-ambiente.",
+        "Alcances y límites de evidencia científica en decisiones."
+      ],
+      "estrategias": [
+        "Usar controversias sociocientíficas con datos.",
+        "Separar evidencia científica de valores y decisiones.",
+        "Comparar beneficios, riesgos y grupos afectados.",
+        "Evitar debates basados solo en opinión."
+      ],
+      "actividades": [
+        "Evaluar una tecnología con matriz evidencia–beneficio–riesgo–impacto.",
+        "Comparar alternativas de uso de un recurso.",
+        "Analizar una afirmación pública sobre ciencia y determinar qué evidencia necesita."
+      ],
+      "errores_a_observar": [
+        "Asumir que lo tecnológico siempre es positivo o negativo.",
+        "Confundir posibilidad científica con conveniencia social.",
+        "Decidir solo por opinión sin analizar evidencia.",
+        "Ignorar efectos ambientales o poblaciones afectadas."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Integrar regularmente problemas sociocientíficos para desarrollar decisiones informadas antes de 2027."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Focalizar en análisis de evidencia y consecuencias de decisiones científicas o tecnológicas."
+      }
+    }
+  },
+  "combinaciones_diagnosticas": [
+    {
+      "si": [
+        "uso_comprensivo_conocimiento_cientifico_bajo",
+        "biologico_bajo"
+      ],
+      "interpretacion": "La prioridad puede estar en transferir conceptos biológicos a fenómenos de organismos, herencia o ecosistemas.",
+      "accion_prioritaria": "Trabajar relaciones estructura–función y variable–respuesta mediante modelos y casos nuevos."
+    },
+    {
+      "si": [
+        "uso_comprensivo_conocimiento_cientifico_bajo",
+        "fisico_bajo"
+      ],
+      "interpretacion": "Puede existir dificultad para seleccionar principios físicos y relacionar variables en situaciones contextualizadas.",
+      "accion_prioritaria": "Usar problemas conceptuales con predicción cualitativa, gráficas y modelos antes del cálculo."
+    },
+    {
+      "si": [
+        "uso_comprensivo_conocimiento_cientifico_bajo",
+        "quimico_bajo"
+      ],
+      "interpretacion": "La dificultad puede concentrarse en conectar estructura, propiedades y transformaciones químicas.",
+      "accion_prioritaria": "Trabajar simultáneamente representaciones macroscópicas, de partículas y simbólicas."
+    },
+    {
+      "si": [
+        "explicacion_fenomenos_baja",
+        "biologico_bajo"
+      ],
+      "interpretacion": "Puede existir dificultad para construir mecanismos causales en sistemas biológicos.",
+      "accion_prioritaria": "Usar explicación afirmación–evidencia–razonamiento sobre homeostasis, genética y ecosistemas."
+    },
+    {
+      "si": [
+        "explicacion_fenomenos_baja",
+        "fisico_bajo"
+      ],
+      "interpretacion": "La dificultad puede estar en usar modelos y relaciones entre variables para explicar fenómenos físicos.",
+      "accion_prioritaria": "Comparar modelos y justificar predicciones mediante leyes y evidencia."
+    },
+    {
+      "si": [
+        "explicacion_fenomenos_baja",
+        "quimico_bajo"
+      ],
+      "interpretacion": "Puede existir dificultad para conectar observaciones de transformaciones con estructura de materia y conservación.",
+      "accion_prioritaria": "Construir explicaciones multinivel de reacciones y propiedades."
+    },
+    {
+      "si": [
+        "indagacion_baja",
+        "biologico_bajo"
+      ],
+      "interpretacion": "La prioridad puede concentrarse en interpretar datos biológicos, variables y diseños experimentales.",
+      "accion_prioritaria": "Usar investigaciones sobre crecimiento, herencia, poblaciones o ecosistemas con datos reales o simulados."
+    },
+    {
+      "si": [
+        "indagacion_baja",
+        "fisico_bajo"
+      ],
+      "interpretacion": "Puede existir dificultad para analizar relaciones entre variables físicas y evaluar procedimientos.",
+      "accion_prioritaria": "Trabajar experimentos con gráficas, controles y predicciones cuantitativas o cualitativas."
+    },
+    {
+      "si": [
+        "indagacion_baja",
+        "quimico_bajo"
+      ],
+      "interpretacion": "La dificultad puede estar en interpretar evidencia experimental de propiedades y reacciones.",
+      "accion_prioritaria": "Usar tablas de resultados, diseños comparativos y conclusiones basadas en conservación y propiedades."
+    },
+    {
+      "si": [
+        "indagacion_baja",
+        "cts_bajo"
+      ],
+      "interpretacion": "Puede existir dificultad para evaluar evidencia científica utilizada en decisiones sobre tecnología, recursos o ambiente.",
+      "accion_prioritaria": "Analizar controversias sociocientíficas distinguiendo datos, inferencias, riesgos y decisiones."
+    },
+    {
+      "si": [
+        "tres_competencias_bajas"
+      ],
+      "interpretacion": "La dificultad es transversal y requiere una ruta integral que articule conceptos, modelos, evidencia, investigación y explicación.",
+      "accion_prioritaria": "Diseñar ciclos de aprendizaje basados en fenómenos: observar, preguntar, modelar, investigar, explicar y evaluar evidencia."
+    }
+  ],
+  "secuencias_de_intervencion": {
+    "grado_10": {
+      "horizonte": "ciclo_2026_2027",
+      "fases": [
+        {
+          "fase": 1,
+          "duracion_sugerida": "6 semanas",
+          "foco": "Línea base, uso conceptual y lectura de datos",
+          "productos": [
+            "registro de errores",
+            "mapas conceptuales",
+            "gráficas comentadas",
+            "problemas de transferencia"
+          ]
+        },
+        {
+          "fase": 2,
+          "duracion_sugerida": "8 semanas",
+          "foco": "Explicación, modelos y relaciones entre variables",
+          "productos": [
+            "explicaciones CER",
+            "modelos comentados",
+            "mini-prueba comparable"
+          ]
+        },
+        {
+          "fase": 3,
+          "duracion_sugerida": "8 semanas",
+          "foco": "Indagación, diseños experimentales y evidencia",
+          "productos": [
+            "miniinvestigaciones",
+            "auditorías experimentales",
+            "medición de progreso"
+          ]
+        },
+        {
+          "fase": 4,
+          "duracion_sugerida": "continuo hasta Saber 11 2027",
+          "foco": "Transferencia interdisciplinar, CTS y práctica acumulativa",
+          "productos": [
+            "problemas integrados",
+            "simulacros analizados",
+            "portafolio científico",
+            "seguimiento por competencia y componente"
+          ]
+        }
+      ]
+    },
+    "grado_11": {
+      "horizonte": "intervencion_focalizada",
+      "fases": [
+        {
+          "fase": 1,
+          "duracion_sugerida": "2 semanas",
+          "foco": "Comparación Sigma 11–Master Pro 11 y clasificación de errores"
+        },
+        {
+          "fase": 2,
+          "duracion_sugerida": "4 a 6 semanas",
+          "foco": "Intervención sobre máximo dos necesidades prioritarias"
+        },
+        {
+          "fase": 3,
+          "duracion_sugerida": "hasta cierre",
+          "foco": "Transferencia, interpretación eficiente de evidencia y análisis de distractores"
+        }
+      ]
+    }
+  },
+  "reglas_para_motor_html": {
+    "entrada_esperada": [
+      "grado",
+      "promedio_area",
+      "puntaje_competencia",
+      "puntaje_componente",
+      "niveles_desempeno",
+      "nivel_necesidad_calculado_por_modulo_estadistico"
+    ],
+    "logica_recomendada": [
+      "Mostrar primero la competencia con mayor necesidad.",
+      "Añadir como complemento el componente de menor desempeño.",
+      "Dar atención especial a Indagación cuando esté comprometida por su peso referencial del 40 %.",
+      "Si coincide una combinación diagnóstica, mostrar la acción prioritaria integrada.",
+      "Para grado 10 añadir siempre el bloque de cohorte Saber 11 2027.",
+      "Para grado 11 comparar Sigma 11 y Master Pro 11 cuando ambas aplicaciones estén disponibles.",
+      "No afirmar causalidad pedagógica a partir de un puntaje agregado.",
+      "No interpretar un componente bajo como falta de contenidos únicamente.",
+      "No recomendar exclusivamente memorización, más talleres o más simulacros.",
+      "Toda recomendación debe incorporar una práctica científica observable y una evidencia de seguimiento."
+    ],
+    "orden_visual_sugerido": [
+      "Hallazgo",
+      "Qué puede significar",
+      "Competencia prioritaria",
+      "Componente prioritario",
+      "Qué fortalecer",
+      "Cómo trabajarlo",
+      "Actividad o práctica científica sugerida",
+      "Errores a observar",
+      "Cómo hacer seguimiento",
+      "Observación específica para el grado"
+    ]
+  },
+  "orientaciones_para_secretaria": {
+    "grado_10": [
+      "Tratar los resultados como línea base municipal de la cohorte que presentará Saber 11 en 2027.",
+      "Priorizar instituciones con debilidad en Indagación o con dos o más competencias comprometidas.",
+      "Solicitar planes de intervención de 6 a 8 semanas con productos verificables.",
+      "Hacer seguimiento por competencia y componente, no solo por promedio de Ciencias Naturales.",
+      "Promover laboratorios, prácticas experimentales y análisis de datos aun cuando no exista infraestructura especializada, mediante diseños sencillos, datos abiertos o experimentos simulados.",
+      "Impulsar coordinación entre Biología, Química y Física alrededor de competencias científicas comunes.",
+      "Favorecer comunidades docentes centradas en análisis de evidencia y errores."
+    ],
+    "grado_11": [
+      "Comparar Sigma 11 y Master Pro 11 para identificar persistencia, mejora o retroceso.",
+      "Distinguir si las debilidades son conceptuales, explicativas o de indagación.",
+      "Documentar prácticas institucionales asociadas a mejoras observadas.",
+      "Transferir hallazgos de grado 11 a la planeación de grado 10.",
+      "Evitar interpretar pequeñas diferencias de puntaje como efecto pedagógico concluyente sin evidencia adicional."
+    ]
+  }
+}

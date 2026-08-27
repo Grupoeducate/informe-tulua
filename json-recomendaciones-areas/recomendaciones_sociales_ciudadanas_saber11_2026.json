@@ -1,0 +1,920 @@
+{
+  "schema_version": "1.0",
+  "tipo_archivo": "motor_recomendaciones_pedagogicas_por_area",
+  "area": {
+    "id": "sociales_ciudadanas",
+    "nombre": "Sociales y Ciudadanas",
+    "proposito": "Convertir los resultados de la prueba en orientaciones metodológicas concretas, diferenciadas por competencia, componente diagnóstico y grado, para fortalecer la comprensión del mundo social, el análisis crítico de perspectivas y la toma de decisiones fundamentada."
+  },
+  "alcance": {
+    "poblacion": [
+      "grado_10",
+      "grado_11"
+    ],
+    "uso_principal": [
+      "Informe municipal para Secretaría de Educación",
+      "Lectura institucional de resultados",
+      "Orientación a coordinaciones académicas y docentes de Ciencias Sociales",
+      "Planeación de acciones de aula y seguimiento",
+      "Preparación de la cohorte de grado 10 que presentará Saber 11 en 2027"
+    ],
+    "nota_psicometrica": "Este archivo no establece puntos de corte para clasificar un resultado como crítico, alto, medio o satisfactorio. El nivel de necesidad debe ser calculado por un módulo estadístico común a todas las áreas. Este JSON define la respuesta pedagógica una vez identificada la necesidad.",
+    "principio_de_interpretacion": "Un puntaje bajo orienta una hipótesis de necesidad pedagógica, pero no demuestra por sí solo una causa. La interpretación debe contrastarse con evidencias de aula, desempeño en otras áreas, análisis de respuestas, prácticas docentes y mediciones posteriores.",
+    "principio_de_no_reduccion": "La preparación no debe reducirse a memorización de fechas, artículos, instituciones o definiciones. Debe promover el uso funcional de conceptos, la lectura crítica de fuentes, la comparación de perspectivas, el análisis multicausal y la evaluación de alternativas de decisión.",
+    "principio_ciudadano": "Las actividades deben evitar inducir una respuesta ideológica o moral predeterminada. El estudiante debe aprender a identificar intereses, comparar argumentos, valorar evidencia, reconocer derechos y analizar consecuencias de alternativas."
+  },
+  "fundamento_evaluativo": {
+    "fuentes": [
+      {
+        "institucion": "Icfes",
+        "documento": "Guía de orientación del Examen Saber 11.º 2026-2",
+        "seccion": "Sociales y Ciudadanas, pp. 46-53",
+        "url": "https://www.icfes.gov.co/wp-content/uploads/2026/03/17-marzo-guia-de-orientacion-saber-11-2026-2.pdf",
+        "uso_en_este_json": "Propósito de la prueba, competencias evaluadas, habilidades asociadas y distribución porcentual de preguntas."
+      },
+      {
+        "institucion": "Icfes",
+        "documento": "Marco de referencia de la prueba de Sociales y Ciudadanas Saber 11.º",
+        "url": "https://www.icfes.gov.co/evaluaciones-icfes/saber-11/marcos-de-referencia-examen-saber-11/",
+        "uso_en_este_json": "Constructo general de la prueba y fundamentos de comprensión social, análisis de perspectivas y pensamiento sistémico."
+      },
+      {
+        "institucion": "Ministerio de Educación Nacional",
+        "documento": "Estándares Básicos de Competencias en Ciencias Sociales y Competencias Ciudadanas",
+        "anio": 2006,
+        "uso_en_este_json": "Referente curricular general para la formación en Ciencias Sociales y ciudadanía."
+      }
+    ],
+    "proposito_oficial_sintetizado": "Evaluar conocimientos y habilidades para comprender el mundo social desde las ciencias sociales y usar esa comprensión como referente para el ejercicio ciudadano, analizando eventos, argumentos, posturas, conceptos, modelos, dimensiones y contextos con criterio.",
+    "competencias_icfes_2026": [
+      {
+        "id": "pensamiento_social",
+        "nombre": "Pensamiento social",
+        "peso_referencial_icfes_2026": 30,
+        "descripcion_operativa": "Usar conceptos básicos de las ciencias sociales y conocimientos sobre el orden constitucional y político colombiano, y comprender dimensiones temporales y espaciales de eventos, prácticas y problemáticas sociales.",
+        "focos_oficiales_sintetizados": [
+          "Conceptos sociales básicos de carácter político, económico, cultural y geográfico.",
+          "Estado Social de Derecho, organización del Estado, derechos y mecanismos de participación.",
+          "Ubicación temporal y espacial de eventos y prácticas.",
+          "Relación entre dimensiones históricas, geográficas y problemáticas sociales."
+        ]
+      },
+      {
+        "id": "interpretacion_analisis_perspectivas",
+        "nombre": "Interpretación y análisis de perspectivas",
+        "peso_referencial_icfes_2026": 40,
+        "descripcion_operativa": "Analizar críticamente información sobre asuntos sociales, valorar argumentos y fuentes, e identificar intereses, opiniones, perspectivas e intenciones de distintos actores y grupos.",
+        "focos_oficiales_sintetizados": [
+          "Reconocimiento y comparación de perspectivas e intereses.",
+          "Contextualización y valoración de fuentes.",
+          "Análisis de solidez, pertinencia y limitaciones de argumentos.",
+          "Identificación de prejuicios, intenciones y efectos posibles de discursos."
+        ]
+      },
+      {
+        "id": "pensamiento_reflexivo_sistemico",
+        "nombre": "Pensamiento reflexivo y sistémico",
+        "peso_referencial_icfes_2026": 30,
+        "descripcion_operativa": "Comprender modelos conceptuales usados para orientar decisiones sociales e identificar relaciones entre dimensiones de una problemática, anticipando efectos y tensiones de posibles intervenciones.",
+        "focos_oficiales_sintetizados": [
+          "Análisis de modelos conceptuales y criterios que orientan decisiones.",
+          "Relaciones entre dimensiones sociales, económicas, políticas, ambientales y culturales.",
+          "Evaluación de efectos directos e indirectos de alternativas de intervención.",
+          "Reconocimiento de tensiones y compensaciones entre objetivos o dimensiones."
+        ]
+      }
+    ],
+    "componentes_del_informe_gec": {
+      "nota": "Los componentes Ético/político, Competencias ciudadanas, Espacio y ambiente e Historia y cultura son categorías reportadas por los informes GEC. En este motor se utilizan como lentes diagnósticos pedagógicos; no se presentan como componentes oficiales de la estructura Icfes Saber 11 2026.",
+      "componentes": [
+        {
+          "id": "etico_politico",
+          "nombre": "Ético / político",
+          "lente_diagnostica": "Comprensión de organización política, ciudadanía, derechos, deberes, institucionalidad, principios democráticos, relaciones de poder y criterios para analizar decisiones públicas."
+        },
+        {
+          "id": "competencias_ciudadanas",
+          "nombre": "Competencias ciudadanas",
+          "lente_diagnostica": "Análisis de conflictos, convivencia, pluralidad, derechos, participación, perspectivas de actores, toma de decisiones y consecuencias para distintos grupos."
+        },
+        {
+          "id": "espacio_ambiente",
+          "nombre": "Espacio y ambiente",
+          "lente_diagnostica": "Comprensión de relaciones sociedad-territorio-ambiente, escalas espaciales, distribución de fenómenos, transformaciones territoriales y efectos sociales de decisiones ambientales."
+        },
+        {
+          "id": "historia_cultura",
+          "nombre": "Historia y cultura",
+          "lente_diagnostica": "Comprensión temporal, causalidad histórica, cambios y permanencias, contexto, diversidad cultural, memoria, actores y relación entre procesos históricos y problemáticas contemporáneas."
+        }
+      ]
+    }
+  },
+  "recomendaciones_transversales": {
+    "para_todos_los_grados": [
+      {
+        "id": "problemas_sociales_como_eje",
+        "nombre": "Organizar la enseñanza alrededor de problemas sociales",
+        "descripcion": "Usar situaciones históricas y contemporáneas que exijan aplicar conceptos, interpretar fuentes, comparar perspectivas y evaluar decisiones.",
+        "acciones": [
+          "Presentar situaciones con información suficiente para argumentar, no solo preguntas de recuerdo.",
+          "Solicitar identificar actores, intereses, temporalidades, territorios y dimensiones implicadas.",
+          "Cerrar cada secuencia con una decisión o conclusión sustentada.",
+          "Evitar preguntas cuya respuesta correcta dependa únicamente de una opinión moral."
+        ]
+      },
+      {
+        "id": "fuentes_multiples",
+        "nombre": "Trabajar con fuentes múltiples y contrastables",
+        "descripcion": "Incorporar textos, mapas, estadísticas, caricaturas, normas, testimonios, noticias, gráficos y fuentes históricas para que el estudiante aprenda a contextualizar y corroborar información.",
+        "acciones": [
+          "Comparar al menos dos fuentes sobre un mismo fenómeno.",
+          "Preguntar qué aporta y qué no permite concluir cada fuente.",
+          "Identificar autor, contexto, propósito y audiencia cuando sea pertinente.",
+          "Diferenciar evidencia de opinión o interpretación."
+        ]
+      },
+      {
+        "id": "pensamiento_multicausal",
+        "nombre": "Fortalecer explicaciones multicausales",
+        "descripcion": "Evitar explicaciones monocausales de fenómenos sociales. Trabajar relaciones entre factores económicos, políticos, sociales, culturales, territoriales y ambientales.",
+        "acciones": [
+          "Construir mapas causales.",
+          "Diferenciar causas estructurales, desencadenantes y condiciones.",
+          "Analizar consecuencias previstas e imprevistas.",
+          "Relacionar escalas local, nacional y global."
+        ]
+      },
+      {
+        "id": "argumentacion_con_evidencia",
+        "nombre": "Distinguir posición de argumento",
+        "descripcion": "Una postura no es suficiente. El estudiante debe aprender a sustentar conclusiones con evidencia y criterios explícitos.",
+        "acciones": [
+          "Usar estructura afirmación–evidencia–razonamiento.",
+          "Pedir una fuente o dato que respalde cada conclusión relevante.",
+          "Analizar distractores identificando por qué resultan plausibles pero insuficientes.",
+          "Comparar argumentos fuertes y débiles sobre una misma situación."
+        ]
+      },
+      {
+        "id": "ciudadania_sin_respuesta_predeterminada",
+        "nombre": "Analizar ciudadanía sin inducir una respuesta predeterminada",
+        "descripcion": "Trabajar dilemas y conflictos desde derechos, normas, intereses, consecuencias y perspectivas, evitando convertir la clase en búsqueda de la respuesta socialmente deseable.",
+        "acciones": [
+          "Presentar alternativas con costos y beneficios.",
+          "Separar legalidad, conveniencia, legitimidad y preferencia personal.",
+          "Identificar quién gana, quién pierde y bajo qué criterio.",
+          "Solicitar justificar una decisión aun cuando existan varias posturas posibles."
+        ]
+      },
+      {
+        "id": "transferencia_entre_sociales_y_lectura",
+        "nombre": "Integrar lectura crítica y análisis social",
+        "descripcion": "Muchos errores en Sociales se originan en la lectura superficial de argumentos, fuentes o relaciones. Coordinar rutinas con Lectura Crítica puede mejorar transferencia.",
+        "acciones": [
+          "Usar protocolos comunes para tesis, evidencia, fuente e intención.",
+          "Trabajar inferencias a partir de tablas, mapas y textos.",
+          "Incluir comparación de perspectivas en ambas áreas.",
+          "Compartir categorías de error entre docentes de Lenguaje y Sociales."
+        ]
+      }
+    ],
+    "uso_exclusivo_grado_10": [
+      {
+        "id": "ruta_sociales_cohorte_2027",
+        "titulo": "Ruta de fortalecimiento de la cohorte Saber 11 de 2027",
+        "observacion": "El resultado de grado 10 debe funcionar como línea base para una intervención de mediano plazo. La prioridad es construir capacidades de análisis, no intensificar prematuramente simulacros completos.",
+        "acciones": [
+          "Establecer línea base por las tres competencias y cuatro componentes.",
+          "Priorizar una competencia y un componente por ciclo de intervención.",
+          "Diseñar ciclos de 6 a 8 semanas con situaciones sociales progresivamente más complejas.",
+          "Aplicar mediciones comparables al cierre de cada ciclo.",
+          "Mantener un portafolio de análisis de fuentes, mapas causales y comparación de perspectivas.",
+          "Incorporar problemas sociales contemporáneos sin abandonar referentes históricos, constitucionales y geográficos.",
+          "Realizar al menos tres mediciones de progreso antes de Saber 11 de 2027."
+        ],
+        "criterio_de_exito": "Evidenciar crecimiento en análisis de fuentes, perspectivas y relaciones sistémicas, además de mejora en el puntaje agregado."
+      }
+    ],
+    "uso_exclusivo_grado_11": [
+      {
+        "id": "intervencion_focalizada_11",
+        "titulo": "Intervención focalizada y transferencia institucional",
+        "observacion": "En grado 11 conviene comparar Sigma 11 y Master Pro 11 para identificar debilidades persistentes y concentrar la intervención en procesos modificables.",
+        "acciones": [
+          "Comparar resultados por competencia y componente entre las dos aplicaciones.",
+          "Priorizar máximo dos necesidades de mayor persistencia.",
+          "Analizar preguntas falladas según tipo de error: conceptual, lectura de fuente, perspectiva, causalidad o pensamiento sistémico.",
+          "Usar prácticas breves y frecuentes con retroalimentación.",
+          "Documentar aprendizajes para ajustar la planeación de grado 10.",
+          "Evitar que el cierre se reduzca a resolver simulacros sin análisis."
+        ],
+        "criterio_de_exito": "Lograr corrección de patrones de error y convertir los resultados de 11.º en conocimiento institucional para la siguiente cohorte."
+      }
+    ]
+  },
+  "competencias": {
+    "pensamiento_social": {
+      "nombre": "Pensamiento social",
+      "peso_referencial_icfes_2026": 30,
+      "diagnostico_pedagogico": "Una debilidad en Pensamiento social puede reflejar dificultad para usar conceptos de las ciencias sociales como herramientas de análisis, comprender principios del Estado colombiano o relacionar eventos con sus dimensiones temporales y espaciales. No debe interpretarse automáticamente como falta de memoria factual.",
+      "objetivo_de_mejoramiento": "Fortalecer el uso funcional de conceptos sociales, políticos, económicos, culturales y geográficos, así como la comprensión temporal y espacial de procesos y problemáticas.",
+      "estrategias_metodologicas": [
+        {
+          "nombre": "Concepto en contexto",
+          "proposito": "Evitar aprendizaje definicional aislado.",
+          "metodologia": [
+            "Presentar una situación concreta.",
+            "Seleccionar el concepto social pertinente.",
+            "Explicar qué rasgos de la situación permiten aplicarlo.",
+            "Compararlo con un concepto próximo que no sería adecuado.",
+            "Transferirlo a un caso diferente."
+          ],
+          "frecuencia_sugerida": "2 veces por semana"
+        },
+        {
+          "nombre": "Constitución aplicada",
+          "proposito": "Convertir conocimientos constitucionales en herramientas para analizar casos.",
+          "metodologia": [
+            "Presentar una situación de derechos, participación o actuación institucional.",
+            "Identificar principio, derecho o mecanismo pertinente.",
+            "Determinar qué institución o mecanismo sería aplicable.",
+            "Justificar límites y alcances."
+          ]
+        },
+        {
+          "nombre": "Tiempo, espacio y proceso",
+          "proposito": "Relacionar dimensiones históricas y geográficas.",
+          "metodologia": [
+            "Ubicar un fenómeno en tiempo y espacio.",
+            "Identificar cambios, permanencias y actores.",
+            "Relacionar condiciones geográficas con prácticas o procesos.",
+            "Comparar el mismo fenómeno en otra escala o periodo."
+          ]
+        },
+        {
+          "nombre": "Línea de tiempo causal",
+          "proposito": "Superar cronologías sin explicación.",
+          "metodologia": [
+            "Seleccionar eventos relevantes.",
+            "Diferenciar antecedente, causa, desencadenante y consecuencia.",
+            "Construir conexiones justificadas.",
+            "Identificar eventos simultáneos que modifican el proceso."
+          ]
+        }
+      ],
+      "actividades_aula": [
+        {
+          "nombre": "Caso constitucional",
+          "descripcion": "Analizar un caso de participación, derechos o funcionamiento institucional y determinar mecanismos, actores y límites.",
+          "producto_evaluable": "Ficha caso–principio–institución–mecanismo–justificación."
+        },
+        {
+          "nombre": "Mapa histórico-geográfico",
+          "descripcion": "Representar un proceso histórico sobre un mapa, incorporando rutas, territorios, recursos, actores y cambios.",
+          "producto_evaluable": "Mapa comentado y explicación de relaciones espacio–proceso."
+        },
+        {
+          "nombre": "Concepto que explica",
+          "descripcion": "Elegir entre varios conceptos el que mejor explica una situación social y justificar por qué los demás son insuficientes.",
+          "producto_evaluable": "Selección argumentada."
+        }
+      ],
+      "errores_a_observar": [
+        "Memoriza conceptos pero no los aplica a situaciones nuevas.",
+        "Confunde funciones de ramas del poder u organismos.",
+        "Selecciona un mecanismo de participación por asociación verbal y no por pertinencia.",
+        "Ordena hechos cronológicamente pero no establece relaciones.",
+        "Explica procesos históricos con una sola causa.",
+        "Ignora el papel del espacio geográfico.",
+        "Confunde cambio temporal con causalidad."
+      ],
+      "preguntas_a_priorizar": [
+        "Aplicación de conceptos sociales a situaciones.",
+        "Estado Social de Derecho, organización estatal y mecanismos de participación.",
+        "Relaciones entre derechos, deberes, instituciones y casos.",
+        "Ubicación temporal y espacial.",
+        "Cambios, permanencias y conexiones históricas.",
+        "Relaciones entre territorio y problemática social."
+      ],
+      "seguimiento": {
+        "indicadores": [
+          "Porcentaje de estudiantes que aplica correctamente conceptos en casos nuevos.",
+          "Porcentaje que identifica institución o mecanismo pertinente y justifica su elección.",
+          "Porcentaje que explica un proceso mediante relaciones temporales y espaciales.",
+          "Reducción de respuestas basadas exclusivamente en memoria verbal."
+        ],
+        "evidencias": [
+          "Estudios de caso",
+          "Mapas históricos y geográficos",
+          "Mini-pruebas contextualizadas",
+          "Organizadores causales"
+        ],
+        "periodicidad_sugerida": "Cada 4 semanas"
+      },
+      "uso_exclusivo_grado_10": {
+        "observacion": "En 10.º debe consolidarse una base conceptual funcional que luego permita interpretar perspectivas y analizar sistemas sociales con mayor complejidad.",
+        "acciones_especificas": [
+          "Construir un glosario aplicado, no definicional.",
+          "Revisitar conceptos en múltiples contextos durante el año.",
+          "Trabajar semanalmente una situación constitucional o histórico-geográfica.",
+          "Medir transferencia a casos no trabajados previamente."
+        ]
+      },
+      "uso_exclusivo_grado_11": {
+        "observacion": "En 11.º conviene identificar qué subcampo genera el error: concepto, institucionalidad, tiempo o espacio, y focalizar la práctica.",
+        "acciones_especificas": [
+          "Usar casos breves de transferencia.",
+          "Corregir confusiones institucionales recurrentes.",
+          "Integrar conceptos con preguntas de perspectivas y pensamiento sistémico."
+        ]
+      }
+    },
+    "interpretacion_analisis_perspectivas": {
+      "nombre": "Interpretación y análisis de perspectivas",
+      "peso_referencial_icfes_2026": 40,
+      "diagnostico_pedagogico": "Una debilidad puede indicar dificultades para contextualizar fuentes, reconocer intereses y posiciones, comparar perspectivas, identificar prejuicios o intenciones y valorar la pertinencia y solidez de argumentos. Por su peso referencial, debe recibir especial atención cuando aparece comprometida.",
+      "objetivo_de_mejoramiento": "Fortalecer la lectura crítica de información social, la contextualización de fuentes y la comparación razonada de perspectivas, distinguiendo evidencia, interés, postura e intención.",
+      "estrategias_metodologicas": [
+        {
+          "nombre": "Ficha de perspectiva",
+          "proposito": "Analizar una posición sin reducirla a estar de acuerdo o en desacuerdo.",
+          "metodologia": [
+            "Identificar actor o grupo.",
+            "Precisar qué busca, qué teme o qué valora.",
+            "Reconocer información o supuestos que sostienen su posición.",
+            "Comparar con otra perspectiva.",
+            "Anticipar reacción ante una propuesta."
+          ]
+        },
+        {
+          "nombre": "Auditoría de fuentes",
+          "proposito": "Evaluar utilidad, límites y contexto de una fuente.",
+          "metodologia": [
+            "Identificar autor, fecha, contexto y propósito.",
+            "Distinguir fuente primaria o secundaria cuando sea pertinente.",
+            "Precisar qué afirmaciones puede respaldar.",
+            "Indicar qué no puede concluirse.",
+            "Contrastar con otra fuente."
+          ]
+        },
+        {
+          "nombre": "Triangulación de información",
+          "proposito": "Evitar aceptar una fuente como suficiente por autoridad aparente.",
+          "metodologia": [
+            "Presentar tres fuentes sobre el mismo hecho.",
+            "Identificar coincidencias y divergencias.",
+            "Evaluar calidad y pertinencia de la evidencia.",
+            "Construir una conclusión que reconozca incertidumbre o límites."
+          ]
+        },
+        {
+          "nombre": "Prejuicio, interés e intención",
+          "proposito": "Reconocer cómo las posiciones influyen en discursos.",
+          "metodologia": [
+            "Subrayar lenguaje valorativo.",
+            "Identificar generalizaciones o estereotipos.",
+            "Inferir intención comunicativa con evidencia.",
+            "Analizar efecto probable sobre distintos públicos."
+          ]
+        }
+      ],
+      "actividades_aula": [
+        {
+          "nombre": "Conflicto con cuatro actores",
+          "descripcion": "Analizar un conflicto social desde cuatro actores con intereses parcialmente coincidentes y contradictorios.",
+          "producto_evaluable": "Matriz actor–interés–argumento–evidencia–posible reacción."
+        },
+        {
+          "nombre": "¿Sirve esta fuente?",
+          "descripcion": "Determinar si una fuente es pertinente para respaldar varias afirmaciones y explicar sus límites.",
+          "producto_evaluable": "Tabla afirmación–fuente–utilidad–limitación."
+        },
+        {
+          "nombre": "Titulares en contraste",
+          "descripcion": "Comparar titulares o fragmentos que encuadran de modo distinto el mismo evento.",
+          "producto_evaluable": "Análisis de selección léxica, énfasis, omisiones e intención."
+        },
+        {
+          "nombre": "Perspectiva y solución",
+          "descripcion": "Evaluar cómo diferentes actores reaccionarían a tres alternativas de solución.",
+          "producto_evaluable": "Predicción argumentada por actor."
+        }
+      ],
+      "errores_a_observar": [
+        "Confunde perspectiva con opinión personal.",
+        "Atribuye a un actor una intención no sustentada.",
+        "Evalúa una fuente solo por estar de acuerdo con ella.",
+        "No distingue utilidad de una fuente de su confiabilidad total.",
+        "Generaliza desde evidencia insuficiente.",
+        "No reconoce prejuicios o lenguaje cargado.",
+        "Trata posiciones diferentes como equivalentes aunque tengan evidencia distinta.",
+        "Ignora contexto temporal o social de una fuente."
+      ],
+      "preguntas_a_priorizar": [
+        "Comparación de perspectivas de actores.",
+        "Contextualización de fuentes.",
+        "Utilidad y limitaciones de una fuente.",
+        "Identificación de intereses, prejuicios e intenciones.",
+        "Evaluación de argumentos y generalizaciones.",
+        "Relación entre perspectivas y alternativas de solución.",
+        "Efectos posibles de un discurso."
+      ],
+      "seguimiento": {
+        "indicadores": [
+          "Porcentaje de estudiantes que identifica correctamente actor, interés y postura.",
+          "Porcentaje que reconoce límites de una fuente.",
+          "Porcentaje que compara perspectivas sin caricaturizarlas.",
+          "Porcentaje que justifica la confiabilidad o pertinencia con criterios explícitos."
+        ],
+        "evidencias": [
+          "Matrices de perspectivas",
+          "Fichas de análisis de fuentes",
+          "Comparaciones de argumentos",
+          "Mini-pruebas con fuentes múltiples"
+        ],
+        "periodicidad_sugerida": "Cada 4 semanas"
+      },
+      "uso_exclusivo_grado_10": {
+        "prioridad": "muy alta cuando sea una debilidad principal",
+        "observacion": "La capacidad de analizar perspectivas y fuentes requiere práctica sostenida; 10.º ofrece una ventana amplia para formar hábitos de corroboración y lectura crítica antes de 2027.",
+        "acciones_especificas": [
+          "Incluir una actividad semanal con al menos dos fuentes.",
+          "Trabajar progresivamente fuentes históricas, periodísticas, estadísticas y normativas.",
+          "Registrar tipos de error: contexto, interés, prejuicio, solidez o generalización.",
+          "Reevaluar con fuentes nuevas al cierre de cada ciclo."
+        ]
+      },
+      "uso_exclusivo_grado_11": {
+        "observacion": "En 11.º conviene focalizar en errores persistentes entre Sigma 11 y Master Pro 11 y aumentar eficiencia de análisis sin sacrificar evidencia.",
+        "acciones_especificas": [
+          "Usar comparaciones breves de fuentes bajo tiempo.",
+          "Analizar distractores que exageran o simplifican la perspectiva de un actor.",
+          "Practicar evaluación de fuentes con criterios estables."
+        ]
+      }
+    },
+    "pensamiento_reflexivo_sistemico": {
+      "nombre": "Pensamiento reflexivo y sistémico",
+      "peso_referencial_icfes_2026": 30,
+      "diagnostico_pedagogico": "Una debilidad puede reflejar dificultad para reconocer múltiples dimensiones de un problema, establecer relaciones entre ellas, analizar modelos o criterios que orientan decisiones y anticipar efectos diferenciados de posibles intervenciones.",
+      "objetivo_de_mejoramiento": "Desarrollar la capacidad de representar problemas sociales como sistemas de relaciones, evaluar alternativas con múltiples criterios y anticipar efectos sobre actores y dimensiones distintas.",
+      "estrategias_metodologicas": [
+        {
+          "nombre": "Mapa sistémico",
+          "proposito": "Visualizar relaciones entre dimensiones de un problema.",
+          "metodologia": [
+            "Identificar dimensiones política, económica, social, cultural, ambiental y territorial que sean pertinentes.",
+            "Establecer relaciones entre ellas.",
+            "Marcar retroalimentaciones o tensiones.",
+            "Identificar efectos de modificar una variable."
+          ]
+        },
+        {
+          "nombre": "Matriz de consecuencias",
+          "proposito": "Evaluar alternativas más allá de un único beneficio.",
+          "metodologia": [
+            "Definir alternativas de intervención.",
+            "Analizar efectos por actor y dimensión.",
+            "Distinguir corto y largo plazo.",
+            "Identificar consecuencias no previstas.",
+            "Comparar alternativas según criterios explícitos."
+          ]
+        },
+        {
+          "nombre": "Modelo y decisión",
+          "proposito": "Comprender que las decisiones sociales pueden apoyarse en modelos o principios.",
+          "metodologia": [
+            "Explicitar el modelo o principio relevante.",
+            "Identificar sus objetivos o supuestos.",
+            "Evaluar si una decisión es coherente con esos criterios.",
+            "Analizar qué cambia si se adopta otro modelo."
+          ]
+        },
+        {
+          "nombre": "Dilemas con trade-offs",
+          "proposito": "Reconocer tensiones entre dimensiones y objetivos.",
+          "metodologia": [
+            "Presentar una decisión con beneficios y costos reales.",
+            "Identificar dimensiones favorecidas y afectadas.",
+            "Comparar perspectivas de actores.",
+            "Proponer mitigaciones y evaluar sus límites."
+          ]
+        }
+      ],
+      "actividades_aula": [
+        {
+          "nombre": "Decisión pública bajo restricciones",
+          "descripcion": "Comparar alternativas para resolver un problema municipal con presupuesto, impacto ambiental y demandas sociales.",
+          "producto_evaluable": "Matriz de alternativas y recomendación sustentada."
+        },
+        {
+          "nombre": "Efecto dominó",
+          "descripcion": "Partir de una intervención y proyectar efectos de primer y segundo orden sobre distintas dimensiones.",
+          "producto_evaluable": "Cadena causal con justificación."
+        },
+        {
+          "nombre": "Modelo en acción",
+          "descripcion": "Analizar si una política o decisión es coherente con los principios del modelo conceptual presentado.",
+          "producto_evaluable": "Evaluación de coherencia y límites."
+        },
+        {
+          "nombre": "Problema desde tres escalas",
+          "descripcion": "Analizar una problemática en escala local, nacional y global, identificando relaciones.",
+          "producto_evaluable": "Cuadro comparativo multiescalar."
+        }
+      ],
+      "errores_a_observar": [
+        "Reduce el problema a una sola dimensión.",
+        "Asume que una solución beneficia por igual a todos los actores.",
+        "Confunde objetivo declarado con efecto real.",
+        "No anticipa consecuencias indirectas.",
+        "Evalúa alternativas sin criterios explícitos.",
+        "Ignora tensiones entre corto y largo plazo.",
+        "Usa un modelo como etiqueta y no como conjunto de principios."
+      ],
+      "preguntas_a_priorizar": [
+        "Relación entre dimensiones de un problema.",
+        "Efectos de una intervención.",
+        "Comparación de alternativas.",
+        "Coherencia entre modelo y decisión.",
+        "Consecuencias para diferentes actores.",
+        "Tensiones entre objetivos sociales, económicos, ambientales o políticos.",
+        "Análisis multiescalar."
+      ],
+      "seguimiento": {
+        "indicadores": [
+          "Porcentaje de estudiantes que identifica al menos dos dimensiones pertinentes de un problema.",
+          "Porcentaje que establece relaciones causales justificadas entre dimensiones.",
+          "Porcentaje que compara alternativas con criterios explícitos.",
+          "Porcentaje que anticipa efectos diferenciados por actor o dimensión."
+        ],
+        "evidencias": [
+          "Mapas sistémicos",
+          "Matrices de consecuencias",
+          "Estudios de caso",
+          "Mini-pruebas con decisiones complejas"
+        ],
+        "periodicidad_sugerida": "Cada 4 a 6 semanas"
+      },
+      "uso_exclusivo_grado_10": {
+        "observacion": "En 10.º debe construirse progresivamente la capacidad de analizar problemas complejos, comenzando con sistemas de pocas variables y aumentando dimensiones y escalas durante 2026-2027.",
+        "acciones_especificas": [
+          "Aplicar un estudio de caso sistémico cada dos semanas.",
+          "Usar mapas causales antes de pedir conclusiones.",
+          "Comparar decisiones con diferentes criterios.",
+          "Registrar evolución en número y calidad de relaciones identificadas."
+        ]
+      },
+      "uso_exclusivo_grado_11": {
+        "observacion": "En 11.º se recomienda trabajar problemas compactos donde la dificultad principal sea integrar dimensiones y evaluar consecuencias.",
+        "acciones_especificas": [
+          "Practicar matrices de consecuencias de forma breve.",
+          "Analizar distractores que privilegian una dimensión e ignoran otras.",
+          "Comparar Sigma 11 y Master Pro 11 para detectar persistencia."
+        ]
+      }
+    }
+  },
+  "componentes": {
+    "etico_politico": {
+      "nombre_en_informe": "Ético / político",
+      "estatus": "lente_diagnostica_gec",
+      "diagnostico_pedagogico": "Una debilidad puede asociarse con dificultades para comprender institucionalidad, derechos, deberes, principios democráticos, relaciones de poder o criterios de decisión pública.",
+      "focos_de_trabajo": [
+        "Estado Social de Derecho.",
+        "Derechos y deberes.",
+        "Ramas del poder y organismos de control.",
+        "Mecanismos de participación.",
+        "Principios democráticos.",
+        "Legalidad, legitimidad, interés público y conflicto de derechos."
+      ],
+      "estrategias": [
+        "Analizar casos constitucionales y decisiones públicas.",
+        "Comparar funciones institucionales mediante situaciones, no listas.",
+        "Distinguir derecho, mecanismo, institución y procedimiento.",
+        "Trabajar dilemas donde diferentes derechos o intereses entren en tensión."
+      ],
+      "actividades": [
+        "Ruta institucional: determinar qué entidad o mecanismo corresponde a un caso.",
+        "Dilema de derechos: identificar tensiones y criterios.",
+        "Mapa de instituciones y responsabilidades a partir de una situación pública."
+      ],
+      "errores_a_observar": [
+        "Confunde funciones de instituciones.",
+        "Elige mecanismos por nombre sin revisar pertinencia.",
+        "Reduce ciudadanía a obediencia de normas.",
+        "Confunde opinión ética personal con análisis constitucional o político."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Consolidar institucionalidad y derechos mediante casos progresivos que sirvan de base para la cohorte 2027."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Focalizar en casos de aplicación, límites de mecanismos y tensiones entre derechos e intereses."
+      }
+    },
+    "competencias_ciudadanas": {
+      "nombre_en_informe": "Competencias ciudadanas",
+      "estatus": "lente_diagnostica_gec",
+      "diagnostico_pedagogico": "Una debilidad puede reflejar dificultad para analizar conflictos desde múltiples perspectivas, reconocer derechos e intereses, evaluar alternativas de participación o anticipar consecuencias para la convivencia y la pluralidad.",
+      "focos_de_trabajo": [
+        "Convivencia y conflicto.",
+        "Participación y responsabilidad democrática.",
+        "Pluralidad y diversidad.",
+        "Perspectivas e intereses.",
+        "Derechos en tensión.",
+        "Consecuencias de decisiones."
+      ],
+      "estrategias": [
+        "Usar dilemas con más de un actor.",
+        "Separar interés, derecho, posición y argumento.",
+        "Evaluar soluciones por consecuencias y no por apariencia moral.",
+        "Incorporar negociación y análisis de propuestas."
+      ],
+      "actividades": [
+        "Mesa de actores con intereses distintos.",
+        "Evaluación de propuestas de solución a un conflicto escolar o comunitario.",
+        "Análisis de participación ciudadana en un caso."
+      ],
+      "errores_a_observar": [
+        "Busca la opción que 'suena más correcta' moralmente.",
+        "No reconoce intereses legítimos en posiciones contrarias.",
+        "Confunde acuerdo con solución equitativa.",
+        "Ignora consecuencias para minorías o actores no visibles."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Desarrollar análisis sistemático de conflictos y participación mediante casos semanales vinculados con contextos juveniles, comunitarios y nacionales."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Priorizar análisis rápido de actores, derechos, intereses y consecuencias en escenarios de conflicto."
+      }
+    },
+    "espacio_ambiente": {
+      "nombre_en_informe": "Espacio y ambiente",
+      "estatus": "lente_diagnostica_gec",
+      "diagnostico_pedagogico": "Una debilidad puede relacionarse con dificultades para comprender escalas espaciales, distribución territorial, interacción sociedad-ambiente, transformaciones del territorio y efectos sociales de decisiones ambientales.",
+      "focos_de_trabajo": [
+        "Escala y localización.",
+        "Territorio y región.",
+        "Relaciones sociedad-ambiente.",
+        "Uso de recursos.",
+        "Urbanización y ruralidad.",
+        "Movilidad y distribución espacial.",
+        "Conflictos socioambientales."
+      ],
+      "estrategias": [
+        "Usar mapas temáticos junto con datos y textos.",
+        "Comparar escalas local, regional y nacional.",
+        "Relacionar decisiones económicas con impactos territoriales.",
+        "Analizar conflictos socioambientales desde varios actores."
+      ],
+      "actividades": [
+        "Lectura cruzada de mapa y tabla.",
+        "Caso de uso del suelo con actores e impactos.",
+        "Análisis multiescalar de una problemática ambiental."
+      ],
+      "errores_a_observar": [
+        "Lee mapas sin considerar escala o leyenda.",
+        "Asume que proximidad espacial implica causalidad.",
+        "Separa ambiente de dimensiones económicas o políticas.",
+        "No distingue escala local de tendencia nacional."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Fortalecer lectura cartográfica y análisis territorial durante todo el ciclo, integrándolo con problemas sociales contemporáneos."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Practicar interpretación combinada de mapas, datos y decisiones socioambientales."
+      }
+    },
+    "historia_cultura": {
+      "nombre_en_informe": "Historia y cultura",
+      "estatus": "lente_diagnostica_gec",
+      "diagnostico_pedagogico": "Una debilidad puede manifestarse en dificultades para ubicar procesos, establecer cambios y permanencias, construir explicaciones multicausales, contextualizar actores o comprender diversidad cultural y relaciones entre pasado y presente.",
+      "focos_de_trabajo": [
+        "Temporalidad histórica.",
+        "Cambio y permanencia.",
+        "Causalidad y consecuencia.",
+        "Actores y contexto.",
+        "Fuentes históricas.",
+        "Diversidad cultural.",
+        "Memoria e interpretación del pasado."
+      ],
+      "estrategias": [
+        "Usar líneas de tiempo explicativas.",
+        "Comparar fuentes de distintos actores.",
+        "Distinguir causa, condición, detonante y consecuencia.",
+        "Relacionar procesos históricos con configuraciones actuales sin anacronismos."
+      ],
+      "actividades": [
+        "Línea de tiempo causal comentada.",
+        "Comparación de dos fuentes históricas.",
+        "Mapa de cambios y permanencias.",
+        "Análisis de un proceso desde actores diferentes."
+      ],
+      "errores_a_observar": [
+        "Memoriza fechas sin explicar procesos.",
+        "Juzga actores del pasado exclusivamente con criterios actuales.",
+        "Confunde secuencia con causalidad.",
+        "Reduce procesos a un héroe, evento o causa única.",
+        "Trata culturas como bloques homogéneos."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Consolidar razonamiento histórico y análisis de fuentes antes de 2027, priorizando relaciones y contexto sobre acumulación factual."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Focalizar en causalidad, comparación de fuentes y relación entre procesos históricos y problemáticas contemporáneas."
+      }
+    }
+  },
+  "combinaciones_diagnosticas": [
+    {
+      "si": [
+        "pensamiento_social_bajo",
+        "etico_politico_bajo"
+      ],
+      "interpretacion": "La prioridad puede estar en el uso funcional de conceptos políticos, institucionalidad, derechos y mecanismos de participación.",
+      "accion_prioritaria": "Implementar secuencias de casos constitucionales e institucionales con transferencia a situaciones nuevas."
+    },
+    {
+      "si": [
+        "pensamiento_social_bajo",
+        "historia_cultura_bajo"
+      ],
+      "interpretacion": "Puede existir dificultad para comprender procesos históricos y relacionar temporalidad, conceptos y contexto.",
+      "accion_prioritaria": "Trabajar líneas de tiempo causales, cambio-permanencia y aplicación de conceptos históricos."
+    },
+    {
+      "si": [
+        "pensamiento_social_bajo",
+        "espacio_ambiente_bajo"
+      ],
+      "interpretacion": "La dificultad puede concentrarse en comprensión espacial, territorial y geográfica de problemáticas sociales.",
+      "accion_prioritaria": "Integrar mapas, escalas, datos y relaciones sociedad-territorio en estudios de caso."
+    },
+    {
+      "si": [
+        "interpretacion_analisis_perspectivas_baja",
+        "competencias_ciudadanas_bajo"
+      ],
+      "interpretacion": "La prioridad debe centrarse en actores, intereses, derechos, perspectivas y evaluación de soluciones a conflictos.",
+      "accion_prioritaria": "Usar matrices de actores y dilemas ciudadanos con evidencia y consecuencias."
+    },
+    {
+      "si": [
+        "interpretacion_analisis_perspectivas_baja",
+        "historia_cultura_bajo"
+      ],
+      "interpretacion": "Puede existir dificultad para contextualizar fuentes y comprender perspectivas históricamente situadas.",
+      "accion_prioritaria": "Comparar fuentes históricas con análisis de autor, contexto, propósito, perspectiva y limitaciones."
+    },
+    {
+      "si": [
+        "pensamiento_reflexivo_sistemico_bajo",
+        "espacio_ambiente_bajo"
+      ],
+      "interpretacion": "La dificultad puede estar en integrar dimensiones territoriales, ambientales, económicas y políticas y anticipar efectos de decisiones.",
+      "accion_prioritaria": "Aplicar mapas sistémicos y matrices de impacto en conflictos socioambientales."
+    },
+    {
+      "si": [
+        "pensamiento_reflexivo_sistemico_bajo",
+        "etico_politico_bajo"
+      ],
+      "interpretacion": "Puede existir dificultad para relacionar criterios políticos o modelos con consecuencias de decisiones.",
+      "accion_prioritaria": "Analizar políticas y decisiones mediante objetivos, principios, actores, efectos y trade-offs."
+    },
+    {
+      "si": [
+        "interpretacion_analisis_perspectivas_baja",
+        "pensamiento_reflexivo_sistemico_bajo"
+      ],
+      "interpretacion": "El estudiante puede reconocer elementos aislados, pero presentar dificultad para integrar perspectivas, dimensiones y consecuencias en decisiones complejas.",
+      "accion_prioritaria": "Combinar análisis de actores con matrices de consecuencias y comparación de alternativas."
+    },
+    {
+      "si": [
+        "tres_competencias_bajas"
+      ],
+      "interpretacion": "La dificultad es transversal y requiere una ruta integral que articule conceptos, fuentes, perspectivas, tiempo, espacio y análisis sistémico.",
+      "accion_prioritaria": "Diseñar un plan de intervención por ciclos: comprensión conceptual, análisis de fuentes y perspectivas, y resolución de problemas sociales multidimensionales."
+    }
+  ],
+  "secuencias_de_intervencion": {
+    "grado_10": {
+      "horizonte": "ciclo_2026_2027",
+      "fases": [
+        {
+          "fase": 1,
+          "duracion_sugerida": "6 semanas",
+          "foco": "Conceptos sociales, institucionalidad, tiempo y espacio",
+          "productos": [
+            "línea base",
+            "glosario aplicado",
+            "casos constitucionales",
+            "mapas histórico-geográficos"
+          ]
+        },
+        {
+          "fase": 2,
+          "duracion_sugerida": "8 semanas",
+          "foco": "Fuentes, argumentos, perspectivas e intereses",
+          "productos": [
+            "matrices de fuentes",
+            "fichas de perspectiva",
+            "mini-prueba comparable"
+          ]
+        },
+        {
+          "fase": 3,
+          "duracion_sugerida": "8 semanas",
+          "foco": "Problemas multidimensionales, modelos y consecuencias",
+          "productos": [
+            "mapas sistémicos",
+            "matrices de alternativas",
+            "medición de progreso"
+          ]
+        },
+        {
+          "fase": 4,
+          "duracion_sugerida": "continuo hasta Saber 11 2027",
+          "foco": "Transferencia, integración de competencias y práctica acumulativa",
+          "productos": [
+            "simulacros analizados",
+            "portafolio de errores",
+            "seguimiento por competencia y componente"
+          ]
+        }
+      ]
+    },
+    "grado_11": {
+      "horizonte": "intervencion_focalizada",
+      "fases": [
+        {
+          "fase": 1,
+          "duracion_sugerida": "2 semanas",
+          "foco": "Comparación Sigma 11–Master Pro 11 y clasificación de errores"
+        },
+        {
+          "fase": 2,
+          "duracion_sugerida": "4 a 6 semanas",
+          "foco": "Intervención en máximo dos debilidades prioritarias"
+        },
+        {
+          "fase": 3,
+          "duracion_sugerida": "hasta cierre",
+          "foco": "Transferencia a situaciones nuevas, control del tiempo y análisis de distractores"
+        }
+      ]
+    }
+  },
+  "reglas_para_motor_html": {
+    "entrada_esperada": [
+      "grado",
+      "promedio_area",
+      "puntaje_competencia",
+      "puntaje_componente",
+      "niveles_desempeno",
+      "nivel_necesidad_calculado_por_modulo_estadistico"
+    ],
+    "logica_recomendada": [
+      "Mostrar primero la competencia con mayor necesidad.",
+      "Añadir como lente el componente de menor desempeño.",
+      "Si coincide una combinación diagnóstica, mostrar la acción prioritaria integrada.",
+      "Para grado 10 añadir siempre el bloque de cohorte Saber 11 2027.",
+      "Para grado 11 comparar Sigma 11 y Master Pro 11 cuando ambas aplicaciones estén disponibles.",
+      "No inferir ideología, valores personales o actitudes ciudadanas a partir del puntaje.",
+      "No afirmar causalidad a partir de un resultado agregado.",
+      "No recomendar solo memorización ni más simulacros.",
+      "Toda recomendación debe incluir acción metodológica, actividad observable y seguimiento."
+    ],
+    "orden_visual_sugerido": [
+      "Hallazgo",
+      "Qué puede significar",
+      "Competencia prioritaria",
+      "Componente diagnóstico",
+      "Qué fortalecer",
+      "Cómo trabajarlo",
+      "Actividad sugerida",
+      "Errores a observar",
+      "Cómo hacer seguimiento",
+      "Observación específica para el grado"
+    ]
+  },
+  "orientaciones_para_secretaria": {
+    "grado_10": [
+      "Tratar los resultados como línea base municipal de la cohorte que presentará Saber 11 en 2027.",
+      "Priorizar instituciones con debilidad en Interpretación y análisis de perspectivas por su peso y centralidad en el análisis de fuentes y argumentos.",
+      "Identificar instituciones con dos o más competencias comprometidas para acompañamiento intensivo.",
+      "Promover planes de intervención de 6 a 8 semanas con productos y mediciones verificables.",
+      "Hacer seguimiento por competencia y componente, no solo por promedio del área.",
+      "Impulsar trabajo interdisciplinar con Lectura Crítica, especialmente en análisis de fuentes y argumentos.",
+      "Favorecer comunidades docentes para compartir estudios de caso y protocolos de análisis."
+    ],
+    "grado_11": [
+      "Comparar Sigma 11 y Master Pro 11 para identificar persistencia, mejora o retroceso.",
+      "Documentar prácticas institucionales asociadas a mejoras observadas.",
+      "Transferir hallazgos de grado 11 a la planeación de 10.º.",
+      "Evitar interpretar diferencias pequeñas entre aplicaciones como evidencia concluyente de impacto sin información adicional."
+    ]
+  }
+}

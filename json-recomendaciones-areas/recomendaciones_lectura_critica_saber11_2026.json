@@ -1,0 +1,978 @@
+{
+  "schema_version": "1.0",
+  "tipo_archivo": "motor_recomendaciones_pedagogicas_por_area",
+  "area": {
+    "id": "lectura_critica",
+    "nombre": "Lectura Crítica",
+    "proposito": "Convertir los resultados de Lectura Crítica en orientaciones metodológicas concretas, diferenciadas por afirmación/proceso lector, componente diagnóstico y grado, para apoyar decisiones de mejoramiento institucional."
+  },
+  "alcance": {
+    "poblacion": [
+      "grado_10",
+      "grado_11"
+    ],
+    "uso_principal": [
+      "Informe municipal para Secretaría de Educación",
+      "Lectura institucional de resultados",
+      "Orientación a coordinaciones académicas",
+      "Planeación de acciones de aula y seguimiento",
+      "Preparación de la cohorte de grado 10 que presentará Saber 11 en 2027"
+    ],
+    "nota_psicometrica": "Este archivo no establece puntos de corte para clasificar un resultado como crítico, alto, medio o satisfactorio. El nivel de necesidad debe ser calculado por un módulo estadístico común a todas las áreas. Este JSON define la respuesta pedagógica una vez identificada la necesidad.",
+    "principio_de_interpretacion": "Un puntaje bajo en una afirmación, proceso lector o componente constituye una señal para formular hipótesis pedagógicas, no una prueba causal. Las decisiones deben contrastarse con evidencias de aula, producción escrita, desempeño en otras áreas, análisis de errores y resultados de evaluaciones posteriores.",
+    "principio_de_no_reduccion": "La preparación no debe reducirse a resolver bancos de preguntas. El progreso lector exige interacción sistemática con textos diversos, discusión de interpretaciones, explicitación de inferencias y evaluación de argumentos."
+  },
+  "fundamento_evaluativo": {
+    "fuentes": [
+      {
+        "institucion": "Icfes",
+        "documento": "Guía de orientación del Examen Saber 11.º 2026-2",
+        "seccion": "Lectura Crítica, pp. 39-45",
+        "url": "https://www.icfes.gov.co/wp-content/uploads/2026/03/17-marzo-guia-de-orientacion-saber-11-2026-2.pdf",
+        "uso_en_este_json": "Propósito de la prueba, procesos lectores, afirmaciones y evidencias, tipos de textos y distribución aproximada de preguntas."
+      },
+      {
+        "institucion": "Icfes",
+        "documento": "Marco de referencia de la prueba de Lectura Crítica Saber 11.º",
+        "url": "https://www.icfes.gov.co/evaluaciones-icfes/saber-11/marcos-de-referencia-examen-saber-11/",
+        "uso_en_este_json": "Constructo general de lectura crítica y relación entre comprensión local, construcción global y evaluación crítica."
+      }
+    ],
+    "proposito_oficial_sintetizado": "La prueba evalúa habilidades para entender, interpretar y evaluar textos de la vida cotidiana y de ámbitos académicos no especializados, con el propósito de valorar capacidades lectoras necesarias para asumir posturas críticas.",
+    "estructura_2026": {
+      "nota": "La guía 2026 describe una competencia lectora organizada en tres procesos cognitivos representados mediante tres afirmaciones. Los JSON de resultados GEC reportan estas tres afirmaciones como competencias; se conserva esa denominación para compatibilidad con el motor.",
+      "procesos_y_afirmaciones": [
+        {
+          "id": "identificar_contenidos_locales",
+          "proceso_2026": "Identificar y ubicar información local",
+          "afirmacion_reportada": "Identificar y entender los contenidos locales que conforman un texto",
+          "peso_referencial_icfes_2026": 25,
+          "descripcion_operativa": "Comprender información explícita y relaciones semánticas locales: significado de palabras, expresiones, frases, eventos y elementos que constituyen segmentos inmediatos del texto.",
+          "evidencias_oficiales_sintetizadas": [
+            "Comprender el significado de elementos locales del texto.",
+            "Identificar eventos narrados explícitamente y personajes cuando corresponda."
+          ]
+        },
+        {
+          "id": "articulacion_sentido_global",
+          "proceso_2026": "Relacionar e interpretar información",
+          "afirmacion_reportada": "Comprender cómo se articulan las partes de un texto para darle un sentido global",
+          "peso_referencial_icfes_2026": 42,
+          "descripcion_operativa": "Relacionar elementos formales y semánticos de diferentes partes del texto para construir un sentido global, reconocer estructura, voces, relaciones entre enunciados, ideas e información explícita e implícita.",
+          "evidencias_oficiales_sintetizadas": [
+            "Comprender la estructura formal de un texto y la función de sus partes.",
+            "Identificar y caracterizar voces o situaciones presentes en un texto.",
+            "Comprender relaciones entre diferentes partes o enunciados.",
+            "Identificar y caracterizar ideas o afirmaciones.",
+            "Relacionar elementos de textos discontinuos."
+          ]
+        },
+        {
+          "id": "reflexion_evaluacion",
+          "proceso_2026": "Evaluar y reflexionar sobre la forma y el contenido de los textos",
+          "afirmacion_reportada": "Reflexionar a partir de un texto y evaluar su contenido",
+          "peso_referencial_icfes_2026": 33,
+          "descripcion_operativa": "Evaluar argumentos, supuestos, implicaciones, contenidos valorativos, estrategias discursivas y relaciones con otros textos o contextos.",
+          "evidencias_oficiales_sintetizadas": [
+            "Establecer validez e implicaciones de enunciados.",
+            "Relacionar un texto con otros textos o enunciados.",
+            "Reconocer contenidos valorativos.",
+            "Reconocer estrategias discursivas.",
+            "Contextualizar adecuadamente un texto o la información que contiene."
+          ]
+        }
+      ]
+    },
+    "tipos_de_textos_2026": {
+      "formatos": {
+        "continuos": "Se leen secuencialmente y se organizan en frases, párrafos, secciones o capítulos.",
+        "discontinuos": "No requieren lectura estrictamente secuencial e incluyen cuadros, gráficas, tablas, infografías y otros formatos visuales o mixtos."
+      },
+      "familias": {
+        "literarios": {
+          "continuos": [
+            "novela",
+            "cuento",
+            "poesía",
+            "canción",
+            "dramaturgia"
+          ],
+          "discontinuos": [
+            "caricatura",
+            "cómic"
+          ]
+        },
+        "informativos": {
+          "continuos": [
+            "ensayo",
+            "columna de opinión",
+            "crónica",
+            "textos descriptivos",
+            "textos expositivos",
+            "textos argumentativos"
+          ],
+          "discontinuos": [
+            "etiqueta",
+            "infografía",
+            "tabla",
+            "diagrama",
+            "aviso publicitario",
+            "manual",
+            "reglamento",
+            "imágenes"
+          ]
+        }
+      },
+      "distribucion_aproximada_preguntas": [
+        {
+          "formato": "continuo",
+          "tipo": "literario",
+          "porcentaje": 24
+        },
+        {
+          "formato": "continuo",
+          "tipo": "informativo_filosofico",
+          "porcentaje": 30
+        },
+        {
+          "formato": "continuo",
+          "tipo": "informativo_no_filosofico",
+          "porcentaje": 30
+        },
+        {
+          "formato": "discontinuo",
+          "tipo": "literario",
+          "porcentaje": 8
+        },
+        {
+          "formato": "discontinuo",
+          "tipo": "informativo",
+          "porcentaje": 8
+        }
+      ],
+      "implicacion_pedagogica": "La preparación institucional debe asegurar diversidad de textos y no concentrarse exclusivamente en textos narrativos o expositivos continuos."
+    },
+    "componentes_del_informe_gec": {
+      "nota": "Semántico, Pragmático y Sintáctico son componentes reportados por los informes GEC. En este motor se usan como lentes diagnósticas pedagógicas; no se presentan como categorías estructurales oficiales de la Guía Icfes 2026.",
+      "componentes": [
+        {
+          "id": "semantico",
+          "nombre": "Semántico",
+          "lente_diagnostica": "Construcción de significado: relaciones léxicas, referentes, inferencias, ideas, cohesión semántica y comprensión de información explícita e implícita."
+        },
+        {
+          "id": "pragmatico",
+          "nombre": "Pragmático",
+          "lente_diagnostica": "Relación entre texto, intención comunicativa, audiencia, contexto, voces, postura, estrategias discursivas y efectos de sentido."
+        },
+        {
+          "id": "sintactico",
+          "nombre": "Sintáctico",
+          "lente_diagnostica": "Organización formal del texto: función de partes, conectores, relaciones entre enunciados, secuencias, jerarquía de información y arquitectura textual."
+        }
+      ]
+    }
+  },
+  "recomendaciones_transversales": {
+    "para_todos_los_grados": [
+      {
+        "id": "lectura_con_proposito",
+        "nombre": "Leer con propósito explícito",
+        "descripcion": "Antes de iniciar una lectura, definir qué debe localizar, relacionar, inferir o evaluar el estudiante. El objetivo lector orienta la atención y permite observar con mayor precisión el proceso que presenta dificultad.",
+        "acciones": [
+          "Diferenciar tareas de localizar información, construir sentido global y evaluar argumentos.",
+          "Solicitar al estudiante que explique qué parte del texto utiliza como evidencia.",
+          "Incluir preguntas antes, durante y después de la lectura.",
+          "Evitar convertir todas las actividades en preguntas de memoria."
+        ]
+      },
+      {
+        "id": "evidencia_textual",
+        "nombre": "Exigir evidencia textual para justificar respuestas",
+        "descripcion": "Cada interpretación relevante debe poder vincularse con una palabra, enunciado, relación, estructura, imagen, dato o estrategia del texto.",
+        "acciones": [
+          "Pedir subrayar o señalar la evidencia que sustenta la respuesta.",
+          "Distinguir 'lo que dice el texto' de 'lo que pienso sobre el tema'.",
+          "Comparar dos interpretaciones y decidir cuál tiene mayor respaldo textual.",
+          "Analizar distractores indicando qué evidencia los contradice."
+        ]
+      },
+      {
+        "id": "diversidad_textual",
+        "nombre": "Ampliar el repertorio de textos",
+        "descripcion": "Planear exposición sistemática a textos continuos y discontinuos, literarios e informativos, incluyendo argumentativos y filosóficos.",
+        "acciones": [
+          "Rotar semanalmente tipos y formatos textuales.",
+          "Combinar texto escrito con tablas, diagramas, caricaturas, infografías o avisos.",
+          "Incluir textos de otras áreas para consolidar transferencia.",
+          "Evitar que la preparación dependa exclusivamente de fragmentos tipo prueba."
+        ]
+      },
+      {
+        "id": "discusion_interpretaciones",
+        "nombre": "Hacer visible el razonamiento lector",
+        "descripcion": "Convertir parte de la lectura en una práctica social donde se comparen hipótesis, inferencias y evaluaciones, haciendo explícitos los criterios usados.",
+        "acciones": [
+          "Usar discusiones breves en parejas antes de responder.",
+          "Pedir reformular la idea central con palabras propias.",
+          "Solicitar explicar por qué una inferencia es razonable y otra no.",
+          "Valorar la calidad de la justificación además del acierto."
+        ]
+      },
+      {
+        "id": "error_lector",
+        "nombre": "Analizar errores por proceso",
+        "descripcion": "No registrar únicamente respuestas incorrectas. Clasificar si el error proviene de localización, relación entre partes, inferencia, intención, evaluación de argumentos o manejo del formato.",
+        "acciones": [
+          "Mantener un registro de errores por tipo.",
+          "Reenseñar según patrón de error y no solo según pregunta fallada.",
+          "Diseñar ítems paralelos para comprobar si el error se supera.",
+          "Distinguir error de comprensión de error por lectura apresurada."
+        ]
+      }
+    ],
+    "uso_exclusivo_grado_10": [
+      {
+        "id": "ruta_lectora_cohorte_2027",
+        "titulo": "Ruta de fortalecimiento lector de la cohorte Saber 11 de 2027",
+        "observacion": "El desempeño de grado 10 debe funcionar como línea base de una intervención prolongada. Existe tiempo para modificar hábitos, ampliar repertorio textual y fortalecer procesos lectores antes de 2027.",
+        "acciones": [
+          "Establecer línea base por las tres afirmaciones y los tres componentes.",
+          "Priorizar la afirmación y el componente de menor desempeño de cada institución.",
+          "Diseñar ciclos de intervención de 6 a 8 semanas.",
+          "Aplicar una mini-medición comparable al cierre de cada ciclo.",
+          "Aumentar progresivamente complejidad, extensión y diversidad de textos.",
+          "Incorporar lectura crítica en Sociales, Ciencias Naturales y Matemáticas para reforzar transferencia.",
+          "Realizar al menos tres mediciones de progreso antes de Saber 11 de 2027."
+        ],
+        "criterio_de_exito": "Evidenciar crecimiento sostenido en los procesos lectores y reducción de errores recurrentes, no solamente aumento del número de simulacros resueltos."
+      }
+    ],
+    "uso_exclusivo_grado_11": [
+      {
+        "id": "intervencion_focalizada_11",
+        "titulo": "Intervención focalizada y transferencia institucional",
+        "observacion": "En grado 11 el tiempo de intervención es menor. Conviene priorizar debilidades persistentes y usar la comparación Sigma 11–Master Pro 11 para identificar avances, estancamientos o retrocesos.",
+        "acciones": [
+          "Comparar por afirmación y componente las dos aplicaciones.",
+          "Priorizar máximo dos necesidades lectoras de alta recurrencia.",
+          "Trabajar corrección de distractores y justificación textual.",
+          "Practicar lectura de textos múltiples y discontinuos bajo condiciones de tiempo razonables.",
+          "Documentar hallazgos para retroalimentar la planeación de grado 10.",
+          "Evitar sobrecargar al estudiante con simulacros completos sin retroalimentación analítica."
+        ],
+        "criterio_de_exito": "Concentrar el esfuerzo en patrones de error modificables y convertir los resultados de grado 11 en conocimiento institucional útil para la siguiente cohorte."
+      }
+    ]
+  },
+  "competencias": {
+    "identificar_contenidos_locales": {
+      "nombre_en_informe": "Identificar y entender los contenidos locales que conforman un texto",
+      "proceso_2026": "Identificar y ubicar información local",
+      "peso_referencial_icfes_2026": 25,
+      "diagnostico_pedagogico": "Cuando este resultado es bajo, el estudiante puede presentar dificultades para comprender información explícita, vocabulario en contexto, referentes, relaciones semánticas inmediatas o eventos y elementos locales. Esta debilidad puede comprometer procesos superiores porque una lectura global adecuada depende de una base local suficientemente precisa.",
+      "objetivo_de_mejoramiento": "Fortalecer la comprensión precisa de palabras, expresiones, referentes, hechos, relaciones inmediatas y elementos explícitos antes de avanzar hacia inferencias y evaluaciones complejas.",
+      "estrategias_metodologicas": [
+        {
+          "nombre": "Localización con evidencia",
+          "proposito": "Mejorar precisión en la búsqueda y comprensión de información explícita.",
+          "metodologia": [
+            "Plantear una pregunta de localización.",
+            "Pedir señalar el fragmento exacto que contiene la evidencia.",
+            "Parafrasear la información localizada.",
+            "Comparar la respuesta con distractores que alteran detalles."
+          ],
+          "frecuencia_sugerida": "2 a 3 microtareas por semana"
+        },
+        {
+          "nombre": "Vocabulario en contexto",
+          "proposito": "Evitar interpretación aislada de palabras.",
+          "metodologia": [
+            "Seleccionar palabras o expresiones cuyo significado dependa del contexto.",
+            "Proponer varios sentidos posibles.",
+            "Usar información cercana y global para decidir el sentido pertinente.",
+            "Reemplazar la expresión por una paráfrasis y comprobar si conserva el significado."
+          ]
+        },
+        {
+          "nombre": "Cadena de referentes",
+          "proposito": "Fortalecer seguimiento de personas, objetos, conceptos y voces.",
+          "metodologia": [
+            "Identificar pronombres, elipsis o expresiones referenciales.",
+            "Determinar a qué elemento remiten.",
+            "Construir una cadena de referencias a lo largo del texto.",
+            "Explicar cómo un error de referente altera el sentido."
+          ]
+        }
+      ],
+      "actividades_aula": [
+        {
+          "nombre": "Detective de detalles relevantes",
+          "descripcion": "El estudiante identifica información explícita que responde a preguntas qué, quién, dónde, cuándo, cómo o con quién y debe citar la evidencia.",
+          "producto_evaluable": "Tabla pregunta–respuesta–evidencia textual."
+        },
+        {
+          "nombre": "Paráfrasis controlada",
+          "descripcion": "Reescribir en lenguaje propio un fragmento breve sin agregar ni perder información.",
+          "producto_evaluable": "Paráfrasis y justificación de equivalencia."
+        },
+        {
+          "nombre": "¿A quién se refiere?",
+          "descripcion": "Rastrear referentes en un texto narrativo, expositivo o argumentativo.",
+          "producto_evaluable": "Mapa de referentes y explicación."
+        }
+      ],
+      "errores_a_observar": [
+        "Responde con información relacionada con el tema, pero no con lo preguntado.",
+        "Confunde detalles próximos en el texto.",
+        "Interpreta palabras por su significado habitual sin atender al contexto.",
+        "Pierde el referente de pronombres o expresiones anafóricas.",
+        "Omite negaciones, condiciones o matices.",
+        "Selecciona un distractor por coincidencia léxica."
+      ],
+      "preguntas_a_priorizar": [
+        "Significado de una palabra o expresión en contexto.",
+        "Identificación de información explícita.",
+        "Reconocimiento de eventos, participantes o relaciones locales.",
+        "Referencia de pronombres o expresiones.",
+        "Paráfrasis equivalente de un fragmento."
+      ],
+      "seguimiento": {
+        "indicadores": [
+          "Porcentaje de respuestas locales respaldadas con evidencia textual correcta.",
+          "Porcentaje de estudiantes que parafrasea sin alterar el sentido.",
+          "Reducción de errores por confusión de referentes o negaciones."
+        ],
+        "evidencias": [
+          "Micropruebas de 5 a 8 ítems",
+          "Tablas de evidencia textual",
+          "Ejercicios de paráfrasis",
+          "Registro de errores de localización"
+        ],
+        "periodicidad_sugerida": "Cada 3 a 4 semanas"
+      },
+      "uso_exclusivo_grado_10": {
+        "observacion": "Si esta afirmación es débil en 10.º, debe intervenirse tempranamente porque los procesos globales y críticos dependen de una base local precisa.",
+        "acciones_especificas": [
+          "Incorporar 10 minutos de lectura precisa tres veces por semana.",
+          "Trabajar vocabulario contextualizado en todas las áreas.",
+          "Llevar registro individual de errores de referente, negación y paráfrasis.",
+          "Reevaluar después de 6 semanas antes de incrementar complejidad."
+        ]
+      },
+      "uso_exclusivo_grado_11": {
+        "observacion": "En 11.º conviene corregir rápidamente errores de lectura superficial que generan pérdida de puntos aun cuando el estudiante comprende globalmente el texto.",
+        "acciones_especificas": [
+          "Entrenar lectura de consignas y detalles críticos bajo tiempo.",
+          "Revisar distractores por coincidencia verbal.",
+          "Usar textos breves para depurar precisión antes de tareas más complejas."
+        ]
+      }
+    },
+    "articulacion_sentido_global": {
+      "nombre_en_informe": "Comprender cómo se articulan las partes de un texto para darle un sentido global",
+      "proceso_2026": "Relacionar e interpretar información",
+      "peso_referencial_icfes_2026": 42,
+      "diagnostico_pedagogico": "Una debilidad en esta afirmación indica dificultades para conectar fragmentos, reconocer la función de las partes, identificar relaciones lógicas, construir inferencias, diferenciar voces o formular una representación global coherente del texto. Por su peso referencial, debe recibir especial atención cuando aparece comprometida.",
+      "objetivo_de_mejoramiento": "Desarrollar la capacidad de integrar información distribuida, reconocer estructura y relaciones entre enunciados, formular inferencias controladas y construir el sentido global del texto.",
+      "estrategias_metodologicas": [
+        {
+          "nombre": "Mapa de arquitectura textual",
+          "proposito": "Hacer visible la función de cada parte dentro del conjunto.",
+          "metodologia": [
+            "Dividir el texto en bloques funcionales.",
+            "Asignar a cada bloque una función: presentar, explicar, ejemplificar, contrastar, justificar, concluir, etc.",
+            "Relacionar los bloques mediante flechas o conectores.",
+            "Formular la idea global a partir de la estructura."
+          ],
+          "frecuencia_sugerida": "1 actividad extensa por semana"
+        },
+        {
+          "nombre": "Reconstrucción de texto",
+          "proposito": "Fortalecer reconocimiento de cohesión y progresión temática.",
+          "metodologia": [
+            "Entregar párrafos o fragmentos desordenados.",
+            "Solicitar una secuencia posible.",
+            "Justificar el orden mediante conectores, referencias, progresión temática y relaciones lógicas.",
+            "Comparar con otras secuencias y discutir cuál preserva mejor la coherencia."
+          ]
+        },
+        {
+          "nombre": "Inferencia con control de evidencia",
+          "proposito": "Diferenciar inferencia válida de especulación.",
+          "metodologia": [
+            "Formular una conclusión no expresada literalmente.",
+            "Identificar al menos dos evidencias que la apoyan.",
+            "Explicar el vínculo lógico entre evidencia e inferencia.",
+            "Comparar con una inferencia plausible pero no respaldada."
+          ]
+        },
+        {
+          "nombre": "Voces y perspectivas",
+          "proposito": "Reconocer quién sostiene cada afirmación y cómo se relacionan las voces.",
+          "metodologia": [
+            "Identificar narrador, autor, personaje, fuente citada o interlocutor.",
+            "Asignar afirmaciones a cada voz.",
+            "Comparar acuerdos, contrastes y cambios de perspectiva.",
+            "Explicar el efecto de esa organización sobre el sentido global."
+          ]
+        }
+      ],
+      "actividades_aula": [
+        {
+          "nombre": "Rompecabezas textual",
+          "descripcion": "Reconstruir un texto segmentado y justificar el orden a partir de relaciones lógicas y temáticas.",
+          "producto_evaluable": "Secuencia reconstruida con justificación."
+        },
+        {
+          "nombre": "Idea global en una oración",
+          "descripcion": "Después de mapear las partes de un texto, formular una oración que sintetice su propósito o tesis sin reducirla a un detalle.",
+          "producto_evaluable": "Síntesis y evidencias que la sustentan."
+        },
+        {
+          "nombre": "Puentes entre párrafos",
+          "descripcion": "Explicar qué relación existe entre dos fragmentos no contiguos: causa, contraste, ejemplo, ampliación, consecuencia, condición o analogía.",
+          "producto_evaluable": "Matriz de relaciones entre partes."
+        },
+        {
+          "nombre": "Texto discontinuo integrado",
+          "descripcion": "Relacionar título, imagen, datos, etiquetas y estructura gráfica de una infografía, caricatura o aviso.",
+          "producto_evaluable": "Explicación del sentido global y función de cada elemento."
+        }
+      ],
+      "errores_a_observar": [
+        "Resume acumulando detalles sin jerarquizarlos.",
+        "Confunde tema con idea central o tesis.",
+        "Interpreta cada párrafo de forma aislada.",
+        "No identifica relaciones de contraste, causa, consecuencia o ejemplificación.",
+        "Construye inferencias con conocimientos externos pero sin respaldo textual.",
+        "Confunde voces o atribuye una afirmación al autor cuando pertenece a otra fuente.",
+        "Ignora la interacción entre texto verbal e imagen."
+      ],
+      "preguntas_a_priorizar": [
+        "Función de un párrafo o segmento.",
+        "Relación entre dos partes del texto.",
+        "Idea central, tesis o propósito global.",
+        "Inferencias a partir de información distribuida.",
+        "Identificación de voces y posiciones.",
+        "Relación entre elementos de textos discontinuos.",
+        "Selección del enunciado que sintetiza mejor el texto."
+      ],
+      "seguimiento": {
+        "indicadores": [
+          "Porcentaje de estudiantes que identifica correctamente la función de las partes.",
+          "Porcentaje de inferencias justificadas con evidencia suficiente.",
+          "Porcentaje de estudiantes que formula una idea global coherente sin copiar fragmentos.",
+          "Desempeño específico en textos discontinuos."
+        ],
+        "evidencias": [
+          "Mapas de estructura textual",
+          "Rúbricas de inferencia",
+          "Síntesis de una oración",
+          "Mini-pruebas con preguntas de relación e interpretación"
+        ],
+        "periodicidad_sugerida": "Cada 4 semanas"
+      },
+      "uso_exclusivo_grado_10": {
+        "prioridad": "muy alta cuando sea una de las debilidades principales",
+        "observacion": "La construcción de sentido global requiere práctica sostenida. Grado 10 ofrece una ventana adecuada para consolidar relaciones entre partes, inferencia y lectura de textos discontinuos antes de 2027.",
+        "acciones_especificas": [
+          "Implementar una actividad semanal de arquitectura textual.",
+          "Alternar textos literarios, argumentativos, científicos y discontinuos.",
+          "Incrementar gradualmente la extensión y densidad conceptual.",
+          "Registrar la diferencia entre errores de relación, inferencia y síntesis."
+        ]
+      },
+      "uso_exclusivo_grado_11": {
+        "observacion": "En 11.º se recomienda focalizar en relaciones e inferencias que generan errores persistentes entre Sigma 11 y Master Pro 11.",
+        "acciones_especificas": [
+          "Comparar desempeño por formato textual.",
+          "Practicar textos múltiples y discontinuos.",
+          "Analizar distractores que convierten un detalle verdadero en una conclusión global incorrecta.",
+          "Trabajar síntesis bajo restricción de tiempo."
+        ]
+      }
+    },
+    "reflexion_evaluacion": {
+      "nombre_en_informe": "Reflexionar a partir de un texto y evaluar su contenido",
+      "proceso_2026": "Evaluar y reflexionar sobre la forma y el contenido de los textos",
+      "peso_referencial_icfes_2026": 33,
+      "diagnostico_pedagogico": "Una debilidad en esta afirmación sugiere dificultad para valorar la fuerza de argumentos, reconocer supuestos, distinguir hechos y valoraciones, identificar estrategias discursivas, establecer implicaciones o relacionar el texto con otros discursos y contextos.",
+      "objetivo_de_mejoramiento": "Fortalecer una lectura propiamente crítica basada en criterios: evaluar argumentos y estrategias, reconocer supuestos y valores, establecer implicaciones y contrastar textos sin reemplazar la evidencia por opiniones personales.",
+      "estrategias_metodologicas": [
+        {
+          "nombre": "Auditoría de argumentos",
+          "proposito": "Evaluar la relación entre tesis, razones y evidencias.",
+          "metodologia": [
+            "Identificar la afirmación principal.",
+            "Localizar razones o evidencias.",
+            "Preguntar si realmente apoyan la conclusión.",
+            "Detectar supuestos no expresados.",
+            "Evaluar qué información fortalecería o debilitaría el argumento."
+          ]
+        },
+        {
+          "nombre": "Hecho, valoración e inferencia",
+          "proposito": "Distinguir tipos de enunciado.",
+          "metodologia": [
+            "Clasificar enunciados del texto.",
+            "Justificar la clasificación.",
+            "Analizar qué efecto producen las valoraciones.",
+            "Reescribir un enunciado para cambiar su carga valorativa."
+          ]
+        },
+        {
+          "nombre": "Lectura lateral comparada",
+          "proposito": "Relacionar textos y evaluar perspectivas.",
+          "metodologia": [
+            "Presentar dos textos sobre un mismo asunto.",
+            "Comparar tesis, fuentes, datos y estrategias.",
+            "Identificar coincidencias y contradicciones.",
+            "Decidir qué afirmaciones están mejor respaldadas."
+          ]
+        },
+        {
+          "nombre": "Intención y estrategia discursiva",
+          "proposito": "Relacionar decisiones formales con efectos comunicativos.",
+          "metodologia": [
+            "Identificar propósito y audiencia probable.",
+            "Reconocer recursos como ironía, ejemplo, analogía, pregunta retórica, apelación, dato o cita.",
+            "Explicar cómo el recurso contribuye a la intención.",
+            "Evaluar si la estrategia es eficaz o manipuladora."
+          ]
+        }
+      ],
+      "actividades_aula": [
+        {
+          "nombre": "¿Qué falta para convencer?",
+          "descripcion": "Analizar un argumento incompleto e identificar evidencia, supuesto o conexión lógica ausente.",
+          "producto_evaluable": "Diagnóstico del argumento y propuesta de mejora."
+        },
+        {
+          "nombre": "Dos columnas de opinión",
+          "descripcion": "Comparar dos textos que sostienen posiciones diferentes sobre el mismo tema.",
+          "producto_evaluable": "Matriz tesis–evidencia–supuestos–estrategias–valoración."
+        },
+        {
+          "nombre": "Caricatura bajo lupa",
+          "descripcion": "Analizar elementos visuales, ironía, contexto, blanco de la crítica y postura del autor.",
+          "producto_evaluable": "Interpretación sustentada en elementos de la imagen."
+        },
+        {
+          "nombre": "Cambiar la estrategia",
+          "descripcion": "Reescribir un fragmento argumentativo sustituyendo una estrategia discursiva y analizar cómo cambia el efecto.",
+          "producto_evaluable": "Versión alternativa y reflexión metadiscursiva."
+        }
+      ],
+      "errores_a_observar": [
+        "Confunde evaluar el texto con expresar una opinión personal sobre el tema.",
+        "Acepta un argumento por estar de acuerdo con la conclusión.",
+        "No distingue evidencia de ejemplo o valoración.",
+        "Ignora supuestos implícitos.",
+        "No identifica ironía, tono o estrategia discursiva.",
+        "Relaciona textos solo por tema y no por postura o argumento.",
+        "Interpreta una implicación como si estuviera explícitamente afirmada."
+      ],
+      "preguntas_a_priorizar": [
+        "Validez o implicaciones de un enunciado.",
+        "Reconocimiento de supuestos.",
+        "Identificación de contenidos valorativos.",
+        "Reconocimiento de estrategias discursivas.",
+        "Relación entre dos textos o perspectivas.",
+        "Contextualización de información.",
+        "Evaluación de evidencia y fuerza argumentativa."
+      ],
+      "seguimiento": {
+        "indicadores": [
+          "Porcentaje de estudiantes que distingue opinión personal de evaluación textual.",
+          "Porcentaje de argumentos analizados con identificación de tesis, evidencia y supuesto.",
+          "Porcentaje de estudiantes que reconoce correctamente estrategias discursivas.",
+          "Desempeño en comparación de textos."
+        ],
+        "evidencias": [
+          "Matrices de argumentación",
+          "Comparación de textos",
+          "Respuestas abiertas justificadas",
+          "Mini-pruebas de evaluación crítica"
+        ],
+        "periodicidad_sugerida": "Cada 4 a 6 semanas"
+      },
+      "uso_exclusivo_grado_10": {
+        "observacion": "La lectura crítica avanzada requiere tiempo para desarrollar criterios de evaluación. En 10.º debe construirse de forma gradual sobre comprensión local y global suficientemente consolidadas.",
+        "acciones_especificas": [
+          "Introducir una tarea semanal de evaluación de argumentos o perspectivas.",
+          "Alternar textos periodísticos, científicos, sociales, filosóficos y publicitarios.",
+          "Trabajar explícitamente supuestos, evidencia y estrategias discursivas.",
+          "Reevaluar con textos nuevos, no con el mismo contenido."
+        ]
+      },
+      "uso_exclusivo_grado_11": {
+        "observacion": "En 11.º se debe focalizar la crítica en identificación rápida de tesis, evidencia, supuestos y estrategias, sin sacrificar justificación textual.",
+        "acciones_especificas": [
+          "Analizar preguntas falladas según el criterio crítico implicado.",
+          "Comparar textos breves bajo tiempo.",
+          "Entrenar descarte de distractores basados en opinión externa o generalizaciones.",
+          "Priorizar debilidades persistentes entre Sigma 11 y Master Pro 11."
+        ]
+      }
+    }
+  },
+  "componentes": {
+    "semantico": {
+      "nombre_en_informe": "Semántico",
+      "estatus": "lente_diagnostica_gec",
+      "diagnostico_pedagogico": "Una debilidad semántica puede manifestarse en problemas para construir significado, reconocer relaciones léxicas, rastrear referentes, integrar información explícita e implícita o sostener inferencias coherentes.",
+      "focos_de_trabajo": [
+        "Vocabulario en contexto.",
+        "Paráfrasis.",
+        "Referentes y relaciones léxicas.",
+        "Ideas principales y secundarias.",
+        "Inferencias controladas.",
+        "Coherencia global."
+      ],
+      "estrategias": [
+        "Trabajar redes semánticas y paráfrasis contextualizadas.",
+        "Solicitar evidencia para cada inferencia.",
+        "Comparar significados posibles de expresiones según contexto.",
+        "Relacionar información distribuida en el texto."
+      ],
+      "actividades": [
+        "Sustituir expresiones por paráfrasis y verificar conservación de sentido.",
+        "Construir cadenas de referentes.",
+        "Completar una inferencia indicando qué evidencias la sostienen.",
+        "Comparar dos resúmenes y decidir cuál conserva mejor el significado."
+      ],
+      "errores_a_observar": [
+        "Interpretación literal de expresiones figuradas.",
+        "Uso de significado de diccionario sin considerar contexto.",
+        "Inferencias no respaldadas.",
+        "Confusión de referentes.",
+        "Pérdida de coherencia al resumir."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Construir una rutina sostenida de vocabulario contextual, paráfrasis e inferencia como base para el progreso hacia 2027."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Focalizar en errores semánticos recurrentes que afecten el descarte de opciones y la comprensión de textos densos."
+      }
+    },
+    "pragmatico": {
+      "nombre_en_informe": "Pragmático",
+      "estatus": "lente_diagnostica_gec",
+      "diagnostico_pedagogico": "Una debilidad pragmática puede relacionarse con dificultades para reconocer intención comunicativa, audiencia, voces, tono, postura, contexto y efectos de las estrategias discursivas.",
+      "focos_de_trabajo": [
+        "Propósito comunicativo.",
+        "Audiencia.",
+        "Voces y puntos de vista.",
+        "Tono e intención.",
+        "Estrategias argumentativas y retóricas.",
+        "Relación texto–contexto."
+      ],
+      "estrategias": [
+        "Preguntar sistemáticamente quién habla, para quién, con qué propósito y mediante qué recurso.",
+        "Comparar el mismo contenido dirigido a audiencias distintas.",
+        "Analizar publicidad, opinión, caricatura y textos argumentativos.",
+        "Relacionar elecciones lingüísticas con efectos comunicativos."
+      ],
+      "actividades": [
+        "Reescribir un mensaje para una audiencia distinta.",
+        "Identificar la estrategia dominante en una columna de opinión.",
+        "Analizar ironía y blanco crítico en caricaturas.",
+        "Comparar dos textos sobre el mismo asunto con intenciones diferentes."
+      ],
+      "errores_a_observar": [
+        "Confundir autor con voz textual.",
+        "Ignorar audiencia o contexto.",
+        "No reconocer ironía o tono.",
+        "Identificar el tema pero no el propósito.",
+        "Describir un recurso sin explicar su efecto."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Exponer sistemáticamente a diversidad de géneros y situaciones comunicativas para desarrollar sensibilidad al propósito y al contexto."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Priorizar reconocimiento rápido de intención, voces y estrategias discursivas en textos argumentativos y discontinuos."
+      }
+    },
+    "sintactico": {
+      "nombre_en_informe": "Sintáctico",
+      "estatus": "lente_diagnostica_gec",
+      "diagnostico_pedagogico": "Una debilidad sintáctica puede manifestarse en dificultades para comprender relaciones entre enunciados, conectores, jerarquía de información, secuencias y función estructural de párrafos o segmentos.",
+      "focos_de_trabajo": [
+        "Conectores y relaciones lógicas.",
+        "Función de párrafos y segmentos.",
+        "Secuenciación.",
+        "Cohesión referencial.",
+        "Jerarquía de información.",
+        "Estructura de textos argumentativos y expositivos."
+      ],
+      "estrategias": [
+        "Reconstruir textos desordenados.",
+        "Eliminar conectores y pedir restaurarlos justificadamente.",
+        "Etiquetar función de párrafos.",
+        "Comparar cambios de sentido producidos por modificar orden o conectores."
+      ],
+      "actividades": [
+        "Rompecabezas de párrafos.",
+        "Banco de conectores por relación lógica.",
+        "Mapa introducción–desarrollo–conclusión o tesis–razones–evidencia.",
+        "Explicar el efecto de retirar un segmento."
+      ],
+      "errores_a_observar": [
+        "Interpreta conectores de manera mecánica.",
+        "No distingue causa de consecuencia.",
+        "No reconoce la función de un párrafo.",
+        "Pierde relaciones entre fragmentos distantes.",
+        "Confunde orden superficial con jerarquía de ideas."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Consolidar progresivamente arquitectura textual y relaciones lógicas antes de incrementar complejidad y velocidad."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Trabajar textos densos y preguntas de función estructural, relación entre partes y reemplazo de conectores bajo condiciones de tiempo."
+      }
+    }
+  },
+  "matriz_por_tipo_de_texto": [
+    {
+      "tipo": "continuo_literario",
+      "prioridades": [
+        "Voces y focalización",
+        "Relaciones entre eventos",
+        "Sentido de expresiones",
+        "Inferencias",
+        "Tono y recursos literarios"
+      ],
+      "actividades_sugeridas": [
+        "Rastrear cambios de voz o perspectiva.",
+        "Reconstruir relaciones causales entre eventos.",
+        "Interpretar expresiones figuradas con evidencia contextual."
+      ]
+    },
+    {
+      "tipo": "continuo_informativo_argumentativo",
+      "prioridades": [
+        "Tesis",
+        "Razones y evidencias",
+        "Supuestos",
+        "Estrategias discursivas",
+        "Implicaciones"
+      ],
+      "actividades_sugeridas": [
+        "Auditoría de argumentos.",
+        "Identificación de supuestos.",
+        "Comparación de columnas de opinión."
+      ]
+    },
+    {
+      "tipo": "continuo_informativo_expositivo",
+      "prioridades": [
+        "Jerarquía de información",
+        "Relaciones conceptuales",
+        "Función de ejemplos",
+        "Síntesis",
+        "Inferencias explicativas"
+      ],
+      "actividades_sugeridas": [
+        "Mapa de conceptos y relaciones.",
+        "Síntesis por secciones.",
+        "Explicación de función de ejemplos y definiciones."
+      ]
+    },
+    {
+      "tipo": "discontinuo_literario",
+      "prioridades": [
+        "Relación imagen–texto",
+        "Ironía",
+        "Secuencia",
+        "Voces",
+        "Intención"
+      ],
+      "actividades_sugeridas": [
+        "Análisis de caricaturas.",
+        "Reconstrucción de secuencia en cómic.",
+        "Explicación del efecto de elementos visuales."
+      ]
+    },
+    {
+      "tipo": "discontinuo_informativo",
+      "prioridades": [
+        "Integración de datos y etiquetas",
+        "Jerarquía visual",
+        "Propósito",
+        "Relación entre componentes",
+        "Conclusiones válidas"
+      ],
+      "actividades_sugeridas": [
+        "Lectura de infografías.",
+        "Análisis de manuales y reglamentos.",
+        "Comparación de datos y mensajes en avisos."
+      ]
+    }
+  ],
+  "combinaciones_diagnosticas": [
+    {
+      "si": [
+        "identificar_contenidos_locales_bajo",
+        "semantico_bajo"
+      ],
+      "interpretacion": "La prioridad debe centrarse en precisión de significado, vocabulario en contexto, referentes y comprensión explícita.",
+      "accion_prioritaria": "Implementar microtareas frecuentes de localización, paráfrasis y rastreo de referentes antes de aumentar dificultad inferencial."
+    },
+    {
+      "si": [
+        "articulacion_sentido_global_baja",
+        "sintactico_bajo"
+      ],
+      "interpretacion": "La dificultad probablemente se concentra en arquitectura textual, relaciones entre partes, conectores y construcción de sentido global.",
+      "accion_prioritaria": "Aplicar semanalmente mapas de estructura, reconstrucción de textos y análisis de función de párrafos."
+    },
+    {
+      "si": [
+        "articulacion_sentido_global_baja",
+        "semantico_bajo"
+      ],
+      "interpretacion": "Puede existir dificultad para integrar significados distribuidos y producir inferencias coherentes.",
+      "accion_prioritaria": "Trabajar inferencia con evidencia múltiple, síntesis y relaciones semánticas entre fragmentos."
+    },
+    {
+      "si": [
+        "reflexion_evaluacion_baja",
+        "pragmatico_bajo"
+      ],
+      "interpretacion": "La prioridad debe orientarse a intención, postura, voces, estrategias discursivas, supuestos y evaluación de argumentos.",
+      "accion_prioritaria": "Usar auditoría de argumentos, comparación de textos y análisis de intención comunicativa."
+    },
+    {
+      "si": [
+        "tres_afirmaciones_bajas"
+      ],
+      "interpretacion": "La dificultad es transversal y requiere una ruta integral de comprensión local, integración global y evaluación crítica.",
+      "accion_prioritaria": "Diseñar un plan lector secuenciado que avance de precisión local a relaciones globales y luego a evaluación crítica, con mediciones intermedias."
+    },
+    {
+      "si": [
+        "reflexion_evaluacion_baja",
+        "identificar_contenidos_locales_alto"
+      ],
+      "interpretacion": "El estudiante comprende información explícita, pero presenta dificultad para trascenderla y evaluar el texto.",
+      "accion_prioritaria": "Reducir tareas de localización repetitiva e incrementar análisis de argumentos, supuestos, estrategias y relaciones entre textos."
+    }
+  ],
+  "secuencias_de_intervencion": {
+    "grado_10": {
+      "horizonte": "ciclo_2026_2027",
+      "fases": [
+        {
+          "fase": 1,
+          "duracion_sugerida": "6 semanas",
+          "foco": "Precisión local y diagnóstico de hábitos lectores",
+          "productos": [
+            "línea base",
+            "registro de errores",
+            "rutinas de evidencia textual"
+          ]
+        },
+        {
+          "fase": 2,
+          "duracion_sugerida": "8 semanas",
+          "foco": "Relaciones entre partes, inferencia y sentido global",
+          "productos": [
+            "mapas textuales",
+            "síntesis",
+            "mini-prueba comparable"
+          ]
+        },
+        {
+          "fase": 3,
+          "duracion_sugerida": "8 semanas",
+          "foco": "Argumentación, intención, evaluación y textos múltiples",
+          "productos": [
+            "matrices argumentativas",
+            "comparación de textos",
+            "medición de progreso"
+          ]
+        },
+        {
+          "fase": 4,
+          "duracion_sugerida": "continuo hasta Saber 11 2027",
+          "foco": "Transferencia, diversidad textual y práctica acumulativa",
+          "productos": [
+            "simulacros analizados",
+            "portafolio de errores",
+            "seguimiento por afirmación"
+          ]
+        }
+      ]
+    },
+    "grado_11": {
+      "horizonte": "intervencion_focalizada",
+      "fases": [
+        {
+          "fase": 1,
+          "duracion_sugerida": "2 semanas",
+          "foco": "Comparación Sigma 11–Master Pro 11 y clasificación de errores"
+        },
+        {
+          "fase": 2,
+          "duracion_sugerida": "4 a 6 semanas",
+          "foco": "Intervención sobre máximo dos debilidades prioritarias"
+        },
+        {
+          "fase": 3,
+          "duracion_sugerida": "hasta cierre",
+          "foco": "Transferencia a textos nuevos, control del tiempo y retroalimentación de distractores"
+        }
+      ]
+    }
+  },
+  "reglas_para_motor_html": {
+    "entrada_esperada": [
+      "grado",
+      "promedio_area",
+      "puntaje_competencia",
+      "puntaje_componente",
+      "niveles_desempeno",
+      "nivel_necesidad_calculado_por_modulo_estadistico"
+    ],
+    "logica_recomendada": [
+      "Mostrar primero la afirmación/proceso con mayor necesidad.",
+      "Añadir el componente diagnóstico de menor desempeño.",
+      "Cuando una combinación diagnóstica coincida, mostrar la acción prioritaria integrada.",
+      "Para grado 10 añadir siempre el bloque de cohorte Saber 11 2027.",
+      "Para grado 11 añadir la comparación entre Sigma 11 y Master Pro 11 cuando ambas aplicaciones estén disponibles.",
+      "No afirmar causalidad a partir de un puntaje agregado.",
+      "No recomendar únicamente más simulacros.",
+      "Toda recomendación debe incluir acción metodológica, actividad observable y mecanismo de seguimiento.",
+      "Alternar textos continuos y discontinuos, literarios e informativos."
+    ],
+    "orden_visual_sugerido": [
+      "Hallazgo",
+      "Qué puede significar",
+      "Proceso lector prioritario",
+      "Componente diagnóstico",
+      "Qué fortalecer",
+      "Cómo trabajarlo",
+      "Actividad sugerida",
+      "Errores a observar",
+      "Cómo hacer seguimiento",
+      "Observación específica para el grado"
+    ]
+  },
+  "orientaciones_para_secretaria": {
+    "grado_10": [
+      "Tratar los resultados como línea base municipal de la cohorte que presentará Saber 11 en 2027.",
+      "Priorizar instituciones con debilidad en Relacionar e interpretar información, especialmente cuando se combina con componente Sintáctico o Semántico bajo.",
+      "Solicitar planes lectores institucionales con ciclos de intervención y medición de progreso.",
+      "Promover lectura crítica transversal en todas las áreas, no únicamente en Lenguaje.",
+      "Hacer seguimiento municipal por afirmación y componente además del promedio de Lectura Crítica.",
+      "Favorecer comunidades de aprendizaje docente centradas en análisis de evidencias y errores lectores."
+    ],
+    "grado_11": [
+      "Comparar las dos aplicaciones para identificar tendencias y persistencia de debilidades.",
+      "Documentar estrategias institucionales asociadas a mejoras observadas.",
+      "Transferir hallazgos de 11.º a la planeación de grado 10.",
+      "Evitar interpretar diferencias pequeñas entre aplicaciones como mejora pedagógica concluyente sin evidencia adicional."
+    ]
+  }
+}

@@ -1,0 +1,1126 @@
+{
+  "schema_version": "1.0",
+  "tipo_archivo": "motor_recomendaciones_pedagogicas_por_area",
+  "area": {
+    "id": "ingles",
+    "nombre": "Inglés",
+    "proposito": "Convertir los resultados de la prueba de Inglés en orientaciones metodológicas concretas, diferenciadas por competencia diagnóstica GEC, componente, parte de la prueba y grado, para fortalecer la competencia comunicativa en lectura y uso de la lengua."
+  },
+  "alcance": {
+    "poblacion": [
+      "grado_10",
+      "grado_11"
+    ],
+    "uso_principal": [
+      "Informe municipal para Secretaría de Educación",
+      "Lectura institucional de resultados",
+      "Orientación a coordinaciones académicas y docentes de Inglés",
+      "Planeación de acciones de aula y seguimiento",
+      "Preparación de la cohorte de grado 10 que presentará Saber 11 en 2027"
+    ],
+    "nota_psicometrica": "Este archivo no establece puntos de corte para clasificar un resultado como crítico, alto, medio o satisfactorio. El nivel de necesidad debe ser calculado por un módulo estadístico común a todas las áreas.",
+    "advertencia_niveles": "Los niveles 1, 2, 3 y 4 reportados por los informes GEC no deben equipararse automáticamente con Pre-A1, A1, A2 y B1. El motor conservará ambas escalas separadas salvo que una fuente técnica específica establezca una correspondencia válida.",
+    "principio_de_interpretacion": "Un puntaje bajo en una competencia o componente orienta una hipótesis de necesidad pedagógica, no una causa demostrada. Debe contrastarse con desempeño real en lectura, vocabulario, gramática, interacción comunicativa, tareas de aula y evaluaciones posteriores.",
+    "principio_de_no_reduccion": "La preparación no debe limitarse a traducción palabra por palabra, listas descontextualizadas de vocabulario o ejercicios repetitivos de gramática. La prueba exige comprender intención, seleccionar lenguaje pertinente, interpretar textos y usar recursos léxicos y gramaticales dentro de contextos comunicativos.",
+    "principio_comunicativo": "El objetivo pedagógico es desarrollar competencia comunicativa funcional: comprender qué significa una expresión, para qué se usa, en qué contexto resulta apropiada y cómo contribuye a comprender un texto."
+  },
+  "fundamento_evaluativo": {
+    "fuentes": [
+      {
+        "institucion": "Icfes",
+        "documento": "Guía de orientación del Examen Saber 11.º 2026-2",
+        "seccion": "Inglés, pp. 63-65",
+        "url": "https://www.icfes.gov.co/wp-content/uploads/2026/03/17-marzo-guia-de-orientacion-saber-11-2026-2.pdf",
+        "uso_en_este_json": "Propósito de la prueba, alineación con los Estándares Básicos de Competencias en Lenguas Extranjeras, niveles MCER, siete partes y distribución de preguntas."
+      },
+      {
+        "institucion": "Icfes",
+        "documento": "Marco de referencia de la prueba de Inglés Saber 11.º",
+        "url": "https://www.icfes.gov.co/evaluaciones-icfes/saber-11/marcos-de-referencia-examen-saber-11/",
+        "uso_en_este_json": "Constructo general de competencia comunicativa en inglés y fundamento conceptual de las tareas."
+      },
+      {
+        "institucion": "Ministerio de Educación Nacional",
+        "documento": "Estándares Básicos de Competencias en Lenguas Extranjeras: Inglés",
+        "uso_en_este_json": "Referente curricular de progresión comunicativa y desempeño en lengua extranjera."
+      }
+    ],
+    "proposito_oficial_sintetizado": "La prueba evalúa la competencia para comunicarse efectivamente en inglés y busca que los evaluados demuestren habilidades comunicativas en lectura y uso de la lengua inglesa.",
+    "niveles_mcer_reportados_por_icfes_2026": {
+      "niveles": [
+        "Pre-A1",
+        "A1",
+        "A2",
+        "B1"
+      ],
+      "nota": "La guía 2026 indica cuatro niveles de desempeño e incorpora Pre-A1 para estudiantes que aún no alcanzan A1 pero comprenden algunas palabras y expresiones fijas.",
+      "regla_para_motor": "No inferir nivel MCER individual o institucional a partir de los niveles 1–4 GEC."
+    },
+    "estructura_oficial_por_partes": [
+      {
+        "parte": 1,
+        "peso_referencial_icfes_2026": 11,
+        "habilidad_oficial_sintetizada": "Conocimiento lexical",
+        "tarea": "Relacionar descripciones con palabras de una lista.",
+        "foco_pedagogico": [
+          "Significado de vocabulario frecuente.",
+          "Reconocimiento de categorías semánticas.",
+          "Comprensión de descripciones breves.",
+          "Discriminación entre palabras próximas."
+        ]
+      },
+      {
+        "parte": 2,
+        "peso_referencial_icfes_2026": 11,
+        "habilidad_oficial_sintetizada": "Conocimiento pragmático",
+        "tarea": "Reconocer el propósito comunicativo de un aviso y el lugar donde podría aparecer.",
+        "foco_pedagogico": [
+          "Propósito de mensajes breves.",
+          "Contexto de uso.",
+          "Relación entre lenguaje, situación y lugar.",
+          "Funciones comunicativas."
+        ]
+      },
+      {
+        "parte": 3,
+        "peso_referencial_icfes_2026": 11,
+        "habilidad_oficial_sintetizada": "Conocimiento comunicativo",
+        "tarea": "Completar conversaciones cortas seleccionando la intervención más adecuada.",
+        "foco_pedagogico": [
+          "Pertinencia de respuesta.",
+          "Funciones comunicativas.",
+          "Coherencia entre turnos.",
+          "Registro y contexto inmediato."
+        ]
+      },
+      {
+        "parte": 4,
+        "peso_referencial_icfes_2026": 18,
+        "habilidad_oficial_sintetizada": "Conocimiento gramatical en contexto",
+        "tarea": "Completar un texto eligiendo la palabra gramaticalmente correcta.",
+        "foco_pedagogico": [
+          "Estructuras gramaticales en contexto.",
+          "Cohesión.",
+          "Relaciones sintácticas.",
+          "Selección de forma adecuada al significado global."
+        ]
+      },
+      {
+        "parte": 5,
+        "peso_referencial_icfes_2026": 16,
+        "habilidad_oficial_sintetizada": "Comprensión de lectura literal",
+        "tarea": "Seleccionar la paráfrasis que responde correctamente preguntas sobre un texto.",
+        "foco_pedagogico": [
+          "Información explícita.",
+          "Paráfrasis.",
+          "Detalle relevante.",
+          "Comprensión local del texto."
+        ]
+      },
+      {
+        "parte": 6,
+        "peso_referencial_icfes_2026": 11,
+        "habilidad_oficial_sintetizada": "Lectura inferencial",
+        "tarea": "Responder preguntas sobre intención del autor y aspectos generales y particulares del texto.",
+        "foco_pedagogico": [
+          "Inferencia.",
+          "Idea general.",
+          "Intención del autor.",
+          "Relación entre información explícita e implícita."
+        ]
+      },
+      {
+        "parte": 7,
+        "peso_referencial_icfes_2026": 22,
+        "habilidad_oficial_sintetizada": "Conocimiento gramatical y lexical en contexto",
+        "tarea": "Completar un texto seleccionando palabras adecuadas entre cuatro opciones.",
+        "foco_pedagogico": [
+          "Vocabulario contextual.",
+          "Gramática contextual.",
+          "Cohesión y coherencia.",
+          "Comprensión global necesaria para completar espacios."
+        ]
+      }
+    ],
+    "distribucion_por_partes": {
+      "parte_1": 11,
+      "parte_2": 11,
+      "parte_3": 11,
+      "parte_4": 18,
+      "parte_5": 16,
+      "parte_6": 11,
+      "parte_7": 22,
+      "total": 100
+    },
+    "competencias_reportadas_por_gec": {
+      "nota": "Los informes GEC reportan Lingüística, Sociolingüístico y Pragmática como competencias diagnósticas. Se conservan para compatibilidad con los JSON de resultados. El siguiente mapeo es pedagógico y no pretende afirmar que Icfes distribuya oficialmente sus siete partes bajo estas tres etiquetas.",
+      "competencias": [
+        {
+          "id": "linguistica",
+          "nombre_en_informe": "Lingüística",
+          "lente_diagnostica": "Dominio funcional de vocabulario, formas gramaticales, relaciones sintácticas y recursos lingüísticos necesarios para construir significado.",
+          "partes_relacionadas_pedagogicamente": [
+            1,
+            4,
+            7
+          ]
+        },
+        {
+          "id": "sociolinguistico",
+          "nombre_en_informe": "Sociolingüístico",
+          "lente_diagnostica": "Adecuación del lenguaje a propósito, interlocutor, lugar y situación comunicativa.",
+          "partes_relacionadas_pedagogicamente": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": "pragmatica",
+          "nombre_en_informe": "Pragmática",
+          "lente_diagnostica": "Construcción e interpretación de sentido en textos e intercambios, coherencia discursiva, intención e inferencia.",
+          "partes_relacionadas_pedagogicamente": [
+            2,
+            3,
+            5,
+            6,
+            7
+          ]
+        }
+      ]
+    },
+    "componentes_del_informe_gec": {
+      "nota": "Lexical, Lectura, Conversacional y Gramatical son componentes reportados por los informes GEC. El mapeo con las partes oficiales sirve al motor como relación pedagógica, no como equivalencia psicométrica oficial.",
+      "componentes": [
+        {
+          "id": "lexical",
+          "nombre_en_informe": "Lexical",
+          "partes_relacionadas_pedagogicamente": [
+            1,
+            7
+          ],
+          "descripcion": "Comprensión y selección de vocabulario según significado, categoría semántica y contexto."
+        },
+        {
+          "id": "lectura",
+          "nombre_en_informe": "Lectura",
+          "partes_relacionadas_pedagogicamente": [
+            5,
+            6
+          ],
+          "descripcion": "Comprensión literal e inferencial, paráfrasis, intención y construcción de sentido en textos."
+        },
+        {
+          "id": "conversacional",
+          "nombre_en_informe": "Conversacional",
+          "partes_relacionadas_pedagogicamente": [
+            2,
+            3
+          ],
+          "descripcion": "Comprensión de funciones comunicativas y selección de intervenciones apropiadas en situaciones sociales breves."
+        },
+        {
+          "id": "gramatical",
+          "nombre_en_informe": "Gramatical",
+          "partes_relacionadas_pedagogicamente": [
+            4,
+            7
+          ],
+          "descripcion": "Uso contextual de estructuras gramaticales para mantener significado, cohesión y corrección en textos."
+        }
+      ]
+    }
+  },
+  "recomendaciones_transversales": {
+    "para_todos_los_grados": [
+      {
+        "id": "ingles_en_contexto",
+        "nombre": "Enseñar vocabulario y gramática dentro de contextos",
+        "descripcion": "Evitar que las formas lingüísticas se aprendan solo como listas o reglas. Cada elemento debe asociarse con significado, función y situación de uso.",
+        "acciones": [
+          "Introducir vocabulario mediante textos, avisos, diálogos e imágenes.",
+          "Trabajar gramática dentro de fragmentos con propósito comunicativo.",
+          "Preguntar qué cambia en el significado al cambiar una forma.",
+          "Reutilizar las mismas estructuras en nuevos contextos."
+        ]
+      },
+      {
+        "id": "lectura_sin_traduccion_total",
+        "nombre": "Desarrollar lectura estratégica sin depender de traducción total",
+        "descripcion": "Enseñar a comprender el texto mediante cognados controlados, contexto, estructura, referentes, palabras clave y propósito, en lugar de traducir palabra por palabra.",
+        "acciones": [
+          "Predecir tema y propósito antes de leer en detalle.",
+          "Localizar evidencia textual.",
+          "Inferir significado por contexto.",
+          "Identificar información que no necesita traducirse para responder.",
+          "Comprobar interpretaciones con el texto."
+        ]
+      },
+      {
+        "id": "funciones_comunicativas",
+        "nombre": "Trabajar funciones comunicativas",
+        "descripcion": "Practicar pedir, ofrecer, aceptar, rechazar, agradecer, sugerir, disculparse, invitar, advertir, informar y responder de acuerdo con la situación.",
+        "acciones": [
+          "Usar microdiálogos.",
+          "Comparar respuestas gramaticalmente correctas pero pragmáticamente inadecuadas.",
+          "Cambiar interlocutor o contexto y observar cómo cambia la respuesta.",
+          "Crear bancos de expresiones funcionales."
+        ]
+      },
+      {
+        "id": "reciclaje_lexico",
+        "nombre": "Reciclar vocabulario de manera espaciada",
+        "descripcion": "La consolidación léxica requiere múltiples encuentros con la misma palabra en contextos diferentes.",
+        "acciones": [
+          "Reutilizar vocabulario en ciclos semanales.",
+          "Agrupar por campos semánticos, colocaciones y familias de palabras.",
+          "Combinar reconocimiento, recuperación y uso.",
+          "Registrar palabras confundidas repetidamente."
+        ]
+      },
+      {
+        "id": "retroalimentacion_por_error",
+        "nombre": "Clasificar errores por habilidad",
+        "descripcion": "Distinguir si el error proviene de vocabulario, gramática, inferencia, función comunicativa, lectura literal, lectura de contexto o distractor.",
+        "acciones": [
+          "Mantener registro por tipo de error.",
+          "Diseñar tareas paralelas para verificar superación.",
+          "Analizar por qué una opción incorrecta resulta atractiva.",
+          "Evitar corregir únicamente indicando la respuesta correcta."
+        ]
+      },
+      {
+        "id": "exposicion_frecuente",
+        "nombre": "Aumentar exposición breve y frecuente al inglés",
+        "descripcion": "Es preferible un contacto regular con textos y mensajes comprensibles que sesiones aisladas de práctica intensiva.",
+        "acciones": [
+          "Usar rutinas de 10 a 15 minutos varias veces por semana.",
+          "Alternar avisos, diálogos, textos breves y cloze.",
+          "Incorporar lectura extensiva accesible.",
+          "Aumentar gradualmente longitud y complejidad."
+        ]
+      }
+    ],
+    "uso_exclusivo_grado_10": [
+      {
+        "id": "ruta_ingles_cohorte_2027",
+        "titulo": "Ruta de fortalecimiento de Inglés para la cohorte Saber 11 de 2027",
+        "observacion": "El resultado de 10.º debe tratarse como línea base. La cohorte dispone de tiempo para ampliar vocabulario, automatizar estructuras frecuentes, desarrollar lectura estratégica y mejorar adecuación comunicativa antes de 2027.",
+        "acciones": [
+          "Establecer línea base por competencias GEC y componentes.",
+          "Identificar si la principal barrera es léxica, gramatical, lectora o conversacional.",
+          "Diseñar ciclos de 6 a 8 semanas.",
+          "Implementar exposición al inglés al menos tres veces por semana, además de la clase formal cuando sea posible.",
+          "Construir un banco acumulativo de vocabulario de alta utilidad.",
+          "Trabajar partes 4 y 7 de forma progresiva por su peso conjunto del 40 %.",
+          "Mantener desarrollo de lectura literal e inferencial mediante partes 5 y 6.",
+          "Realizar al menos tres mediciones comparables antes de Saber 11 de 2027."
+        ],
+        "criterio_de_exito": "Mostrar crecimiento sostenido en comprensión y uso contextual del idioma, reducción de errores recurrentes y mayor autonomía lectora antes de 2027."
+      }
+    ],
+    "uso_exclusivo_grado_11": [
+      {
+        "id": "intervencion_focalizada_11",
+        "titulo": "Intervención focalizada y transferencia institucional",
+        "observacion": "En 11.º conviene comparar Sigma 11 y Master Pro 11 para identificar habilidades persistentes y concentrar la preparación en patrones de error modificables.",
+        "acciones": [
+          "Comparar resultados por competencia y componente.",
+          "Priorizar máximo dos focos de intervención.",
+          "Identificar qué partes de la prueba se relacionan pedagógicamente con esos focos.",
+          "Trabajar sesiones breves con retroalimentación inmediata.",
+          "Evitar simulacros completos sin análisis posterior.",
+          "Documentar los hallazgos para ajustar el currículo de grado 10."
+        ],
+        "criterio_de_exito": "Reducir errores recurrentes y convertir los resultados de 11.º en aprendizaje institucional para la cohorte siguiente."
+      }
+    ]
+  },
+  "competencias": {
+    "linguistica": {
+      "nombre_en_informe": "Lingüística",
+      "estatus": "competencia_diagnostica_gec",
+      "diagnostico_pedagogico": "Una debilidad puede reflejar repertorio léxico insuficiente, baja automatización de estructuras frecuentes, dificultad para reconocer relaciones sintácticas o problemas para seleccionar formas lingüísticas adecuadas dentro de un texto.",
+      "objetivo_de_mejoramiento": "Ampliar y automatizar recursos léxicos y gramaticales de alta frecuencia, vinculándolos siempre con significado y contexto.",
+      "estrategias_metodologicas": [
+        {
+          "nombre": "Vocabulario por redes",
+          "proposito": "Construir repertorio lexical conectado.",
+          "metodologia": [
+            "Seleccionar un campo semántico.",
+            "Organizar palabras por significado, categoría y colocación.",
+            "Usarlas en descripciones breves.",
+            "Recuperarlas días después en un contexto diferente.",
+            "Registrar confusiones frecuentes."
+          ],
+          "frecuencia_sugerida": "3 microtareas semanales"
+        },
+        {
+          "nombre": "Gramática para completar significado",
+          "proposito": "Evitar aprendizaje de reglas aisladas.",
+          "metodologia": [
+            "Presentar un texto con espacios.",
+            "Analizar qué significado debe expresarse.",
+            "Identificar señales gramaticales antes de mirar opciones.",
+            "Seleccionar la forma.",
+            "Explicar por qué las demás alteran estructura o sentido."
+          ]
+        },
+        {
+          "nombre": "Contraste mínimo",
+          "proposito": "Distinguir formas cercanas.",
+          "metodologia": [
+            "Comparar pares como do/make, much/many, since/for, say/tell o tiempos próximos según nivel.",
+            "Usarlos en contextos breves.",
+            "Explicar la diferencia funcional.",
+            "Reutilizar en producción controlada."
+          ]
+        }
+      ],
+      "actividades_aula": [
+        {
+          "nombre": "Definition match",
+          "descripcion": "Relacionar definiciones breves con vocabulario y justificar qué rasgo semántico permite la asociación.",
+          "partes_relacionadas": [
+            1
+          ],
+          "producto_evaluable": "Tabla palabra–definición–evidencia."
+        },
+        {
+          "nombre": "Cloze razonado",
+          "descripcion": "Completar un texto explicando primero qué clase de palabra o relación gramatical requiere cada espacio.",
+          "partes_relacionadas": [
+            4,
+            7
+          ],
+          "producto_evaluable": "Texto completado y justificación de opciones."
+        },
+        {
+          "nombre": "Word family lab",
+          "descripcion": "Transformar palabras entre noun, verb, adjective y adverb y usarlas en frases contextualizadas.",
+          "producto_evaluable": "Mapa de familia y uso."
+        }
+      ],
+      "errores_a_observar": [
+        "Selecciona una palabra por parecido ortográfico.",
+        "Traduce literalmente falsos cognados.",
+        "Conoce una regla pero no identifica cuándo aplicarla.",
+        "Ignora concordancia, tiempo verbal o función de la palabra.",
+        "Elige una opción gramaticalmente posible pero incompatible con el contexto.",
+        "No reconoce colocaciones frecuentes."
+      ],
+      "preguntas_a_priorizar": [
+        "Relación definición–palabra.",
+        "Vocabulario por contexto.",
+        "Cloze gramatical.",
+        "Cloze lexical y gramatical.",
+        "Colocaciones y familias de palabras.",
+        "Selección de estructuras por significado."
+      ],
+      "seguimiento": {
+        "indicadores": [
+          "Porcentaje de vocabulario acumulativo retenido después de cuatro semanas.",
+          "Porcentaje de espacios completados correctamente justificando la señal contextual.",
+          "Reducción de errores por falsos cognados y formas gramaticales próximas.",
+          "Transferencia del mismo recurso lingüístico a un texto nuevo."
+        ],
+        "evidencias": [
+          "Quizzes acumulativos",
+          "Cloze comentados",
+          "Tarjetas de recuperación",
+          "Portafolio lexical"
+        ],
+        "periodicidad_sugerida": "Cada 3 a 4 semanas"
+      },
+      "uso_exclusivo_grado_10": {
+        "observacion": "La automatización léxico-gramatical requiere tiempo y frecuencia; debe construirse desde 10.º, no aplazarse para el último semestre de 11.º.",
+        "acciones_especificas": [
+          "Definir un repertorio acumulativo por periodos.",
+          "Reciclar vocabulario durante todo el año.",
+          "Trabajar cloze de dificultad creciente.",
+          "Medir retención, no solo aprendizaje inmediato."
+        ]
+      },
+      "uso_exclusivo_grado_11": {
+        "observacion": "En 11.º conviene focalizar en los patrones léxico-gramaticales que continúan produciendo errores entre aplicaciones.",
+        "acciones_especificas": [
+          "Construir listas personalizadas de errores.",
+          "Practicar partes 4 y 7 con análisis de distractores.",
+          "Evitar repasar reglas que ya se aplican correctamente."
+        ]
+      }
+    },
+    "sociolinguistico": {
+      "nombre_en_informe": "Sociolingüístico",
+      "estatus": "competencia_diagnostica_gec",
+      "diagnostico_pedagogico": "Una debilidad puede indicar dificultad para reconocer qué expresión resulta apropiada según interlocutor, propósito, situación o lugar, aun cuando el estudiante comprenda el significado literal.",
+      "objetivo_de_mejoramiento": "Fortalecer la adecuación del lenguaje a contextos comunicativos, reconociendo funciones, destinatarios, lugares y respuestas socialmente pertinentes.",
+      "estrategias_metodologicas": [
+        {
+          "nombre": "Same meaning, different situation",
+          "proposito": "Relacionar expresión con contexto.",
+          "metodologia": [
+            "Presentar una misma intención comunicativa.",
+            "Cambiar interlocutor, lugar o grado de formalidad.",
+            "Comparar expresiones posibles.",
+            "Decidir cuál es más adecuada y por qué."
+          ]
+        },
+        {
+          "nombre": "Notice detective",
+          "proposito": "Reconocer propósito y lugar de avisos.",
+          "metodologia": [
+            "Leer el aviso.",
+            "Identificar palabra o estructura clave.",
+            "Determinar función: warn, inform, prohibit, invite, instruct, etc.",
+            "Inferir lugar probable.",
+            "Comparar con un distractor plausible."
+          ]
+        },
+        {
+          "nombre": "Functional dialogue",
+          "proposito": "Automatizar respuestas comunicativas frecuentes.",
+          "metodologia": [
+            "Practicar funciones como request, offer, invitation, apology, thanks y suggestion.",
+            "Presentar varias respuestas gramaticalmente correctas.",
+            "Seleccionar la pragmáticamente pertinente.",
+            "Crear una respuesta alternativa válida."
+          ]
+        }
+      ],
+      "actividades_aula": [
+        {
+          "nombre": "Where would you see this?",
+          "descripcion": "Clasificar avisos según lugar y propósito comunicativo.",
+          "partes_relacionadas": [
+            2
+          ],
+          "producto_evaluable": "Aviso–propósito–lugar–evidencia lingüística."
+        },
+        {
+          "nombre": "Best reply",
+          "descripcion": "Completar microconversaciones y explicar la función comunicativa de la respuesta.",
+          "partes_relacionadas": [
+            3
+          ],
+          "producto_evaluable": "Diálogo completo y etiqueta funcional."
+        },
+        {
+          "nombre": "Register switch",
+          "descripcion": "Reformular una petición, invitación o disculpa para contextos distintos.",
+          "producto_evaluable": "Versiones y explicación de adecuación."
+        }
+      ],
+      "errores_a_observar": [
+        "Elige la respuesta por significado literal sin considerar la situación.",
+        "No reconoce el propósito de un aviso.",
+        "Confunde lugar posible con lugar probable.",
+        "Selecciona una respuesta gramatical pero socialmente extraña.",
+        "No identifica la función comunicativa de una expresión.",
+        "Traduce convenciones comunicativas desde el español de forma literal."
+      ],
+      "preguntas_a_priorizar": [
+        "Propósito de avisos.",
+        "Lugar probable de mensajes.",
+        "Respuesta pertinente en conversaciones.",
+        "Funciones comunicativas.",
+        "Adecuación de expresiones según situación."
+      ],
+      "seguimiento": {
+        "indicadores": [
+          "Porcentaje de avisos clasificados correctamente por propósito y lugar.",
+          "Porcentaje de diálogos completados con respuesta pragmáticamente adecuada.",
+          "Reducción de respuestas basadas solo en traducción literal."
+        ],
+        "evidencias": [
+          "Microdiálogos",
+          "Bancos de avisos",
+          "Role cards",
+          "Quizzes de funciones comunicativas"
+        ],
+        "periodicidad_sugerida": "Mensual"
+      },
+      "uso_exclusivo_grado_10": {
+        "observacion": "La competencia sociolingüística mejora con exposición repetida a situaciones comunicativas, por lo que debe trabajarse de manera acumulativa durante la preparación 2027.",
+        "acciones_especificas": [
+          "Introducir una función comunicativa semanal.",
+          "Reciclarla en varios contextos.",
+          "Crear banco institucional de avisos y diálogos.",
+          "Medir transferencia a situaciones nuevas."
+        ]
+      },
+      "uso_exclusivo_grado_11": {
+        "observacion": "En 11.º conviene automatizar la identificación de propósito y respuesta adecuada mediante tareas breves y frecuentes.",
+        "acciones_especificas": [
+          "Analizar distractores de partes 2 y 3.",
+          "Practicar bajo tiempos breves.",
+          "Registrar funciones comunicativas que siguen generando error."
+        ]
+      }
+    },
+    "pragmatica": {
+      "nombre_en_informe": "Pragmática",
+      "estatus": "competencia_diagnostica_gec",
+      "diagnostico_pedagogico": "Una debilidad puede manifestarse en dificultad para construir sentido más allá de palabras aisladas, identificar intención, mantener coherencia entre partes del texto, interpretar información implícita o usar contexto para decidir qué opción encaja mejor.",
+      "objetivo_de_mejoramiento": "Fortalecer la construcción global de significado, la inferencia y el reconocimiento de intención y coherencia discursiva.",
+      "estrategias_metodologicas": [
+        {
+          "nombre": "Context before option",
+          "proposito": "Reducir selección por palabra aislada.",
+          "metodologia": [
+            "Leer oración anterior y posterior.",
+            "Predecir el significado o función faltante.",
+            "Solo entonces revisar opciones.",
+            "Verificar coherencia global después de completar."
+          ]
+        },
+        {
+          "nombre": "Author intention",
+          "proposito": "Fortalecer lectura inferencial.",
+          "metodologia": [
+            "Identificar tema.",
+            "Diferenciar informar, persuadir, narrar, recomendar, advertir o describir.",
+            "Localizar señales lingüísticas.",
+            "Justificar la intención con evidencia."
+          ]
+        },
+        {
+          "nombre": "Inference ladder",
+          "proposito": "Construir inferencias controladas.",
+          "metodologia": [
+            "Identificar información explícita.",
+            "Combinar dos pistas.",
+            "Formular inferencia.",
+            "Comprobar que no exceda el texto.",
+            "Comparar con una inferencia plausible pero no respaldada."
+          ]
+        }
+      ],
+      "actividades_aula": [
+        {
+          "nombre": "Literal or inferred?",
+          "descripcion": "Clasificar respuestas según estén explícitas o requieran inferencia y señalar evidencia.",
+          "partes_relacionadas": [
+            5,
+            6
+          ],
+          "producto_evaluable": "Tabla respuesta–tipo–evidencia."
+        },
+        {
+          "nombre": "What is the writer doing?",
+          "descripcion": "Identificar intención general y función de fragmentos en textos breves.",
+          "partes_relacionadas": [
+            6
+          ],
+          "producto_evaluable": "Intención y evidencia textual."
+        },
+        {
+          "nombre": "Cloze by meaning",
+          "descripcion": "Completar un texto prediciendo primero la función semántica o discursiva del espacio.",
+          "partes_relacionadas": [
+            7
+          ],
+          "producto_evaluable": "Texto completado y razonamiento contextual."
+        }
+      ],
+      "errores_a_observar": [
+        "Selecciona opciones por una palabra coincidente.",
+        "No integra información entre oraciones.",
+        "Confunde detalle con idea general.",
+        "Infiere información que el texto no permite.",
+        "No identifica intención del autor.",
+        "Ignora conectores o referentes.",
+        "Completa un espacio sin releer el texto completo."
+      ],
+      "preguntas_a_priorizar": [
+        "Lectura literal con paráfrasis.",
+        "Idea general.",
+        "Intención del autor.",
+        "Inferencias.",
+        "Coherencia contextual.",
+        "Cloze lexical y gramatical basado en sentido."
+      ],
+      "seguimiento": {
+        "indicadores": [
+          "Porcentaje de inferencias respaldadas con evidencia.",
+          "Porcentaje de respuestas literales identificadas mediante paráfrasis.",
+          "Porcentaje de intenciones del autor reconocidas correctamente.",
+          "Reducción de distractores seleccionados por coincidencia léxica."
+        ],
+        "evidencias": [
+          "Reading logs",
+          "Mini-pruebas de partes 5 y 6",
+          "Cloze contextual",
+          "Registros de evidencia textual"
+        ],
+        "periodicidad_sugerida": "Cada 4 semanas"
+      },
+      "uso_exclusivo_grado_10": {
+        "observacion": "La autonomía lectora debe crecer durante todo el ciclo 2026-2027 mediante textos accesibles y dificultad progresiva.",
+        "acciones_especificas": [
+          "Mantener lectura breve semanal.",
+          "Aumentar longitud gradualmente.",
+          "Combinar literal, inferencial e intención.",
+          "Registrar velocidad solo después de asegurar comprensión."
+        ]
+      },
+      "uso_exclusivo_grado_11": {
+        "observacion": "En 11.º debe priorizarse lectura estratégica y descarte de distractores sin volver a la traducción total.",
+        "acciones_especificas": [
+          "Practicar partes 5, 6 y 7.",
+          "Analizar la evidencia de cada respuesta.",
+          "Trabajar textos bajo tiempo una vez consolidada la estrategia."
+        ]
+      }
+    }
+  },
+  "componentes": {
+    "lexical": {
+      "nombre_en_informe": "Lexical",
+      "estatus": "componente_diagnostico_gec",
+      "partes_relacionadas_pedagogicamente": [
+        1,
+        7
+      ],
+      "diagnostico_pedagogico": "Una debilidad lexical puede limitar tanto la comprensión de definiciones como la lectura de textos completos, especialmente cuando el estudiante depende de traducción o posee un repertorio poco automatizado.",
+      "focos_de_trabajo": [
+        "Vocabulario de alta frecuencia.",
+        "Campos semánticos.",
+        "Colocaciones.",
+        "Familias de palabras.",
+        "Cognados y falsos cognados.",
+        "Vocabulario en contexto."
+      ],
+      "estrategias": [
+        "Recuperación espaciada.",
+        "Mapas semánticos.",
+        "Lectura graduada.",
+        "Uso de definiciones en inglés accesible.",
+        "Registro de colocaciones, no solo palabras."
+      ],
+      "actividades": [
+        "Definition matching.",
+        "Word families.",
+        "Odd one out con justificación.",
+        "Cloze lexical contextual."
+      ],
+      "errores_a_observar": [
+        "Dependencia excesiva del diccionario.",
+        "Confusión por similitud ortográfica.",
+        "Falsos cognados.",
+        "Conocimiento receptivo sin recuperación.",
+        "Elección de sinónimos incompatibles con la colocación."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Construir repertorio acumulativo y medir retención a largo plazo durante toda la cohorte 2027."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Priorizar vocabulario de alta utilidad y errores repetidos, evitando listas extensas de última hora."
+      }
+    },
+    "lectura": {
+      "nombre_en_informe": "Lectura",
+      "estatus": "componente_diagnostico_gec",
+      "partes_relacionadas_pedagogicamente": [
+        5,
+        6
+      ],
+      "diagnostico_pedagogico": "Una debilidad puede asociarse con dificultad para localizar detalles, reconocer paráfrasis, identificar intención, construir inferencias o integrar información a nivel global.",
+      "focos_de_trabajo": [
+        "Información explícita.",
+        "Paráfrasis.",
+        "Idea general.",
+        "Inferencia.",
+        "Intención del autor.",
+        "Referentes y conectores."
+      ],
+      "estrategias": [
+        "Lectura con propósito.",
+        "Evidencia textual.",
+        "Skimming y scanning controlados.",
+        "Inferencia por pistas múltiples.",
+        "Lectura extensiva accesible."
+      ],
+      "actividades": [
+        "Find the evidence.",
+        "Best paraphrase.",
+        "Main idea in one sentence.",
+        "Literal vs inferred."
+      ],
+      "errores_a_observar": [
+        "Traducción palabra por palabra.",
+        "Confusión entre detalle y idea general.",
+        "Inferencia sin evidencia.",
+        "Desconocimiento de referentes.",
+        "Respuesta por conocimiento previo en vez del texto."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Crear hábito de lectura en inglés con dificultad progresiva y seguimiento de comprensión durante 2026-2027."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Concentrar la práctica en partes 5 y 6 y en los tipos de pregunta donde persisten errores."
+      }
+    },
+    "conversacional": {
+      "nombre_en_informe": "Conversacional",
+      "estatus": "componente_diagnostico_gec",
+      "partes_relacionadas_pedagogicamente": [
+        2,
+        3
+      ],
+      "diagnostico_pedagogico": "Una debilidad puede reflejar problemas para reconocer propósito comunicativo, función de expresiones, secuencia de turnos o adecuación de una respuesta.",
+      "focos_de_trabajo": [
+        "Saludos y despedidas.",
+        "Ofertas y solicitudes.",
+        "Invitaciones.",
+        "Agradecimientos y disculpas.",
+        "Sugerencias.",
+        "Acuerdo y desacuerdo.",
+        "Avisos y propósito."
+      ],
+      "estrategias": [
+        "Microdiálogos.",
+        "Role cards.",
+        "Banco de funciones.",
+        "Contraste de respuestas plausibles.",
+        "Avisos contextualizados."
+      ],
+      "actividades": [
+        "Best reply.",
+        "Where is this notice?",
+        "Complete the dialogue.",
+        "Change the situation."
+      ],
+      "errores_a_observar": [
+        "Respuesta literal inadecuada.",
+        "Confusión de función comunicativa.",
+        "No considerar interlocutor.",
+        "No reconocer propósito del aviso."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Automatizar funciones comunicativas mediante exposición regular a diálogos y avisos."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Practicar identificación rápida de función y pertinencia en partes 2 y 3."
+      }
+    },
+    "gramatical": {
+      "nombre_en_informe": "Gramatical",
+      "estatus": "componente_diagnostico_gec",
+      "partes_relacionadas_pedagogicamente": [
+        4,
+        7
+      ],
+      "diagnostico_pedagogico": "Una debilidad puede indicar que las estructuras no están suficientemente automatizadas o que el estudiante conoce reglas pero no las integra con el significado del texto.",
+      "focos_de_trabajo": [
+        "Tiempos verbales frecuentes.",
+        "Concordancia.",
+        "Pronombres y referentes.",
+        "Preposiciones.",
+        "Conectores.",
+        "Comparativos y cuantificadores.",
+        "Modales.",
+        "Estructuras según nivel y contexto."
+      ],
+      "estrategias": [
+        "Cloze contextual.",
+        "Noticing de formas dentro de textos.",
+        "Contraste de estructuras cercanas.",
+        "Reciclaje acumulativo.",
+        "Corrección razonada de errores."
+      ],
+      "actividades": [
+        "Grammar cloze.",
+        "Error correction with reason.",
+        "Sentence combining.",
+        "Choose and explain."
+      ],
+      "errores_a_observar": [
+        "Aplicación mecánica de reglas.",
+        "No reconocer pistas temporales.",
+        "Ignorar concordancia.",
+        "Confundir categorías gramaticales.",
+        "Elegir una forma correcta fuera de contexto."
+      ],
+      "uso_exclusivo_grado_10": {
+        "accion": "Automatizar estructuras frecuentes progresivamente y siempre dentro de textos."
+      },
+      "uso_exclusivo_grado_11": {
+        "accion": "Focalizar partes 4 y 7 según errores reales, evitando repasos indiscriminados de toda la gramática."
+      }
+    }
+  },
+  "recomendaciones_por_parte_icfes": {
+    "parte_1": {
+      "peso": 11,
+      "prioridad_metodologica": "vocabulario_semantico",
+      "estrategias": [
+        "Definition matching semanal.",
+        "Agrupación por categorías semánticas.",
+        "Distractores con palabras cercanas.",
+        "Vocabulario acumulativo."
+      ]
+    },
+    "parte_2": {
+      "peso": 11,
+      "prioridad_metodologica": "proposito_y_contexto",
+      "estrategias": [
+        "Avisos reales o simulados.",
+        "Identificar purpose y place.",
+        "Subrayar evidencia lingüística.",
+        "Comparar contextos plausibles."
+      ]
+    },
+    "parte_3": {
+      "peso": 11,
+      "prioridad_metodologica": "funcion_comunicativa",
+      "estrategias": [
+        "Microconversaciones.",
+        "Best reply.",
+        "Función comunicativa explícita.",
+        "Cambio de interlocutor y contexto."
+      ]
+    },
+    "parte_4": {
+      "peso": 18,
+      "prioridad_metodologica": "gramatica_en_texto",
+      "estrategias": [
+        "Cloze gramatical.",
+        "Predicción de categoría antes de opciones.",
+        "Justificación de distractores.",
+        "Lectura completa después de completar."
+      ]
+    },
+    "parte_5": {
+      "peso": 16,
+      "prioridad_metodologica": "lectura_literal_y_parafrasis",
+      "estrategias": [
+        "Localización de evidencia.",
+        "Paráfrasis.",
+        "Detalle relevante.",
+        "Evitar coincidencia léxica superficial."
+      ]
+    },
+    "parte_6": {
+      "peso": 11,
+      "prioridad_metodologica": "lectura_inferencial",
+      "estrategias": [
+        "Idea general.",
+        "Intención del autor.",
+        "Inferencia por pistas.",
+        "Diferenciar explícito e implícito."
+      ]
+    },
+    "parte_7": {
+      "peso": 22,
+      "prioridad_metodologica": "integracion_lexico_gramatical",
+      "estrategias": [
+        "Cloze integrado.",
+        "Predicción por contexto.",
+        "Vocabulario y gramática simultáneos.",
+        "Coherencia global del texto."
+      ]
+    }
+  },
+  "combinaciones_diagnosticas": [
+    {
+      "si": [
+        "linguistica_baja",
+        "lexical_bajo"
+      ],
+      "interpretacion": "La principal barrera puede ser un repertorio lexical insuficiente o poco automatizado.",
+      "accion_prioritaria": "Implementar recuperación espaciada, campos semánticos y tareas de parte 1 y 7."
+    },
+    {
+      "si": [
+        "linguistica_baja",
+        "gramatical_bajo"
+      ],
+      "interpretacion": "Puede existir dificultad para integrar estructuras gramaticales con el significado del texto.",
+      "accion_prioritaria": "Trabajar cloze razonado de partes 4 y 7, clasificando errores por estructura."
+    },
+    {
+      "si": [
+        "sociolinguistico_bajo",
+        "conversacional_bajo"
+      ],
+      "interpretacion": "La dificultad puede concentrarse en funciones comunicativas, propósito, interlocutor y adecuación.",
+      "accion_prioritaria": "Implementar microdiálogos, avisos y contraste de respuestas en partes 2 y 3."
+    },
+    {
+      "si": [
+        "pragmatica_baja",
+        "lectura_baja"
+      ],
+      "interpretacion": "Puede existir dificultad para construir sentido global, reconocer intención e inferir información.",
+      "accion_prioritaria": "Priorizar partes 5 y 6 con evidencia textual e inferencia controlada."
+    },
+    {
+      "si": [
+        "pragmatica_baja",
+        "gramatical_bajo"
+      ],
+      "interpretacion": "El estudiante puede reconocer reglas aisladas pero no usarlas para mantener coherencia discursiva.",
+      "accion_prioritaria": "Trabajar parte 7 mediante predicción de significado antes de seleccionar forma."
+    },
+    {
+      "si": [
+        "lexical_bajo",
+        "lectura_baja"
+      ],
+      "interpretacion": "El vocabulario puede estar limitando acceso al texto y generando dependencia de traducción.",
+      "accion_prioritaria": "Combinar lectura graduada con vocabulario de alta frecuencia y estrategias de inferencia lexical."
+    },
+    {
+      "si": [
+        "gramatical_bajo",
+        "lexical_bajo"
+      ],
+      "interpretacion": "La dificultad puede comprometer especialmente partes 4 y 7, que juntas representan 40 % de la prueba.",
+      "accion_prioritaria": "Diseñar intervención integrada de cloze, vocabulario contextual y estructuras frecuentes."
+    },
+    {
+      "si": [
+        "conversacional_bajo",
+        "lectura_alta"
+      ],
+      "interpretacion": "El estudiante comprende textos pero puede presentar dificultad para adecuar respuestas a situaciones comunicativas.",
+      "accion_prioritaria": "Reducir práctica lectora adicional y focalizar funciones comunicativas y avisos."
+    },
+    {
+      "si": [
+        "lectura_baja",
+        "lexical_alto"
+      ],
+      "interpretacion": "El problema probablemente no es solo vocabulario; conviene trabajar paráfrasis, estructura, inferencia e intención.",
+      "accion_prioritaria": "Priorizar partes 5 y 6 con estrategias de comprensión."
+    },
+    {
+      "si": [
+        "tres_competencias_gec_bajas"
+      ],
+      "interpretacion": "La dificultad es transversal y requiere una ruta integral de vocabulario, gramática, funciones comunicativas y lectura.",
+      "accion_prioritaria": "Organizar intervención secuenciada con alta frecuencia de exposición y medición por componente."
+    }
+  ],
+  "secuencias_de_intervencion": {
+    "grado_10": {
+      "horizonte": "ciclo_2026_2027",
+      "fases": [
+        {
+          "fase": 1,
+          "duracion_sugerida": "6 semanas",
+          "foco": "Línea base, vocabulario funcional y funciones comunicativas",
+          "productos": [
+            "registro lexical",
+            "banco de funciones",
+            "avisos y diálogos",
+            "medición inicial"
+          ]
+        },
+        {
+          "fase": 2,
+          "duracion_sugerida": "8 semanas",
+          "foco": "Gramática en contexto y lectura literal",
+          "productos": [
+            "cloze comentados",
+            "paráfrasis",
+            "mini-prueba comparable"
+          ]
+        },
+        {
+          "fase": 3,
+          "duracion_sugerida": "8 semanas",
+          "foco": "Lectura inferencial e integración léxico-gramatical",
+          "productos": [
+            "reading logs",
+            "tareas partes 6 y 7",
+            "medición de progreso"
+          ]
+        },
+        {
+          "fase": 4,
+          "duracion_sugerida": "continuo hasta Saber 11 2027",
+          "foco": "Automatización, transferencia y práctica acumulativa de las siete partes",
+          "productos": [
+            "simulacros analizados",
+            "portafolio de errores",
+            "seguimiento por competencia y componente"
+          ]
+        }
+      ]
+    },
+    "grado_11": {
+      "horizonte": "intervencion_focalizada",
+      "fases": [
+        {
+          "fase": 1,
+          "duracion_sugerida": "2 semanas",
+          "foco": "Comparación Sigma 11–Master Pro 11 y clasificación de errores"
+        },
+        {
+          "fase": 2,
+          "duracion_sugerida": "4 a 6 semanas",
+          "foco": "Intervención en máximo dos componentes prioritarios"
+        },
+        {
+          "fase": 3,
+          "duracion_sugerida": "hasta cierre",
+          "foco": "Transferencia a partes de la prueba relacionadas, automatización y control del tiempo"
+        }
+      ]
+    }
+  },
+  "reglas_para_motor_html": {
+    "entrada_esperada": [
+      "grado",
+      "promedio_area",
+      "puntaje_competencia",
+      "puntaje_componente",
+      "niveles_desempeno_gec",
+      "nivel_necesidad_calculado_por_modulo_estadistico"
+    ],
+    "logica_recomendada": [
+      "Mostrar primero la competencia GEC con mayor necesidad.",
+      "Añadir el componente de menor desempeño.",
+      "Relacionar pedagógicamente el hallazgo con las partes Icfes correspondientes.",
+      "Destacar partes 4 y 7 cuando exista debilidad gramatical o léxico-gramatical, considerando su peso conjunto del 40 %.",
+      "Para grado 10 añadir siempre el bloque de cohorte Saber 11 2027.",
+      "Para grado 11 comparar Sigma 11 y Master Pro 11 cuando ambas aplicaciones estén disponibles.",
+      "No convertir niveles GEC 1–4 en niveles MCER.",
+      "No inferir competencia oral o auditiva a partir de esta prueba, pues la estructura descrita evalúa lectura y uso de la lengua.",
+      "No recomendar solo memorizar vocabulario o reglas.",
+      "Toda recomendación debe incluir contexto comunicativo, actividad observable y evidencia de seguimiento."
+    ],
+    "orden_visual_sugerido": [
+      "Hallazgo",
+      "Qué puede significar",
+      "Competencia diagnóstica",
+      "Componente prioritario",
+      "Partes Icfes relacionadas",
+      "Qué fortalecer",
+      "Cómo trabajarlo",
+      "Actividad sugerida",
+      "Errores a observar",
+      "Cómo hacer seguimiento",
+      "Observación específica para el grado"
+    ]
+  },
+  "orientaciones_para_secretaria": {
+    "grado_10": [
+      "Tratar los resultados como línea base municipal de la cohorte que presentará Saber 11 en 2027.",
+      "Identificar instituciones donde coincidan debilidades lexicales y gramaticales, dada su relación pedagógica con las partes 4 y 7, que concentran 40 % de la prueba.",
+      "Priorizar instituciones con debilidad transversal en Lectura y Lingüística.",
+      "Promover planes de exposición frecuente al inglés y no únicamente talleres previos al examen.",
+      "Solicitar ciclos de intervención de 6 a 8 semanas con medición comparable.",
+      "Hacer seguimiento por competencia y componente además del promedio del área.",
+      "Favorecer comunidades de docentes de Inglés centradas en análisis de errores y progresión comunicativa."
+    ],
+    "grado_11": [
+      "Comparar Sigma 11 y Master Pro 11 para identificar persistencia, mejora o retroceso.",
+      "Distinguir si las dificultades principales son lexicales, gramaticales, lectoras o conversacionales.",
+      "Evitar programas de repaso indiscriminado de toda la gramática.",
+      "Documentar prácticas institucionales asociadas a mejora y transferirlas a grado 10.",
+      "No reportar equivalencias MCER que no estén respaldadas por la información disponible."
+    ]
+  }
+}
