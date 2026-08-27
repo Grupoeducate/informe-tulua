@@ -1,7 +1,97 @@
 {
+  "schema_version": "1.1",
+  "tipo_archivo": "manifest_resultados_tulua",
   "municipio": "Tuluá",
   "departamento": "Valle del Cauca",
-  "schema_version": "1.0",
+  "rutas": {
+    "base_resultados": "./data/resultados/",
+    "manifest": "./data/resultados/manifest.json",
+    "configuracion": "./data/configuracion.json",
+    "consolidados": "./data/consolidados/",
+    "recomendaciones_areas": "./json-recomendaciones-areas/"
+  },
+  "informe": {
+    "anio": 2026,
+    "titulo": "Informe de resultados y oportunidades de mejoramiento educativo - Tuluá",
+    "instituciones_oficiales": 18,
+    "instituciones_evaluadas": 18,
+    "cobertura_institucional_porcentaje": 100,
+    "areas_evaluadas": 5,
+    "grados_evaluados": [
+      10,
+      11
+    ],
+    "cohorte_prioritaria": {
+      "grado_actual": 10,
+      "presenta_saber_11": 2027,
+      "etiqueta": "Cohorte Saber 11 — 2027"
+    }
+  },
+  "catalogos": {
+    "areas": [
+      {
+        "id": "matematicas",
+        "nombre": "Matemáticas",
+        "archivo_recomendaciones": "recomendaciones_matematicas_saber11_2026.json"
+      },
+      {
+        "id": "lectura_critica",
+        "nombre": "Lectura Crítica",
+        "archivo_recomendaciones": "recomendaciones_lectura_critica_saber11_2026.json"
+      },
+      {
+        "id": "sociales_ciudadanas",
+        "nombre": "Sociales y Ciudadanas",
+        "archivo_recomendaciones": "recomendaciones_sociales_ciudadanas_saber11_2026.json"
+      },
+      {
+        "id": "ciencias_naturales",
+        "nombre": "Ciencias Naturales",
+        "archivo_recomendaciones": "recomendaciones_ciencias_naturales_saber11_2026.json"
+      },
+      {
+        "id": "ingles",
+        "nombre": "Inglés",
+        "archivo_recomendaciones": "recomendaciones_ingles_saber11_2026.json"
+      }
+    ],
+    "pruebas": {
+      "grado_10": [
+        {
+          "id": "sigma10",
+          "nombre": "2-02 SIGMA 10 SABER"
+        }
+      ],
+      "grado_11": [
+        {
+          "id": "sigma11",
+          "nombre": "2-02 SIGMA 11 SABER"
+        },
+        {
+          "id": "masterpro11",
+          "nombre": "2-11 MASTER PRO 11"
+        }
+      ]
+    },
+    "zonas": [
+      {
+        "id": "urbana",
+        "nombre": "Urbana"
+      },
+      {
+        "id": "rural",
+        "nombre": "Rural"
+      }
+    ]
+  },
+  "resumen_datos": {
+    "total_instituciones": 18,
+    "total_archivos_resultados": 54,
+    "total_aplicaciones_grado_10": 18,
+    "total_aplicaciones_grado_11": 36,
+    "instituciones_urbanas": 9,
+    "instituciones_rurales": 9
+  },
   "instituciones": [
     {
       "numero": 1,
