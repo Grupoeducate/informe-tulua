@@ -1,0 +1,504 @@
+{
+  "schema_version": "1.0",
+  "tipo_archivo": "configuracion_aplicacion_informe_tulua",
+  "aplicacion": {
+    "id": "informe-tulua",
+    "titulo": "Informe de resultados y oportunidades de mejoramiento educativo",
+    "subtitulo": "Tuluá 2026",
+    "municipio": "Tuluá",
+    "departamento": "Valle del Cauca",
+    "anio_informe": 2026,
+    "entidad_destinataria": "Secretaría de Educación de Tuluá",
+    "entidad_elabora": "Grupo Edúcate Colombia",
+    "descripcion": "Aplicación web para analizar resultados de las 18 instituciones educativas oficiales evaluadas, identificar prioridades pedagógicas y orientar acciones de mejoramiento, con énfasis en la cohorte de grado 10.º que presentará Saber 11 en 2027."
+  },
+  "rutas": {
+    "manifest": "./data/resultados/manifest.json",
+    "resultados": "./data/resultados/",
+    "consolidados": "./data/consolidados/",
+    "recomendaciones": "./json-recomendaciones-areas/",
+    "assets": "./assets/",
+    "css": "./css/",
+    "js": "./js/"
+  },
+  "narrativa_estrategica": {
+    "lema": "Evaluar para comprender. Intervenir para mejorar. Medir para verificar.",
+    "preguntas_guia": [
+      "¿Cómo está Tuluá?",
+      "¿Dónde debemos intervenir?",
+      "¿Qué debemos hacer para mejorar?"
+    ],
+    "principio": "El informe no debe limitarse a mostrar resultados. Cada hallazgo relevante debe conducir, cuando la evidencia lo permita, a una interpretación pedagógica, una recomendación metodológica y una propuesta de seguimiento.",
+    "mensaje_central": "Los resultados 2026 constituyen una línea base para orientar decisiones de mejoramiento educativo y fortalecer el acompañamiento institucional y municipal."
+  },
+  "cohorte_prioritaria": {
+    "grado": 10,
+    "etiqueta": "Cohorte Saber 11 — 2027",
+    "anio_presentacion_saber11": 2027,
+    "prioridad_visual": "alta",
+    "mostrar_en_inicio": true,
+    "mensaje": "La cohorte actualmente matriculada en grado 10.º representa la principal oportunidad de intervención, debido a que dispone de un ciclo académico para fortalecer competencias y componentes antes de presentar Saber 11 en 2027.",
+    "objetivos": [
+      "Establecer una línea base municipal e institucional.",
+      "Identificar competencias y componentes con mayor oportunidad de fortalecimiento.",
+      "Orientar intervenciones pedagógicas durante 2027.",
+      "Realizar nuevas mediciones comparables sobre la misma cohorte.",
+      "Verificar avances y ajustar las estrategias antes de Saber 11."
+    ]
+  },
+  "navegacion": [
+    {
+      "id": "inicio",
+      "etiqueta": "Inicio",
+      "orden": 1,
+      "visible": true,
+      "descripcion": "Resumen ejecutivo municipal."
+    },
+    {
+      "id": "cohorte_2027",
+      "etiqueta": "Cohorte 2027",
+      "orden": 2,
+      "visible": true,
+      "descripcion": "Análisis prioritario de grado 10.º."
+    },
+    {
+      "id": "instituciones",
+      "etiqueta": "Instituciones",
+      "orden": 3,
+      "visible": true,
+      "descripcion": "Comparación y perfil de las 18 instituciones."
+    },
+    {
+      "id": "areas",
+      "etiqueta": "Áreas",
+      "orden": 4,
+      "visible": true,
+      "descripcion": "Análisis municipal e institucional por área evaluada."
+    },
+    {
+      "id": "plan_mejoramiento",
+      "etiqueta": "Plan de mejoramiento",
+      "orden": 5,
+      "visible": true,
+      "descripcion": "Prioridades, acciones, seguimiento y sostenibilidad de la estrategia."
+    },
+    {
+      "id": "metodologia",
+      "etiqueta": "Metodología",
+      "orden": 6,
+      "visible": true,
+      "descripcion": "Fuentes, criterios de interpretación y alcances del informe."
+    }
+  ],
+  "filtros_globales": {
+    "mostrar_barra_fija": true,
+    "orden": [
+      "institucion",
+      "grado",
+      "prueba",
+      "area",
+      "zona"
+    ],
+    "institucion": {
+      "activo": true,
+      "valor_inicial": "todas",
+      "etiqueta": "Institución"
+    },
+    "grado": {
+      "activo": true,
+      "valor_inicial": 10,
+      "opciones": [
+        10,
+        11
+      ],
+      "etiqueta": "Grado"
+    },
+    "prueba": {
+      "activo": true,
+      "dependiente_de_grado": true,
+      "etiqueta": "Prueba"
+    },
+    "area": {
+      "activo": true,
+      "valor_inicial": "todas",
+      "etiqueta": "Área"
+    },
+    "zona": {
+      "activo": true,
+      "valor_inicial": "todas",
+      "opciones": [
+        "todas",
+        "urbana",
+        "rural"
+      ],
+      "etiqueta": "Zona"
+    }
+  },
+  "areas": [
+    {
+      "id": "matematicas",
+      "nombre": "Matemáticas",
+      "archivo_recomendaciones": "recomendaciones_matematicas_saber11_2026.json"
+    },
+    {
+      "id": "lectura_critica",
+      "nombre": "Lectura Crítica",
+      "archivo_recomendaciones": "recomendaciones_lectura_critica_saber11_2026.json"
+    },
+    {
+      "id": "sociales_ciudadanas",
+      "nombre": "Sociales y Ciudadanas",
+      "archivo_recomendaciones": "recomendaciones_sociales_ciudadanas_saber11_2026.json"
+    },
+    {
+      "id": "ciencias_naturales",
+      "nombre": "Ciencias Naturales",
+      "archivo_recomendaciones": "recomendaciones_ciencias_naturales_saber11_2026.json"
+    },
+    {
+      "id": "ingles",
+      "nombre": "Inglés",
+      "archivo_recomendaciones": "recomendaciones_ingles_saber11_2026.json"
+    }
+  ],
+  "inicio": {
+    "mostrar": true,
+    "tarjetas_principales": [
+      "instituciones_evaluadas",
+      "estudiantes_evaluados_grado_10",
+      "estudiantes_evaluados_grado_11",
+      "area_mayor_desempeno",
+      "area_mayor_oportunidad"
+    ],
+    "secciones": [
+      "panorama_municipal",
+      "resultados_por_area",
+      "urbano_rural",
+      "fortalezas",
+      "oportunidades",
+      "hallazgo_estrategico_cohorte_2027"
+    ],
+    "regla": "La página inicial debe permitir una lectura ejecutiva en pocos minutos y evitar saturación de gráficos."
+  },
+  "modulo_cohorte_2027": {
+    "mostrar": true,
+    "grado": 10,
+    "secciones": [
+      "resumen_municipal",
+      "promedio_por_area",
+      "competencias_prioritarias",
+      "componentes_prioritarios",
+      "niveles_desempeno",
+      "comparacion_urbano_rural",
+      "instituciones_con_mayor_oportunidad",
+      "instituciones_destacadas",
+      "recomendaciones_pedagogicas",
+      "ruta_intervencion_2027"
+    ],
+    "enfoque": "La vista debe responder qué fortalecer, dónde intervenir y cómo hacer seguimiento antes de Saber 11 de 2027."
+  },
+  "modulo_grado_11": {
+    "mostrar_en_inicio": false,
+    "pruebas": [
+      "sigma11",
+      "masterpro11"
+    ],
+    "permitir_comparacion": true,
+    "regla_comparacion": "Mostrar diferencias observadas entre aplicaciones sin atribuir causalidad automática.",
+    "lenguaje_recomendado": "Se observa una diferencia de X puntos entre las aplicaciones.",
+    "lenguaje_no_recomendado": "La institución mejoró X puntos gracias a la intervención.",
+    "uso_estrategico": "Los resultados de 11.º deben servir también para retroalimentar la planeación de grado 10.º."
+  },
+  "modulo_instituciones": {
+    "mostrar": true,
+    "permitir_ordenamiento": true,
+    "criterios_ordenamiento": [
+      "promedio_area",
+      "promedio_general",
+      "zona",
+      "nombre"
+    ],
+    "perfil_institucional": {
+      "mostrar_identificacion": true,
+      "mostrar_dane": true,
+      "mostrar_zona": true,
+      "mostrar_total_estudiantes": true,
+      "mostrar_top_5": true,
+      "mostrar_nombres_reales_estudiantes": true,
+      "mostrar_puntajes_top_5_por_area": true,
+      "mostrar_competencias": true,
+      "mostrar_componentes": true,
+      "mostrar_niveles": true,
+      "mostrar_fortalezas": true,
+      "mostrar_oportunidades": true,
+      "mostrar_recomendaciones": true
+    },
+    "regla_ranking": "Los rankings son una herramienta de exploración y no deben presentarse como clasificación punitiva de instituciones.",
+    "etiqueta_priorizacion": "Instituciones con mayor oportunidad de fortalecimiento",
+    "etiqueta_destacadas": "Instituciones con desempeño destacado"
+  },
+  "modulo_areas": {
+    "mostrar": true,
+    "vista_por_area": {
+      "mostrar_promedio_municipal": true,
+      "mostrar_promedio_por_institucion": true,
+      "mostrar_competencias": true,
+      "mostrar_componentes": true,
+      "mostrar_niveles": true,
+      "mostrar_urbano_rural": true,
+      "mostrar_grado_10": true,
+      "mostrar_grado_11": true,
+      "mostrar_recomendaciones": true
+    },
+    "principio": "Cada área debe permitir pasar del resultado municipal al detalle institucional y de allí a la recomendación pedagógica."
+  },
+  "motor_recomendaciones": {
+    "activo": true,
+    "ruta_base": "./json-recomendaciones-areas/",
+    "fuente_recomendaciones": "json_por_area",
+    "entrada_esperada": [
+      "grado",
+      "area",
+      "puntaje_competencia",
+      "puntaje_componente",
+      "niveles_desempeno",
+      "nivel_necesidad"
+    ],
+    "salida_esperada": [
+      "hallazgo",
+      "interpretacion_pedagogica",
+      "objetivo_mejoramiento",
+      "estrategias_metodologicas",
+      "actividad_sugerida",
+      "errores_a_observar",
+      "indicadores_seguimiento",
+      "observacion_especifica_grado"
+    ],
+    "orden_presentacion": [
+      "Hallazgo",
+      "Qué puede significar",
+      "Qué fortalecer",
+      "Cómo trabajarlo",
+      "Actividad sugerida",
+      "Errores a observar",
+      "Cómo hacer seguimiento",
+      "Observación específica para el grado"
+    ],
+    "reglas": [
+      "No afirmar causalidad a partir de un único puntaje.",
+      "No limitar la recomendación a realizar más simulacros.",
+      "Toda recomendación debe incluir una acción metodológica.",
+      "Toda recomendación debe incluir una evidencia o indicador de seguimiento.",
+      "En grado 10 siempre debe mostrarse el bloque específico de cohorte Saber 11 2027.",
+      "En grado 11 debe aprovecharse la comparación entre Sigma 11 y Master Pro 11 cuando exista."
+    ]
+  },
+  "clasificacion_necesidad": {
+    "estado": "pendiente_definicion_metodologica",
+    "aplica_a": [
+      "promedio_area",
+      "competencias",
+      "componentes"
+    ],
+    "categorias_previstas": [
+      "fortaleza",
+      "seguimiento",
+      "prioridad",
+      "alta_prioridad"
+    ],
+    "regla": "No utilizar cortes arbitrarios. Los umbrales deberán definirse en un módulo metodológico común y documentado para las cinco áreas.",
+    "usar_desviacion_estandar": true,
+    "nota_desviacion": "Por ahora se utiliza la desviación estándar como dato descriptivo. Cualquier clasificación de dispersión debe estar respaldada por una metodología independiente."
+  },
+  "consolidados": {
+    "archivos_previstos": {
+      "municipio": "./data/consolidados/municipio.json",
+      "grado_10": "./data/consolidados/grado10.json",
+      "grado_11": "./data/consolidados/grado11.json"
+    },
+    "indicadores_minimos_municipio": [
+      "total_estudiantes_evaluados",
+      "promedio_por_area",
+      "promedio_por_competencia",
+      "promedio_por_componente",
+      "distribucion_niveles",
+      "comparacion_urbano_rural",
+      "instituciones_por_encima_referente_municipal",
+      "instituciones_por_debajo_referente_municipal"
+    ],
+    "regla_promedios": "Los consolidados municipales deberán calcularse a partir de los datos de estudiantes evaluados y/o ponderaciones técnicamente justificadas. No promediar promedios institucionales sin considerar tamaño de población cuando corresponda."
+  },
+  "visualizacion": {
+    "principios": [
+      "Priorizar claridad sobre cantidad de gráficos.",
+      "Mostrar primero la lectura ejecutiva y luego permitir profundización.",
+      "Usar etiquetas comprensibles para directivos.",
+      "Evitar gráficos decorativos sin función analítica.",
+      "Diferenciar visualmente grado 10 como cohorte prioritaria."
+    ],
+    "graficos_preferidos": [
+      "barras",
+      "barras_horizontales",
+      "lineas_para_comparacion_de_aplicaciones",
+      "distribucion_por_niveles",
+      "tablas_interactivas"
+    ],
+    "graficos_evitar": [
+      "graficos_3d",
+      "efectos_decorativos",
+      "rankings_sin_contexto"
+    ]
+  },
+  "textos_interfaz": {
+    "fortalezas": "Fortalezas",
+    "oportunidades": "Oportunidades de fortalecimiento",
+    "prioridad": "Prioridad pedagógica",
+    "alta_prioridad": "Alta prioridad pedagógica",
+    "urbana": "Urbana",
+    "rural": "Rural",
+    "todas": "Todas",
+    "resultado_municipal": "Resultado municipal",
+    "referente_municipal": "Referente municipal",
+    "cohorte_2027": "Cohorte Saber 11 — 2027",
+    "recomendaciones": "Recomendaciones metodológicas",
+    "seguimiento": "Seguimiento sugerido"
+  },
+  "privacidad_y_visualizacion_estudiantes": {
+    "conservar_nombres_reales_en_datos": true,
+    "mostrar_nombres_reales": true,
+    "contextos_de_visualizacion": [
+      "perfil_institucional",
+      "top_5"
+    ],
+    "mostrar_en_vista_municipal": false,
+    "nota": "Los nombres reales se conservan por solicitud del destinatario. La vista municipal debe priorizar datos agregados; los nombres se muestran únicamente en contextos institucionales definidos."
+  },
+  "metodologia": {
+    "fuentes_principales": [
+      "Informes de resultados GEC 2026 de las 18 instituciones educativas oficiales",
+      "Guía de orientación Saber 11 Icfes 2026",
+      "Marcos de referencia Saber 11 del Icfes",
+      "Diagnóstico del Plan de Desarrollo Municipal de Tuluá 2024-2027"
+    ],
+    "criterios": [
+      "Separar descripción estadística de interpretación pedagógica.",
+      "No inferir causalidad sin evidencia.",
+      "No convertir diferencias pequeñas entre mediciones en conclusiones de impacto.",
+      "Mantener trazabilidad entre resultado, competencia, componente y recomendación.",
+      "Documentar cualquier criterio de clasificación que se incorpore."
+    ]
+  },
+  "alineacion_plan_desarrollo": {
+    "mostrar": true,
+    "titulo": "Conexión con el diagnóstico educativo municipal",
+    "ejes": [
+      {
+        "id": "calidad",
+        "nombre": "Calidad educativa",
+        "mensaje": "El diagnóstico municipal reconoce la necesidad de mejorar continuamente los procesos de enseñanza y aprendizaje y utiliza Saber 11 como uno de sus referentes de calidad."
+      },
+      {
+        "id": "equidad",
+        "nombre": "Equidad territorial",
+        "mensaje": "El seguimiento debe conservar la lectura urbano-rural para identificar brechas y orientar intervenciones contextualizadas."
+      },
+      {
+        "id": "formacion_docente",
+        "nombre": "Formación docente",
+        "mensaje": "Las necesidades recurrentes identificadas por competencia y componente pueden convertirse en líneas focalizadas de formación y acompañamiento docente."
+      },
+      {
+        "id": "seguimiento",
+        "nombre": "Seguimiento basado en evidencia",
+        "mensaje": "Las decisiones de mejoramiento deben apoyarse en mediciones comparables y análisis de progreso."
+      }
+    ]
+  },
+  "plan_mejoramiento": {
+    "mostrar": true,
+    "titulo": "Ruta municipal de mejoramiento 2027",
+    "estructura": [
+      "prioridades_municipales",
+      "prioridades_por_area",
+      "instituciones_priorizadas",
+      "acciones_docentes",
+      "acciones_coordinadores",
+      "acciones_secretaria",
+      "cronograma_sugerido",
+      "indicadores_seguimiento",
+      "proxima_medicion"
+    ],
+    "niveles_de_accion": {
+      "docente": "Acciones concretas de aula y seguimiento de aprendizajes.",
+      "coordinacion": "Acompañamiento, observación, comunidades de aprendizaje y seguimiento institucional.",
+      "secretaria": "Priorización de asistencia técnica, formación docente, seguimiento municipal y recursos."
+    }
+  },
+  "continuidad_alianza": {
+    "mostrar": true,
+    "titulo": "Sostenibilidad de la estrategia de mejoramiento",
+    "mensaje_principal": "La medición 2026 debe entenderse como el inicio de un ciclo de mejoramiento y no como un evento aislado.",
+    "ciclo": [
+      {
+        "paso": 1,
+        "nombre": "Evaluar",
+        "descripcion": "Medir competencias y establecer una línea base."
+      },
+      {
+        "paso": 2,
+        "nombre": "Analizar",
+        "descripcion": "Identificar fortalezas, oportunidades, competencias y componentes prioritarios."
+      },
+      {
+        "paso": 3,
+        "nombre": "Intervenir",
+        "descripcion": "Implementar recomendaciones pedagógicas y acompañamiento institucional."
+      },
+      {
+        "paso": 4,
+        "nombre": "Verificar",
+        "descripcion": "Realizar nuevas mediciones comparables y ajustar las estrategias."
+      }
+    ],
+    "recomendacion_estrategica": "Dar continuidad durante 2027 a la alianza entre la Secretaría de Educación de Tuluá y Grupo Edúcate Colombia, con énfasis inicial en la cohorte de grado 10.º que presentará Saber 11 en 2027.",
+    "argumentos": [
+      "Ya existe una línea base para las 18 instituciones educativas oficiales.",
+      "La continuidad permite observar la evolución de la misma cohorte.",
+      "Las recomendaciones pueden orientar acciones de aula y formación docente.",
+      "Las nuevas mediciones permiten verificar avances y ajustar las estrategias.",
+      "El proceso transforma la evaluación en un sistema de mejoramiento continuo."
+    ]
+  },
+  "accesibilidad": {
+    "contraste_alto": true,
+    "tamano_texto_legible": true,
+    "graficos_con_etiquetas": true,
+    "no_dependent_only_on_color": true,
+    "navegacion_teclado": true,
+    "texto_alternativo_imagenes": true
+  },
+  "integridad_datos": {
+    "validar_manifest_al_cargar": true,
+    "validar_archivos_resultados": true,
+    "mostrar_error_si_falta_archivo": true,
+    "permitir_datos_parciales": false,
+    "reglas": [
+      "No sustituir valores faltantes por cero.",
+      "No forzar total_evaluados_area a coincidir con total_estudiantes_grado.",
+      "Conservar DANE como texto.",
+      "Mostrar advertencia cuando un área tenga menos evaluados que el total del grado.",
+      "No modificar los nombres de competencias o componentes provenientes del esquema validado."
+    ]
+  },
+  "estado_desarrollo": {
+    "manifest": "completado",
+    "resultados_54_json": "completado",
+    "recomendaciones_5_areas": "completado",
+    "configuracion": "completado",
+    "consolidado_municipal": "pendiente",
+    "consolidado_grado_10": "pendiente",
+    "consolidado_grado_11": "pendiente",
+    "motor_clasificacion_necesidad": "pendiente",
+    "html": "pendiente"
+  }
+}
