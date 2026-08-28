@@ -1,0 +1,733 @@
+{
+  "schema_version": "1.0",
+  "tipo_archivo": "consolidado_municipal_ejecutivo",
+  "municipio": "Tuluá",
+  "departamento": "Valle del Cauca",
+  "anio_informe": 2026,
+  "proposito": {
+    "descripcion": "Resumen ejecutivo municipal para orientar la lectura inicial del informe, facilitar la navegación hacia los consolidados por grado y apoyar la identificación de hallazgos que posteriormente serán vinculados con recomendaciones pedagógicas.",
+    "lema": "Evaluar para comprender. Intervenir para mejorar. Medir para verificar."
+  },
+  "cobertura_institucional": {
+    "instituciones_oficiales": 18,
+    "instituciones_evaluadas": 18,
+    "porcentaje": 100.0,
+    "instituciones_urbanas": 9,
+    "instituciones_rurales": 9,
+    "nota": "La cobertura se refiere a instituciones educativas oficiales incluidas en el proyecto."
+  },
+  "poblaciones_y_aplicaciones": {
+    "grado_10": {
+      "cohorte": "Cohorte Saber 11 — 2027",
+      "prueba": "2-02 SIGMA 10 SABER",
+      "instituciones": 18,
+      "grupos": 55,
+      "estudiantes_cohorte_reportados": 1528
+    },
+    "grado_11": {
+      "instituciones": 18,
+      "grupos": 56,
+      "aplicaciones": [
+        {
+          "id": "sigma11",
+          "nombre": "2-02 SIGMA 11 SABER",
+          "participantes_reportados": 1336
+        },
+        {
+          "id": "masterpro11",
+          "nombre": "2-11 MASTER PRO 11",
+          "participantes_reportados": 1312
+        }
+      ],
+      "nota": "Los participantes de Sigma 11 y Master Pro 11 no se suman para estimar estudiantes únicos, porque corresponden a dos aplicaciones de la misma cohorte y la participación reportada no es idéntica."
+    },
+    "total_estudiantes_unicos_proyecto": null,
+    "nota_total_unicos": "No se calcula un total único municipal sumando las aplicaciones de grado 11."
+  },
+  "areas_evaluadas": {
+    "matematicas": {
+      "nombre": "Matemáticas",
+      "grado_10_sigma10": {
+        "promedio_municipal_ponderado": 38.63,
+        "total_evaluados_area": 1528,
+        "cobertura_sobre_total_grado_porcentaje": 100.0,
+        "urbana": {
+          "promedio_ponderado": 39.54,
+          "total_evaluados_area": 1276
+        },
+        "rural": {
+          "promedio_ponderado": 34.02,
+          "total_evaluados_area": 252
+        },
+        "brecha_urbana_menos_rural": 5.52
+      },
+      "grado_11": {
+        "sigma11": {
+          "promedio_municipal_ponderado": 51.46
+        },
+        "masterpro11": {
+          "promedio_municipal_ponderado": 40.37
+        },
+        "diferencia_masterpro_menos_sigma": -11.09,
+        "interpretacion_comparacion": "Diferencia descriptiva entre aplicaciones. No implica por sí sola efecto causal ni progreso individual."
+      }
+    },
+    "lectura_critica": {
+      "nombre": "Lectura Crítica",
+      "grado_10_sigma10": {
+        "promedio_municipal_ponderado": 41.85,
+        "total_evaluados_area": 1509,
+        "cobertura_sobre_total_grado_porcentaje": 98.76,
+        "urbana": {
+          "promedio_ponderado": 42.51,
+          "total_evaluados_area": 1260
+        },
+        "rural": {
+          "promedio_ponderado": 38.47,
+          "total_evaluados_area": 249
+        },
+        "brecha_urbana_menos_rural": 4.04
+      },
+      "grado_11": {
+        "sigma11": {
+          "promedio_municipal_ponderado": 53.73
+        },
+        "masterpro11": {
+          "promedio_municipal_ponderado": 58.09
+        },
+        "diferencia_masterpro_menos_sigma": 4.36,
+        "interpretacion_comparacion": "Diferencia descriptiva entre aplicaciones. No implica por sí sola efecto causal ni progreso individual."
+      }
+    },
+    "sociales_ciudadanas": {
+      "nombre": "Sociales y Ciudadanas",
+      "grado_10_sigma10": {
+        "promedio_municipal_ponderado": 50.65,
+        "total_evaluados_area": 1528,
+        "cobertura_sobre_total_grado_porcentaje": 100.0,
+        "urbana": {
+          "promedio_ponderado": 51.19,
+          "total_evaluados_area": 1276
+        },
+        "rural": {
+          "promedio_ponderado": 47.88,
+          "total_evaluados_area": 252
+        },
+        "brecha_urbana_menos_rural": 3.31
+      },
+      "grado_11": {
+        "sigma11": {
+          "promedio_municipal_ponderado": 44.75
+        },
+        "masterpro11": {
+          "promedio_municipal_ponderado": 57.36
+        },
+        "diferencia_masterpro_menos_sigma": 12.61,
+        "interpretacion_comparacion": "Diferencia descriptiva entre aplicaciones. No implica por sí sola efecto causal ni progreso individual."
+      }
+    },
+    "ciencias_naturales": {
+      "nombre": "Ciencias Naturales",
+      "grado_10_sigma10": {
+        "promedio_municipal_ponderado": 41.91,
+        "total_evaluados_area": 1528,
+        "cobertura_sobre_total_grado_porcentaje": 100.0,
+        "urbana": {
+          "promedio_ponderado": 42.55,
+          "total_evaluados_area": 1276
+        },
+        "rural": {
+          "promedio_ponderado": 38.65,
+          "total_evaluados_area": 252
+        },
+        "brecha_urbana_menos_rural": 3.9
+      },
+      "grado_11": {
+        "sigma11": {
+          "promedio_municipal_ponderado": 42.0
+        },
+        "masterpro11": {
+          "promedio_municipal_ponderado": 53.86
+        },
+        "diferencia_masterpro_menos_sigma": 11.86,
+        "interpretacion_comparacion": "Diferencia descriptiva entre aplicaciones. No implica por sí sola efecto causal ni progreso individual."
+      }
+    },
+    "ingles": {
+      "nombre": "Inglés",
+      "grado_10_sigma10": {
+        "promedio_municipal_ponderado": 46.84,
+        "total_evaluados_area": 1499,
+        "cobertura_sobre_total_grado_porcentaje": 98.1,
+        "urbana": {
+          "promedio_ponderado": 47.55,
+          "total_evaluados_area": 1255
+        },
+        "rural": {
+          "promedio_ponderado": 43.2,
+          "total_evaluados_area": 244
+        },
+        "brecha_urbana_menos_rural": 4.35
+      },
+      "grado_11": {
+        "sigma11": {
+          "promedio_municipal_ponderado": 47.75
+        },
+        "masterpro11": {
+          "promedio_municipal_ponderado": 50.85
+        },
+        "diferencia_masterpro_menos_sigma": 3.1,
+        "interpretacion_comparacion": "Diferencia descriptiva entre aplicaciones. No implica por sí sola efecto causal ni progreso individual."
+      }
+    }
+  },
+  "lectura_ejecutiva": {
+    "grado_10_cohorte_2027": {
+      "orden_areas_por_promedio": [
+        {
+          "id": "sociales_ciudadanas",
+          "nombre": "Sociales y Ciudadanas",
+          "promedio": 50.65
+        },
+        {
+          "id": "ingles",
+          "nombre": "Inglés",
+          "promedio": 46.84
+        },
+        {
+          "id": "ciencias_naturales",
+          "nombre": "Ciencias Naturales",
+          "promedio": 41.91
+        },
+        {
+          "id": "lectura_critica",
+          "nombre": "Lectura Crítica",
+          "promedio": 41.85
+        },
+        {
+          "id": "matematicas",
+          "nombre": "Matemáticas",
+          "promedio": 38.63
+        }
+      ],
+      "mayor_promedio_observado": {
+        "id": "sociales_ciudadanas",
+        "nombre": "Sociales y Ciudadanas",
+        "promedio": 50.65
+      },
+      "menor_promedio_observado": {
+        "id": "matematicas",
+        "nombre": "Matemáticas",
+        "promedio": 38.63
+      },
+      "brechas_urbano_rural": [
+        {
+          "id": "matematicas",
+          "nombre": "Matemáticas",
+          "urbana": 39.54,
+          "rural": 34.02,
+          "diferencia_urbana_menos_rural": 5.52
+        },
+        {
+          "id": "lectura_critica",
+          "nombre": "Lectura Crítica",
+          "urbana": 42.51,
+          "rural": 38.47,
+          "diferencia_urbana_menos_rural": 4.04
+        },
+        {
+          "id": "sociales_ciudadanas",
+          "nombre": "Sociales y Ciudadanas",
+          "urbana": 51.19,
+          "rural": 47.88,
+          "diferencia_urbana_menos_rural": 3.31
+        },
+        {
+          "id": "ciencias_naturales",
+          "nombre": "Ciencias Naturales",
+          "urbana": 42.55,
+          "rural": 38.65,
+          "diferencia_urbana_menos_rural": 3.9
+        },
+        {
+          "id": "ingles",
+          "nombre": "Inglés",
+          "urbana": 47.55,
+          "rural": 43.2,
+          "diferencia_urbana_menos_rural": 4.35
+        }
+      ],
+      "mayor_brecha_absoluta_urbano_rural": {
+        "id": "matematicas",
+        "nombre": "Matemáticas",
+        "urbana": 39.54,
+        "rural": 34.02,
+        "diferencia_urbana_menos_rural": 5.52
+      },
+      "nota": "Los términos mayor y menor describen el orden observado de los promedios. No constituyen por sí solos una clasificación de fortaleza o prioridad pedagógica."
+    },
+    "grado_11_sigma11": {
+      "orden_areas_por_promedio": [
+        {
+          "id": "lectura_critica",
+          "nombre": "Lectura Crítica",
+          "promedio": 53.73
+        },
+        {
+          "id": "matematicas",
+          "nombre": "Matemáticas",
+          "promedio": 51.46
+        },
+        {
+          "id": "ingles",
+          "nombre": "Inglés",
+          "promedio": 47.75
+        },
+        {
+          "id": "sociales_ciudadanas",
+          "nombre": "Sociales y Ciudadanas",
+          "promedio": 44.75
+        },
+        {
+          "id": "ciencias_naturales",
+          "nombre": "Ciencias Naturales",
+          "promedio": 42.0
+        }
+      ],
+      "mayor_promedio_observado": {
+        "id": "lectura_critica",
+        "nombre": "Lectura Crítica",
+        "promedio": 53.73
+      },
+      "menor_promedio_observado": {
+        "id": "ciencias_naturales",
+        "nombre": "Ciencias Naturales",
+        "promedio": 42.0
+      }
+    },
+    "grado_11_masterpro11": {
+      "orden_areas_por_promedio": [
+        {
+          "id": "lectura_critica",
+          "nombre": "Lectura Crítica",
+          "promedio": 58.09
+        },
+        {
+          "id": "sociales_ciudadanas",
+          "nombre": "Sociales y Ciudadanas",
+          "promedio": 57.36
+        },
+        {
+          "id": "ciencias_naturales",
+          "nombre": "Ciencias Naturales",
+          "promedio": 53.86
+        },
+        {
+          "id": "ingles",
+          "nombre": "Inglés",
+          "promedio": 50.85
+        },
+        {
+          "id": "matematicas",
+          "nombre": "Matemáticas",
+          "promedio": 40.37
+        }
+      ],
+      "mayor_promedio_observado": {
+        "id": "lectura_critica",
+        "nombre": "Lectura Crítica",
+        "promedio": 58.09
+      },
+      "menor_promedio_observado": {
+        "id": "matematicas",
+        "nombre": "Matemáticas",
+        "promedio": 40.37
+      }
+    },
+    "comparacion_grado_11": {
+      "diferencias_por_area_masterpro_menos_sigma": [
+        {
+          "id": "sociales_ciudadanas",
+          "nombre": "Sociales y Ciudadanas",
+          "diferencia_masterpro_menos_sigma": 12.61
+        },
+        {
+          "id": "ciencias_naturales",
+          "nombre": "Ciencias Naturales",
+          "diferencia_masterpro_menos_sigma": 11.86
+        },
+        {
+          "id": "lectura_critica",
+          "nombre": "Lectura Crítica",
+          "diferencia_masterpro_menos_sigma": 4.36
+        },
+        {
+          "id": "ingles",
+          "nombre": "Inglés",
+          "diferencia_masterpro_menos_sigma": 3.1
+        },
+        {
+          "id": "matematicas",
+          "nombre": "Matemáticas",
+          "diferencia_masterpro_menos_sigma": -11.09
+        }
+      ],
+      "mayor_diferencia_positiva_observada": {
+        "id": "sociales_ciudadanas",
+        "nombre": "Sociales y Ciudadanas",
+        "diferencia_masterpro_menos_sigma": 12.61
+      },
+      "mayor_diferencia_negativa_observada": {
+        "id": "matematicas",
+        "nombre": "Matemáticas",
+        "diferencia_masterpro_menos_sigma": -11.09
+      },
+      "regla_interpretacion": "Las diferencias entre Sigma 11 y Master Pro 11 son descriptivas. No deben interpretarse automáticamente como progreso individual, impacto de intervención o efecto causal."
+    }
+  },
+  "reglas_de_comparacion": {
+    "comparar_grado_10_con_grado_11_como_misma_medicion": false,
+    "razon": "Los grados, cohortes y aplicaciones no deben asumirse equivalentes sin evidencia técnica de comparabilidad.",
+    "comparar_sigma11_con_masterpro11": true,
+    "tipo_comparacion_sigma_master": "descriptiva",
+    "comparar_urbano_rural": true,
+    "nota_urbano_rural": "La comparación territorial describe diferencias observadas y no identifica por sí misma sus causas."
+  },
+  "rutas_de_navegacion": {
+    "cohorte_2027": "./data/consolidados/grado10.json",
+    "grado_11": "./data/consolidados/grado11.json",
+    "manifest": "./data/resultados/manifest.json",
+    "recomendaciones": "./json-recomendaciones-areas/"
+  },
+  "instituciones": [
+    {
+      "numero": 1,
+      "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+      "dane": "27683400123901",
+      "zona": "rural",
+      "grado_10": {
+        "cantidad_grupos": 1,
+        "total_estudiantes_grado": 14,
+        "archivo_resultado": "01_institucion_educativa_la_moralia__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 1,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 2,
+      "nombre": "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+      "dane": "176834000394",
+      "zona": "urbana",
+      "grado_10": {
+        "cantidad_grupos": 5,
+        "total_estudiantes_grado": 195,
+        "archivo_resultado": "02_sede_principal_no_7_maria_antonia_ruiz__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 6,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 3,
+      "nombre": "INSTITUCION EDUCATIVA AGUACLARA",
+      "dane": "276834001778",
+      "zona": "rural",
+      "grado_10": {
+        "cantidad_grupos": 4,
+        "total_estudiantes_grado": 88,
+        "archivo_resultado": "03_institucion_educativa_aguaclara__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 3,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 4,
+      "nombre": "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+      "dane": "176834003946",
+      "zona": "urbana",
+      "grado_10": {
+        "cantidad_grupos": 5,
+        "total_estudiantes_grado": 121,
+        "archivo_resultado": "04_institucion_educativa_alfonso_lopez_pumarejo__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 5,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 5,
+      "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+      "dane": "276834000941",
+      "zona": "rural",
+      "grado_10": {
+        "cantidad_grupos": 1,
+        "total_estudiantes_grado": 6,
+        "archivo_resultado": "05_institucion_educativa_alto_rocio__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 1,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 6,
+      "nombre": "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+      "dane": "176834000351",
+      "zona": "urbana",
+      "grado_10": {
+        "cantidad_grupos": 4,
+        "total_estudiantes_grado": 108,
+        "archivo_resultado": "06_institucion_educativa_corazon_del_valle__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 4,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 7,
+      "nombre": "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+      "dane": "176834000084",
+      "zona": "urbana",
+      "grado_10": {
+        "cantidad_grupos": 5,
+        "total_estudiantes_grado": 131,
+        "archivo_resultado": "07_institucion_educativa_gimnasio_del_pacifico__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 5,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 8,
+      "nombre": "I.E. JOVITA SANTA COLOMA",
+      "dane": "276834000666",
+      "zona": "rural",
+      "grado_10": {
+        "cantidad_grupos": 1,
+        "total_estudiantes_grado": 26,
+        "archivo_resultado": "08_i_e_jovita_santa_coloma__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 2,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 9,
+      "nombre": "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+      "dane": "176834002559",
+      "zona": "urbana",
+      "grado_10": {
+        "cantidad_grupos": 4,
+        "total_estudiantes_grado": 154,
+        "archivo_resultado": "09_institucion_educativa_juan_maria_cespedes__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 4,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 10,
+      "nombre": "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+      "dane": "176834000092",
+      "zona": "urbana",
+      "grado_10": {
+        "cantidad_grupos": 7,
+        "total_estudiantes_grado": 243,
+        "archivo_resultado": "10_sede_principal_instituto_julia_restrepo__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 6,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 11,
+      "nombre": "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+      "dane": "276834002626",
+      "zona": "rural",
+      "grado_10": {
+        "cantidad_grupos": 1,
+        "total_estudiantes_grado": 23,
+        "archivo_resultado": "11_institucion_educativa_julio_cesar_zuluaga__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 1,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 12,
+      "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+      "dane": "176834000106",
+      "zona": "urbana",
+      "grado_10": {
+        "cantidad_grupos": 3,
+        "total_estudiantes_grado": 84,
+        "archivo_resultado": "12_institucion_educativa_moderna_de_tulua__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 4,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 13,
+      "nombre": "INSTITUCION EDUCATIVA MONTELORO",
+      "dane": "276834000917",
+      "zona": "rural",
+      "grado_10": {
+        "cantidad_grupos": 1,
+        "total_estudiantes_grado": 10,
+        "archivo_resultado": "13_institucion_educativa_monteloro__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 1,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 14,
+      "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+      "dane": "276834000852",
+      "zona": "rural",
+      "grado_10": {
+        "cantidad_grupos": 1,
+        "total_estudiantes_grado": 23,
+        "archivo_resultado": "14_institucion_educativa_san_rafael__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 1,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 15,
+      "nombre": "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+      "dane": "176834000289",
+      "zona": "urbana",
+      "grado_10": {
+        "cantidad_grupos": 4,
+        "total_estudiantes_grado": 99,
+        "archivo_resultado": "15_institucion_educativa_tecnico_industrial_carlos_sarmiento_lora__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 3,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 16,
+      "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+      "dane": "276834002243",
+      "zona": "rural",
+      "grado_10": {
+        "cantidad_grupos": 2,
+        "total_estudiantes_grado": 50,
+        "archivo_resultado": "16_institucion_educativa_tecnica_la_marina__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 2,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 17,
+      "nombre": "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+      "dane": "176834003989",
+      "zona": "urbana",
+      "grado_10": {
+        "cantidad_grupos": 5,
+        "total_estudiantes_grado": 141,
+        "archivo_resultado": "17_institucion_educativa_tecnica_occidente__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 6,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    },
+    {
+      "numero": 18,
+      "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+      "dane": "276834000704",
+      "zona": "rural",
+      "grado_10": {
+        "cantidad_grupos": 1,
+        "total_estudiantes_grado": 12,
+        "archivo_resultado": "18_institucion_educativa_tecnica_san_juan_de_barragan__sigma10.json"
+      },
+      "grado_11": {
+        "cantidad_grupos": 1,
+        "archivo_sigma11": null,
+        "archivo_masterpro11": null
+      }
+    }
+  ],
+  "motor_de_interpretacion": {
+    "estado": "pendiente_clasificacion_metodologica",
+    "categorias_previstas": [
+      "fortaleza",
+      "seguimiento",
+      "prioridad",
+      "alta_prioridad"
+    ],
+    "regla": "municipio.json no asigna categorías pedagógicas mediante cortes arbitrarios. La clasificación debe provenir del módulo metodológico común.",
+    "flujo_previsto": [
+      "resultado",
+      "hallazgo",
+      "interpretacion_pedagogica",
+      "competencia_o_componente",
+      "recomendacion",
+      "accion",
+      "indicador_de_seguimiento"
+    ]
+  },
+  "integridad": {
+    "archivos_fuente": {
+      "manifest": "./data/resultados/manifest.json",
+      "consolidado_grado_10": "./data/consolidados/grado10.json",
+      "consolidado_grado_11": "./data/consolidados/grado11.json",
+      "recomendaciones_areas": "./json-recomendaciones-areas/"
+    },
+    "validaciones": {
+      "instituciones_grado_10": 18,
+      "instituciones_grado_11": 18,
+      "areas": 5,
+      "errores_reportados_grado_10": 0,
+      "errores_reportados_grado_11": 0
+    },
+    "reglas": [
+      "No sumar las dos aplicaciones de grado 11 para estimar estudiantes únicos.",
+      "No sustituir datos faltantes por cero.",
+      "No forzar el total evaluado de un área a coincidir con el total del grado.",
+      "No convertir diferencias entre aplicaciones en conclusiones causales.",
+      "No clasificar resultados con umbrales no documentados."
+    ]
+  }
+}
