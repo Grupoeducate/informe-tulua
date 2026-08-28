@@ -1,0 +1,337 @@
+{
+  "schema_version": "1.0",
+  "tipo_archivo": "metodologia_clasificacion_priorizacion_pedagogica",
+  "nombre": "Módulo metodológico de clasificación y priorización pedagógica",
+  "municipio": "Tuluá",
+  "anio": 2026,
+  "proposito": {
+    "objetivo": "Transformar resultados estadísticos en señales operativas de intervención pedagógica sin convertirlas en niveles de desempeño oficiales ni en juicios absolutos sobre las instituciones.",
+    "principio_central": "La clasificación es relativa al conjunto municipal analizado y debe realizarse siempre sobre el mismo indicador, grado y prueba.",
+    "advertencia": "Las categorías producidas por este módulo son indicadores operativos para orientar la intervención pedagógica. No corresponden a niveles de desempeño oficiales definidos por el Icfes."
+  },
+  "categorias": [
+    {
+      "id": "fortaleza_relativa",
+      "etiqueta": "Fortaleza relativa",
+      "orden_prioridad": 1,
+      "descripcion": "Desempeño favorable respecto al conjunto municipal analizado para el mismo indicador. No implica dominio absoluto ni cumplimiento garantizado de un estándar externo."
+    },
+    {
+      "id": "seguimiento",
+      "etiqueta": "Seguimiento",
+      "orden_prioridad": 2,
+      "descripcion": "Resultado que no presenta simultáneamente señales suficientes para clasificarse como fortaleza relativa ni como prioridad. Requiere observación y seguimiento."
+    },
+    {
+      "id": "prioridad",
+      "etiqueta": "Prioridad",
+      "orden_prioridad": 3,
+      "descripcion": "Se identifica al menos una señal estadística relevante de necesidad de fortalecimiento."
+    },
+    {
+      "id": "alta_prioridad",
+      "etiqueta": "Alta prioridad",
+      "orden_prioridad": 4,
+      "descripcion": "Convergencia de señales estadísticas que indica una necesidad relativa de fortalecimiento más marcada."
+    }
+  ],
+  "universo_de_comparacion": {
+    "unidad_principal": "institucion × grado × prueba × indicador",
+    "regla": "Toda comparación debe realizarse entre instituciones sobre el mismo indicador, en el mismo grado y la misma prueba.",
+    "ejemplos_validos": [
+      "Matemáticas de una institución vs. Matemáticas de las demás instituciones en Sigma 10.",
+      "Formulación y ejecución de una institución vs. la misma competencia en las demás instituciones en Sigma 10.",
+      "Componente Numérico-variacional de una institución vs. el mismo componente en las demás instituciones."
+    ],
+    "comparaciones_no_validas": [
+      "Matemáticas vs. Lectura Crítica para determinar prioridad relativa.",
+      "Una competencia vs. otra competencia distinta para asignar percentil.",
+      "Grado 10 vs. grado 11 como si fueran una misma medición.",
+      "Sigma 11 vs. Master Pro 11 como si fueran aplicaciones psicométricamente idénticas sin evidencia adicional."
+    ]
+  },
+  "percentiles": {
+    "metodo": "rango_percentil_empirico_con_rango_promedio_en_empates",
+    "formula": "P = 100 * (rango_promedio - 0.5) / N",
+    "definiciones": {
+      "N": "Número de instituciones con dato válido para el indicador.",
+      "rango_promedio": "Posición promedio ocupada por un valor cuando existen empates, ordenando de menor a mayor."
+    },
+    "direccion": {
+      "promedio": "mayor_es_mejor",
+      "niveles_bajos": "menor_es_mejor",
+      "competencias": "mayor_es_mejor",
+      "componentes": "mayor_es_mejor"
+    },
+    "tratamiento_empates": "Los valores iguales reciben el mismo rango promedio y, por tanto, el mismo percentil.",
+    "datos_validos_minimos": {
+      "instituciones_recomendadas": 8,
+      "regla": "Si el número de instituciones con dato válido es menor de 8, no se asignará clasificación automática; se mostrará 'datos insuficientes para clasificación relativa'."
+    }
+  },
+  "indicadores_derivados": {
+    "concentracion_niveles_bajos": {
+      "id": "porcentaje_niveles_1_2",
+      "formula": "100 * (nivel_1 + nivel_2) / total_evaluados_area",
+      "interpretacion": "Una mayor concentración en niveles 1 y 2 constituye una señal relativa de mayor necesidad."
+    },
+    "brecha_estandarizada": {
+      "id": "z_brecha_municipal",
+      "formula": "(promedio_institucion - promedio_municipal) / desviacion_estandar_municipal_combinada",
+      "uso": "descriptivo",
+      "clasifica_directamente": false,
+      "nota": "Puede utilizarse para describir magnitud relativa de la brecha, pero no modifica por sí sola la categoría de priorización."
+    }
+  },
+  "clasificacion_area_institucional": {
+    "requiere": [
+      "percentil_promedio_area",
+      "percentil_concentracion_niveles_bajos"
+    ],
+    "reglas": [
+      {
+        "categoria": "alta_prioridad",
+        "condiciones": {
+          "percentil_promedio_area": "<=25",
+          "percentil_concentracion_niveles_bajos": ">=75"
+        },
+        "logica": "ambas"
+      },
+      {
+        "categoria": "fortaleza_relativa",
+        "condiciones": {
+          "percentil_promedio_area": ">=75",
+          "percentil_concentracion_niveles_bajos": "<=25"
+        },
+        "logica": "ambas"
+      },
+      {
+        "categoria": "prioridad",
+        "condiciones": {
+          "senal_1": "percentil_promedio_area <=25",
+          "senal_2": "percentil_concentracion_niveles_bajos >=75"
+        },
+        "logica": "exactamente_una"
+      },
+      {
+        "categoria": "seguimiento",
+        "condiciones": {
+          "regla": "cualquier_otra_combinacion"
+        },
+        "logica": "residual"
+      }
+    ],
+    "fallback_sin_niveles": {
+      "permitido": true,
+      "reglas": [
+        {
+          "si": "percentil_promedio_area <=25",
+          "categoria": "prioridad"
+        },
+        {
+          "si": "percentil_promedio_area >=75",
+          "categoria": "fortaleza_relativa"
+        },
+        {
+          "si": "25 < percentil_promedio_area < 75",
+          "categoria": "seguimiento"
+        }
+      ],
+      "restriccion": "Sin distribución por niveles no se asignará 'alta prioridad' automáticamente, porque no existe triangulación."
+    }
+  },
+  "clasificacion_competencias_componentes": {
+    "principio": "Cada competencia o componente se compara exclusivamente con el mismo indicador en las demás instituciones.",
+    "reglas_percentil": [
+      {
+        "desde": 0,
+        "hasta_inclusive": 25,
+        "categoria": "alta_prioridad"
+      },
+      {
+        "desde_exclusive": 25,
+        "hasta_inclusive": 50,
+        "categoria": "prioridad"
+      },
+      {
+        "desde_exclusive": 50,
+        "hasta_inclusive": 75,
+        "categoria": "seguimiento"
+      },
+      {
+        "desde_exclusive": 75,
+        "hasta_inclusive": 100,
+        "categoria": "fortaleza_relativa"
+      }
+    ],
+    "nota": "Estas categorías son de posición relativa. No implican que una competencia en fortaleza relativa haya alcanzado dominio absoluto."
+  },
+  "priorizacion_pedagogica_institucional": {
+    "objetivo": "Determinar qué competencia y qué componente deben aparecer primero en la recomendación de cada área.",
+    "orden_seleccion": [
+      "alta_prioridad",
+      "prioridad",
+      "seguimiento",
+      "fortaleza_relativa"
+    ],
+    "desempate": [
+      "menor_percentil_en_indicadores_donde_mayor_es_mejor",
+      "mayor_distancia_relativa_respecto_al_referente_municipal",
+      "si_persiste_empate_conservar_orden_original_del_esquema"
+    ],
+    "salida": {
+      "competencia_principal": true,
+      "componente_principal": true,
+      "permitir_multiples_si_empate": true
+    }
+  },
+  "priorizacion_municipal": {
+    "principio": "La prioridad municipal de un área no se define únicamente por su promedio bruto.",
+    "indicadores": [
+      "porcentaje_instituciones_alta_prioridad",
+      "porcentaje_instituciones_prioridad",
+      "porcentaje_instituciones_seguimiento",
+      "porcentaje_instituciones_fortaleza_relativa",
+      "frecuencia_competencias_priorizadas",
+      "frecuencia_componentes_priorizados"
+    ],
+    "indicador_sintetico_principal": {
+      "nombre": "porcentaje_instituciones_con_necesidad_prioritaria",
+      "formula": "100 * (instituciones_alta_prioridad + instituciones_prioridad) / instituciones_con_dato_valido"
+    },
+    "regla": "El sistema puede ordenar áreas por concentración de instituciones en prioridad o alta prioridad, pero no asignará etiquetas absolutas al municipio sin una regla adicional documentada."
+  },
+  "desviacion_estandar": {
+    "uso": "descriptivo_y_contextual",
+    "determina_categoria": false,
+    "reglas_interpretativas": [
+      {
+        "situacion": "promedio_relativamente_bajo_y_dispersion_relativamente_baja",
+        "lectura": "La dificultad puede estar relativamente generalizada dentro del grupo."
+      },
+      {
+        "situacion": "promedio_relativamente_bajo_y_dispersion_relativamente_alta",
+        "lectura": "Existen desempeños heterogéneos y puede requerirse diferenciación pedagógica."
+      },
+      {
+        "situacion": "promedio_relativamente_alto_y_dispersion_relativamente_alta",
+        "lectura": "El promedio favorable puede coexistir con un subconjunto de estudiantes que requiere apoyo."
+      }
+    ],
+    "restriccion": "La desviación estándar no cambia por sí sola el color o categoría de priorización."
+  },
+  "grado_11": {
+    "comparacion_sigma11_masterpro11": {
+      "permitida": true,
+      "tipo": "descriptiva",
+      "indicadores": [
+        "diferencia_promedio_area",
+        "diferencia_competencia_homologada",
+        "diferencia_componente_homologado",
+        "cambio_distribucion_niveles",
+        "numero_instituciones_diferencia_positiva",
+        "numero_instituciones_diferencia_negativa"
+      ],
+      "restricciones": [
+        "No denominar la diferencia como ganancia de aprendizaje.",
+        "No atribuir causalidad a una intervención.",
+        "No asumir correspondencia individual completa entre participantes si no está demostrada.",
+        "No comparar competencias con nombres diferentes sin una homologación explícita documentada."
+      ]
+    }
+  },
+  "urbano_rural": {
+    "permitido": true,
+    "nombre_indicador": "brecha_territorial_observada",
+    "formula": "promedio_urbano - promedio_rural",
+    "reglas": [
+      "Describir la magnitud y dirección de la diferencia.",
+      "Complementar con distribución por niveles e instituciones prioritarias por zona.",
+      "No atribuir la diferencia automáticamente a la condición urbana o rural."
+    ]
+  },
+  "ingles": {
+    "regla_especial": "Los niveles 1–4 reportados en los resultados GEC no se traducen automáticamente a niveles MCER.",
+    "equivalencias_prohibidas": [
+      "nivel_1 = Pre-A1",
+      "nivel_2 = A1",
+      "nivel_3 = A2",
+      "nivel_4 = B1"
+    ],
+    "uso_permitido": "Los niveles GEC pueden utilizarse para analizar distribución interna y priorización relativa."
+  },
+  "datos_faltantes": {
+    "reglas": [
+      "No reemplazar valores faltantes por cero.",
+      "Calcular percentiles únicamente con instituciones que tengan dato válido.",
+      "Registrar N válido utilizado en cada clasificación.",
+      "Si falta promedio de área, no clasificar el área.",
+      "Si existe promedio pero faltan niveles, aplicar únicamente el fallback sin niveles.",
+      "Si N válido es menor de 8, no asignar clasificación automática."
+    ]
+  },
+  "trazabilidad": {
+    "campos_minimos_salida": [
+      "grado",
+      "prueba",
+      "institucion",
+      "dane",
+      "area",
+      "indicador",
+      "valor_observado",
+      "n_valido_comparacion",
+      "percentil",
+      "categoria",
+      "regla_aplicada",
+      "fuente_dato"
+    ],
+    "regla": "Toda categoría visible en el HTML debe poder rastrearse hasta el valor original y la regla que la generó."
+  },
+  "integracion_motor_recomendaciones": {
+    "flujo": [
+      "resultado_estadistico",
+      "clasificacion_relativa",
+      "hallazgo",
+      "competencia_prioritaria",
+      "componente_prioritario",
+      "json_recomendaciones_area",
+      "objetivo_pedagogico",
+      "estrategia_metodologica",
+      "actividad_sugerida",
+      "errores_a_observar",
+      "indicador_seguimiento"
+    ],
+    "reglas": [
+      "No generar una recomendación causal a partir de un único puntaje.",
+      "No limitar la respuesta pedagógica a realizar más simulacros.",
+      "Las recomendaciones deben diferenciar grado 10 y grado 11.",
+      "En grado 10 debe priorizarse la preparación progresiva de la Cohorte Saber 11 — 2027."
+    ]
+  },
+  "presentacion_visual": {
+    "categorias": {
+      "fortaleza_relativa": {
+        "etiqueta": "Fortaleza relativa",
+        "icono_semantico": "fortaleza"
+      },
+      "seguimiento": {
+        "etiqueta": "Seguimiento",
+        "icono_semantico": "seguimiento"
+      },
+      "prioridad": {
+        "etiqueta": "Prioridad",
+        "icono_semantico": "prioridad"
+      },
+      "alta_prioridad": {
+        "etiqueta": "Alta prioridad",
+        "icono_semantico": "alta_prioridad"
+      }
+    },
+    "regla_accesibilidad": "La categoría no debe comunicarse únicamente mediante color; siempre debe acompañarse de texto o iconografía."
+  },
+  "versionado": {
+    "version_metodologica": "1.0",
+    "estado": "aprobada_para_implementacion",
+    "nota": "Cualquier cambio de cortes, fórmulas o reglas deberá incrementar la versión metodológica y quedar registrado antes de recalcular clasificaciones."
+  }
+}
