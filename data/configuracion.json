@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3",
+  "schema_version": "1.4",
   "tipo_archivo": "configuracion_aplicacion_informe_tulua",
   "aplicacion": {
     "id": "informe-tulua",
@@ -23,17 +23,22 @@
     "metodologia": "./data/metodologia/",
     "clasificacion": "./data/metodologia/clasificacion.json",
     "prioridades_municipales": "./data/priorizacion/prioridades_municipales.json",
-    "plan_mejoramiento_2027": "./data/plan-mejoramiento/plan_mejoramiento_2027.json"
+    "plan_mejoramiento_2027": "./data/plan-mejoramiento/plan_mejoramiento_2027.json",
+    "historico": "./data/historico/",
+    "saber11_2025": "./data/historico/saber11_2025.json"
   },
   "narrativa_estrategica": {
     "lema": "Evaluar para comprender. Intervenir para mejorar. Medir para verificar.",
+    "enfoque_v2": "Equilibrar la lectura del estado actual de grado 11 con la oportunidad de intervención sobre grado 10, incorporando Saber 11 2025-2 como antecedente histórico externo.",
     "preguntas_guia": [
-      "¿Cómo está Tuluá?",
-      "¿Dónde debemos intervenir?",
-      "¿Qué debemos hacer para mejorar?"
+      "¿Dónde se encontraba Tuluá en 2025?",
+      "¿Cuál es la situación observada en grado 11 durante 2026?",
+      "¿Cómo se comportan las 18 instituciones por área?",
+      "¿Qué brechas y oportunidades aparecen entre instituciones y zonas?",
+      "¿Qué puede fortalecerse en grado 10 antes de Saber 11 de 2027?",
+      "¿Cómo se convierte la evidencia en un plan de mejoramiento y seguimiento?"
     ],
-    "principio": "El informe no debe limitarse a mostrar resultados. Cada hallazgo relevante debe conducir, cuando la evidencia lo permita, a una interpretación pedagógica, una recomendación metodológica y una propuesta de seguimiento.",
-    "mensaje_central": "Los resultados 2026 constituyen una línea base para orientar decisiones de mejoramiento educativo y fortalecer el acompañamiento institucional y municipal."
+    "principio": "El inicio debe presentar primero el panorama municipal y la situación de grado 11; grado 10 debe aparecer con igual relevancia como oportunidad de intervención futura."
   },
   "cohorte_prioritaria": {
     "grado": 10,
@@ -97,6 +102,7 @@
   "filtros_globales": {
     "mostrar_barra_fija": true,
     "orden": [
+      "fuente",
       "institucion",
       "grado",
       "prueba",
@@ -136,6 +142,17 @@
         "rural"
       ],
       "etiqueta": "Zona"
+    },
+    "fuente": {
+      "activo": true,
+      "valor_inicial": "masterpro11",
+      "etiqueta": "Fuente / medición",
+      "opciones": [
+        "saber11_2025",
+        "sigma10",
+        "sigma11",
+        "masterpro11"
+      ]
     }
   },
   "areas": [
@@ -167,22 +184,35 @@
   ],
   "inicio": {
     "mostrar": true,
+    "version_diseno": "2.0",
+    "titulo": "Resultados educativos Tuluá 2025–2026",
+    "subtitulo": "Panorama municipal, comparación institucional y ruta de mejoramiento",
     "tarjetas_principales": [
       "instituciones_evaluadas",
-      "estudiantes_evaluados_grado_10",
-      "estudiantes_evaluados_grado_11",
-      "area_mayor_desempeno",
-      "area_mayor_oportunidad"
+      "estudiantes_grado_10",
+      "participantes_sigma_11",
+      "participantes_master_pro_11"
     ],
-    "secciones": [
+    "orden_secciones": [
+      "portada_ejecutiva",
       "panorama_municipal",
-      "resultados_por_area",
+      "grado_11_situacion_actual",
+      "grado_10_cohorte_2027",
+      "comparativo_institucional",
+      "mapa_calor",
+      "comparativo_por_area",
       "urbano_rural",
-      "fortalezas",
-      "oportunidades",
-      "hallazgo_estrategico_cohorte_2027"
+      "prioridades_municipales",
+      "plan_mejoramiento_2027",
+      "continuidad_alianza"
     ],
-    "regla": "La página inicial debe permitir una lectura ejecutiva en pocos minutos y evitar saturación de gráficos."
+    "reglas": [
+      "Grado 11 y grado 10 deben tener peso visual equivalente en la portada ejecutiva.",
+      "Master Pro 11 se presenta como la medición GEC más reciente de grado 11.",
+      "Saber 11 2025-2 se presenta como referente histórico externo.",
+      "Los comparativos institucionales deben permitir filtros por fuente, grado, prueba y área.",
+      "La página de inicio debe ser ejecutiva, pero permitir profundización hacia instituciones y áreas."
+    ]
   },
   "modulo_cohorte_2027": {
     "mostrar": true,
@@ -199,10 +229,13 @@
       "recomendaciones_pedagogicas",
       "ruta_intervencion_2027"
     ],
-    "enfoque": "La vista debe responder qué fortalecer, dónde intervenir y cómo hacer seguimiento antes de Saber 11 de 2027."
+    "enfoque": "La vista debe responder qué fortalecer, dónde intervenir y cómo hacer seguimiento antes de Saber 11 de 2027.",
+    "prioridad_visual": "alta",
+    "mostrar_en_inicio": true,
+    "peso_visual_inicio": "equivalente_a_grado_11"
   },
   "modulo_grado_11": {
-    "mostrar_en_inicio": false,
+    "mostrar_en_inicio": true,
     "pruebas": [
       "sigma11",
       "masterpro11"
@@ -211,7 +244,15 @@
     "regla_comparacion": "Mostrar diferencias observadas entre aplicaciones sin atribuir causalidad automática.",
     "lenguaje_recomendado": "Se observa una diferencia de X puntos entre las aplicaciones.",
     "lenguaje_no_recomendado": "La institución mejoró X puntos gracias a la intervención.",
-    "uso_estrategico": "Los resultados de 11.º deben servir también para retroalimentar la planeación de grado 10.º."
+    "uso_estrategico": "Los resultados de 11.º deben servir también para retroalimentar la planeación de grado 10.º.",
+    "prioridad_visual": "alta",
+    "titulo": "Grado 11 — Situación actual 2026",
+    "medicion_principal_visual": "masterpro11",
+    "antecedentes": [
+      "saber11_2025",
+      "sigma11"
+    ],
+    "regla_historica": "Saber 11 2025-2 funciona como antecedente externo; Sigma 11 y Master Pro 11 son mediciones GEC 2026."
   },
   "modulo_instituciones": {
     "mostrar": true,
@@ -381,6 +422,7 @@
   },
   "metodologia": {
     "fuentes_principales": [
+      "Resultados agregados Saber 11 2025-2 de instituciones oficiales de Tuluá",
       "Informes de resultados GEC 2026 de las 18 instituciones educativas oficiales",
       "Guía de orientación Saber 11 Icfes 2026",
       "Marcos de referencia Saber 11 del Icfes",
@@ -392,7 +434,8 @@
       "No convertir diferencias pequeñas entre mediciones en conclusiones de impacto.",
       "Mantener trazabilidad entre resultado, competencia, componente y recomendación.",
       "Documentar cualquier criterio de clasificación que se incorpore.",
-      "Las categorías de priorización son relativas al conjunto municipal y no constituyen niveles oficiales del Icfes."
+      "Las categorías de priorización son relativas al conjunto municipal y no constituyen niveles oficiales del Icfes.",
+      "Saber 11 2025-2 se utiliza como referente histórico externo y no se equipara psicométricamente con las mediciones GEC 2026."
     ],
     "archivo_clasificacion": "./data/metodologia/clasificacion.json",
     "version_clasificacion": "1.0"
@@ -511,7 +554,10 @@
     "metodologia_clasificacion": "completado",
     "priorizacion_municipal": "completado",
     "plan_mejoramiento_2027": "completado",
-    "capa_datos_y_metodologia": "completado"
+    "capa_datos_y_metodologia": "completado",
+    "historico_saber11_2025": "completado",
+    "municipio_con_historico": "completado",
+    "inicio_v2": "pendiente_rediseño"
   },
   "priorizacion_municipal": {
     "estado": "completado",
@@ -532,5 +578,86 @@
       "acompanamiento_institucional",
       "seguimiento_municipal"
     ]
+  },
+  "modulo_historico_2025": {
+    "mostrar": true,
+    "archivo": "./data/historico/saber11_2025.json",
+    "etiqueta": "Saber 11 2025-2",
+    "tipo": "referente_historico_externo",
+    "instituciones_con_dato": 17,
+    "instituciones_sin_dato": 1,
+    "mostrar_desviacion_estandar": true,
+    "mostrar_nombre_sede_fuente": true,
+    "regla_alto_rocio": "Mostrar 'Sin dato disponible en la fuente' y no imputar valores.",
+    "regla_comparabilidad": "No mostrar diferencias 2025-2026 como ganancia o pérdida de aprendizaje."
+  },
+  "comparativo_institucional": {
+    "mostrar": true,
+    "titulo": "Comparativo institucional",
+    "fuentes": [
+      "saber11_2025",
+      "sigma10",
+      "sigma11",
+      "masterpro11"
+    ],
+    "fuente_inicial": "masterpro11",
+    "filtros": [
+      "fuente",
+      "grado",
+      "prueba",
+      "area",
+      "zona"
+    ],
+    "columnas_base": [
+      "institucion",
+      "zona",
+      "matematicas",
+      "lectura_critica",
+      "sociales_ciudadanas",
+      "ciencias_naturales",
+      "ingles"
+    ],
+    "permitir_ordenamiento_por_area": true,
+    "terminologia": {
+      "titulo": "Comparativo institucional",
+      "evitar": "Ranking de colegios"
+    },
+    "reglas": [
+      "Conservar las 18 instituciones visibles incluso cuando una fuente tenga datos para 17.",
+      "Mostrar sin dato cuando no exista registro.",
+      "No usar el ordenamiento como clasificación punitiva."
+    ]
+  },
+  "mapa_calor_institucional": {
+    "mostrar": true,
+    "titulo": "Mapa de desempeño relativo por institución y área",
+    "fuentes": [
+      "sigma10",
+      "sigma11",
+      "masterpro11"
+    ],
+    "usar_saber11_2025": true,
+    "modo_saber11_2025": "escala_descriptiva_separada",
+    "categorias_gec": [
+      "fortaleza_relativa",
+      "seguimiento",
+      "prioridad",
+      "alta_prioridad"
+    ],
+    "regla_accesibilidad": "Las categorías deben mostrarse con texto o tooltip y no depender únicamente del color.",
+    "regla_historica": "El mapa 2025 no debe aplicar automáticamente las categorías GEC si no se define una metodología histórica específica."
+  },
+  "comparativo_por_area": {
+    "mostrar": true,
+    "titulo": "Comparación por área entre instituciones",
+    "area_inicial": "matematicas",
+    "fuente_inicial": "masterpro11",
+    "permitir_cambiar_area": true,
+    "permitir_cambiar_fuente": true,
+    "mostrar_referente_municipal_gec": true,
+    "mostrar_referente_municipal_2025": false,
+    "razon_sin_referente_2025": "La fuente 2025 no contiene tamaños de población institucional para calcular un promedio municipal ponderado.",
+    "ordenamiento": "por_puntaje_descendente",
+    "terminologia": "Resultados institucionales por área"
   }
 }
