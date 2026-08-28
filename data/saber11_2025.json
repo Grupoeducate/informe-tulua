@@ -1,0 +1,650 @@
+{
+  "schema_version": "1.0",
+  "tipo_archivo": "historico_saber11_2025_2_tulua",
+  "municipio": "Tuluá",
+  "departamento": "Valle del Cauca",
+  "periodo_fuente": "20253",
+  "fuente": {
+    "archivo": "Resultados-Agregados-2025-2 tulua.csv",
+    "tipo": "resultados_agregados_saber11",
+    "registros_en_fuente": 17,
+    "instituciones_maestras": 18
+  },
+  "alcance": {
+    "uso_principal": "Referente histórico externo para contextualizar los resultados 2026 y apoyar comparaciones institucionales y por área.",
+    "comparabilidad": {
+      "directamente_comparable_con_gec_2026": false,
+      "regla": "No interpretar diferencias entre Saber 11 2025-2 y las mediciones GEC 2026 como ganancia o pérdida de aprendizaje sin evidencia técnica de equivalencia."
+    },
+    "promedio_municipal_ponderado_disponible": false,
+    "razon": "La fuente no contiene el número de estudiantes evaluados por institución; por tanto, no se calcula un promedio municipal ponderado de estudiantes."
+  },
+  "homologacion": {
+    "criterio": "Cada registro de sede del archivo fuente se vinculó con la institución maestra utilizada en el informe 2026.",
+    "conservar_nombre_fuente_original": true,
+    "registros_homologados": 17,
+    "instituciones_sin_registro": 1
+  },
+  "descriptivos_no_ponderados": {
+    "lectura_critica": {
+      "instituciones_con_dato": 17,
+      "promedio_simple_entre_instituciones": 52.29,
+      "minimo_institucional_observado": 48,
+      "maximo_institucional_observado": 58,
+      "uso": "descriptivo_no_ponderado"
+    },
+    "matematicas": {
+      "instituciones_con_dato": 17,
+      "promedio_simple_entre_instituciones": 51.29,
+      "minimo_institucional_observado": 45,
+      "maximo_institucional_observado": 57,
+      "uso": "descriptivo_no_ponderado"
+    },
+    "sociales_ciudadanas": {
+      "instituciones_con_dato": 17,
+      "promedio_simple_entre_instituciones": 45.29,
+      "minimo_institucional_observado": 41,
+      "maximo_institucional_observado": 52,
+      "uso": "descriptivo_no_ponderado"
+    },
+    "ciencias_naturales": {
+      "instituciones_con_dato": 17,
+      "promedio_simple_entre_instituciones": 49.41,
+      "minimo_institucional_observado": 46,
+      "maximo_institucional_observado": 53,
+      "uso": "descriptivo_no_ponderado"
+    },
+    "ingles": {
+      "instituciones_con_dato": 17,
+      "promedio_simple_entre_instituciones": 49.76,
+      "minimo_institucional_observado": 45,
+      "maximo_institucional_observado": 57,
+      "uso": "descriptivo_no_ponderado"
+    }
+  },
+  "instituciones": [
+    {
+      "numero": 1,
+      "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+      "dane": "27683400123901",
+      "zona": "rural",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "SEDE PRINCIPAL  NO. 30 ATANASIO GIRARDOT",
+      "jornada_fuente": "ÚNICA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 52,
+          "desviacion_estandar": 6
+        },
+        "matematicas": {
+          "promedio": 51,
+          "desviacion_estandar": 9
+        },
+        "sociales_ciudadanas": {
+          "promedio": 45,
+          "desviacion_estandar": 10
+        },
+        "ciencias_naturales": {
+          "promedio": 49,
+          "desviacion_estandar": 7
+        },
+        "ingles": {
+          "promedio": 51,
+          "desviacion_estandar": 8
+        }
+      }
+    },
+    {
+      "numero": 2,
+      "nombre": "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+      "dane": "176834000394",
+      "zona": "urbana",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+      "jornada_fuente": "MAÑANA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 57,
+          "desviacion_estandar": 9
+        },
+        "matematicas": {
+          "promedio": 56,
+          "desviacion_estandar": 11
+        },
+        "sociales_ciudadanas": {
+          "promedio": 51,
+          "desviacion_estandar": 11
+        },
+        "ciencias_naturales": {
+          "promedio": 53,
+          "desviacion_estandar": 9
+        },
+        "ingles": {
+          "promedio": 57,
+          "desviacion_estandar": 11
+        }
+      }
+    },
+    {
+      "numero": 3,
+      "nombre": "INSTITUCION EDUCATIVA AGUACLARA",
+      "dane": "276834001778",
+      "zona": "rural",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "SEDE NO. 34 LUIS CARLOS DELGADO",
+      "jornada_fuente": "ÚNICA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 51,
+          "desviacion_estandar": 9
+        },
+        "matematicas": {
+          "promedio": 51,
+          "desviacion_estandar": 12
+        },
+        "sociales_ciudadanas": {
+          "promedio": 45,
+          "desviacion_estandar": 11
+        },
+        "ciencias_naturales": {
+          "promedio": 49,
+          "desviacion_estandar": 10
+        },
+        "ingles": {
+          "promedio": 49,
+          "desviacion_estandar": 9
+        }
+      }
+    },
+    {
+      "numero": 4,
+      "nombre": "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+      "dane": "176834003946",
+      "zona": "urbana",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "SEDE NO. 11 MARIA JOSEFA HORMAZA",
+      "jornada_fuente": "MAÑANA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 53,
+          "desviacion_estandar": 10
+        },
+        "matematicas": {
+          "promedio": 51,
+          "desviacion_estandar": 12
+        },
+        "sociales_ciudadanas": {
+          "promedio": 46,
+          "desviacion_estandar": 11
+        },
+        "ciencias_naturales": {
+          "promedio": 49,
+          "desviacion_estandar": 11
+        },
+        "ingles": {
+          "promedio": 51,
+          "desviacion_estandar": 10
+        }
+      }
+    },
+    {
+      "numero": 5,
+      "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+      "dane": "276834000941",
+      "zona": "rural",
+      "registro_saber11_2025_2": false,
+      "estado_fuente": "sin_registro_en_archivo_consultado",
+      "nombre_fuente_original": null,
+      "jornada_fuente": null,
+      "periodo_fuente": "20253",
+      "resultados": null,
+      "posible_explicacion": "La ausencia podría estar relacionada con criterios técnicos de publicación, suficiencia de información o población válida establecidos por el Icfes; la fuente analizada no permite confirmar la causa.",
+      "causa_confirmada": false
+    },
+    {
+      "numero": 6,
+      "nombre": "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+      "dane": "176834000351",
+      "zona": "urbana",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "SEDE PRINCIPAL  NO. 3 TOMAS URIBE URIBE",
+      "jornada_fuente": "MAÑANA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 51,
+          "desviacion_estandar": 9
+        },
+        "matematicas": {
+          "promedio": 51,
+          "desviacion_estandar": 11
+        },
+        "sociales_ciudadanas": {
+          "promedio": 42,
+          "desviacion_estandar": 10
+        },
+        "ciencias_naturales": {
+          "promedio": 47,
+          "desviacion_estandar": 8
+        },
+        "ingles": {
+          "promedio": 50,
+          "desviacion_estandar": 9
+        }
+      }
+    },
+    {
+      "numero": 7,
+      "nombre": "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+      "dane": "176834000084",
+      "zona": "urbana",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "SEDE PRINCIPAL GIMNASIO DEL PACIFICO CENTRAL",
+      "jornada_fuente": "ÚNICA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 57,
+          "desviacion_estandar": 10
+        },
+        "matematicas": {
+          "promedio": 57,
+          "desviacion_estandar": 13
+        },
+        "sociales_ciudadanas": {
+          "promedio": 52,
+          "desviacion_estandar": 12
+        },
+        "ciencias_naturales": {
+          "promedio": 53,
+          "desviacion_estandar": 10
+        },
+        "ingles": {
+          "promedio": 56,
+          "desviacion_estandar": 12
+        }
+      }
+    },
+    {
+      "numero": 8,
+      "nombre": "I.E. JOVITA SANTA COLOMA",
+      "dane": "276834000666",
+      "zona": "rural",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "SEDE PRINCIPAL UNIDAD DOCENTE JOVITA SANTA COLOMA",
+      "jornada_fuente": "ÚNICA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 49,
+          "desviacion_estandar": 8
+        },
+        "matematicas": {
+          "promedio": 48,
+          "desviacion_estandar": 11
+        },
+        "sociales_ciudadanas": {
+          "promedio": 43,
+          "desviacion_estandar": 9
+        },
+        "ciencias_naturales": {
+          "promedio": 48,
+          "desviacion_estandar": 9
+        },
+        "ingles": {
+          "promedio": 48,
+          "desviacion_estandar": 11
+        }
+      }
+    },
+    {
+      "numero": 9,
+      "nombre": "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+      "dane": "176834002559",
+      "zona": "urbana",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+      "jornada_fuente": "ÚNICA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 52,
+          "desviacion_estandar": 9
+        },
+        "matematicas": {
+          "promedio": 49,
+          "desviacion_estandar": 12
+        },
+        "sociales_ciudadanas": {
+          "promedio": 46,
+          "desviacion_estandar": 11
+        },
+        "ciencias_naturales": {
+          "promedio": 49,
+          "desviacion_estandar": 9
+        },
+        "ingles": {
+          "promedio": 50,
+          "desviacion_estandar": 10
+        }
+      }
+    },
+    {
+      "numero": 10,
+      "nombre": "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+      "dane": "176834000092",
+      "zona": "urbana",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+      "jornada_fuente": "MAÑANA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 58,
+          "desviacion_estandar": 8
+        },
+        "matematicas": {
+          "promedio": 57,
+          "desviacion_estandar": 11
+        },
+        "sociales_ciudadanas": {
+          "promedio": 51,
+          "desviacion_estandar": 11
+        },
+        "ciencias_naturales": {
+          "promedio": 53,
+          "desviacion_estandar": 10
+        },
+        "ingles": {
+          "promedio": 54,
+          "desviacion_estandar": 11
+        }
+      }
+    },
+    {
+      "numero": 11,
+      "nombre": "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+      "dane": "276834002626",
+      "zona": "rural",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "SEDE PRINCIPAL  TRES ESQUINAS",
+      "jornada_fuente": "ÚNICA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 50,
+          "desviacion_estandar": 8
+        },
+        "matematicas": {
+          "promedio": 45,
+          "desviacion_estandar": 10
+        },
+        "sociales_ciudadanas": {
+          "promedio": 41,
+          "desviacion_estandar": 9
+        },
+        "ciencias_naturales": {
+          "promedio": 48,
+          "desviacion_estandar": 9
+        },
+        "ingles": {
+          "promedio": 47,
+          "desviacion_estandar": 6
+        }
+      }
+    },
+    {
+      "numero": 12,
+      "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+      "dane": "176834000106",
+      "zona": "urbana",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "SEDE PRINCIPAL LICEO MODERNO",
+      "jornada_fuente": "MAÑANA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 53,
+          "desviacion_estandar": 9
+        },
+        "matematicas": {
+          "promedio": 50,
+          "desviacion_estandar": 11
+        },
+        "sociales_ciudadanas": {
+          "promedio": 46,
+          "desviacion_estandar": 10
+        },
+        "ciencias_naturales": {
+          "promedio": 50,
+          "desviacion_estandar": 9
+        },
+        "ingles": {
+          "promedio": 48,
+          "desviacion_estandar": 8
+        }
+      }
+    },
+    {
+      "numero": 13,
+      "nombre": "INSTITUCION EDUCATIVA MONTELORO",
+      "dane": "276834000917",
+      "zona": "rural",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "SEDE PRINCIPAL   NO. 65 SAN VICENTE DE PAÚL",
+      "jornada_fuente": "ÚNICA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 49,
+          "desviacion_estandar": 4
+        },
+        "matematicas": {
+          "promedio": 53,
+          "desviacion_estandar": 8
+        },
+        "sociales_ciudadanas": {
+          "promedio": 42,
+          "desviacion_estandar": 5
+        },
+        "ciencias_naturales": {
+          "promedio": 49,
+          "desviacion_estandar": 6
+        },
+        "ingles": {
+          "promedio": 46,
+          "desviacion_estandar": 4
+        }
+      }
+    },
+    {
+      "numero": 14,
+      "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+      "dane": "276834000852",
+      "zona": "rural",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "SEDE NO. 67 PEDRO PABLO PRIAS",
+      "jornada_fuente": "ÚNICA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 50,
+          "desviacion_estandar": 8
+        },
+        "matematicas": {
+          "promedio": 51,
+          "desviacion_estandar": 11
+        },
+        "sociales_ciudadanas": {
+          "promedio": 45,
+          "desviacion_estandar": 10
+        },
+        "ciencias_naturales": {
+          "promedio": 49,
+          "desviacion_estandar": 10
+        },
+        "ingles": {
+          "promedio": 47,
+          "desviacion_estandar": 9
+        }
+      }
+    },
+    {
+      "numero": 15,
+      "nombre": "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+      "dane": "176834000289",
+      "zona": "urbana",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "SEDE PRINCIPAL INSTITUTO TEC.  INDUSTRIAL C.S.L.",
+      "jornada_fuente": "MAÑANA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 57,
+          "desviacion_estandar": 8
+        },
+        "matematicas": {
+          "promedio": 55,
+          "desviacion_estandar": 11
+        },
+        "sociales_ciudadanas": {
+          "promedio": 48,
+          "desviacion_estandar": 11
+        },
+        "ciencias_naturales": {
+          "promedio": 53,
+          "desviacion_estandar": 9
+        },
+        "ingles": {
+          "promedio": 52,
+          "desviacion_estandar": 11
+        }
+      }
+    },
+    {
+      "numero": 16,
+      "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+      "dane": "276834002243",
+      "zona": "rural",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "SEDE PRINCIPAL CONCENTRACIÓN DE DESARROLLO RURAL",
+      "jornada_fuente": "ÚNICA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 50,
+          "desviacion_estandar": 8
+        },
+        "matematicas": {
+          "promedio": 46,
+          "desviacion_estandar": 11
+        },
+        "sociales_ciudadanas": {
+          "promedio": 42,
+          "desviacion_estandar": 9
+        },
+        "ciencias_naturales": {
+          "promedio": 46,
+          "desviacion_estandar": 8
+        },
+        "ingles": {
+          "promedio": 46,
+          "desviacion_estandar": 9
+        }
+      }
+    },
+    {
+      "numero": 17,
+      "nombre": "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+      "dane": "176834003989",
+      "zona": "urbana",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "I.E. OCCIDENTE - SEDE PRINCIPAL",
+      "jornada_fuente": "MAÑANA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 52,
+          "desviacion_estandar": 9
+        },
+        "matematicas": {
+          "promedio": 51,
+          "desviacion_estandar": 10
+        },
+        "sociales_ciudadanas": {
+          "promedio": 44,
+          "desviacion_estandar": 10
+        },
+        "ciencias_naturales": {
+          "promedio": 48,
+          "desviacion_estandar": 9
+        },
+        "ingles": {
+          "promedio": 49,
+          "desviacion_estandar": 11
+        }
+      }
+    },
+    {
+      "numero": 18,
+      "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+      "dane": "276834000704",
+      "zona": "rural",
+      "registro_saber11_2025_2": true,
+      "estado_fuente": "registro_disponible",
+      "nombre_fuente_original": "SEDE PRINCIPAL   UNIDAD DOCENTE SAN JUAN DE BARRAGAN",
+      "jornada_fuente": "ÚNICA",
+      "periodo_fuente": "20253",
+      "resultados": {
+        "lectura_critica": {
+          "promedio": 48,
+          "desviacion_estandar": 7
+        },
+        "matematicas": {
+          "promedio": 50,
+          "desviacion_estandar": 10
+        },
+        "sociales_ciudadanas": {
+          "promedio": 41,
+          "desviacion_estandar": 6
+        },
+        "ciencias_naturales": {
+          "promedio": 47,
+          "desviacion_estandar": 7
+        },
+        "ingles": {
+          "promedio": 45,
+          "desviacion_estandar": 9
+        }
+      }
+    }
+  ],
+  "integridad": {
+    "instituciones_totales": 18,
+    "con_registro_2025": 17,
+    "sin_registro_2025": 1,
+    "alto_rocio_causa_confirmada": false,
+    "datos_faltantes_reemplazados_por_cero": false,
+    "dane_conservado_como_texto": true
+  }
+}
