@@ -10,7 +10,12 @@
     class10: "./data/clasificaciones/clasificaciones_grado10.json",
     class11: "./data/clasificaciones/clasificaciones_grado11.json",
     prioridades: "./data/priorizacion/prioridades_municipales.json",
-    plan: "./data/plan-mejoramiento/plan_mejoramiento_2027.json"
+    plan: "./data/plan-mejoramiento/plan_mejoramiento_2027.json",
+    recMat: "./json-recomendaciones-areas/recomendaciones_matematicas_saber11_2026.json",
+    recLectura: "./json-recomendaciones-areas/recomendaciones_lectura_critica_saber11_2026.json",
+    recSociales: "./json-recomendaciones-areas/recomendaciones_sociales_ciudadanas_saber11_2026.json",
+    recNaturales: "./json-recomendaciones-areas/recomendaciones_ciencias_naturales_saber11_2026.json",
+    recIngles: "./json-recomendaciones-areas/recomendaciones_ingles_saber11_2026.json"
   };
 
   const AREA_ORDER = ["matematicas", "lectura_critica", "sociales_ciudadanas", "ciencias_naturales", "ingles"];
@@ -28,10 +33,12 @@
     saber11_2025: "Saber 11 2025-2"
   };
 
+  const REC_KEYS = {matematicas:"recMat",lectura_critica:"recLectura",sociales_ciudadanas:"recSociales",ciencias_naturales:"recNaturales",ingles:"recIngles"};
+
   const fmt = new Intl.NumberFormat("es-CO", { maximumFractionDigits: 2 });
   const fmt0 = new Intl.NumberFormat("es-CO", { maximumFractionDigits: 0 });
 
-  const state = { data: null };
+  const state = { data: null, dialogInstitution: null, dialogSource: null, dialogArea: "matematicas" };
 
   function q(selector) { return document.querySelector(selector); }
   function qa(selector) { return Array.from(document.querySelectorAll(selector)); }
@@ -39,6 +46,7 @@
   function n(v) { const x = Number(v); return Number.isFinite(x) ? x : null; }
   function f(v) { return finite(v) ? fmt.format(v) : "—"; }
   function f0(v) { return finite(v) ? fmt0.format(v) : "—"; }
+  function norm(v) { return String(v || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim(); }
 
   function esc(value) {
     return String(value == null ? "" : value)
@@ -115,6 +123,60 @@
     if (source === "sigma11") return n(a.grado_11.sigma11.promedio_municipal_ponderado);
     if (source === "masterpro11") return n(a.grado_11.masterpro11.promedio_municipal_ponderado);
     return null;
+  }
+
+  function getClassInstitution(numero, source) {
+    return getClassificationRows(source).find(x => x.numero === numero) || null;
+  }
+
+  function getHistoricalInstitution(numero) {
+    return state.data.historico.instituciones.find(x => x.numero === numero) || null;
+  }
+
+  function getRecommendation(area, type, name) {
+    const rec = state.data[REC_KEYS[area]];
+    if (!rec || !rec[type]) return null;
+    const target = norm(name);
+    let best = null;
+    Object.values(rec[type]).forEach(obj => {
+      [obj.nombre, obj.nombre_en_informe, obj.proceso_2026, obj.nombre_fuente].filter(Boolean).forEach(label => {
+        const candidate = norm(label);
+        let score = 0;
+        if (candidate === target) score = 100;
+        else if (candidate.includes(target) || target.includes(candidate)) score = 85;
+        else {
+          const a = new Set(target.split(" ").filter(Boolean));
+          const b = new Set(candidate.split(" ").filter(Boolean));
+          let inter = 0; a.forEach(t => { if (b.has(t)) inter++; });
+          const union = new Set([...a, ...b]).size || 1;
+          score = (inter / union) * 70;
+        }
+        if (!best || score > best.score) best = { score, obj };
+      });
+    });
+    return best && best.score >= 32 ? best.obj : null;
+  }
+
+  function specificActions(rec, source) {
+    if (!rec) return [];
+    const block = source === "sigma10" ? rec.uso_exclusivo_grado_10 : rec.uso_exclusivo_grado_11;
+    if (block && Array.isArray(block.acciones_especificas) && block.acciones_especificas.length) return block.acciones_especificas.slice(0, 4);
+    if (Array.isArray(rec.estrategias_metodologicas)) return rec.estrategias_metodologicas.slice(0, 3).map(x => typeof x === "string" ? x : (x.nombre || x.proposito)).filter(Boolean);
+    return [];
+  }
+
+  function sourceAreaStats(source, area) {
+    const vals = getInstitutionRows(source).map(x => x.areas[area].promedio).filter(x => x != null);
+    return { n: vals.length, min: vals.length ? Math.min(...vals) : null, max: vals.length ? Math.max(...vals) : null };
+  }
+
+  function categoryDistribution(source, area) {
+    const out = { fortaleza_relativa: 0, seguimiento: 0, prioridad: 0, alta_prioridad: 0 };
+    getClassificationRows(source).forEach(inst => {
+      const a = inst.areas[area];
+      if (a && Object.prototype.hasOwnProperty.call(out, a.categoria_area)) out[a.categoria_area]++;
+    });
+    return out;
   }
 
   function renderKPIs() {
@@ -241,7 +303,7 @@
         '<td><span class="inst-name">' + esc(inst.nombre) + '</span></td>' +
         '<td><span class="zone-tag">' + esc(inst.zona) + '</span></td>' +
         cells +
-        '<td><button class="detail-btn" data-inst="' + inst.numero + '" data-source="' + esc(source) + '">Ver</button></td>' +
+        '<td><button class="detail-btn" data-inst="' + inst.numero + '" data-source="' + esc(source) + '">Analizar</button></td>' +
       '</tr>';
     }).join("");
 
@@ -293,39 +355,49 @@
     });
   }
 
+  function renderAreaDecision(area, source) {
+    const priority = state.data.prioridades.areas[area];
+    const stats = sourceAreaStats(source, area);
+    const ref = getMunicipalReference(source, area);
+    const dist = source === "saber11_2025" ? null : categoryDistribution(source, area);
+    const focus = priority.foco_municipal_2027;
+    const plan = priority.salida_para_plan_mejoramiento;
+    const accompaniment = plan.instituciones_para_acompanamiento_inicial || [];
+    let measurement;
+    if (source === "saber11_2025") {
+      measurement = '<p><strong>' + stats.n + ' instituciones</strong> con dato. Rango institucional observado: <strong>' + f(stats.min) + '–' + f(stats.max) + '</strong>. No se calcula promedio municipal ponderado con esta fuente.</p>';
+    } else {
+      measurement = '<p>Referente municipal ponderado: <strong>' + f(ref) + '</strong>. Rango institucional observado: <strong>' + f(stats.min) + '–' + f(stats.max) + '</strong>.</p>' +
+        '<div class="category-mini"><span>Fortaleza relativa: ' + dist.fortaleza_relativa + '</span><span>Seguimiento: ' + dist.seguimiento + '</span><span>Prioridad: ' + dist.prioridad + '</span><span>Alta prioridad: ' + dist.alta_prioridad + '</span></div>';
+    }
+    q("#areaDecision").innerHTML =
+      '<span class="micro-label">Lectura para la decisión</span><div class="area-decision-grid">' +
+      '<article class="decision-panel"><h4>' + esc(SOURCE_LABELS[source]) + '</h4>' + measurement + '<div class="decision-kpis"><div class="decision-kpi"><span>Instituciones con dato</span><b>' + stats.n + '</b></div><div class="decision-kpi"><span>Amplitud observada</span><b>' + f(stats.max != null && stats.min != null ? stats.max - stats.min : null) + '</b></div></div></article>' +
+      '<article class="decision-panel accent"><span class="micro-label">Foco de intervención 2027 · Grado 10</span><h4>' + esc(focus.competencia.nombre) + '</h4><p>Componente asociado: <strong>' + esc(focus.componente.nombre) + '</strong>. La competencia aparece como menor puntaje institucional con recurrencia equivalente de <strong>' + f(n(focus.competencia.porcentaje_instituciones_equivalente)) + '%</strong>.</p></article>' +
+      '<article class="decision-panel"><span class="micro-label">Acción pedagógica</span><h4>' + esc(plan.objetivo) + '</h4><ul class="action-list">' + plan.acciones_iniciales.slice(0,3).map(x => '<li>' + esc(x) + '</li>').join("") + '</ul></article></div>' +
+      '<div class="accompaniment"><span>Instituciones para acompañamiento inicial en ' + esc(AREA_LABELS[area]) + '</span><div class="accompaniment-tags">' + accompaniment.map(x => '<button type="button" data-open-inst="' + x.numero + '">' + esc(x.nombre) + '</button>').join("") + '</div></div>';
+    qa("[data-open-inst]").forEach(btn => btn.addEventListener("click", () => openInstitution(Number(btn.dataset.openInst), source === "saber11_2025" ? "sigma10" : source, area)));
+  }
+
   function renderAreaComparison() {
     const area = q("#areaSelect").value;
     const source = q("#areaSource").value;
-    const rows = getInstitutionRows(source).map(inst => ({
-      numero: inst.numero, nombre: inst.nombre, zona: inst.zona,
-      score: inst.areas[area].promedio
-    })).sort((a,b) => {
+    const rows = getInstitutionRows(source).map(inst => ({ numero: inst.numero, nombre: inst.nombre, zona: inst.zona, score: inst.areas[area].promedio })).sort((a,b) => {
       if (a.score == null && b.score == null) return a.nombre.localeCompare(b.nombre,"es");
-      if (a.score == null) return 1;
-      if (b.score == null) return -1;
-      return b.score - a.score;
+      if (a.score == null) return 1; if (b.score == null) return -1; return b.score - a.score;
     });
-
     const ref = getMunicipalReference(source, area);
     q("#areaComparisonTitle").textContent = AREA_LABELS[area];
-
-    if (ref == null) {
-      q("#areaReferenceBox").innerHTML =
-        "<strong>" + esc(SOURCE_LABELS[source]) + ".</strong> No se muestra referente municipal ponderado porque esta fuente no contiene tamaños institucionales de población.";
-    } else {
-      q("#areaReferenceBox").innerHTML =
-        "<strong>Referente municipal ponderado: " + f(ref) + ".</strong> La línea vertical en cada barra indica este referente.";
-    }
-
+    q("#areaReferenceBox").innerHTML = ref == null ?
+      "<strong>" + esc(SOURCE_LABELS[source]) + ".</strong> No se muestra referente municipal ponderado porque esta fuente no contiene tamaños institucionales de población." :
+      "<strong>Referente municipal ponderado: " + f(ref) + ".</strong> La línea vertical en cada barra indica este referente.";
     q("#areaBars").innerHTML = rows.map(inst => {
       const width = inst.score == null ? 0 : Math.max(0, Math.min(100, inst.score));
       const refLine = ref == null ? "" : '<span class="reference-line" style="left:' + Math.max(0, Math.min(100, ref)) + '%"></span>';
-      return '<div class="bar-row">' +
-        '<span class="bar-label" title="' + esc(inst.nombre) + '">' + esc(inst.nombre) + '</span>' +
-        '<div class="bar-track"><span class="bar-fill" style="width:' + width + '%"></span>' + refLine + '</div>' +
-        '<strong class="bar-value">' + (inst.score == null ? "—" : f(inst.score)) + '</strong>' +
-      '</div>';
+      return '<div class="bar-row clickable" data-bar-inst="' + inst.numero + '" data-bar-source="' + esc(source) + '"><span class="bar-label" title="' + esc(inst.nombre) + '">' + esc(inst.nombre) + '</span><div class="bar-track"><span class="bar-fill" style="width:' + width + '%"></span>' + refLine + '</div><strong class="bar-value">' + (inst.score == null ? "—" : f(inst.score)) + '</strong></div>';
     }).join("");
+    qa("[data-bar-inst]").forEach(row => row.addEventListener("click", () => openInstitution(Number(row.dataset.barInst), row.dataset.barSource, area)));
+    renderAreaDecision(area, source);
   }
 
   function renderTerritory() {
@@ -358,43 +430,63 @@
     ).join("");
   }
 
-  function openInstitution(numero, source) {
-    const rows = getInstitutionRows(source);
-    const inst = rows.find(x => x.numero === numero);
-    if (!inst) return;
-
-    const classRows = source === "saber11_2025" ? [] : getClassificationRows(source);
-    const classInst = classRows.find(x => x.numero === numero);
-
-    const scoreCards = AREA_ORDER.map(a => {
-      const area = inst.areas[a];
-      const cat = classInst && classInst.areas[a] ? classInst.areas[a].etiqueta_categoria_area : null;
-      return '<article class="dialog-score">' +
-        '<span>' + esc(AREA_LABELS[a]) + '</span>' +
-        '<strong>' + (area.promedio == null ? "—" : f(area.promedio)) + '</strong>' +
-        '<small>' + (cat ? esc(cat) : (area.promedio == null ? "Sin dato en la fuente" : "DE: " + f(area.desviacion_estandar))) + '</small>' +
-      '</article>';
-    }).join("");
-
-    let note;
-    if (source === "saber11_2025") {
-      note = "Saber 11 2025-2 es un referente histórico externo. No debe interpretarse su diferencia con GEC 2026 como ganancia o pérdida de aprendizaje.";
-    } else {
-      note = "La categoría visible es relativa a las demás instituciones para el mismo indicador y medición; orienta focalización pedagógica y no constituye una clasificación oficial del Icfes.";
+  function historicalContext(numero, area) {
+    const h = getHistoricalInstitution(numero);
+    if (!h || !h.registro_saber11_2025_2 || !h.resultados) {
+      return '<div class="history-context"><div class="year-badge">25</div><div><h4>Saber 11 2025-2</h4><p>Sin dato disponible para esta institución en la fuente histórica consultada.</p></div></div>';
     }
+    const score = h.resultados[area];
+    return '<div class="history-context"><div class="year-badge">25</div><div><h4>Referente histórico externo · ' + esc(AREA_LABELS[area]) + '</h4><p>Registro fuente: ' + esc(h.nombre_fuente_original || h.nombre) + '. No se interpreta como medición equivalente a GEC 2026.</p><div class="history-scores"><span>Promedio: <strong>' + f(n(score.promedio)) + '</strong></span><span>DE: <strong>' + f(n(score.desviacion_estandar)) + '</strong></span></div></div></div>';
+  }
 
-    q("#institutionDialogContent").innerHTML =
-      '<div class="dialog-content">' +
-        '<span class="micro-label">' + esc(SOURCE_LABELS[source]) + '</span>' +
-        '<h2>' + esc(inst.nombre) + '</h2>' +
-        '<div class="dialog-meta"><span class="zone-tag">' + esc(inst.zona) + '</span><span class="zone-tag">DANE ' + esc(inst.dane) + '</span></div>' +
-        '<div class="dialog-grid">' + scoreCards + '</div>' +
-        '<div class="dialog-note">' + esc(note) + '</div>' +
-      '</div>';
+  function renderInstitutionDialog() {
+    const numero = state.dialogInstitution, source = state.dialogSource, area = state.dialogArea;
+    const inst = getInstitutionRows(source).find(x => x.numero === numero);
+    if (!inst) return;
+    const classInst = getClassInstitution(numero, source);
+    const classArea = classInst && classInst.areas ? classInst.areas[area] : null;
+    const score = inst.areas[area];
+    const ref = getMunicipalReference(source, area);
+    const delta = score.promedio != null && ref != null ? score.promedio - ref : null;
+    const sign = delta != null && delta > 0 ? "+" : "";
+    const historical = source === "saber11_2025";
+    const overview = AREA_ORDER.map(a => {
+      const v = inst.areas[a];
+      const cat = classInst && classInst.areas[a] ? classInst.areas[a].etiqueta_categoria_area : null;
+      return '<article class="dialog-score"><span>' + esc(AREA_LABELS[a]) + '</span><strong>' + (v.promedio == null ? "—" : f(v.promedio)) + '</strong><small>' + (cat ? esc(cat) : (v.promedio == null ? "Sin dato" : "DE: " + f(v.desviacion_estandar))) + '</small></article>';
+    }).join("");
+    let analysis = "";
+    if (historical) {
+      analysis = '<div class="detail-section"><div class="detail-section-head"><div><span class="micro-label">Alcance de la fuente</span><h3>Referente histórico institucional</h3></div></div><div class="no-tech-detail">Esta fuente aporta promedio y desviación estándar por área, pero no competencias, componentes o niveles. Para análisis pedagógico seleccione Sigma 10, Sigma 11 o Master Pro 11.</div></div>';
+    } else if (classArea) {
+      const comps = [...(classArea.competencias || [])].sort((a,b) => a.puntaje - b.puntaje);
+      const components = [...(classArea.componentes || [])].sort((a,b) => a.puntaje - b.puntaje);
+      const weakComp = comps[0] || null, weakComponent = components[0] || null;
+      const recComp = weakComp ? getRecommendation(area, "competencias", weakComp.nombre) : null;
+      const recComponent = weakComponent ? getRecommendation(area, "componentes", weakComponent.nombre) : null;
+      const actions = specificActions(recComp, source);
+      analysis = '<div class="dialog-summary"><article class="dialog-summary-card"><span class="micro-label">Lectura frente al municipio</span><h3>' + esc(AREA_LABELS[area]) + '</h3><div class="big-metric"><strong>' + f(score.promedio) + '</strong><span>resultado institucional</span></div>' +
+        (ref != null ? '<span class="delta-chip">' + sign + f(delta) + ' puntos frente al referente municipal (' + f(ref) + ')</span>' : '') +
+        '<p style="margin-top:9px">DE institucional: <strong>' + f(score.desviacion_estandar) + '</strong> · Evaluados en el área: <strong>' + f0(n(classArea.total_evaluados_area)) + '</strong>.</p></article>' +
+        '<article class="dialog-summary-card accent"><span class="micro-label">Prioridad relativa</span><h3>' + esc(classArea.etiqueta_categoria_area) + '</h3><p>Percentil del promedio: <strong>' + f(n(classArea.percentil_promedio_area)) + '</strong>. Estudiantes en niveles 1–2: <strong>' + f(n(classArea.porcentaje_niveles_1_2)) + '%</strong>.</p><p style="margin-top:8px">La categoría orienta focalización y no es una clasificación oficial del Icfes.</p></article></div>' +
+        '<div class="detail-section"><div class="detail-section-head"><div><span class="micro-label">Diagnóstico pedagógico</span><h3>Competencias y componentes</h3></div><p>Ordenados de menor a mayor puntaje dentro de esta institución. El percentil compara el mismo indicador entre instituciones.</p></div><div class="indicator-grid"><div class="indicator-column"><h4>Competencias</h4>' + comps.map(x => '<div class="indicator-item"><div class="indicator-name">' + esc(x.nombre) + '<small>' + esc(x.etiqueta_categoria) + ' · percentil ' + f(n(x.percentil_relativo)) + '</small></div><div class="indicator-score">' + f(n(x.puntaje)) + '</div></div>').join("") + '</div><div class="indicator-column"><h4>Componentes</h4>' + components.map(x => '<div class="indicator-item"><div class="indicator-name">' + esc(x.nombre) + '<small>' + esc(x.etiqueta_categoria) + ' · percentil ' + f(n(x.percentil_relativo)) + '</small></div><div class="indicator-score">' + f(n(x.puntaje)) + '</div></div>').join("") + '</div></div></div>' +
+        '<div class="detail-section"><div class="recommendation-box"><div><span class="micro-label">Hipótesis pedagógica orientadora</span><h4>' + (recComp ? esc(recComp.objetivo_de_mejoramiento || "Fortalecer la competencia priorizada") : "Fortalecer el indicador de menor desempeño") + '</h4><p>' + (recComp ? esc(recComp.diagnostico_pedagogico || "") : "La lectura debe contrastarse con evidencias de aula antes de atribuir causas.") + '</p></div><div><span class="micro-label">Acciones sugeridas</span><ul>' +
+        (actions.length ? actions.map(x => '<li>' + esc(x) + '</li>').join("") : '<li>Contrastar el resultado con evidencias de aula.</li><li>Diseñar práctica focalizada.</li><li>Aplicar seguimiento formativo.</li>') +
+        (recComponent && Array.isArray(recComponent.focos_de_trabajo) && recComponent.focos_de_trabajo.length ? '<li><strong>Componente ' + esc(weakComponent.nombre) + ':</strong> ' + esc(recComponent.focos_de_trabajo.slice(0,2).join(" · ")) + '</li>' : '') + '</ul></div></div></div>';
+    }
+    q("#institutionDialogContent").innerHTML = '<div class="dialog-content"><span class="micro-label">' + esc(SOURCE_LABELS[source]) + '</span><h2>' + esc(inst.nombre) + '</h2><div class="dialog-meta"><span class="zone-tag">' + esc(inst.zona) + '</span><span class="zone-tag">DANE ' + esc(inst.dane) + '</span></div>' +
+      '<div class="dialog-toolbar"><label><span>Fuente / medición</span><select id="dialogSource">' + Object.keys(SOURCE_LABELS).map(k => '<option value="' + k + '" ' + (k === source ? 'selected' : '') + '>' + esc(SOURCE_LABELS[k]) + '</option>').join("") + '</select></label><label><span>Área de análisis</span><select id="dialogArea">' + AREA_ORDER.map(k => '<option value="' + k + '" ' + (k === area ? 'selected' : '') + '>' + esc(AREA_LABELS[k]) + '</option>').join("") + '</select></label></div>' +
+      '<div class="dialog-grid">' + overview + '</div>' + analysis + '<div class="detail-section">' + historicalContext(numero, area) + '</div></div>';
+    q("#dialogSource").addEventListener("change", e => { state.dialogSource = e.target.value; renderInstitutionDialog(); });
+    q("#dialogArea").addEventListener("change", e => { state.dialogArea = e.target.value; renderInstitutionDialog(); });
+  }
 
+  function openInstitution(numero, source, area) {
+    state.dialogInstitution = numero; state.dialogSource = source; state.dialogArea = area || "matematicas";
+    renderInstitutionDialog();
     const dialog = q("#institutionDialog");
-    if (typeof dialog.showModal === "function") dialog.showModal();
-    else dialog.setAttribute("open", "open");
+    if (!dialog.open && typeof dialog.showModal === "function") dialog.showModal();
+    else if (!dialog.open) dialog.setAttribute("open", "open");
   }
 
   function bindUI() {
