@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informe dinámico de resultados y oportunidades de mejoramiento educativo de Tuluá 2026.">
+  <title>Informe educativo Tuluá 2026 | Grupo Edúcate Colombia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="Grupo Edúcate Colombia - Inicio">
+        <img src="./assets/logo-grupo-educate.png" alt="Grupo Edúcate Colombia">
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+
+      <nav id="mainNav" class="main-nav" aria-label="Navegación principal">
+        <a class="active" href="#inicio">Inicio</a>
+        <a href="#cohorte">Cohorte 2027</a>
+        <a href="#instituciones">Instituciones</a>
+        <a href="#areas">Áreas</a>
+        <a href="#plan">Plan de mejoramiento</a>
+        <a href="#metodologia">Metodología</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Informe dinámico · Tuluá 2026</div>
+          <h1>De la evidencia a la <span>acción pedagógica</span></h1>
+          <p class="hero-lead">
+            Panorama municipal de resultados, prioridades de fortalecimiento y ruta de acompañamiento
+            para las instituciones educativas oficiales de Tuluá.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#cohorte">Ver Cohorte Saber 11 — 2027</a>
+            <a class="btn btn-secondary" href="#plan">Conocer la ruta de mejoramiento</a>
+          </div>
+
+          <p class="hero-motto">Evaluar para comprender. Intervenir para mejorar. Medir para verificar.</p>
+        </div>
+
+        <aside class="hero-highlight" aria-label="Prioridad estratégica">
+          <div class="highlight-label">Prioridad estratégica</div>
+          <div class="highlight-year">2027</div>
+          <h2>Cohorte Saber 11</h2>
+          <p>
+            Grado 10.º constituye la principal oportunidad de intervención antes de la presentación
+            de Saber 11 en 2027.
+          </p>
+          <div class="highlight-meta">
+            <span><strong id="heroStudents">—</strong> estudiantes</span>
+            <span><strong id="heroGroups">—</strong> grupos</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="kpi-strip" aria-label="Indicadores generales">
+      <div class="container kpi-grid">
+        <article class="kpi-card">
+          <span class="kpi-label">Cobertura institucional</span>
+          <strong id="kpiCoverage">—</strong>
+          <small>instituciones oficiales evaluadas</small>
+        </article>
+        <article class="kpi-card">
+          <span class="kpi-label">Cohorte prioritaria</span>
+          <strong id="kpiStudents">—</strong>
+          <small>estudiantes de grado 10.º</small>
+        </article>
+        <article class="kpi-card">
+          <span class="kpi-label">Grupos grado 10.º</span>
+          <strong id="kpiGroups">—</strong>
+          <small>grupos incluidos en la línea base</small>
+        </article>
+        <article class="kpi-card">
+          <span class="kpi-label">Áreas evaluadas</span>
+          <strong id="kpiAreas">—</strong>
+          <small>lectura integral de competencias</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-light" id="cohorte">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Cohorte Saber 11 — 2027</span>
+            <h2>Panorama municipal de grado 10.º</h2>
+          </div>
+          <p>
+            Esta vista establece la línea base 2026. Los resultados se presentan como evidencia para orientar
+            intervención y seguimiento, no como una clasificación definitiva de calidad institucional.
+          </p>
+        </div>
+
+        <div class="area-cards" id="areaCards" aria-live="polite"></div>
+
+        <div class="method-note">
+          <span class="method-icon" aria-hidden="true">i</span>
+          <p>
+            Los promedios municipales están ponderados por el número real de evaluados en cada área.
+            Los faltantes no se sustituyen por cero.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="areas">
+      <div class="container">
+        <div class="section-heading compact">
+          <div>
+            <span class="section-kicker">Lectura territorial</span>
+            <h2>Brecha urbano–rural observada</h2>
+          </div>
+          <p>
+            La diferencia territorial es descriptiva. No permite atribuir automáticamente sus causas a la
+            condición urbana o rural.
+          </p>
+        </div>
+
+        <div class="panel table-panel">
+          <div class="panel-head">
+            <div>
+              <span class="panel-label">Grado 10.º · Sigma 10</span>
+              <h3>Resultados por zona y área</h3>
+            </div>
+            <span class="legend-pill">Urbana − Rural</span>
+          </div>
+          <div class="responsive-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Área</th>
+                  <th>Urbana</th>
+                  <th>Rural</th>
+                  <th>Brecha observada</th>
+                </tr>
+              </thead>
+              <tbody id="zoneTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="prioridades">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Prioridades municipales 2027</span>
+            <h2>Qué fortalecer en cada área</h2>
+          </div>
+          <p>
+            El foco se identifica dentro de cada área por recurrencia del menor puntaje observado
+            en las instituciones. No se construye un ranking artificial entre áreas.
+          </p>
+        </div>
+
+        <div class="focus-list" id="focusList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="instituciones">
+      <div class="container">
+        <div class="executive-grid">
+          <article class="panel panel-dark">
+            <span class="section-kicker light">Lectura ejecutiva</span>
+            <h2>18 instituciones. Una sola ruta de mejoramiento.</h2>
+            <p>
+              El informe permite pasar del panorama municipal al detalle de cada institución, grado, prueba,
+              área, competencia y componente, manteniendo la trazabilidad entre resultado y recomendación.
+            </p>
+            <div class="mini-stats">
+              <div><strong>9</strong><span>urbanas</span></div>
+              <div><strong>9</strong><span>rurales</span></div>
+              <div><strong>18/18</strong><span>cobertura institucional</span></div>
+            </div>
+            <a class="text-link light-link" href="#metodologia">Ver cómo se interpretan los resultados →</a>
+          </article>
+
+          <article class="panel">
+            <span class="panel-label">Grado 11 · Evidencia complementaria</span>
+            <h3>Sigma 11 vs. Master Pro 11</h3>
+            <p class="muted">
+              Las diferencias entre aplicaciones son descriptivas y no se interpretan automáticamente
+              como ganancia de aprendizaje.
+            </p>
+            <div class="responsive-table small-table">
+              <table>
+                <thead>
+                  <tr><th>Área</th><th>Sigma 11</th><th>Master Pro</th><th>Δ</th></tr>
+                </thead>
+                <tbody id="grade11TableBody"></tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="plan">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Plan de mejoramiento educativo 2027</span>
+            <h2>Del diagnóstico al seguimiento</h2>
+          </div>
+          <p>
+            La evaluación adquiere valor cuando sus hallazgos se convierten en decisiones de aula,
+            acompañamiento y nuevas mediciones comparables.
+          </p>
+        </div>
+
+        <div class="roadmap" id="roadmap"></div>
+      </div>
+    </section>
+
+    <section class="alliance-section" aria-labelledby="allianceTitle">
+      <div class="container alliance-grid">
+        <div>
+          <span class="section-kicker light">Sostenibilidad de la estrategia</span>
+          <h2 id="allianceTitle">Continuar la alianza permite cerrar el ciclo de mejoramiento.</h2>
+        </div>
+        <div>
+          <p id="allianceMessage">
+            La línea base 2026 ya identifica dónde actuar. El siguiente valor público está en implementar,
+            acompañar, volver a medir y verificar qué cambia en la Cohorte Saber 11 — 2027.
+          </p>
+          <div class="cycle-line" aria-label="Ciclo de mejoramiento">
+            <span>Evaluar</span><b>→</b><span>Intervenir</span><b>→</b><span>Acompañar</span><b>→</b><span>Verificar</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section methodology" id="metodologia">
+      <div class="container">
+        <div class="methodology-card">
+          <div>
+            <span class="section-kicker">Criterio metodológico</span>
+            <h2>Una lectura responsable de los datos</h2>
+          </div>
+          <div class="methodology-points">
+            <p><strong>01.</strong> No se sustituyen datos faltantes por cero.</p>
+            <p><strong>02.</strong> Las categorías de priorización son relativas al conjunto municipal.</p>
+            <p><strong>03.</strong> Las diferencias entre aplicaciones no implican causalidad.</p>
+            <p><strong>04.</strong> Los resultados GEC no se equiparan automáticamente con la escala oficial del Icfes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <img src="./assets/logo-grupo-educate.png" alt="Grupo Edúcate Colombia">
+      <div>
+        <strong>Informe de resultados y oportunidades de mejoramiento educativo</strong>
+        <span>Tuluá · Valle del Cauca · 2026</span>
+      </div>
+      <span class="footer-note">Grupo Edúcate Colombia · Departamento de Pedagogía</span>
+    </div>
+  </footer>
+
+  <div class="error-toast" id="errorToast" role="status" aria-live="polite" hidden></div>
+
+  <script src="./js/app.js" defer></script>
+</body>
+</html>
