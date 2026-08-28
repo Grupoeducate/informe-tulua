@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "1.3",
   "tipo_archivo": "configuracion_aplicacion_informe_tulua",
   "aplicacion": {
     "id": "informe-tulua",
@@ -22,7 +22,8 @@
     "js": "./js/",
     "metodologia": "./data/metodologia/",
     "clasificacion": "./data/metodologia/clasificacion.json",
-    "prioridades_municipales": "./data/priorizacion/prioridades_municipales.json"
+    "prioridades_municipales": "./data/priorizacion/prioridades_municipales.json",
+    "plan_mejoramiento_2027": "./data/plan-mejoramiento/plan_mejoramiento_2027.json"
   },
   "narrativa_estrategica": {
     "lema": "Evaluar para comprender. Intervenir para mejorar. Medir para verificar.",
@@ -424,23 +425,21 @@
   },
   "plan_mejoramiento": {
     "mostrar": true,
-    "titulo": "Ruta municipal de mejoramiento 2027",
+    "estado": "completado",
+    "archivo": "./data/plan-mejoramiento/plan_mejoramiento_2027.json",
+    "titulo": "Plan de mejoramiento educativo 2027",
+    "cohorte_prioritaria": "Cohorte Saber 11 — 2027",
     "estructura": [
-      "prioridades_municipales",
-      "prioridades_por_area",
-      "instituciones_priorizadas",
-      "acciones_docentes",
-      "acciones_coordinadores",
-      "acciones_secretaria",
-      "cronograma_sugerido",
-      "indicadores_seguimiento",
-      "proxima_medicion"
+      "linea_base",
+      "focos_por_area",
+      "acciones_por_actor",
+      "formacion_docente",
+      "fases_de_intervencion",
+      "indicadores_de_seguimiento",
+      "mediciones_comparables",
+      "continuidad_alianza"
     ],
-    "niveles_de_accion": {
-      "docente": "Acciones concretas de aula y seguimiento de aprendizajes.",
-      "coordinacion": "Acompañamiento, observación, comunidades de aprendizaje y seguimiento institucional.",
-      "secretaria": "Priorización de asistencia técnica, formación docente, seguimiento municipal y recursos."
-    }
+    "regla": "El plan convierte los hallazgos en acciones, indicadores y ciclos de seguimiento. Las metas numéricas se definirán únicamente cuando la arquitectura de medición 2027 esté acordada."
   },
   "continuidad_alianza": {
     "mostrar": true,
@@ -511,7 +510,8 @@
     "html": "pendiente",
     "metodologia_clasificacion": "completado",
     "priorizacion_municipal": "completado",
-    "plan_mejoramiento_2027": "pendiente"
+    "plan_mejoramiento_2027": "completado",
+    "capa_datos_y_metodologia": "completado"
   },
   "priorizacion_municipal": {
     "estado": "completado",
