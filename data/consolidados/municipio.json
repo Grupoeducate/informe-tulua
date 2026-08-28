@@ -1,12 +1,19 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "tipo_archivo": "consolidado_municipal_ejecutivo",
   "municipio": "Tuluá",
   "departamento": "Valle del Cauca",
   "anio_informe": 2026,
   "proposito": {
-    "descripcion": "Resumen ejecutivo municipal para orientar la lectura inicial del informe, facilitar la navegación hacia los consolidados por grado y apoyar la identificación de hallazgos que posteriormente serán vinculados con recomendaciones pedagógicas.",
-    "lema": "Evaluar para comprender. Intervenir para mejorar. Medir para verificar."
+    "descripcion": "Resumen ejecutivo municipal para integrar el referente histórico Saber 11 2025-2, las mediciones GEC 2026 de grado 11 y la línea base de grado 10 que conforma la Cohorte Saber 11 — 2027.",
+    "lema": "Evaluar para comprender. Intervenir para mejorar. Medir para verificar.",
+    "preguntas_ejecutivas": [
+      "¿Dónde se encontraba Tuluá en el referente histórico 2025?",
+      "¿Cuál es la situación observada en grado 11 durante 2026?",
+      "¿Qué oportunidades de intervención presenta la cohorte de grado 10 para 2027?",
+      "¿Cómo se comparan las instituciones entre sí y frente al referente municipal?",
+      "¿Qué debe fortalecerse y cómo debe hacerse seguimiento?"
+    ]
   },
   "cobertura_institucional": {
     "instituciones_oficiales": 18,
@@ -391,13 +398,17 @@
     "comparar_sigma11_con_masterpro11": true,
     "tipo_comparacion_sigma_master": "descriptiva",
     "comparar_urbano_rural": true,
-    "nota_urbano_rural": "La comparación territorial describe diferencias observadas y no identifica por sí misma sus causas."
+    "nota_urbano_rural": "La comparación territorial describe diferencias observadas y no identifica por sí misma sus causas.",
+    "comparar_saber11_2025_con_gec_2026": true,
+    "tipo_comparacion_2025_2026": "contextual_no_equivalente",
+    "regla_2025_2026": "Puede mostrarse una lectura histórica lado a lado, pero no una diferencia interpretada como progreso o retroceso psicométrico."
   },
   "rutas_de_navegacion": {
     "cohorte_2027": "./data/consolidados/grado10.json",
     "grado_11": "./data/consolidados/grado11.json",
     "manifest": "./data/resultados/manifest.json",
-    "recomendaciones": "./json-recomendaciones-areas/"
+    "recomendaciones": "./json-recomendaciones-areas/",
+    "historico_2025": "./data/historico/saber11_2025.json"
   },
   "instituciones": [
     {
@@ -414,6 +425,34 @@
         "cantidad_grupos": 1,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "SEDE PRINCIPAL  NO. 30 ATANASIO GIRARDOT",
+        "jornada_fuente": "ÚNICA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 52,
+            "desviacion_estandar": 6
+          },
+          "matematicas": {
+            "promedio": 51,
+            "desviacion_estandar": 9
+          },
+          "sociales_ciudadanas": {
+            "promedio": 45,
+            "desviacion_estandar": 10
+          },
+          "ciencias_naturales": {
+            "promedio": 49,
+            "desviacion_estandar": 7
+          },
+          "ingles": {
+            "promedio": 51,
+            "desviacion_estandar": 8
+          }
+        }
       }
     },
     {
@@ -430,6 +469,34 @@
         "cantidad_grupos": 6,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+        "jornada_fuente": "MAÑANA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 57,
+            "desviacion_estandar": 9
+          },
+          "matematicas": {
+            "promedio": 56,
+            "desviacion_estandar": 11
+          },
+          "sociales_ciudadanas": {
+            "promedio": 51,
+            "desviacion_estandar": 11
+          },
+          "ciencias_naturales": {
+            "promedio": 53,
+            "desviacion_estandar": 9
+          },
+          "ingles": {
+            "promedio": 57,
+            "desviacion_estandar": 11
+          }
+        }
       }
     },
     {
@@ -446,6 +513,34 @@
         "cantidad_grupos": 3,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "SEDE NO. 34 LUIS CARLOS DELGADO",
+        "jornada_fuente": "ÚNICA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 51,
+            "desviacion_estandar": 9
+          },
+          "matematicas": {
+            "promedio": 51,
+            "desviacion_estandar": 12
+          },
+          "sociales_ciudadanas": {
+            "promedio": 45,
+            "desviacion_estandar": 11
+          },
+          "ciencias_naturales": {
+            "promedio": 49,
+            "desviacion_estandar": 10
+          },
+          "ingles": {
+            "promedio": 49,
+            "desviacion_estandar": 9
+          }
+        }
       }
     },
     {
@@ -462,6 +557,34 @@
         "cantidad_grupos": 5,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "SEDE NO. 11 MARIA JOSEFA HORMAZA",
+        "jornada_fuente": "MAÑANA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 53,
+            "desviacion_estandar": 10
+          },
+          "matematicas": {
+            "promedio": 51,
+            "desviacion_estandar": 12
+          },
+          "sociales_ciudadanas": {
+            "promedio": 46,
+            "desviacion_estandar": 11
+          },
+          "ciencias_naturales": {
+            "promedio": 49,
+            "desviacion_estandar": 11
+          },
+          "ingles": {
+            "promedio": 51,
+            "desviacion_estandar": 10
+          }
+        }
       }
     },
     {
@@ -478,6 +601,13 @@
         "cantidad_grupos": 1,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": false,
+        "estado_fuente": "sin_registro_en_archivo_consultado",
+        "nombre_fuente_original": null,
+        "jornada_fuente": null,
+        "resultados": null
       }
     },
     {
@@ -494,6 +624,34 @@
         "cantidad_grupos": 4,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "SEDE PRINCIPAL  NO. 3 TOMAS URIBE URIBE",
+        "jornada_fuente": "MAÑANA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 51,
+            "desviacion_estandar": 9
+          },
+          "matematicas": {
+            "promedio": 51,
+            "desviacion_estandar": 11
+          },
+          "sociales_ciudadanas": {
+            "promedio": 42,
+            "desviacion_estandar": 10
+          },
+          "ciencias_naturales": {
+            "promedio": 47,
+            "desviacion_estandar": 8
+          },
+          "ingles": {
+            "promedio": 50,
+            "desviacion_estandar": 9
+          }
+        }
       }
     },
     {
@@ -510,6 +668,34 @@
         "cantidad_grupos": 5,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "SEDE PRINCIPAL GIMNASIO DEL PACIFICO CENTRAL",
+        "jornada_fuente": "ÚNICA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 57,
+            "desviacion_estandar": 10
+          },
+          "matematicas": {
+            "promedio": 57,
+            "desviacion_estandar": 13
+          },
+          "sociales_ciudadanas": {
+            "promedio": 52,
+            "desviacion_estandar": 12
+          },
+          "ciencias_naturales": {
+            "promedio": 53,
+            "desviacion_estandar": 10
+          },
+          "ingles": {
+            "promedio": 56,
+            "desviacion_estandar": 12
+          }
+        }
       }
     },
     {
@@ -526,6 +712,34 @@
         "cantidad_grupos": 2,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "SEDE PRINCIPAL UNIDAD DOCENTE JOVITA SANTA COLOMA",
+        "jornada_fuente": "ÚNICA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 49,
+            "desviacion_estandar": 8
+          },
+          "matematicas": {
+            "promedio": 48,
+            "desviacion_estandar": 11
+          },
+          "sociales_ciudadanas": {
+            "promedio": 43,
+            "desviacion_estandar": 9
+          },
+          "ciencias_naturales": {
+            "promedio": 48,
+            "desviacion_estandar": 9
+          },
+          "ingles": {
+            "promedio": 48,
+            "desviacion_estandar": 11
+          }
+        }
       }
     },
     {
@@ -542,6 +756,34 @@
         "cantidad_grupos": 4,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+        "jornada_fuente": "ÚNICA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 52,
+            "desviacion_estandar": 9
+          },
+          "matematicas": {
+            "promedio": 49,
+            "desviacion_estandar": 12
+          },
+          "sociales_ciudadanas": {
+            "promedio": 46,
+            "desviacion_estandar": 11
+          },
+          "ciencias_naturales": {
+            "promedio": 49,
+            "desviacion_estandar": 9
+          },
+          "ingles": {
+            "promedio": 50,
+            "desviacion_estandar": 10
+          }
+        }
       }
     },
     {
@@ -558,6 +800,34 @@
         "cantidad_grupos": 6,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+        "jornada_fuente": "MAÑANA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 58,
+            "desviacion_estandar": 8
+          },
+          "matematicas": {
+            "promedio": 57,
+            "desviacion_estandar": 11
+          },
+          "sociales_ciudadanas": {
+            "promedio": 51,
+            "desviacion_estandar": 11
+          },
+          "ciencias_naturales": {
+            "promedio": 53,
+            "desviacion_estandar": 10
+          },
+          "ingles": {
+            "promedio": 54,
+            "desviacion_estandar": 11
+          }
+        }
       }
     },
     {
@@ -574,6 +844,34 @@
         "cantidad_grupos": 1,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "SEDE PRINCIPAL  TRES ESQUINAS",
+        "jornada_fuente": "ÚNICA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 50,
+            "desviacion_estandar": 8
+          },
+          "matematicas": {
+            "promedio": 45,
+            "desviacion_estandar": 10
+          },
+          "sociales_ciudadanas": {
+            "promedio": 41,
+            "desviacion_estandar": 9
+          },
+          "ciencias_naturales": {
+            "promedio": 48,
+            "desviacion_estandar": 9
+          },
+          "ingles": {
+            "promedio": 47,
+            "desviacion_estandar": 6
+          }
+        }
       }
     },
     {
@@ -590,6 +888,34 @@
         "cantidad_grupos": 4,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "SEDE PRINCIPAL LICEO MODERNO",
+        "jornada_fuente": "MAÑANA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 53,
+            "desviacion_estandar": 9
+          },
+          "matematicas": {
+            "promedio": 50,
+            "desviacion_estandar": 11
+          },
+          "sociales_ciudadanas": {
+            "promedio": 46,
+            "desviacion_estandar": 10
+          },
+          "ciencias_naturales": {
+            "promedio": 50,
+            "desviacion_estandar": 9
+          },
+          "ingles": {
+            "promedio": 48,
+            "desviacion_estandar": 8
+          }
+        }
       }
     },
     {
@@ -606,6 +932,34 @@
         "cantidad_grupos": 1,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "SEDE PRINCIPAL   NO. 65 SAN VICENTE DE PAÚL",
+        "jornada_fuente": "ÚNICA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 49,
+            "desviacion_estandar": 4
+          },
+          "matematicas": {
+            "promedio": 53,
+            "desviacion_estandar": 8
+          },
+          "sociales_ciudadanas": {
+            "promedio": 42,
+            "desviacion_estandar": 5
+          },
+          "ciencias_naturales": {
+            "promedio": 49,
+            "desviacion_estandar": 6
+          },
+          "ingles": {
+            "promedio": 46,
+            "desviacion_estandar": 4
+          }
+        }
       }
     },
     {
@@ -622,6 +976,34 @@
         "cantidad_grupos": 1,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "SEDE NO. 67 PEDRO PABLO PRIAS",
+        "jornada_fuente": "ÚNICA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 50,
+            "desviacion_estandar": 8
+          },
+          "matematicas": {
+            "promedio": 51,
+            "desviacion_estandar": 11
+          },
+          "sociales_ciudadanas": {
+            "promedio": 45,
+            "desviacion_estandar": 10
+          },
+          "ciencias_naturales": {
+            "promedio": 49,
+            "desviacion_estandar": 10
+          },
+          "ingles": {
+            "promedio": 47,
+            "desviacion_estandar": 9
+          }
+        }
       }
     },
     {
@@ -638,6 +1020,34 @@
         "cantidad_grupos": 3,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "SEDE PRINCIPAL INSTITUTO TEC.  INDUSTRIAL C.S.L.",
+        "jornada_fuente": "MAÑANA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 57,
+            "desviacion_estandar": 8
+          },
+          "matematicas": {
+            "promedio": 55,
+            "desviacion_estandar": 11
+          },
+          "sociales_ciudadanas": {
+            "promedio": 48,
+            "desviacion_estandar": 11
+          },
+          "ciencias_naturales": {
+            "promedio": 53,
+            "desviacion_estandar": 9
+          },
+          "ingles": {
+            "promedio": 52,
+            "desviacion_estandar": 11
+          }
+        }
       }
     },
     {
@@ -654,6 +1064,34 @@
         "cantidad_grupos": 2,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "SEDE PRINCIPAL CONCENTRACIÓN DE DESARROLLO RURAL",
+        "jornada_fuente": "ÚNICA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 50,
+            "desviacion_estandar": 8
+          },
+          "matematicas": {
+            "promedio": 46,
+            "desviacion_estandar": 11
+          },
+          "sociales_ciudadanas": {
+            "promedio": 42,
+            "desviacion_estandar": 9
+          },
+          "ciencias_naturales": {
+            "promedio": 46,
+            "desviacion_estandar": 8
+          },
+          "ingles": {
+            "promedio": 46,
+            "desviacion_estandar": 9
+          }
+        }
       }
     },
     {
@@ -670,6 +1108,34 @@
         "cantidad_grupos": 6,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "I.E. OCCIDENTE - SEDE PRINCIPAL",
+        "jornada_fuente": "MAÑANA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 52,
+            "desviacion_estandar": 9
+          },
+          "matematicas": {
+            "promedio": 51,
+            "desviacion_estandar": 10
+          },
+          "sociales_ciudadanas": {
+            "promedio": 44,
+            "desviacion_estandar": 10
+          },
+          "ciencias_naturales": {
+            "promedio": 48,
+            "desviacion_estandar": 9
+          },
+          "ingles": {
+            "promedio": 49,
+            "desviacion_estandar": 11
+          }
+        }
       }
     },
     {
@@ -686,6 +1152,34 @@
         "cantidad_grupos": 1,
         "archivo_sigma11": null,
         "archivo_masterpro11": null
+      },
+      "saber11_2025": {
+        "registro_disponible": true,
+        "estado_fuente": "registro_disponible",
+        "nombre_fuente_original": "SEDE PRINCIPAL   UNIDAD DOCENTE SAN JUAN DE BARRAGAN",
+        "jornada_fuente": "ÚNICA",
+        "resultados": {
+          "lectura_critica": {
+            "promedio": 48,
+            "desviacion_estandar": 7
+          },
+          "matematicas": {
+            "promedio": 50,
+            "desviacion_estandar": 10
+          },
+          "sociales_ciudadanas": {
+            "promedio": 41,
+            "desviacion_estandar": 6
+          },
+          "ciencias_naturales": {
+            "promedio": 47,
+            "desviacion_estandar": 7
+          },
+          "ingles": {
+            "promedio": 45,
+            "desviacion_estandar": 9
+          }
+        }
       }
     }
   ],
@@ -713,21 +1207,228 @@
       "manifest": "./data/resultados/manifest.json",
       "consolidado_grado_10": "./data/consolidados/grado10.json",
       "consolidado_grado_11": "./data/consolidados/grado11.json",
-      "recomendaciones_areas": "./json-recomendaciones-areas/"
+      "recomendaciones_areas": "./json-recomendaciones-areas/",
+      "historico_2025": "./data/historico/saber11_2025.json"
     },
     "validaciones": {
       "instituciones_grado_10": 18,
       "instituciones_grado_11": 18,
       "areas": 5,
       "errores_reportados_grado_10": 0,
-      "errores_reportados_grado_11": 0
+      "errores_reportados_grado_11": 0,
+      "instituciones_historico_2025_con_dato": 17,
+      "instituciones_historico_2025_sin_dato": 1
     },
     "reglas": [
       "No sumar las dos aplicaciones de grado 11 para estimar estudiantes únicos.",
       "No sustituir datos faltantes por cero.",
       "No forzar el total evaluado de un área a coincidir con el total del grado.",
       "No convertir diferencias entre aplicaciones en conclusiones causales.",
-      "No clasificar resultados con umbrales no documentados."
+      "No clasificar resultados con umbrales no documentados.",
+      "El referente Saber 11 2025-2 se presenta como antecedente externo y no como medición directamente equivalente a GEC 2026."
+    ]
+  },
+  "linea_tiempo_estrategica": [
+    {
+      "anio": 2025,
+      "etiqueta": "Saber 11 2025-2",
+      "tipo": "referente_historico_externo",
+      "instituciones_con_registro": 17,
+      "instituciones_sin_registro": 1,
+      "descripcion": "Resultados agregados Saber 11 2025-2 utilizados como antecedente institucional y por área."
+    },
+    {
+      "anio": 2026,
+      "etiqueta": "Grado 11 — Sigma 11 y Master Pro 11",
+      "tipo": "mediciones_gec",
+      "descripcion": "Dos aplicaciones GEC que permiten describir el comportamiento observado de la cohorte actual de grado 11."
+    },
+    {
+      "anio": 2026,
+      "etiqueta": "Grado 10 — Sigma 10",
+      "tipo": "linea_base_gec",
+      "descripcion": "Línea base de la Cohorte Saber 11 — 2027 para orientar intervención pedagógica."
+    },
+    {
+      "anio": 2027,
+      "etiqueta": "Intervención y seguimiento",
+      "tipo": "plan_mejoramiento",
+      "descripcion": "Implementación de acciones, acompañamiento y nuevas mediciones comparables."
+    }
+  ],
+  "referente_historico_2025": {
+    "archivo": "./data/historico/saber11_2025.json",
+    "periodo_fuente": "20253",
+    "tipo": "referente_historico_externo",
+    "instituciones_maestras": 18,
+    "instituciones_con_registro": 17,
+    "instituciones_sin_registro": 1,
+    "promedio_municipal_ponderado_disponible": false,
+    "comparabilidad_directa_con_gec_2026": false,
+    "regla_comparabilidad": "No interpretar diferencias entre Saber 11 2025-2 y las mediciones GEC 2026 como ganancia o pérdida de aprendizaje sin evidencia técnica de equivalencia.",
+    "descriptivos_no_ponderados": {
+      "lectura_critica": {
+        "instituciones_con_dato": 17,
+        "promedio_simple_entre_instituciones": 52.29,
+        "minimo_institucional_observado": 48,
+        "maximo_institucional_observado": 58,
+        "uso": "descriptivo_no_ponderado"
+      },
+      "matematicas": {
+        "instituciones_con_dato": 17,
+        "promedio_simple_entre_instituciones": 51.29,
+        "minimo_institucional_observado": 45,
+        "maximo_institucional_observado": 57,
+        "uso": "descriptivo_no_ponderado"
+      },
+      "sociales_ciudadanas": {
+        "instituciones_con_dato": 17,
+        "promedio_simple_entre_instituciones": 45.29,
+        "minimo_institucional_observado": 41,
+        "maximo_institucional_observado": 52,
+        "uso": "descriptivo_no_ponderado"
+      },
+      "ciencias_naturales": {
+        "instituciones_con_dato": 17,
+        "promedio_simple_entre_instituciones": 49.41,
+        "minimo_institucional_observado": 46,
+        "maximo_institucional_observado": 53,
+        "uso": "descriptivo_no_ponderado"
+      },
+      "ingles": {
+        "instituciones_con_dato": 17,
+        "promedio_simple_entre_instituciones": 49.76,
+        "minimo_institucional_observado": 45,
+        "maximo_institucional_observado": 57,
+        "uso": "descriptivo_no_ponderado"
+      }
+    },
+    "nota": "Los promedios simples entre instituciones se conservan únicamente como estadísticos descriptivos institucionales. No equivalen a un promedio municipal ponderado por estudiantes."
+  },
+  "situacion_actual_grado_11": {
+    "titulo": "Grado 11 — Situación observada 2026",
+    "instituciones": 18,
+    "grupos": 56,
+    "aplicaciones": [
+      {
+        "id": "sigma11",
+        "nombre": "2-02 SIGMA 11 SABER",
+        "participantes_reportados": 1336
+      },
+      {
+        "id": "masterpro11",
+        "nombre": "2-11 MASTER PRO 11",
+        "participantes_reportados": 1312
+      }
+    ],
+    "area_resultados": {
+      "matematicas": {
+        "nombre": "Matemáticas",
+        "sigma11": 51.46,
+        "masterpro11": 40.37,
+        "diferencia_observada": -11.09
+      },
+      "lectura_critica": {
+        "nombre": "Lectura Crítica",
+        "sigma11": 53.73,
+        "masterpro11": 58.09,
+        "diferencia_observada": 4.36
+      },
+      "sociales_ciudadanas": {
+        "nombre": "Sociales y Ciudadanas",
+        "sigma11": 44.75,
+        "masterpro11": 57.36,
+        "diferencia_observada": 12.61
+      },
+      "ciencias_naturales": {
+        "nombre": "Ciencias Naturales",
+        "sigma11": 42.0,
+        "masterpro11": 53.86,
+        "diferencia_observada": 11.86
+      },
+      "ingles": {
+        "nombre": "Inglés",
+        "sigma11": 47.75,
+        "masterpro11": 50.85,
+        "diferencia_observada": 3.1
+      }
+    },
+    "regla": "Master Pro 11 puede mostrarse como la medición GEC más reciente de grado 11. Las diferencias frente a Sigma 11 son descriptivas y no constituyen por sí solas ganancia de aprendizaje."
+  },
+  "proyeccion_grado_10_2027": {
+    "titulo": "Grado 10 — Cohorte Saber 11 — 2027",
+    "prueba": "2-02 SIGMA 10 SABER",
+    "instituciones": 18,
+    "grupos": 55,
+    "estudiantes_cohorte_reportados": 1528,
+    "uso": "Línea base para identificar oportunidades de fortalecimiento e implementar intervención pedagógica durante 2027."
+  },
+  "comparativos_disponibles": {
+    "fuentes": [
+      {
+        "id": "saber11_2025",
+        "etiqueta": "Saber 11 2025-2",
+        "grado": 11,
+        "tipo": "referente_historico_externo",
+        "instituciones_con_dato": 17,
+        "directamente_comparable_con_otras_fuentes": false
+      },
+      {
+        "id": "sigma10",
+        "etiqueta": "Sigma 10 — 2026",
+        "grado": 10,
+        "tipo": "medicion_gec",
+        "instituciones_con_dato": 18
+      },
+      {
+        "id": "sigma11",
+        "etiqueta": "Sigma 11 — 2026",
+        "grado": 11,
+        "tipo": "medicion_gec",
+        "instituciones_con_dato": 18
+      },
+      {
+        "id": "masterpro11",
+        "etiqueta": "Master Pro 11 — 2026",
+        "grado": 11,
+        "tipo": "medicion_gec",
+        "instituciones_con_dato": 18
+      }
+    ],
+    "areas": [
+      {
+        "id": "matematicas",
+        "nombre": "Matemáticas"
+      },
+      {
+        "id": "lectura_critica",
+        "nombre": "Lectura Crítica"
+      },
+      {
+        "id": "sociales_ciudadanas",
+        "nombre": "Sociales y Ciudadanas"
+      },
+      {
+        "id": "ciencias_naturales",
+        "nombre": "Ciencias Naturales"
+      },
+      {
+        "id": "ingles",
+        "nombre": "Inglés"
+      }
+    ],
+    "vistas": [
+      "tabla_instituciones_por_areas",
+      "mapa_calor_institucion_area",
+      "comparativo_area_entre_instituciones",
+      "detalle_institucional"
+    ],
+    "reglas": [
+      "No presentar el ordenamiento institucional como ranking punitivo.",
+      "Saber 11 2025-2 debe identificarse siempre como referente histórico externo.",
+      "Alto Rocío debe permanecer visible en 2025 con la etiqueta 'Sin dato disponible en la fuente'.",
+      "No calcular diferencias 2025-2026 como ganancia de aprendizaje.",
+      "En GEC 2026, utilizar los referentes municipales ponderados definidos en los consolidados."
     ]
   }
 }
