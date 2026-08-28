@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "tipo_archivo": "configuracion_aplicacion_informe_tulua",
   "aplicacion": {
     "id": "informe-tulua",
@@ -21,7 +21,8 @@
     "css": "./css/",
     "js": "./js/",
     "metodologia": "./data/metodologia/",
-    "clasificacion": "./data/metodologia/clasificacion.json"
+    "clasificacion": "./data/metodologia/clasificacion.json",
+    "prioridades_municipales": "./data/priorizacion/prioridades_municipales.json"
   },
   "narrativa_estrategica": {
     "lema": "Evaluar para comprender. Intervenir para mejorar. Medir para verificar.",
@@ -508,6 +509,28 @@
     "consolidado_grado_11": "pendiente",
     "motor_clasificacion_necesidad": "completado",
     "html": "pendiente",
-    "metodologia_clasificacion": "completado"
+    "metodologia_clasificacion": "completado",
+    "priorizacion_municipal": "completado",
+    "plan_mejoramiento_2027": "pendiente"
+  },
+  "priorizacion_municipal": {
+    "estado": "completado",
+    "archivo": "./data/priorizacion/prioridades_municipales.json",
+    "cohorte_prioritaria": "Cohorte Saber 11 — 2027",
+    "principio": "No se construye un ranking artificial entre áreas. Se identifica un foco pedagógico dentro de cada área a partir de evidencia municipal y recurrencia institucional.",
+    "evidencias": [
+      "niveles_1_2",
+      "instituciones_prioridad_alta",
+      "brecha_urbano_rural",
+      "recurrencia_competencia_menor_puntaje",
+      "recurrencia_componente_menor_puntaje",
+      "grado_11_complementario"
+    ],
+    "uso": [
+      "plan_mejoramiento_2027",
+      "formacion_docente",
+      "acompanamiento_institucional",
+      "seguimiento_municipal"
+    ]
   }
 }
