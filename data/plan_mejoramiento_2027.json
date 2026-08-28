@@ -1,0 +1,1770 @@
+{
+  "schema_version": "1.0",
+  "tipo_archivo": "plan_mejoramiento_municipal_2027",
+  "municipio": "Tuluá",
+  "departamento": "Valle del Cauca",
+  "anio_linea_base": 2026,
+  "anio_intervencion": 2027,
+  "cohorte_prioritaria": "Cohorte Saber 11 — 2027",
+  "titulo": "Plan de mejoramiento educativo 2027 — Tuluá",
+  "proposito": {
+    "objetivo_general": "Convertir la línea base 2026 en un ciclo municipal de intervención, acompañamiento y seguimiento que fortalezca las competencias evaluadas, con énfasis en la cohorte de grado 10.º que presentará Saber 11 en 2027.",
+    "principio": "Evaluar para comprender. Intervenir para mejorar. Medir para verificar.",
+    "alcance": "Las 18 instituciones educativas oficiales incluidas en la línea base, con acompañamiento inicial más intensivo en aquellas clasificadas con prioridad o alta prioridad por área."
+  },
+  "principios_operativos": [
+    "Usar los resultados como punto de partida para la intervención y no como finalidad del proceso.",
+    "Vincular cada hallazgo con una acción pedagógica concreta.",
+    "Mantener trazabilidad entre área, competencia, componente, estrategia e indicador.",
+    "Priorizar la Cohorte Saber 11 — 2027 sin descuidar aprendizajes derivados de grado 11.",
+    "No atribuir causalidad a diferencias de puntaje sin evidencia suficiente.",
+    "No fijar metas numéricas arbitrarias antes de acordar la arquitectura de mediciones 2027.",
+    "Usar resultados oficiales de Saber 11 como referente externo, sin asumir equivalencia directa con escalas internas."
+  ],
+  "gobernanza": {
+    "secretaria_educacion": {
+      "rol": "Dirección, priorización, articulación y seguimiento municipal.",
+      "responsabilidades": [
+        "Definir lineamientos y convocar a las instituciones.",
+        "Priorizar asistencia técnica y formación docente.",
+        "Garantizar seguimiento municipal y lectura territorial.",
+        "Facilitar condiciones para la implementación y toma de decisiones."
+      ]
+    },
+    "rectores_y_coordinadores": {
+      "rol": "Liderazgo institucional del plan.",
+      "responsabilidades": [
+        "Incorporar los focos en planes de área y seguimiento académico.",
+        "Organizar tiempos de trabajo colaborativo.",
+        "Revisar evidencias de implementación y aprendizaje.",
+        "Ajustar acciones institucionales con base en el seguimiento."
+      ]
+    },
+    "docentes": {
+      "rol": "Implementación pedagógica y evaluación formativa.",
+      "responsabilidades": [
+        "Aplicar estrategias focalizadas.",
+        "Registrar errores y evidencias de aprendizaje.",
+        "Retroalimentar a los estudiantes.",
+        "Participar en análisis y ajustes metodológicos."
+      ]
+    },
+    "grupo_educate_colombia": {
+      "rol": "Aliado técnico-pedagógico para análisis, transferencia metodológica y seguimiento.",
+      "responsabilidades": [
+        "Mantener y actualizar la arquitectura de datos y el informe dinámico.",
+        "Orientar la lectura técnica de resultados.",
+        "Desarrollar acompañamiento metodológico focalizado.",
+        "Diseñar o gestionar mediciones de seguimiento técnicamente documentadas.",
+        "Actualizar recomendaciones a partir de nueva evidencia."
+      ]
+    }
+  },
+  "fases": [
+    {
+      "fase": 0,
+      "nombre": "Socialización y concertación de la línea base",
+      "momento": "Inicio del acompañamiento 2027",
+      "proposito": "Asegurar que Secretaría, equipos directivos y docentes comprendan los resultados 2026 y acuerden focos institucionales y municipales.",
+      "acciones": [
+        "Presentar el panorama municipal y la Cohorte Saber 11 — 2027.",
+        "Entregar lectura institucional de fortalezas relativas, seguimiento y prioridades.",
+        "Validar con docentes si los hallazgos son consistentes con evidencias de aula.",
+        "Definir responsables institucionales y evidencias mínimas de seguimiento."
+      ],
+      "producto": "Ruta de intervención acordada por institución y área."
+    },
+    {
+      "fase": 1,
+      "nombre": "Formación y transferencia metodológica",
+      "momento": "Primer ciclo 2027",
+      "proposito": "Traducir los focos estadísticos en prácticas concretas de enseñanza y evaluación formativa.",
+      "acciones": [
+        "Desarrollar formación docente focalizada en los cinco focos municipales.",
+        "Modelar actividades y tipos de pregunta asociados a cada competencia.",
+        "Acordar indicadores de aula simples y observables.",
+        "Diferenciar apoyos para instituciones priorizadas y contextos rurales cuando corresponda."
+      ],
+      "producto": "Secuencias y rutinas de aula listas para implementación."
+    },
+    {
+      "fase": 2,
+      "nombre": "Intervención pedagógica — Ciclo 1",
+      "momento": "Después de la formación inicial",
+      "proposito": "Implementar de manera sostenida las acciones acordadas.",
+      "acciones": [
+        "Aplicar las rutinas de aula por área.",
+        "Registrar errores recurrentes y evidencias de aprendizaje.",
+        "Realizar seguimiento interno según la periodicidad sugerida en cada área.",
+        "Analizar avances en comunidades de aprendizaje o reuniones de área."
+      ],
+      "producto": "Evidencias de aula y registro de implementación del primer ciclo."
+    },
+    {
+      "fase": 3,
+      "nombre": "Medición de seguimiento 1",
+      "momento": "Después de un periodo suficiente de intervención",
+      "proposito": "Observar cambios en la misma cohorte mediante una medición técnicamente documentada y comparable.",
+      "acciones": [
+        "Aplicar una medición de seguimiento.",
+        "Comparar promedios, niveles, competencias y componentes cuando la comparabilidad esté sustentada.",
+        "Actualizar el tablero municipal e institucional.",
+        "Identificar focos que avanzan y focos que persisten."
+      ],
+      "producto": "Informe de seguimiento 1 y ajuste de prioridades."
+    },
+    {
+      "fase": 4,
+      "nombre": "Intervención ajustada — Ciclo 2",
+      "momento": "Posterior al seguimiento 1",
+      "proposito": "Intensificar o modificar las estrategias según la evidencia.",
+      "acciones": [
+        "Mantener estrategias que muestran señales favorables.",
+        "Modificar estrategias donde persisten dificultades.",
+        "Focalizar acompañamiento adicional en instituciones con mayores necesidades.",
+        "Fortalecer diferenciación pedagógica cuando exista alta dispersión dentro de los grupos."
+      ],
+      "producto": "Plan de intervención ajustado."
+    },
+    {
+      "fase": 5,
+      "nombre": "Medición de seguimiento 2 y preparación final",
+      "momento": "Antes de la presentación de Saber 11 de 2027",
+      "proposito": "Verificar el estado de la cohorte y concentrar el acompañamiento final en necesidades persistentes.",
+      "acciones": [
+        "Realizar una segunda medición comparable.",
+        "Identificar avances sostenidos y necesidades persistentes.",
+        "Definir apoyos finales por institución y área.",
+        "Evitar reducir la preparación a repetición mecánica de simulacros."
+      ],
+      "producto": "Perfil actualizado de preparación de la Cohorte Saber 11 — 2027."
+    },
+    {
+      "fase": 6,
+      "nombre": "Cierre y evaluación del ciclo",
+      "momento": "Después de disponer de resultados pertinentes de 2027",
+      "proposito": "Valorar el ciclo completo y convertir los aprendizajes en decisiones para nuevas cohortes.",
+      "acciones": [
+        "Contrastar los resultados de las mediciones internas comparables.",
+        "Analizar los resultados oficiales de Saber 11 como referente externo cuando estén disponibles.",
+        "No equiparar automáticamente la escala GEC con la escala oficial del Icfes.",
+        "Documentar prácticas que conviene sostener, modificar o ampliar."
+      ],
+      "producto": "Balance municipal del ciclo de mejoramiento 2027."
+    }
+  ],
+  "areas": {
+    "matematicas": {
+      "nombre": "Matemáticas",
+      "linea_base_2026": {
+        "grado": 10,
+        "cohorte": "Cohorte Saber 11 — 2027",
+        "promedio_municipal_ponderado": 38.63,
+        "total_evaluados_area": 1528,
+        "niveles_1_2": {
+          "cantidad": 1256,
+          "porcentaje": 82.2
+        },
+        "instituciones_prioridad_o_alta_prioridad": {
+          "cantidad": 7,
+          "porcentaje": 38.89
+        },
+        "brecha_urbana_menos_rural": 5.52
+      },
+      "foco_2027": {
+        "competencia": "Formulación y ejecución",
+        "componente": "Numérico - variacional",
+        "recurrencia_competencia_porcentaje": 83.33,
+        "recurrencia_componente_porcentaje": 100.0,
+        "advertencia": "La recurrencia identifica un foco operativo para intervención dentro del área. No constituye una estimación de dificultad psicométrica de las subescalas."
+      },
+      "objetivo_de_mejoramiento": "Desarrollar flexibilidad para diseñar, ejecutar y revisar estrategias de solución, evitando la aplicación mecánica de fórmulas sin modelación previa.",
+      "hipotesis_pedagogica": {
+        "competencia": "Una debilidad en esta competencia sugiere dificultad para pasar de la comprensión del problema a una estrategia de solución viable, seleccionar herramientas pertinentes, ejecutar el plan o verificar si la respuesta satisface las condiciones iniciales.",
+        "componente": "Una debilidad puede asociarse a dificultades con proporcionalidad, porcentajes, operaciones con racionales, relaciones lineales, tasas de cambio, expresiones algebraicas o interpretación de funciones.",
+        "regla": "Estas lecturas son hipótesis pedagógicas orientadoras; deben contrastarse con evidencias de aula y no se presentan como explicación causal del resultado."
+      },
+      "acciones_docentes": {
+        "prioridad_inicial": [
+          "Implementar un problema no rutinario semanal por área de contenido.",
+          "Construir banco institucional de estrategias, no solo de respuestas.",
+          "Hacer seguimiento separado a formulación, ejecución y verificación.",
+          "Incrementar gradualmente la complejidad de contextos y restricciones durante el año."
+        ],
+        "estrategias_metodologicas": [
+          "Plan antes de procedimiento",
+          "Dos rutas, una decisión",
+          "Modelación de situaciones reales"
+        ],
+        "actividades_sugeridas": [
+          {
+            "nombre": "Presupuesto con restricciones"
+          },
+          {
+            "nombre": "¿Qué procedimiento conviene?"
+          },
+          {
+            "nombre": "Problema inverso"
+          }
+        ],
+        "focos_componente": [
+          "Fracciones, razones, decimales y porcentajes.",
+          "Propiedades de operaciones y estimación.",
+          "Relaciones lineales y afines.",
+          "Tasas de cambio en contextos.",
+          "Expresiones algebraicas y relaciones entre variables.",
+          "Lectura gráfica y algebraica de funciones."
+        ],
+        "errores_a_observar": [
+          "Busca una fórmula antes de comprender la estructura del problema.",
+          "Selecciona operaciones por palabras clave.",
+          "No identifica restricciones o condiciones.",
+          "Obtiene un resultado numérico pero no verifica su sentido.",
+          "Abandona el problema si la estrategia inicial no funciona.",
+          "Confunde procedimiento correcto con respuesta correcta por coincidencia."
+        ],
+        "preguntas_a_priorizar": [
+          "Problemas que exijan seleccionar una estrategia entre varias.",
+          "Situaciones de proporcionalidad, porcentaje, razones de cambio y relaciones lineales.",
+          "Problemas de conteo, probabilidad y análisis de datos.",
+          "Situaciones geométricas de medida, semejanza, áreas, volúmenes o coordenadas.",
+          "Problemas donde el resultado deba interpretarse dentro de una restricción contextual."
+        ]
+      },
+      "acciones_coordinacion": [
+        "Incorporar el foco 'Formulación y ejecución' y el componente 'Numérico - variacional' al plan de área y al seguimiento académico.",
+        "Acordar una evidencia común de aprendizaje para el ciclo de intervención.",
+        "Revisar periódicamente muestras de trabajo estudiantil y registros de error.",
+        "Facilitar espacios breves de comunidad de aprendizaje para analizar avances y dificultades.",
+        "Verificar que las acciones se desarrollen con continuidad y no únicamente antes de una prueba."
+      ],
+      "acciones_secretaria": [
+        "Priorizar formación y asistencia técnica en Matemáticas alrededor del foco 'Formulación y ejecución'.",
+        "Acompañar inicialmente a las instituciones identificadas con prioridad o alta prioridad.",
+        "Conservar lectura diferenciada urbano-rural para orientar apoyos contextualizados.",
+        "Solicitar evidencias simples y comparables de implementación, evitando cargas administrativas innecesarias.",
+        "Integrar los hallazgos del seguimiento en las decisiones de formación docente y acompañamiento institucional."
+      ],
+      "acciones_aliado_tecnico_pedagogico": [
+        "Entregar lectura técnica de resultados municipales e institucionales.",
+        "Orientar talleres de transferencia metodológica vinculados con el foco identificado.",
+        "Proveer instrumentos o mediciones de seguimiento técnicamente documentadas.",
+        "Actualizar los análisis institucionales y municipales después de cada medición comparable.",
+        "Convertir los nuevos hallazgos en recomendaciones pedagógicas ajustadas."
+      ],
+      "seguimiento_de_aula": {
+        "indicadores": [
+          "Porcentaje de estudiantes que formula un plan pertinente antes del cálculo.",
+          "Porcentaje de soluciones que incluyen verificación del resultado.",
+          "Porcentaje de estudiantes que puede resolver el mismo problema con una estrategia alternativa."
+        ],
+        "evidencias": [
+          "Rúbricas de resolución de problemas",
+          "Cuadernos de estrategias",
+          "Mini-pruebas con ítems de selección de procedimientos"
+        ],
+        "periodicidad_sugerida": "Cada 4 a 6 semanas",
+        "nota": "Estos indicadores observan procesos de aprendizaje y complementan los resultados de pruebas."
+      },
+      "indicadores_de_resultado": [
+        {
+          "id": "promedio_area",
+          "descripcion": "Cambio del promedio del área en una medición técnicamente comparable.",
+          "direccion_esperada": "aumentar",
+          "meta_numerica": null
+        },
+        {
+          "id": "niveles_1_2",
+          "descripcion": "Cambio en el porcentaje de estudiantes ubicados en niveles 1 y 2.",
+          "direccion_esperada": "disminuir",
+          "meta_numerica": null
+        },
+        {
+          "id": "competencia_foco",
+          "descripcion": "Cambio en el desempeño de la competencia foco: Formulación y ejecución.",
+          "direccion_esperada": "aumentar",
+          "meta_numerica": null
+        },
+        {
+          "id": "componente_foco",
+          "descripcion": "Cambio en el desempeño del componente foco: Numérico - variacional.",
+          "direccion_esperada": "aumentar",
+          "meta_numerica": null
+        },
+        {
+          "id": "brecha_territorial",
+          "descripcion": "Evolución de la brecha urbano-rural observada, cuando la medición permita compararla.",
+          "direccion_esperada": "reducir_sin_empeorar_resultados",
+          "meta_numerica": null
+        }
+      ],
+      "instituciones_acompanamiento_inicial": [
+        {
+          "numero": 1,
+          "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+          "dane": "27683400123901",
+          "zona": "rural",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 18,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+          "dane": "276834000704",
+          "zona": "rural",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 14,
+          "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+          "dane": "276834000852",
+          "zona": "rural",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 16,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+          "dane": "276834002243",
+          "zona": "rural",
+          "categoria": "prioridad"
+        },
+        {
+          "numero": 3,
+          "nombre": "INSTITUCION EDUCATIVA AGUACLARA",
+          "dane": "276834001778",
+          "zona": "rural",
+          "categoria": "prioridad"
+        },
+        {
+          "numero": 10,
+          "nombre": "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+          "dane": "176834000092",
+          "zona": "urbana",
+          "categoria": "prioridad"
+        },
+        {
+          "numero": 5,
+          "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+          "dane": "276834000941",
+          "zona": "rural",
+          "categoria": "prioridad"
+        }
+      ],
+      "evidencia_grado_11_complementaria": {
+        "sigma11": {
+          "promedio_municipal": 51.46,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Formulación y ejecución",
+            "recurrencia_equivalente": 16.0,
+            "porcentaje_instituciones_equivalente": 88.89,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Geométrico - métrico",
+            "recurrencia_equivalente": 17.0,
+            "porcentaje_instituciones_equivalente": 94.44,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        },
+        "masterpro11": {
+          "promedio_municipal": 40.37,
+          "diferencia_frente_sigma11": -11.09,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Formulación y ejecución",
+            "recurrencia_equivalente": 11.0,
+            "porcentaje_instituciones_equivalente": 61.11,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Numérico - variacional",
+            "recurrencia_equivalente": 14.0,
+            "porcentaje_instituciones_equivalente": 77.78,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        },
+        "regla": "Grado 11 funciona como evidencia complementaria de contexto. No modifica automáticamente el foco definido para la cohorte de grado 10."
+      },
+      "fuentes_pedagogicas": {
+        "archivo_recomendaciones": "recomendaciones_matematicas_saber11_2026.json",
+        "competencia_json_id": "formulacion_ejecucion",
+        "componente_json_id": "numerico_variacional",
+        "coincidencia_competencia": 1.0,
+        "coincidencia_componente": 1.0
+      }
+    },
+    "lectura_critica": {
+      "nombre": "Lectura Crítica",
+      "linea_base_2026": {
+        "grado": 10,
+        "cohorte": "Cohorte Saber 11 — 2027",
+        "promedio_municipal_ponderado": 41.85,
+        "total_evaluados_area": 1509,
+        "niveles_1_2": {
+          "cantidad": 1079,
+          "porcentaje": 71.5
+        },
+        "instituciones_prioridad_o_alta_prioridad": {
+          "cantidad": 7,
+          "porcentaje": 38.89
+        },
+        "brecha_urbana_menos_rural": 4.04
+      },
+      "foco_2027": {
+        "competencia": "Comprender cómo se articulan las partes de un texto para darle un sentido global",
+        "componente": "Semántico",
+        "recurrencia_competencia_porcentaje": 61.11,
+        "recurrencia_componente_porcentaje": 83.33,
+        "advertencia": "La recurrencia identifica un foco operativo para intervención dentro del área. No constituye una estimación de dificultad psicométrica de las subescalas."
+      },
+      "objetivo_de_mejoramiento": "Desarrollar la capacidad de integrar información distribuida, reconocer estructura y relaciones entre enunciados, formular inferencias controladas y construir el sentido global del texto.",
+      "hipotesis_pedagogica": {
+        "competencia": "Una debilidad en esta afirmación indica dificultades para conectar fragmentos, reconocer la función de las partes, identificar relaciones lógicas, construir inferencias, diferenciar voces o formular una representación global coherente del texto. Por su peso referencial, debe recibir especial atención cuando aparece comprometida.",
+        "componente": "Una debilidad semántica puede manifestarse en problemas para construir significado, reconocer relaciones léxicas, rastrear referentes, integrar información explícita e implícita o sostener inferencias coherentes.",
+        "regla": "Estas lecturas son hipótesis pedagógicas orientadoras; deben contrastarse con evidencias de aula y no se presentan como explicación causal del resultado."
+      },
+      "acciones_docentes": {
+        "prioridad_inicial": [
+          "Implementar una actividad semanal de arquitectura textual.",
+          "Alternar textos literarios, argumentativos, científicos y discontinuos.",
+          "Incrementar gradualmente la extensión y densidad conceptual.",
+          "Registrar la diferencia entre errores de relación, inferencia y síntesis."
+        ],
+        "estrategias_metodologicas": [
+          "Mapa de arquitectura textual",
+          "Reconstrucción de texto",
+          "Inferencia con control de evidencia",
+          "Voces y perspectivas"
+        ],
+        "actividades_sugeridas": [
+          {
+            "nombre": "Rompecabezas textual"
+          },
+          {
+            "nombre": "Idea global en una oración"
+          },
+          {
+            "nombre": "Puentes entre párrafos"
+          },
+          {
+            "nombre": "Texto discontinuo integrado"
+          }
+        ],
+        "focos_componente": [
+          "Vocabulario en contexto.",
+          "Paráfrasis.",
+          "Referentes y relaciones léxicas.",
+          "Ideas principales y secundarias.",
+          "Inferencias controladas.",
+          "Coherencia global."
+        ],
+        "errores_a_observar": [
+          "Resume acumulando detalles sin jerarquizarlos.",
+          "Confunde tema con idea central o tesis.",
+          "Interpreta cada párrafo de forma aislada.",
+          "No identifica relaciones de contraste, causa, consecuencia o ejemplificación.",
+          "Construye inferencias con conocimientos externos pero sin respaldo textual.",
+          "Confunde voces o atribuye una afirmación al autor cuando pertenece a otra fuente."
+        ],
+        "preguntas_a_priorizar": [
+          "Función de un párrafo o segmento.",
+          "Relación entre dos partes del texto.",
+          "Idea central, tesis o propósito global.",
+          "Inferencias a partir de información distribuida.",
+          "Identificación de voces y posiciones.",
+          "Relación entre elementos de textos discontinuos."
+        ]
+      },
+      "acciones_coordinacion": [
+        "Incorporar el foco 'Comprender cómo se articulan las partes de un texto para darle un sentido global' y el componente 'Semántico' al plan de área y al seguimiento académico.",
+        "Acordar una evidencia común de aprendizaje para el ciclo de intervención.",
+        "Revisar periódicamente muestras de trabajo estudiantil y registros de error.",
+        "Facilitar espacios breves de comunidad de aprendizaje para analizar avances y dificultades.",
+        "Verificar que las acciones se desarrollen con continuidad y no únicamente antes de una prueba."
+      ],
+      "acciones_secretaria": [
+        "Priorizar formación y asistencia técnica en Lectura Crítica alrededor del foco 'Comprender cómo se articulan las partes de un texto para darle un sentido global'.",
+        "Acompañar inicialmente a las instituciones identificadas con prioridad o alta prioridad.",
+        "Conservar lectura diferenciada urbano-rural para orientar apoyos contextualizados.",
+        "Solicitar evidencias simples y comparables de implementación, evitando cargas administrativas innecesarias.",
+        "Integrar los hallazgos del seguimiento en las decisiones de formación docente y acompañamiento institucional."
+      ],
+      "acciones_aliado_tecnico_pedagogico": [
+        "Entregar lectura técnica de resultados municipales e institucionales.",
+        "Orientar talleres de transferencia metodológica vinculados con el foco identificado.",
+        "Proveer instrumentos o mediciones de seguimiento técnicamente documentadas.",
+        "Actualizar los análisis institucionales y municipales después de cada medición comparable.",
+        "Convertir los nuevos hallazgos en recomendaciones pedagógicas ajustadas."
+      ],
+      "seguimiento_de_aula": {
+        "indicadores": [
+          "Porcentaje de estudiantes que identifica correctamente la función de las partes.",
+          "Porcentaje de inferencias justificadas con evidencia suficiente.",
+          "Porcentaje de estudiantes que formula una idea global coherente sin copiar fragmentos.",
+          "Desempeño específico en textos discontinuos."
+        ],
+        "evidencias": [
+          "Mapas de estructura textual",
+          "Rúbricas de inferencia",
+          "Síntesis de una oración",
+          "Mini-pruebas con preguntas de relación e interpretación"
+        ],
+        "periodicidad_sugerida": "Cada 4 semanas",
+        "nota": "Estos indicadores observan procesos de aprendizaje y complementan los resultados de pruebas."
+      },
+      "indicadores_de_resultado": [
+        {
+          "id": "promedio_area",
+          "descripcion": "Cambio del promedio del área en una medición técnicamente comparable.",
+          "direccion_esperada": "aumentar",
+          "meta_numerica": null
+        },
+        {
+          "id": "niveles_1_2",
+          "descripcion": "Cambio en el porcentaje de estudiantes ubicados en niveles 1 y 2.",
+          "direccion_esperada": "disminuir",
+          "meta_numerica": null
+        },
+        {
+          "id": "competencia_foco",
+          "descripcion": "Cambio en el desempeño de la competencia foco: Comprender cómo se articulan las partes de un texto para darle un sentido global.",
+          "direccion_esperada": "aumentar",
+          "meta_numerica": null
+        },
+        {
+          "id": "componente_foco",
+          "descripcion": "Cambio en el desempeño del componente foco: Semántico.",
+          "direccion_esperada": "aumentar",
+          "meta_numerica": null
+        },
+        {
+          "id": "brecha_territorial",
+          "descripcion": "Evolución de la brecha urbano-rural observada, cuando la medición permita compararla.",
+          "direccion_esperada": "reducir_sin_empeorar_resultados",
+          "meta_numerica": null
+        }
+      ],
+      "instituciones_acompanamiento_inicial": [
+        {
+          "numero": 18,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+          "dane": "276834000704",
+          "zona": "rural",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 16,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+          "dane": "276834002243",
+          "zona": "rural",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 3,
+          "nombre": "INSTITUCION EDUCATIVA AGUACLARA",
+          "dane": "276834001778",
+          "zona": "rural",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 12,
+          "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+          "dane": "176834000106",
+          "zona": "urbana",
+          "categoria": "prioridad"
+        },
+        {
+          "numero": 8,
+          "nombre": "I.E. JOVITA SANTA COLOMA",
+          "dane": "276834000666",
+          "zona": "rural",
+          "categoria": "prioridad"
+        },
+        {
+          "numero": 1,
+          "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+          "dane": "27683400123901",
+          "zona": "rural",
+          "categoria": "prioridad"
+        },
+        {
+          "numero": 14,
+          "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+          "dane": "276834000852",
+          "zona": "rural",
+          "categoria": "prioridad"
+        }
+      ],
+      "evidencia_grado_11_complementaria": {
+        "sigma11": {
+          "promedio_municipal": 53.73,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Reflexionar a partir de un texto y evaluar su contenido",
+            "recurrencia_equivalente": 18.0,
+            "porcentaje_instituciones_equivalente": 100.0,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Pragmático",
+            "recurrencia_equivalente": 18.0,
+            "porcentaje_instituciones_equivalente": 100.0,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        },
+        "masterpro11": {
+          "promedio_municipal": 58.09,
+          "diferencia_frente_sigma11": 4.36,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Evaluar y reflexionar sobre la forma y el contenido de los textos",
+            "recurrencia_equivalente": 9.5,
+            "porcentaje_instituciones_equivalente": 52.78,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Pragmático",
+            "recurrencia_equivalente": 15.0,
+            "porcentaje_instituciones_equivalente": 83.33,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          }
+        },
+        "regla": "Grado 11 funciona como evidencia complementaria de contexto. No modifica automáticamente el foco definido para la cohorte de grado 10."
+      },
+      "fuentes_pedagogicas": {
+        "archivo_recomendaciones": "recomendaciones_lectura_critica_saber11_2026.json",
+        "competencia_json_id": "articulacion_sentido_global",
+        "componente_json_id": "semantico",
+        "coincidencia_competencia": 1.0,
+        "coincidencia_componente": 1.0
+      }
+    },
+    "sociales_ciudadanas": {
+      "nombre": "Sociales y Ciudadanas",
+      "linea_base_2026": {
+        "grado": 10,
+        "cohorte": "Cohorte Saber 11 — 2027",
+        "promedio_municipal_ponderado": 50.65,
+        "total_evaluados_area": 1528,
+        "niveles_1_2": {
+          "cantidad": 896,
+          "porcentaje": 58.64
+        },
+        "instituciones_prioridad_o_alta_prioridad": {
+          "cantidad": 6,
+          "porcentaje": 33.33
+        },
+        "brecha_urbana_menos_rural": 3.31
+      },
+      "foco_2027": {
+        "competencia": "Pensamiento social",
+        "componente": "Historia y cultura",
+        "recurrencia_competencia_porcentaje": 88.89,
+        "recurrencia_componente_porcentaje": 72.22,
+        "advertencia": "La recurrencia identifica un foco operativo para intervención dentro del área. No constituye una estimación de dificultad psicométrica de las subescalas."
+      },
+      "objetivo_de_mejoramiento": "Fortalecer el uso funcional de conceptos sociales, políticos, económicos, culturales y geográficos, así como la comprensión temporal y espacial de procesos y problemáticas.",
+      "hipotesis_pedagogica": {
+        "competencia": "Una debilidad en Pensamiento social puede reflejar dificultad para usar conceptos de las ciencias sociales como herramientas de análisis, comprender principios del Estado colombiano o relacionar eventos con sus dimensiones temporales y espaciales. No debe interpretarse automáticamente como falta de memoria factual.",
+        "componente": "Una debilidad puede manifestarse en dificultades para ubicar procesos, establecer cambios y permanencias, construir explicaciones multicausales, contextualizar actores o comprender diversidad cultural y relaciones entre pasado y presente.",
+        "regla": "Estas lecturas son hipótesis pedagógicas orientadoras; deben contrastarse con evidencias de aula y no se presentan como explicación causal del resultado."
+      },
+      "acciones_docentes": {
+        "prioridad_inicial": [
+          "Construir un glosario aplicado, no definicional.",
+          "Revisitar conceptos en múltiples contextos durante el año.",
+          "Trabajar semanalmente una situación constitucional o histórico-geográfica.",
+          "Medir transferencia a casos no trabajados previamente."
+        ],
+        "estrategias_metodologicas": [
+          "Concepto en contexto",
+          "Constitución aplicada",
+          "Tiempo, espacio y proceso",
+          "Línea de tiempo causal"
+        ],
+        "actividades_sugeridas": [
+          {
+            "nombre": "Caso constitucional"
+          },
+          {
+            "nombre": "Mapa histórico-geográfico"
+          },
+          {
+            "nombre": "Concepto que explica"
+          }
+        ],
+        "focos_componente": [
+          "Temporalidad histórica.",
+          "Cambio y permanencia.",
+          "Causalidad y consecuencia.",
+          "Actores y contexto.",
+          "Fuentes históricas.",
+          "Diversidad cultural."
+        ],
+        "errores_a_observar": [
+          "Memoriza conceptos pero no los aplica a situaciones nuevas.",
+          "Confunde funciones de ramas del poder u organismos.",
+          "Selecciona un mecanismo de participación por asociación verbal y no por pertinencia.",
+          "Ordena hechos cronológicamente pero no establece relaciones.",
+          "Explica procesos históricos con una sola causa.",
+          "Ignora el papel del espacio geográfico."
+        ],
+        "preguntas_a_priorizar": [
+          "Aplicación de conceptos sociales a situaciones.",
+          "Estado Social de Derecho, organización estatal y mecanismos de participación.",
+          "Relaciones entre derechos, deberes, instituciones y casos.",
+          "Ubicación temporal y espacial.",
+          "Cambios, permanencias y conexiones históricas.",
+          "Relaciones entre territorio y problemática social."
+        ]
+      },
+      "acciones_coordinacion": [
+        "Incorporar el foco 'Pensamiento social' y el componente 'Historia y cultura' al plan de área y al seguimiento académico.",
+        "Acordar una evidencia común de aprendizaje para el ciclo de intervención.",
+        "Revisar periódicamente muestras de trabajo estudiantil y registros de error.",
+        "Facilitar espacios breves de comunidad de aprendizaje para analizar avances y dificultades.",
+        "Verificar que las acciones se desarrollen con continuidad y no únicamente antes de una prueba."
+      ],
+      "acciones_secretaria": [
+        "Priorizar formación y asistencia técnica en Sociales y Ciudadanas alrededor del foco 'Pensamiento social'.",
+        "Acompañar inicialmente a las instituciones identificadas con prioridad o alta prioridad.",
+        "Conservar lectura diferenciada urbano-rural para orientar apoyos contextualizados.",
+        "Solicitar evidencias simples y comparables de implementación, evitando cargas administrativas innecesarias.",
+        "Integrar los hallazgos del seguimiento en las decisiones de formación docente y acompañamiento institucional."
+      ],
+      "acciones_aliado_tecnico_pedagogico": [
+        "Entregar lectura técnica de resultados municipales e institucionales.",
+        "Orientar talleres de transferencia metodológica vinculados con el foco identificado.",
+        "Proveer instrumentos o mediciones de seguimiento técnicamente documentadas.",
+        "Actualizar los análisis institucionales y municipales después de cada medición comparable.",
+        "Convertir los nuevos hallazgos en recomendaciones pedagógicas ajustadas."
+      ],
+      "seguimiento_de_aula": {
+        "indicadores": [
+          "Porcentaje de estudiantes que aplica correctamente conceptos en casos nuevos.",
+          "Porcentaje que identifica institución o mecanismo pertinente y justifica su elección.",
+          "Porcentaje que explica un proceso mediante relaciones temporales y espaciales.",
+          "Reducción de respuestas basadas exclusivamente en memoria verbal."
+        ],
+        "evidencias": [
+          "Estudios de caso",
+          "Mapas históricos y geográficos",
+          "Mini-pruebas contextualizadas",
+          "Organizadores causales"
+        ],
+        "periodicidad_sugerida": "Cada 4 semanas",
+        "nota": "Estos indicadores observan procesos de aprendizaje y complementan los resultados de pruebas."
+      },
+      "indicadores_de_resultado": [
+        {
+          "id": "promedio_area",
+          "descripcion": "Cambio del promedio del área en una medición técnicamente comparable.",
+          "direccion_esperada": "aumentar",
+          "meta_numerica": null
+        },
+        {
+          "id": "niveles_1_2",
+          "descripcion": "Cambio en el porcentaje de estudiantes ubicados en niveles 1 y 2.",
+          "direccion_esperada": "disminuir",
+          "meta_numerica": null
+        },
+        {
+          "id": "competencia_foco",
+          "descripcion": "Cambio en el desempeño de la competencia foco: Pensamiento social.",
+          "direccion_esperada": "aumentar",
+          "meta_numerica": null
+        },
+        {
+          "id": "componente_foco",
+          "descripcion": "Cambio en el desempeño del componente foco: Historia y cultura.",
+          "direccion_esperada": "aumentar",
+          "meta_numerica": null
+        },
+        {
+          "id": "brecha_territorial",
+          "descripcion": "Evolución de la brecha urbano-rural observada, cuando la medición permita compararla.",
+          "direccion_esperada": "reducir_sin_empeorar_resultados",
+          "meta_numerica": null
+        }
+      ],
+      "instituciones_acompanamiento_inicial": [
+        {
+          "numero": 18,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+          "dane": "276834000704",
+          "zona": "rural",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 8,
+          "nombre": "I.E. JOVITA SANTA COLOMA",
+          "dane": "276834000666",
+          "zona": "rural",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 12,
+          "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+          "dane": "176834000106",
+          "zona": "urbana",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 17,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+          "dane": "176834003989",
+          "zona": "urbana",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 5,
+          "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+          "dane": "276834000941",
+          "zona": "rural",
+          "categoria": "prioridad"
+        },
+        {
+          "numero": 6,
+          "nombre": "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+          "dane": "176834000351",
+          "zona": "urbana",
+          "categoria": "prioridad"
+        }
+      ],
+      "evidencia_grado_11_complementaria": {
+        "sigma11": {
+          "promedio_municipal": 44.75,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Pensamiento social",
+            "recurrencia_equivalente": 17.0,
+            "porcentaje_instituciones_equivalente": 94.44,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Historia y cultura",
+            "recurrencia_equivalente": 14.0,
+            "porcentaje_instituciones_equivalente": 77.78,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        },
+        "masterpro11": {
+          "promedio_municipal": 57.36,
+          "diferencia_frente_sigma11": 12.61,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Pensamiento social",
+            "recurrencia_equivalente": 14.0,
+            "porcentaje_instituciones_equivalente": 77.78,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Competencias ciudadanas",
+            "recurrencia_equivalente": 18.0,
+            "porcentaje_instituciones_equivalente": 100.0,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        },
+        "regla": "Grado 11 funciona como evidencia complementaria de contexto. No modifica automáticamente el foco definido para la cohorte de grado 10."
+      },
+      "fuentes_pedagogicas": {
+        "archivo_recomendaciones": "recomendaciones_sociales_ciudadanas_saber11_2026.json",
+        "competencia_json_id": "pensamiento_social",
+        "componente_json_id": "historia_cultura",
+        "coincidencia_competencia": 1.0,
+        "coincidencia_componente": 1.0
+      }
+    },
+    "ciencias_naturales": {
+      "nombre": "Ciencias Naturales",
+      "linea_base_2026": {
+        "grado": 10,
+        "cohorte": "Cohorte Saber 11 — 2027",
+        "promedio_municipal_ponderado": 41.91,
+        "total_evaluados_area": 1528,
+        "niveles_1_2": {
+          "cantidad": 1289,
+          "porcentaje": 84.36
+        },
+        "instituciones_prioridad_o_alta_prioridad": {
+          "cantidad": 6,
+          "porcentaje": 33.33
+        },
+        "brecha_urbana_menos_rural": 3.9
+      },
+      "foco_2027": {
+        "competencia": "Indagación",
+        "componente": "Entorno biológico",
+        "recurrencia_competencia_porcentaje": 94.44,
+        "recurrencia_componente_porcentaje": 44.44,
+        "advertencia": "La recurrencia identifica un foco operativo para intervención dentro del área. No constituye una estimación de dificultad psicométrica de las subescalas."
+      },
+      "objetivo_de_mejoramiento": "Fortalecer el razonamiento basado en evidencia mediante preguntas investigables, diseño y evaluación de procedimientos, análisis de datos, predicción y elaboración de conclusiones válidas.",
+      "hipotesis_pedagogica": {
+        "competencia": "Una debilidad en Indagación puede manifestarse en dificultad para formular preguntas investigables, identificar variables, analizar diseños experimentales, interpretar datos, reconocer patrones, hacer predicciones o derivar conclusiones sustentadas. Dado su peso referencial, debe recibir especial atención cuando aparece comprometida.",
+        "componente": "Una debilidad puede relacionarse con dificultades para comprender funcionamiento de organismos, relaciones entre estructuras y funciones, genética, evolución, ecosistemas e interacciones bióticas y abióticas.",
+        "regla": "Estas lecturas son hipótesis pedagógicas orientadoras; deben contrastarse con evidencias de aula y no se presentan como explicación causal del resultado."
+      },
+      "acciones_docentes": {
+        "prioridad_inicial": [
+          "Implementar al menos una miniinvestigación o análisis experimental cada dos semanas.",
+          "Usar datos reales y simulados de Biología, Física y Química.",
+          "Registrar errores por variables, datos, evidencia y conclusión.",
+          "Aplicar mediciones comparables cada 6 a 8 semanas.",
+          "Aumentar gradualmente complejidad de diseños y conjuntos de datos."
+        ],
+        "estrategias_metodologicas": [
+          "Pregunta investigable o no investigable",
+          "Auditoría experimental",
+          "Dato–patrón–conclusión",
+          "Evidencia suficiente"
+        ],
+        "actividades_sugeridas": [
+          {
+            "nombre": "Miniinvestigación de una clase"
+          },
+          {
+            "nombre": "Experimento defectuoso"
+          },
+          {
+            "nombre": "¿Qué concluyen realmente los datos?"
+          },
+          {
+            "nombre": "Predicción verificable"
+          }
+        ],
+        "focos_componente": [
+          "Célula, organismo y niveles de organización.",
+          "Homeostasis y funciones vitales.",
+          "Genética y herencia.",
+          "Evolución y adaptación.",
+          "Ecosistemas, poblaciones y comunidades.",
+          "Flujo de materia y energía."
+        ],
+        "errores_a_observar": [
+          "Formula preguntas imposibles de responder con el procedimiento planteado.",
+          "Confunde variable independiente y dependiente.",
+          "Cambia varias variables simultáneamente sin control.",
+          "Concluye causalidad a partir de una correlación.",
+          "Generaliza desde muestras insuficientes.",
+          "Ignora variabilidad o valores atípicos."
+        ],
+        "preguntas_a_priorizar": [
+          "Preguntas investigables.",
+          "Variables y controles.",
+          "Evaluación de procedimientos.",
+          "Interpretación de tablas y gráficas.",
+          "Reconocimiento de patrones.",
+          "Predicciones."
+        ]
+      },
+      "acciones_coordinacion": [
+        "Incorporar el foco 'Indagación' y el componente 'Entorno biológico' al plan de área y al seguimiento académico.",
+        "Acordar una evidencia común de aprendizaje para el ciclo de intervención.",
+        "Revisar periódicamente muestras de trabajo estudiantil y registros de error.",
+        "Facilitar espacios breves de comunidad de aprendizaje para analizar avances y dificultades.",
+        "Verificar que las acciones se desarrollen con continuidad y no únicamente antes de una prueba."
+      ],
+      "acciones_secretaria": [
+        "Priorizar formación y asistencia técnica en Ciencias Naturales alrededor del foco 'Indagación'.",
+        "Acompañar inicialmente a las instituciones identificadas con prioridad o alta prioridad.",
+        "Conservar lectura diferenciada urbano-rural para orientar apoyos contextualizados.",
+        "Solicitar evidencias simples y comparables de implementación, evitando cargas administrativas innecesarias.",
+        "Integrar los hallazgos del seguimiento en las decisiones de formación docente y acompañamiento institucional."
+      ],
+      "acciones_aliado_tecnico_pedagogico": [
+        "Entregar lectura técnica de resultados municipales e institucionales.",
+        "Orientar talleres de transferencia metodológica vinculados con el foco identificado.",
+        "Proveer instrumentos o mediciones de seguimiento técnicamente documentadas.",
+        "Actualizar los análisis institucionales y municipales después de cada medición comparable.",
+        "Convertir los nuevos hallazgos en recomendaciones pedagógicas ajustadas."
+      ],
+      "seguimiento_de_aula": {
+        "indicadores": [
+          "Porcentaje de estudiantes que identifica correctamente variables y controles.",
+          "Porcentaje que deriva conclusiones compatibles con la evidencia.",
+          "Porcentaje que interpreta datos antes de explicar.",
+          "Porcentaje que detecta limitaciones en un diseño experimental.",
+          "Porcentaje que formula predicciones verificables."
+        ],
+        "evidencias": [
+          "Miniinvestigaciones",
+          "Análisis de experimentos",
+          "Gráficas comentadas",
+          "Mini-pruebas de indagación",
+          "Portafolio de conclusiones y predicciones"
+        ],
+        "periodicidad_sugerida": "Cada 4 semanas",
+        "nota": "Estos indicadores observan procesos de aprendizaje y complementan los resultados de pruebas."
+      },
+      "indicadores_de_resultado": [
+        {
+          "id": "promedio_area",
+          "descripcion": "Cambio del promedio del área en una medición técnicamente comparable.",
+          "direccion_esperada": "aumentar",
+          "meta_numerica": null
+        },
+        {
+          "id": "niveles_1_2",
+          "descripcion": "Cambio en el porcentaje de estudiantes ubicados en niveles 1 y 2.",
+          "direccion_esperada": "disminuir",
+          "meta_numerica": null
+        },
+        {
+          "id": "competencia_foco",
+          "descripcion": "Cambio en el desempeño de la competencia foco: Indagación.",
+          "direccion_esperada": "aumentar",
+          "meta_numerica": null
+        },
+        {
+          "id": "componente_foco",
+          "descripcion": "Cambio en el desempeño del componente foco: Entorno biológico.",
+          "direccion_esperada": "aumentar",
+          "meta_numerica": null
+        },
+        {
+          "id": "brecha_territorial",
+          "descripcion": "Evolución de la brecha urbano-rural observada, cuando la medición permita compararla.",
+          "direccion_esperada": "reducir_sin_empeorar_resultados",
+          "meta_numerica": null
+        }
+      ],
+      "instituciones_acompanamiento_inicial": [
+        {
+          "numero": 18,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+          "dane": "276834000704",
+          "zona": "rural",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 1,
+          "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+          "dane": "27683400123901",
+          "zona": "rural",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 16,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+          "dane": "276834002243",
+          "zona": "rural",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 13,
+          "nombre": "INSTITUCION EDUCATIVA MONTELORO",
+          "dane": "276834000917",
+          "zona": "rural",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 17,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+          "dane": "176834003989",
+          "zona": "urbana",
+          "categoria": "prioridad"
+        },
+        {
+          "numero": 5,
+          "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+          "dane": "276834000941",
+          "zona": "rural",
+          "categoria": "prioridad"
+        }
+      ],
+      "evidencia_grado_11_complementaria": {
+        "sigma11": {
+          "promedio_municipal": 42.0,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Explicación de fenómenos",
+            "recurrencia_equivalente": 14.0,
+            "porcentaje_instituciones_equivalente": 77.78,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Entorno físico",
+            "recurrencia_equivalente": 15.0,
+            "porcentaje_instituciones_equivalente": 83.33,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        },
+        "masterpro11": {
+          "promedio_municipal": 53.86,
+          "diferencia_frente_sigma11": 11.86,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Indagación",
+            "recurrencia_equivalente": 7.0,
+            "porcentaje_instituciones_equivalente": 38.89,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Entorno químico",
+            "recurrencia_equivalente": 13.0,
+            "porcentaje_instituciones_equivalente": 72.22,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA"
+            ]
+          }
+        },
+        "regla": "Grado 11 funciona como evidencia complementaria de contexto. No modifica automáticamente el foco definido para la cohorte de grado 10."
+      },
+      "fuentes_pedagogicas": {
+        "archivo_recomendaciones": "recomendaciones_ciencias_naturales_saber11_2026.json",
+        "competencia_json_id": "indagacion",
+        "componente_json_id": "biologico",
+        "coincidencia_competencia": 1.0,
+        "coincidencia_componente": 1.0
+      }
+    },
+    "ingles": {
+      "nombre": "Inglés",
+      "linea_base_2026": {
+        "grado": 10,
+        "cohorte": "Cohorte Saber 11 — 2027",
+        "promedio_municipal_ponderado": 46.84,
+        "total_evaluados_area": 1499,
+        "niveles_1_2": {
+          "cantidad": 1026,
+          "porcentaje": 68.45
+        },
+        "instituciones_prioridad_o_alta_prioridad": {
+          "cantidad": 6,
+          "porcentaje": 33.33
+        },
+        "brecha_urbana_menos_rural": 4.35
+      },
+      "foco_2027": {
+        "competencia": "Pragmática",
+        "componente": "Gramatical",
+        "recurrencia_competencia_porcentaje": 44.44,
+        "recurrencia_componente_porcentaje": 77.78,
+        "advertencia": "La recurrencia identifica un foco operativo para intervención dentro del área. No constituye una estimación de dificultad psicométrica de las subescalas."
+      },
+      "objetivo_de_mejoramiento": "Fortalecer la construcción global de significado, la inferencia y el reconocimiento de intención y coherencia discursiva.",
+      "hipotesis_pedagogica": {
+        "competencia": "Una debilidad puede manifestarse en dificultad para construir sentido más allá de palabras aisladas, identificar intención, mantener coherencia entre partes del texto, interpretar información implícita o usar contexto para decidir qué opción encaja mejor.",
+        "componente": "Una debilidad puede indicar que las estructuras no están suficientemente automatizadas o que el estudiante conoce reglas pero no las integra con el significado del texto.",
+        "regla": "Estas lecturas son hipótesis pedagógicas orientadoras; deben contrastarse con evidencias de aula y no se presentan como explicación causal del resultado."
+      },
+      "acciones_docentes": {
+        "prioridad_inicial": [
+          "Mantener lectura breve semanal.",
+          "Aumentar longitud gradualmente.",
+          "Combinar literal, inferencial e intención.",
+          "Registrar velocidad solo después de asegurar comprensión."
+        ],
+        "estrategias_metodologicas": [
+          "Context before option",
+          "Author intention",
+          "Inference ladder"
+        ],
+        "actividades_sugeridas": [
+          {
+            "nombre": "Literal or inferred?"
+          },
+          {
+            "nombre": "What is the writer doing?"
+          },
+          {
+            "nombre": "Cloze by meaning"
+          }
+        ],
+        "focos_componente": [
+          "Tiempos verbales frecuentes.",
+          "Concordancia.",
+          "Pronombres y referentes.",
+          "Preposiciones.",
+          "Conectores.",
+          "Comparativos y cuantificadores."
+        ],
+        "errores_a_observar": [
+          "Selecciona opciones por una palabra coincidente.",
+          "No integra información entre oraciones.",
+          "Confunde detalle con idea general.",
+          "Infiere información que el texto no permite.",
+          "No identifica intención del autor.",
+          "Ignora conectores o referentes."
+        ],
+        "preguntas_a_priorizar": [
+          "Lectura literal con paráfrasis.",
+          "Idea general.",
+          "Intención del autor.",
+          "Inferencias.",
+          "Coherencia contextual.",
+          "Cloze lexical y gramatical basado en sentido."
+        ]
+      },
+      "acciones_coordinacion": [
+        "Incorporar el foco 'Pragmática' y el componente 'Gramatical' al plan de área y al seguimiento académico.",
+        "Acordar una evidencia común de aprendizaje para el ciclo de intervención.",
+        "Revisar periódicamente muestras de trabajo estudiantil y registros de error.",
+        "Facilitar espacios breves de comunidad de aprendizaje para analizar avances y dificultades.",
+        "Verificar que las acciones se desarrollen con continuidad y no únicamente antes de una prueba."
+      ],
+      "acciones_secretaria": [
+        "Priorizar formación y asistencia técnica en Inglés alrededor del foco 'Pragmática'.",
+        "Acompañar inicialmente a las instituciones identificadas con prioridad o alta prioridad.",
+        "Conservar lectura diferenciada urbano-rural para orientar apoyos contextualizados.",
+        "Solicitar evidencias simples y comparables de implementación, evitando cargas administrativas innecesarias.",
+        "Integrar los hallazgos del seguimiento en las decisiones de formación docente y acompañamiento institucional."
+      ],
+      "acciones_aliado_tecnico_pedagogico": [
+        "Entregar lectura técnica de resultados municipales e institucionales.",
+        "Orientar talleres de transferencia metodológica vinculados con el foco identificado.",
+        "Proveer instrumentos o mediciones de seguimiento técnicamente documentadas.",
+        "Actualizar los análisis institucionales y municipales después de cada medición comparable.",
+        "Convertir los nuevos hallazgos en recomendaciones pedagógicas ajustadas."
+      ],
+      "seguimiento_de_aula": {
+        "indicadores": [
+          "Porcentaje de inferencias respaldadas con evidencia.",
+          "Porcentaje de respuestas literales identificadas mediante paráfrasis.",
+          "Porcentaje de intenciones del autor reconocidas correctamente.",
+          "Reducción de distractores seleccionados por coincidencia léxica."
+        ],
+        "evidencias": [
+          "Reading logs",
+          "Mini-pruebas de partes 5 y 6",
+          "Cloze contextual",
+          "Registros de evidencia textual"
+        ],
+        "periodicidad_sugerida": "Cada 4 semanas",
+        "nota": "Estos indicadores observan procesos de aprendizaje y complementan los resultados de pruebas."
+      },
+      "indicadores_de_resultado": [
+        {
+          "id": "promedio_area",
+          "descripcion": "Cambio del promedio del área en una medición técnicamente comparable.",
+          "direccion_esperada": "aumentar",
+          "meta_numerica": null
+        },
+        {
+          "id": "niveles_1_2",
+          "descripcion": "Cambio en el porcentaje de estudiantes ubicados en niveles 1 y 2.",
+          "direccion_esperada": "disminuir",
+          "meta_numerica": null
+        },
+        {
+          "id": "competencia_foco",
+          "descripcion": "Cambio en el desempeño de la competencia foco: Pragmática.",
+          "direccion_esperada": "aumentar",
+          "meta_numerica": null
+        },
+        {
+          "id": "componente_foco",
+          "descripcion": "Cambio en el desempeño del componente foco: Gramatical.",
+          "direccion_esperada": "aumentar",
+          "meta_numerica": null
+        },
+        {
+          "id": "brecha_territorial",
+          "descripcion": "Evolución de la brecha urbano-rural observada, cuando la medición permita compararla.",
+          "direccion_esperada": "reducir_sin_empeorar_resultados",
+          "meta_numerica": null
+        }
+      ],
+      "instituciones_acompanamiento_inicial": [
+        {
+          "numero": 1,
+          "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+          "dane": "27683400123901",
+          "zona": "rural",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 14,
+          "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+          "dane": "276834000852",
+          "zona": "rural",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 18,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+          "dane": "276834000704",
+          "zona": "rural",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 16,
+          "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+          "dane": "276834002243",
+          "zona": "rural",
+          "categoria": "alta_prioridad"
+        },
+        {
+          "numero": 12,
+          "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+          "dane": "176834000106",
+          "zona": "urbana",
+          "categoria": "prioridad"
+        },
+        {
+          "numero": 5,
+          "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+          "dane": "276834000941",
+          "zona": "rural",
+          "categoria": "prioridad"
+        }
+      ],
+      "evidencia_grado_11_complementaria": {
+        "sigma11": {
+          "promedio_municipal": 47.75,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Lingüística",
+            "recurrencia_equivalente": 12.0,
+            "porcentaje_instituciones_equivalente": 66.67,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Gramatical",
+            "recurrencia_equivalente": 15.0,
+            "porcentaje_instituciones_equivalente": 83.33,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          }
+        },
+        "masterpro11": {
+          "promedio_municipal": 50.85,
+          "diferencia_frente_sigma11": 3.1,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Pragmática",
+            "recurrencia_equivalente": 9.0,
+            "porcentaje_instituciones_equivalente": 50.0,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Lectura",
+            "recurrencia_equivalente": 9.0,
+            "porcentaje_instituciones_equivalente": 50.0,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        },
+        "regla": "Grado 11 funciona como evidencia complementaria de contexto. No modifica automáticamente el foco definido para la cohorte de grado 10."
+      },
+      "fuentes_pedagogicas": {
+        "archivo_recomendaciones": "recomendaciones_ingles_saber11_2026.json",
+        "competencia_json_id": "pragmatica",
+        "componente_json_id": "gramatical",
+        "coincidencia_competencia": 1.0,
+        "coincidencia_componente": 1.0
+      }
+    }
+  },
+  "formacion_docente_municipal": {
+    "enfoque": "Formación basada en evidencia derivada de los focos recurrentes de la Cohorte Saber 11 — 2027.",
+    "lineas": [
+      {
+        "area": "Matemáticas",
+        "competencia_foco": "Formulación y ejecución",
+        "componente_foco": "Numérico - variacional",
+        "objetivo": "Desarrollar flexibilidad para diseñar, ejecutar y revisar estrategias de solución, evitando la aplicación mecánica de fórmulas sin modelación previa."
+      },
+      {
+        "area": "Lectura Crítica",
+        "competencia_foco": "Comprender cómo se articulan las partes de un texto para darle un sentido global",
+        "componente_foco": "Semántico",
+        "objetivo": "Desarrollar la capacidad de integrar información distribuida, reconocer estructura y relaciones entre enunciados, formular inferencias controladas y construir el sentido global del texto."
+      },
+      {
+        "area": "Sociales y Ciudadanas",
+        "competencia_foco": "Pensamiento social",
+        "componente_foco": "Historia y cultura",
+        "objetivo": "Fortalecer el uso funcional de conceptos sociales, políticos, económicos, culturales y geográficos, así como la comprensión temporal y espacial de procesos y problemáticas."
+      },
+      {
+        "area": "Ciencias Naturales",
+        "competencia_foco": "Indagación",
+        "componente_foco": "Entorno biológico",
+        "objetivo": "Fortalecer el razonamiento basado en evidencia mediante preguntas investigables, diseño y evaluación de procedimientos, análisis de datos, predicción y elaboración de conclusiones válidas."
+      },
+      {
+        "area": "Inglés",
+        "competencia_foco": "Pragmática",
+        "componente_foco": "Gramatical",
+        "objetivo": "Fortalecer la construcción global de significado, la inferencia y el reconocimiento de intención y coherencia discursiva."
+      }
+    ],
+    "regla": "La formación debe combinar modelación didáctica, práctica de aula, revisión de evidencias y seguimiento; no limitarse a conferencias informativas."
+  },
+  "indicadores_municipales_transversales": {
+    "implementacion": [
+      "Número de instituciones con ruta de intervención activa.",
+      "Número de áreas que reportan evidencias de seguimiento.",
+      "Participación docente en espacios de formación y análisis.",
+      "Cumplimiento de los ciclos de acompañamiento acordados."
+    ],
+    "aprendizaje": [
+      "Evolución de promedios en mediciones técnicamente comparables.",
+      "Evolución de la proporción de estudiantes en niveles 1 y 2.",
+      "Evolución del desempeño en competencias y componentes foco.",
+      "Persistencia o reducción de brechas territoriales observadas."
+    ],
+    "priorizacion": [
+      "Instituciones que requieren continuidad de acompañamiento intensivo.",
+      "Focos que persisten después de cada medición.",
+      "Nuevas necesidades que emergen en el seguimiento."
+    ],
+    "nota": "Las categorías relativas de prioridad sirven para focalizar acompañamiento, pero no deben utilizarse como único indicador de impacto porque dependen de la posición de cada institución frente a las demás."
+  },
+  "metas_2027": {
+    "tipo": "direccionales_hasta_acordar_metas_cuantitativas",
+    "metas": [
+      "Mejorar el desempeño de la Cohorte Saber 11 — 2027 en mediciones comparables.",
+      "Reducir la concentración de estudiantes en niveles 1 y 2.",
+      "Fortalecer las competencias y componentes foco de cada área.",
+      "Reducir brechas territoriales cuando sea posible sin deteriorar los resultados de ningún grupo.",
+      "Aumentar la capacidad institucional para analizar resultados y convertirlos en decisiones pedagógicas."
+    ],
+    "metas_numericas": null,
+    "condicion_para_fijarlas": "Definir previamente número de mediciones 2027, diseño de los instrumentos, escala, comparabilidad y ventana temporal de intervención."
+  },
+  "continuidad_alianza": {
+    "recomendacion": "Dar continuidad durante 2027 a la alianza entre la Secretaría de Educación de Tuluá y Grupo Edúcate Colombia para completar el ciclo de intervención y seguimiento de la Cohorte Saber 11 — 2027.",
+    "fundamento": [
+      "La línea base 2026 ya cubre las 18 instituciones educativas oficiales incluidas en el proyecto.",
+      "La cohorte de grado 10.º puede ser observada nuevamente durante 2027.",
+      "Los focos municipales e institucionales ya están identificados por área, competencia y componente.",
+      "Sin nuevas mediciones no es posible verificar si las acciones pedagógicas producen cambios observables.",
+      "La continuidad permite pasar de una evaluación aislada a un ciclo de mejoramiento basado en evidencia."
+    ],
+    "ciclo": [
+      "línea_base",
+      "intervención",
+      "acompañamiento",
+      "medición_de_seguimiento",
+      "ajuste",
+      "nueva_medición",
+      "balance"
+    ],
+    "mensaje_ejecutivo": "La continuidad no se plantea como repetición de pruebas, sino como sostenimiento de un sistema de evaluación, intervención, acompañamiento y verificación."
+  },
+  "alineacion_politica_publica": {
+    "fuente_contextual": "DIAGNOSTICO PLAN DE DESARROLLO_TULUA_21_02_2024.pdf",
+    "seccion": "8.1 Educación",
+    "ejes_relacionados": [
+      "mejoramiento continuo de la calidad educativa",
+      "seguimiento a resultados Saber 11",
+      "formación y fortalecimiento docente",
+      "lectura de brechas urbano-rural",
+      "acceso y permanencia como contexto del sistema educativo"
+    ],
+    "regla_de_uso": "El diagnóstico municipal funciona como marco de contexto y política pública. No se utiliza para atribuir causas directas a los resultados GEC 2026."
+  },
+  "comparabilidad_y_evaluacion": {
+    "reglas": [
+      "Comparar únicamente mediciones internas cuando exista soporte técnico de comparabilidad.",
+      "No denominar automáticamente las diferencias como ganancia de aprendizaje.",
+      "No sumar participantes de aplicaciones distintas como estudiantes únicos.",
+      "No equiparar puntajes GEC con puntajes oficiales Icfes sin estudio de equivalencia.",
+      "En Inglés, no traducir automáticamente niveles GEC 1–4 a Pre-A1, A1, A2 y B1."
+    ]
+  },
+  "fuentes": [
+    "./data/priorizacion/prioridades_municipales.json",
+    "./data/consolidados/grado10.json",
+    "./data/consolidados/grado11.json",
+    "./data/clasificaciones/clasificaciones_grado10.json",
+    "./data/clasificaciones/clasificaciones_grado11.json",
+    "./data/metodologia/clasificacion.json",
+    "./json-recomendaciones-areas/",
+    "Guía de orientación Saber 11 Icfes 2026",
+    "Diagnóstico del Plan de Desarrollo Municipal de Tuluá — sección Educación"
+  ],
+  "integridad": {
+    "areas_con_plan": 5,
+    "instituciones_oficiales_en_linea_base": 18,
+    "metas_numericas_arbitrarias": false,
+    "causalidad_inferida_desde_puntajes": false,
+    "comparacion_directa_gec_icfes": false,
+    "continuidad_alianza_incorporada": true
+  }
+}
