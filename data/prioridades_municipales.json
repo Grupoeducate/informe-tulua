@@ -1,0 +1,2323 @@
+{
+  "schema_version": "1.0",
+  "tipo_archivo": "prioridades_municipales_2027",
+  "municipio": "Tuluá",
+  "departamento": "Valle del Cauca",
+  "anio_base": 2026,
+  "anio_intervencion": 2027,
+  "cohorte_prioritaria": "Cohorte Saber 11 — 2027",
+  "proposito": {
+    "objetivo": "Traducir la evidencia estadística municipal en focos pedagógicos accionables por área, sin construir un ranking artificial entre las cinco áreas evaluadas.",
+    "pregunta_central": "¿Qué debe fortalecer Tuluá en cada área durante 2027?",
+    "principio": "Cada área se analiza por sus propias evidencias. El módulo identifica focos de intervención y no declara que una prueba o subescala sea psicométricamente más fácil o más difícil que otra."
+  },
+  "metodologia": {
+    "fuentes": [
+      "./data/consolidados/grado10.json",
+      "./data/consolidados/grado11.json",
+      "./data/clasificaciones/clasificaciones_grado10.json",
+      "./data/clasificaciones/clasificaciones_grado11.json",
+      "./data/metodologia/clasificacion.json",
+      "./json-recomendaciones-areas/"
+    ],
+    "evidencias_por_area": [
+      "concentracion_estudiantes_niveles_1_2",
+      "instituciones_con_prioridad_o_alta_prioridad",
+      "brecha_urbano_rural_observada",
+      "recurrencia_competencia_con_menor_puntaje_institucional",
+      "recurrencia_componente_con_menor_puntaje_institucional",
+      "evidencia_complementaria_grado_11"
+    ],
+    "regla_recurrencia": {
+      "descripcion": "En cada institución se identifica la competencia y el componente con menor puntaje observado dentro del área. Si existe empate, cada indicador recibe una fracción equivalente de 1 dividido por el número de indicadores empatados.",
+      "uso": "La mayor recurrencia define el foco operativo municipal dentro de cada área para grado 10.",
+      "restriccion": "No se interpreta como dificultad psicométrica oficial de la competencia o componente."
+    },
+    "regla_no_ranking_areas": "No se crea un índice compuesto único ni se ordenan las cinco áreas como mejor/peor para decidir la intervención. Cada área conserva su propio foco pedagógico."
+  },
+  "resumen_focos_2027": [
+    {
+      "area_id": "matematicas",
+      "area": "Matemáticas",
+      "porcentaje_niveles_1_2": 82.2,
+      "instituciones_prioridad_o_alta": 7,
+      "brecha_urbana_menos_rural": 5.52,
+      "competencia_foco": "Formulación y ejecución",
+      "competencia_recurrencia_porcentaje": 83.33,
+      "componente_foco": "Numérico - variacional",
+      "componente_recurrencia_porcentaje": 100.0
+    },
+    {
+      "area_id": "lectura_critica",
+      "area": "Lectura Crítica",
+      "porcentaje_niveles_1_2": 71.5,
+      "instituciones_prioridad_o_alta": 7,
+      "brecha_urbana_menos_rural": 4.04,
+      "competencia_foco": "Comprender cómo se articulan las partes de un texto para darle un sentido global",
+      "competencia_recurrencia_porcentaje": 61.11,
+      "componente_foco": "Semántico",
+      "componente_recurrencia_porcentaje": 83.33
+    },
+    {
+      "area_id": "sociales_ciudadanas",
+      "area": "Sociales y Ciudadanas",
+      "porcentaje_niveles_1_2": 58.64,
+      "instituciones_prioridad_o_alta": 6,
+      "brecha_urbana_menos_rural": 3.31,
+      "competencia_foco": "Pensamiento social",
+      "competencia_recurrencia_porcentaje": 88.89,
+      "componente_foco": "Historia y cultura",
+      "componente_recurrencia_porcentaje": 72.22
+    },
+    {
+      "area_id": "ciencias_naturales",
+      "area": "Ciencias Naturales",
+      "porcentaje_niveles_1_2": 84.36,
+      "instituciones_prioridad_o_alta": 6,
+      "brecha_urbana_menos_rural": 3.9,
+      "competencia_foco": "Indagación",
+      "competencia_recurrencia_porcentaje": 94.44,
+      "componente_foco": "Entorno biológico",
+      "componente_recurrencia_porcentaje": 44.44
+    },
+    {
+      "area_id": "ingles",
+      "area": "Inglés",
+      "porcentaje_niveles_1_2": 68.45,
+      "instituciones_prioridad_o_alta": 6,
+      "brecha_urbana_menos_rural": 4.35,
+      "competencia_foco": "Pragmática",
+      "competencia_recurrencia_porcentaje": 44.44,
+      "componente_foco": "Gramatical",
+      "componente_recurrencia_porcentaje": 77.78
+    }
+  ],
+  "areas": {
+    "matematicas": {
+      "nombre": "Matemáticas",
+      "cohorte_prioritaria_2027": {
+        "grado": 10,
+        "prueba": "2-02 SIGMA 10 SABER",
+        "promedio_municipal_ponderado": 38.63,
+        "total_evaluados_area": 1528,
+        "niveles_1_2": {
+          "cantidad": 1256,
+          "porcentaje": 82.2
+        },
+        "distribucion_completa_niveles": {
+          "nivel_1": {
+            "cantidad": 673,
+            "porcentaje": 44.04
+          },
+          "nivel_2": {
+            "cantidad": 583,
+            "porcentaje": 38.15
+          },
+          "nivel_3": {
+            "cantidad": 238,
+            "porcentaje": 15.58
+          },
+          "nivel_4": {
+            "cantidad": 34,
+            "porcentaje": 2.23
+          }
+        },
+        "instituciones_con_prioridad_o_alta_prioridad": {
+          "cantidad": 7,
+          "porcentaje": 38.89,
+          "detalle": [
+            {
+              "numero": 1,
+              "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+              "dane": "27683400123901",
+              "zona": "rural",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 28.0,
+              "porcentaje_niveles_1_2": 92.86,
+              "percentil_promedio_area": 2.78,
+              "percentil_concentracion_niveles_1_2": 75.0
+            },
+            {
+              "numero": 18,
+              "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+              "dane": "276834000704",
+              "zona": "rural",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 28.7,
+              "porcentaje_niveles_1_2": 100.0,
+              "percentil_promedio_area": 8.33,
+              "percentil_concentracion_niveles_1_2": 91.67
+            },
+            {
+              "numero": 14,
+              "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "dane": "276834000852",
+              "zona": "rural",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 32.3,
+              "porcentaje_niveles_1_2": 100.0,
+              "percentil_promedio_area": 19.44,
+              "percentil_concentracion_niveles_1_2": 91.67
+            },
+            {
+              "numero": 16,
+              "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "dane": "276834002243",
+              "zona": "rural",
+              "categoria": "prioridad",
+              "etiqueta_categoria": "Prioridad",
+              "promedio": 31.0,
+              "porcentaje_niveles_1_2": 92.0,
+              "percentil_promedio_area": 13.89,
+              "percentil_concentracion_niveles_1_2": 63.89
+            },
+            {
+              "numero": 3,
+              "nombre": "INSTITUCION EDUCATIVA AGUACLARA",
+              "dane": "276834001778",
+              "zona": "rural",
+              "categoria": "prioridad",
+              "etiqueta_categoria": "Prioridad",
+              "promedio": 33.6,
+              "porcentaje_niveles_1_2": 90.91,
+              "percentil_promedio_area": 25.0,
+              "percentil_concentracion_niveles_1_2": 58.33
+            },
+            {
+              "numero": 10,
+              "nombre": "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "dane": "176834000092",
+              "zona": "urbana",
+              "categoria": "prioridad",
+              "etiqueta_categoria": "Prioridad",
+              "promedio": 35.3,
+              "porcentaje_niveles_1_2": 93.0,
+              "percentil_promedio_area": 36.11,
+              "percentil_concentracion_niveles_1_2": 80.56
+            },
+            {
+              "numero": 5,
+              "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "dane": "276834000941",
+              "zona": "rural",
+              "categoria": "prioridad",
+              "etiqueta_categoria": "Prioridad",
+              "promedio": 41.7,
+              "porcentaje_niveles_1_2": 100.0,
+              "percentil_promedio_area": 80.56,
+              "percentil_concentracion_niveles_1_2": 91.67
+            }
+          ]
+        },
+        "brecha_territorial_observada": {
+          "promedio_urbano": 39.54,
+          "promedio_rural": 34.02,
+          "diferencia_urbano_menos_rural": 5.52,
+          "interpretacion": "Diferencia descriptiva entre zonas. No permite atribuir causalidad a la condición urbana o rural."
+        }
+      },
+      "foco_municipal_2027": {
+        "criterio": "Indicador que aparece con mayor recurrencia como el menor puntaje observado dentro de las instituciones en esta área. Los empates se distribuyen fraccionalmente.",
+        "competencia": {
+          "nombre": "Formulación y ejecución",
+          "recurrencia_equivalente": 15.0,
+          "porcentaje_instituciones_equivalente": 83.33,
+          "instituciones_en_las_que_aparece_como_menor_puntaje": [
+            "INSTITUCION EDUCATIVA LA MORALIA",
+            "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+            "INSTITUCION EDUCATIVA AGUACLARA",
+            "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+            "INSTITUCION EDUCATIVA ALTO ROCIO",
+            "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+            "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+            "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+            "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+            "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+            "INSTITUCION EDUCATIVA MONTELORO",
+            "INSTITUCION EDUCATIVA SAN RAFAEL",
+            "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+            "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+            "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+          ],
+          "promedio_municipal_ponderado": 34.63
+        },
+        "componente": {
+          "nombre": "Numérico - variacional",
+          "recurrencia_equivalente": 18.0,
+          "porcentaje_instituciones_equivalente": 100.0,
+          "instituciones_en_las_que_aparece_como_menor_puntaje": [
+            "INSTITUCION EDUCATIVA LA MORALIA",
+            "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+            "INSTITUCION EDUCATIVA AGUACLARA",
+            "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+            "INSTITUCION EDUCATIVA ALTO ROCIO",
+            "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+            "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+            "I.E. JOVITA SANTA COLOMA",
+            "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+            "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+            "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+            "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+            "INSTITUCION EDUCATIVA MONTELORO",
+            "INSTITUCION EDUCATIVA SAN RAFAEL",
+            "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+            "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+            "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+            "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+          ],
+          "promedio_municipal_ponderado": 34.49
+        },
+        "distribucion_recurrencia_competencias": [
+          {
+            "nombre": "Formulación y ejecución",
+            "recurrencia_equivalente": 15.0,
+            "porcentaje_instituciones_equivalente": 83.33,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          },
+          {
+            "nombre": "Argumentación",
+            "recurrencia_equivalente": 3.0,
+            "porcentaje_instituciones_equivalente": 16.67,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        ],
+        "distribucion_recurrencia_componentes": [
+          {
+            "nombre": "Numérico - variacional",
+            "recurrencia_equivalente": 18.0,
+            "porcentaje_instituciones_equivalente": 100.0,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        ],
+        "advertencia": "La recurrencia identifica un foco operativo para intervención dentro del área. No constituye una estimación de dificultad psicométrica de las subescalas."
+      },
+      "evidencia_complementaria_grado_11": {
+        "sigma11": {
+          "promedio_municipal": 51.46,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Formulación y ejecución",
+            "recurrencia_equivalente": 16.0,
+            "porcentaje_instituciones_equivalente": 88.89,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Geométrico - métrico",
+            "recurrencia_equivalente": 17.0,
+            "porcentaje_instituciones_equivalente": 94.44,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        },
+        "masterpro11": {
+          "promedio_municipal": 40.37,
+          "diferencia_frente_sigma11": -11.09,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Formulación y ejecución",
+            "recurrencia_equivalente": 11.0,
+            "porcentaje_instituciones_equivalente": 61.11,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Numérico - variacional",
+            "recurrencia_equivalente": 14.0,
+            "porcentaje_instituciones_equivalente": 77.78,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        },
+        "regla": "Grado 11 funciona como evidencia complementaria de contexto. No modifica automáticamente el foco definido para la cohorte de grado 10."
+      },
+      "vinculo_pedagogico": {
+        "archivo_recomendaciones": "recomendaciones_matematicas_saber11_2026.json",
+        "competencia": {
+          "id_json": "formulacion_ejecucion",
+          "nombre": "Formulación y ejecución",
+          "coincidencia_nombre": 1.0,
+          "diagnostico_pedagogico": "Una debilidad en esta competencia sugiere dificultad para pasar de la comprensión del problema a una estrategia de solución viable, seleccionar herramientas pertinentes, ejecutar el plan o verificar si la respuesta satisface las condiciones iniciales.",
+          "objetivo_de_mejoramiento": "Desarrollar flexibilidad para diseñar, ejecutar y revisar estrategias de solución, evitando la aplicación mecánica de fórmulas sin modelación previa.",
+          "estrategias_metodologicas_destacadas": [
+            "Plan antes de procedimiento",
+            "Dos rutas, una decisión",
+            "Modelación de situaciones reales"
+          ],
+          "acciones_especificas_grado_10": [
+            "Implementar un problema no rutinario semanal por área de contenido.",
+            "Construir banco institucional de estrategias, no solo de respuestas.",
+            "Hacer seguimiento separado a formulación, ejecución y verificación.",
+            "Incrementar gradualmente la complejidad de contextos y restricciones durante el año."
+          ],
+          "observacion_grado_10": "Grado 10 dispone del tiempo necesario para desarrollar hábitos de modelación y verificación antes de 2027.",
+          "nota": "El diagnóstico es una hipótesis pedagógica orientadora y debe contrastarse con evidencias de aula."
+        },
+        "componente": {
+          "id_json": "numerico_variacional",
+          "nombre": "Numérico - variacional",
+          "coincidencia_nombre": 1.0,
+          "diagnostico_pedagogico": "Una debilidad puede asociarse a dificultades con proporcionalidad, porcentajes, operaciones con racionales, relaciones lineales, tasas de cambio, expresiones algebraicas o interpretación de funciones.",
+          "focos_de_trabajo": [
+            "Fracciones, razones, decimales y porcentajes.",
+            "Propiedades de operaciones y estimación.",
+            "Relaciones lineales y afines.",
+            "Tasas de cambio en contextos.",
+            "Expresiones algebraicas y relaciones entre variables.",
+            "Lectura gráfica y algebraica de funciones."
+          ],
+          "estrategias_destacadas": [
+            "Vincular cada expresión con significado contextual.",
+            "Usar tablas y gráficas para introducir relaciones antes de formalizar algebraicamente.",
+            "Trabajar estimación previa para detectar resultados imposibles.",
+            "Comparar crecimiento aditivo, multiplicativo y porcentual."
+          ],
+          "acciones_especificas_grado_10": [],
+          "observacion_grado_10": null
+        }
+      },
+      "salida_para_plan_mejoramiento": {
+        "foco_competencia": "Formulación y ejecución",
+        "foco_componente": "Numérico - variacional",
+        "objetivo": "Desarrollar flexibilidad para diseñar, ejecutar y revisar estrategias de solución, evitando la aplicación mecánica de fórmulas sin modelación previa.",
+        "acciones_iniciales": [
+          "Implementar un problema no rutinario semanal por área de contenido.",
+          "Construir banco institucional de estrategias, no solo de respuestas.",
+          "Hacer seguimiento separado a formulación, ejecución y verificación.",
+          "Incrementar gradualmente la complejidad de contextos y restricciones durante el año."
+        ],
+        "instituciones_para_acompanamiento_inicial": [
+          {
+            "numero": 1,
+            "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+            "dane": "27683400123901",
+            "zona": "rural",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 18,
+            "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+            "dane": "276834000704",
+            "zona": "rural",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 14,
+            "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+            "dane": "276834000852",
+            "zona": "rural",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 16,
+            "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+            "dane": "276834002243",
+            "zona": "rural",
+            "categoria": "prioridad"
+          },
+          {
+            "numero": 3,
+            "nombre": "INSTITUCION EDUCATIVA AGUACLARA",
+            "dane": "276834001778",
+            "zona": "rural",
+            "categoria": "prioridad"
+          },
+          {
+            "numero": 10,
+            "nombre": "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+            "dane": "176834000092",
+            "zona": "urbana",
+            "categoria": "prioridad"
+          },
+          {
+            "numero": 5,
+            "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+            "dane": "276834000941",
+            "zona": "rural",
+            "categoria": "prioridad"
+          }
+        ]
+      }
+    },
+    "lectura_critica": {
+      "nombre": "Lectura Crítica",
+      "cohorte_prioritaria_2027": {
+        "grado": 10,
+        "prueba": "2-02 SIGMA 10 SABER",
+        "promedio_municipal_ponderado": 41.85,
+        "total_evaluados_area": 1509,
+        "niveles_1_2": {
+          "cantidad": 1079,
+          "porcentaje": 71.5
+        },
+        "distribucion_completa_niveles": {
+          "nivel_1": {
+            "cantidad": 500,
+            "porcentaje": 33.13
+          },
+          "nivel_2": {
+            "cantidad": 579,
+            "porcentaje": 38.37
+          },
+          "nivel_3": {
+            "cantidad": 388,
+            "porcentaje": 25.71
+          },
+          "nivel_4": {
+            "cantidad": 42,
+            "porcentaje": 2.78
+          }
+        },
+        "instituciones_con_prioridad_o_alta_prioridad": {
+          "cantidad": 7,
+          "porcentaje": 38.89,
+          "detalle": [
+            {
+              "numero": 18,
+              "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+              "dane": "276834000704",
+              "zona": "rural",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 32.9,
+              "porcentaje_niveles_1_2": 100.0,
+              "percentil_promedio_area": 2.78,
+              "percentil_concentracion_niveles_1_2": 97.22
+            },
+            {
+              "numero": 16,
+              "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "dane": "276834002243",
+              "zona": "rural",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 35.8,
+              "porcentaje_niveles_1_2": 86.0,
+              "percentil_promedio_area": 8.33,
+              "percentil_concentracion_niveles_1_2": 91.67
+            },
+            {
+              "numero": 3,
+              "nombre": "INSTITUCION EDUCATIVA AGUACLARA",
+              "dane": "276834001778",
+              "zona": "rural",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 36.5,
+              "porcentaje_niveles_1_2": 84.71,
+              "percentil_promedio_area": 13.89,
+              "percentil_concentracion_niveles_1_2": 80.56
+            },
+            {
+              "numero": 12,
+              "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "dane": "176834000106",
+              "zona": "urbana",
+              "categoria": "prioridad",
+              "etiqueta_categoria": "Prioridad",
+              "promedio": 38.2,
+              "porcentaje_niveles_1_2": 79.76,
+              "percentil_promedio_area": 19.44,
+              "percentil_concentracion_niveles_1_2": 69.44
+            },
+            {
+              "numero": 8,
+              "nombre": "I.E. JOVITA SANTA COLOMA",
+              "dane": "276834000666",
+              "zona": "rural",
+              "categoria": "prioridad",
+              "etiqueta_categoria": "Prioridad",
+              "promedio": 38.9,
+              "porcentaje_niveles_1_2": 73.08,
+              "percentil_promedio_area": 25.0,
+              "percentil_concentracion_niveles_1_2": 47.22
+            },
+            {
+              "numero": 1,
+              "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+              "dane": "27683400123901",
+              "zona": "rural",
+              "categoria": "prioridad",
+              "etiqueta_categoria": "Prioridad",
+              "promedio": 39.0,
+              "porcentaje_niveles_1_2": 85.71,
+              "percentil_promedio_area": 30.56,
+              "percentil_concentracion_niveles_1_2": 86.11
+            },
+            {
+              "numero": 14,
+              "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "dane": "276834000852",
+              "zona": "rural",
+              "categoria": "prioridad",
+              "etiqueta_categoria": "Prioridad",
+              "promedio": 39.7,
+              "porcentaje_niveles_1_2": 82.61,
+              "percentil_promedio_area": 41.67,
+              "percentil_concentracion_niveles_1_2": 75.0
+            }
+          ]
+        },
+        "brecha_territorial_observada": {
+          "promedio_urbano": 42.51,
+          "promedio_rural": 38.47,
+          "diferencia_urbano_menos_rural": 4.04,
+          "interpretacion": "Diferencia descriptiva entre zonas. No permite atribuir causalidad a la condición urbana o rural."
+        }
+      },
+      "foco_municipal_2027": {
+        "criterio": "Indicador que aparece con mayor recurrencia como el menor puntaje observado dentro de las instituciones en esta área. Los empates se distribuyen fraccionalmente.",
+        "competencia": {
+          "nombre": "Comprender cómo se articulan las partes de un texto para darle un sentido global",
+          "recurrencia_equivalente": 11.0,
+          "porcentaje_instituciones_equivalente": 61.11,
+          "instituciones_en_las_que_aparece_como_menor_puntaje": [
+            "INSTITUCION EDUCATIVA LA MORALIA",
+            "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+            "INSTITUCION EDUCATIVA AGUACLARA",
+            "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+            "INSTITUCION EDUCATIVA ALTO ROCIO",
+            "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+            "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+            "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+            "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+            "INSTITUCION EDUCATIVA SAN RAFAEL",
+            "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+          ],
+          "promedio_municipal_ponderado": 40.29
+        },
+        "componente": {
+          "nombre": "Semántico",
+          "recurrencia_equivalente": 15.0,
+          "porcentaje_instituciones_equivalente": 83.33,
+          "instituciones_en_las_que_aparece_como_menor_puntaje": [
+            "INSTITUCION EDUCATIVA LA MORALIA",
+            "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+            "INSTITUCION EDUCATIVA AGUACLARA",
+            "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+            "INSTITUCION EDUCATIVA ALTO ROCIO",
+            "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+            "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+            "I.E. JOVITA SANTA COLOMA",
+            "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+            "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+            "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+            "INSTITUCION EDUCATIVA SAN RAFAEL",
+            "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+            "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+            "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+          ],
+          "promedio_municipal_ponderado": 39.24
+        },
+        "distribucion_recurrencia_competencias": [
+          {
+            "nombre": "Comprender cómo se articulan las partes de un texto para darle un sentido global",
+            "recurrencia_equivalente": 11.0,
+            "porcentaje_instituciones_equivalente": 61.11,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          {
+            "nombre": "Reflexionar a partir de un texto y evaluar su contenido",
+            "recurrencia_equivalente": 5.0,
+            "porcentaje_instituciones_equivalente": 27.78,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          },
+          {
+            "nombre": "Identificar y entender los contenidos locales que conforman un texto",
+            "recurrencia_equivalente": 2.0,
+            "porcentaje_instituciones_equivalente": 11.11,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA"
+            ]
+          }
+        ],
+        "distribucion_recurrencia_componentes": [
+          {
+            "nombre": "Semántico",
+            "recurrencia_equivalente": 15.0,
+            "porcentaje_instituciones_equivalente": 83.33,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          {
+            "nombre": "Pragmático",
+            "recurrencia_equivalente": 2.0,
+            "porcentaje_instituciones_equivalente": 11.11,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA"
+            ]
+          },
+          {
+            "nombre": "Sintáctico",
+            "recurrencia_equivalente": 1.0,
+            "porcentaje_instituciones_equivalente": 5.56,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA MONTELORO"
+            ]
+          }
+        ],
+        "advertencia": "La recurrencia identifica un foco operativo para intervención dentro del área. No constituye una estimación de dificultad psicométrica de las subescalas."
+      },
+      "evidencia_complementaria_grado_11": {
+        "sigma11": {
+          "promedio_municipal": 53.73,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Reflexionar a partir de un texto y evaluar su contenido",
+            "recurrencia_equivalente": 18.0,
+            "porcentaje_instituciones_equivalente": 100.0,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Pragmático",
+            "recurrencia_equivalente": 18.0,
+            "porcentaje_instituciones_equivalente": 100.0,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        },
+        "masterpro11": {
+          "promedio_municipal": 58.09,
+          "diferencia_frente_sigma11": 4.36,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Evaluar y reflexionar sobre la forma y el contenido de los textos",
+            "recurrencia_equivalente": 9.5,
+            "porcentaje_instituciones_equivalente": 52.78,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Pragmático",
+            "recurrencia_equivalente": 15.0,
+            "porcentaje_instituciones_equivalente": 83.33,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          }
+        },
+        "regla": "Grado 11 funciona como evidencia complementaria de contexto. No modifica automáticamente el foco definido para la cohorte de grado 10."
+      },
+      "vinculo_pedagogico": {
+        "archivo_recomendaciones": "recomendaciones_lectura_critica_saber11_2026.json",
+        "competencia": {
+          "id_json": "articulacion_sentido_global",
+          "nombre": "Comprender cómo se articulan las partes de un texto para darle un sentido global",
+          "coincidencia_nombre": 1.0,
+          "diagnostico_pedagogico": "Una debilidad en esta afirmación indica dificultades para conectar fragmentos, reconocer la función de las partes, identificar relaciones lógicas, construir inferencias, diferenciar voces o formular una representación global coherente del texto. Por su peso referencial, debe recibir especial atención cuando aparece comprometida.",
+          "objetivo_de_mejoramiento": "Desarrollar la capacidad de integrar información distribuida, reconocer estructura y relaciones entre enunciados, formular inferencias controladas y construir el sentido global del texto.",
+          "estrategias_metodologicas_destacadas": [
+            "Mapa de arquitectura textual",
+            "Reconstrucción de texto",
+            "Inferencia con control de evidencia"
+          ],
+          "acciones_especificas_grado_10": [
+            "Implementar una actividad semanal de arquitectura textual.",
+            "Alternar textos literarios, argumentativos, científicos y discontinuos.",
+            "Incrementar gradualmente la extensión y densidad conceptual.",
+            "Registrar la diferencia entre errores de relación, inferencia y síntesis."
+          ],
+          "observacion_grado_10": "La construcción de sentido global requiere práctica sostenida. Grado 10 ofrece una ventana adecuada para consolidar relaciones entre partes, inferencia y lectura de textos discontinuos antes de 2027.",
+          "nota": "El diagnóstico es una hipótesis pedagógica orientadora y debe contrastarse con evidencias de aula."
+        },
+        "componente": {
+          "id_json": "semantico",
+          "nombre": "Semántico",
+          "coincidencia_nombre": 1.0,
+          "diagnostico_pedagogico": "Una debilidad semántica puede manifestarse en problemas para construir significado, reconocer relaciones léxicas, rastrear referentes, integrar información explícita e implícita o sostener inferencias coherentes.",
+          "focos_de_trabajo": [
+            "Vocabulario en contexto.",
+            "Paráfrasis.",
+            "Referentes y relaciones léxicas.",
+            "Ideas principales y secundarias.",
+            "Inferencias controladas.",
+            "Coherencia global."
+          ],
+          "estrategias_destacadas": [
+            "Trabajar redes semánticas y paráfrasis contextualizadas.",
+            "Solicitar evidencia para cada inferencia.",
+            "Comparar significados posibles de expresiones según contexto.",
+            "Relacionar información distribuida en el texto."
+          ],
+          "acciones_especificas_grado_10": [],
+          "observacion_grado_10": null
+        }
+      },
+      "salida_para_plan_mejoramiento": {
+        "foco_competencia": "Comprender cómo se articulan las partes de un texto para darle un sentido global",
+        "foco_componente": "Semántico",
+        "objetivo": "Desarrollar la capacidad de integrar información distribuida, reconocer estructura y relaciones entre enunciados, formular inferencias controladas y construir el sentido global del texto.",
+        "acciones_iniciales": [
+          "Implementar una actividad semanal de arquitectura textual.",
+          "Alternar textos literarios, argumentativos, científicos y discontinuos.",
+          "Incrementar gradualmente la extensión y densidad conceptual.",
+          "Registrar la diferencia entre errores de relación, inferencia y síntesis."
+        ],
+        "instituciones_para_acompanamiento_inicial": [
+          {
+            "numero": 18,
+            "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+            "dane": "276834000704",
+            "zona": "rural",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 16,
+            "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+            "dane": "276834002243",
+            "zona": "rural",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 3,
+            "nombre": "INSTITUCION EDUCATIVA AGUACLARA",
+            "dane": "276834001778",
+            "zona": "rural",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 12,
+            "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+            "dane": "176834000106",
+            "zona": "urbana",
+            "categoria": "prioridad"
+          },
+          {
+            "numero": 8,
+            "nombre": "I.E. JOVITA SANTA COLOMA",
+            "dane": "276834000666",
+            "zona": "rural",
+            "categoria": "prioridad"
+          },
+          {
+            "numero": 1,
+            "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+            "dane": "27683400123901",
+            "zona": "rural",
+            "categoria": "prioridad"
+          },
+          {
+            "numero": 14,
+            "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+            "dane": "276834000852",
+            "zona": "rural",
+            "categoria": "prioridad"
+          }
+        ]
+      }
+    },
+    "sociales_ciudadanas": {
+      "nombre": "Sociales y Ciudadanas",
+      "cohorte_prioritaria_2027": {
+        "grado": 10,
+        "prueba": "2-02 SIGMA 10 SABER",
+        "promedio_municipal_ponderado": 50.65,
+        "total_evaluados_area": 1528,
+        "niveles_1_2": {
+          "cantidad": 896,
+          "porcentaje": 58.64
+        },
+        "distribucion_completa_niveles": {
+          "nivel_1": {
+            "cantidad": 428,
+            "porcentaje": 28.01
+          },
+          "nivel_2": {
+            "cantidad": 468,
+            "porcentaje": 30.63
+          },
+          "nivel_3": {
+            "cantidad": 483,
+            "porcentaje": 31.61
+          },
+          "nivel_4": {
+            "cantidad": 149,
+            "porcentaje": 9.75
+          }
+        },
+        "instituciones_con_prioridad_o_alta_prioridad": {
+          "cantidad": 6,
+          "porcentaje": 33.33,
+          "detalle": [
+            {
+              "numero": 18,
+              "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+              "dane": "276834000704",
+              "zona": "rural",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 38.0,
+              "porcentaje_niveles_1_2": 83.33,
+              "percentil_promedio_area": 2.78,
+              "percentil_concentracion_niveles_1_2": 91.67
+            },
+            {
+              "numero": 8,
+              "nombre": "I.E. JOVITA SANTA COLOMA",
+              "dane": "276834000666",
+              "zona": "rural",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 43.8,
+              "porcentaje_niveles_1_2": 84.62,
+              "percentil_promedio_area": 8.33,
+              "percentil_concentracion_niveles_1_2": 97.22
+            },
+            {
+              "numero": 12,
+              "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "dane": "176834000106",
+              "zona": "urbana",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 44.2,
+              "porcentaje_niveles_1_2": 75.0,
+              "percentil_promedio_area": 13.89,
+              "percentil_concentracion_niveles_1_2": 80.56
+            },
+            {
+              "numero": 17,
+              "nombre": "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "dane": "176834003989",
+              "zona": "urbana",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 45.3,
+              "porcentaje_niveles_1_2": 75.89,
+              "percentil_promedio_area": 25.0,
+              "percentil_concentracion_niveles_1_2": 86.11
+            },
+            {
+              "numero": 5,
+              "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "dane": "276834000941",
+              "zona": "rural",
+              "categoria": "prioridad",
+              "etiqueta_categoria": "Prioridad",
+              "promedio": 45.0,
+              "porcentaje_niveles_1_2": 66.67,
+              "percentil_promedio_area": 19.44,
+              "percentil_concentracion_niveles_1_2": 58.33
+            },
+            {
+              "numero": 6,
+              "nombre": "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "dane": "176834000351",
+              "zona": "urbana",
+              "categoria": "prioridad",
+              "etiqueta_categoria": "Prioridad",
+              "promedio": 45.8,
+              "porcentaje_niveles_1_2": 72.22,
+              "percentil_promedio_area": 36.11,
+              "percentil_concentracion_niveles_1_2": 75.0
+            }
+          ]
+        },
+        "brecha_territorial_observada": {
+          "promedio_urbano": 51.19,
+          "promedio_rural": 47.88,
+          "diferencia_urbano_menos_rural": 3.31,
+          "interpretacion": "Diferencia descriptiva entre zonas. No permite atribuir causalidad a la condición urbana o rural."
+        }
+      },
+      "foco_municipal_2027": {
+        "criterio": "Indicador que aparece con mayor recurrencia como el menor puntaje observado dentro de las instituciones en esta área. Los empates se distribuyen fraccionalmente.",
+        "competencia": {
+          "nombre": "Pensamiento social",
+          "recurrencia_equivalente": 16.0,
+          "porcentaje_instituciones_equivalente": 88.89,
+          "instituciones_en_las_que_aparece_como_menor_puntaje": [
+            "INSTITUCION EDUCATIVA LA MORALIA",
+            "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+            "INSTITUCION EDUCATIVA AGUACLARA",
+            "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+            "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+            "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+            "I.E. JOVITA SANTA COLOMA",
+            "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+            "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+            "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+            "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+            "INSTITUCION EDUCATIVA MONTELORO",
+            "INSTITUCION EDUCATIVA SAN RAFAEL",
+            "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+            "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+            "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+          ],
+          "promedio_municipal_ponderado": 47.04
+        },
+        "componente": {
+          "nombre": "Historia y cultura",
+          "recurrencia_equivalente": 13.0,
+          "porcentaje_instituciones_equivalente": 72.22,
+          "instituciones_en_las_que_aparece_como_menor_puntaje": [
+            "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+            "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+            "INSTITUCION EDUCATIVA ALTO ROCIO",
+            "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+            "I.E. JOVITA SANTA COLOMA",
+            "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+            "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+            "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+            "INSTITUCION EDUCATIVA MONTELORO",
+            "INSTITUCION EDUCATIVA SAN RAFAEL",
+            "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+            "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+            "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+          ],
+          "promedio_municipal_ponderado": 49.66
+        },
+        "distribucion_recurrencia_competencias": [
+          {
+            "nombre": "Pensamiento social",
+            "recurrencia_equivalente": 16.0,
+            "porcentaje_instituciones_equivalente": 88.89,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          {
+            "nombre": "Interpretación y análisis de perspectivas",
+            "recurrencia_equivalente": 1.0,
+            "porcentaje_instituciones_equivalente": 5.56,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA ALTO ROCIO"
+            ]
+          },
+          {
+            "nombre": "Pensamiento reflexivo y sistémico",
+            "recurrencia_equivalente": 1.0,
+            "porcentaje_instituciones_equivalente": 5.56,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA"
+            ]
+          }
+        ],
+        "distribucion_recurrencia_componentes": [
+          {
+            "nombre": "Historia y cultura",
+            "recurrencia_equivalente": 13.0,
+            "porcentaje_instituciones_equivalente": 72.22,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          {
+            "nombre": "Espacio y ambiente",
+            "recurrencia_equivalente": 3.0,
+            "porcentaje_instituciones_equivalente": 16.67,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA"
+            ]
+          },
+          {
+            "nombre": "Ético / político",
+            "recurrencia_equivalente": 2.0,
+            "porcentaje_instituciones_equivalente": 11.11,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "INSTITUCION EDUCATIVA AGUACLARA"
+            ]
+          }
+        ],
+        "advertencia": "La recurrencia identifica un foco operativo para intervención dentro del área. No constituye una estimación de dificultad psicométrica de las subescalas."
+      },
+      "evidencia_complementaria_grado_11": {
+        "sigma11": {
+          "promedio_municipal": 44.75,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Pensamiento social",
+            "recurrencia_equivalente": 17.0,
+            "porcentaje_instituciones_equivalente": 94.44,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Historia y cultura",
+            "recurrencia_equivalente": 14.0,
+            "porcentaje_instituciones_equivalente": 77.78,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        },
+        "masterpro11": {
+          "promedio_municipal": 57.36,
+          "diferencia_frente_sigma11": 12.61,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Pensamiento social",
+            "recurrencia_equivalente": 14.0,
+            "porcentaje_instituciones_equivalente": 77.78,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Competencias ciudadanas",
+            "recurrencia_equivalente": 18.0,
+            "porcentaje_instituciones_equivalente": 100.0,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        },
+        "regla": "Grado 11 funciona como evidencia complementaria de contexto. No modifica automáticamente el foco definido para la cohorte de grado 10."
+      },
+      "vinculo_pedagogico": {
+        "archivo_recomendaciones": "recomendaciones_sociales_ciudadanas_saber11_2026.json",
+        "competencia": {
+          "id_json": "pensamiento_social",
+          "nombre": "Pensamiento social",
+          "coincidencia_nombre": 1.0,
+          "diagnostico_pedagogico": "Una debilidad en Pensamiento social puede reflejar dificultad para usar conceptos de las ciencias sociales como herramientas de análisis, comprender principios del Estado colombiano o relacionar eventos con sus dimensiones temporales y espaciales. No debe interpretarse automáticamente como falta de memoria factual.",
+          "objetivo_de_mejoramiento": "Fortalecer el uso funcional de conceptos sociales, políticos, económicos, culturales y geográficos, así como la comprensión temporal y espacial de procesos y problemáticas.",
+          "estrategias_metodologicas_destacadas": [
+            "Concepto en contexto",
+            "Constitución aplicada",
+            "Tiempo, espacio y proceso"
+          ],
+          "acciones_especificas_grado_10": [
+            "Construir un glosario aplicado, no definicional.",
+            "Revisitar conceptos en múltiples contextos durante el año.",
+            "Trabajar semanalmente una situación constitucional o histórico-geográfica.",
+            "Medir transferencia a casos no trabajados previamente."
+          ],
+          "observacion_grado_10": "En 10.º debe consolidarse una base conceptual funcional que luego permita interpretar perspectivas y analizar sistemas sociales con mayor complejidad.",
+          "nota": "El diagnóstico es una hipótesis pedagógica orientadora y debe contrastarse con evidencias de aula."
+        },
+        "componente": {
+          "id_json": "historia_cultura",
+          "nombre": "Historia y cultura",
+          "coincidencia_nombre": 1.0,
+          "diagnostico_pedagogico": "Una debilidad puede manifestarse en dificultades para ubicar procesos, establecer cambios y permanencias, construir explicaciones multicausales, contextualizar actores o comprender diversidad cultural y relaciones entre pasado y presente.",
+          "focos_de_trabajo": [
+            "Temporalidad histórica.",
+            "Cambio y permanencia.",
+            "Causalidad y consecuencia.",
+            "Actores y contexto.",
+            "Fuentes históricas.",
+            "Diversidad cultural."
+          ],
+          "estrategias_destacadas": [
+            "Usar líneas de tiempo explicativas.",
+            "Comparar fuentes de distintos actores.",
+            "Distinguir causa, condición, detonante y consecuencia.",
+            "Relacionar procesos históricos con configuraciones actuales sin anacronismos."
+          ],
+          "acciones_especificas_grado_10": [],
+          "observacion_grado_10": null
+        }
+      },
+      "salida_para_plan_mejoramiento": {
+        "foco_competencia": "Pensamiento social",
+        "foco_componente": "Historia y cultura",
+        "objetivo": "Fortalecer el uso funcional de conceptos sociales, políticos, económicos, culturales y geográficos, así como la comprensión temporal y espacial de procesos y problemáticas.",
+        "acciones_iniciales": [
+          "Construir un glosario aplicado, no definicional.",
+          "Revisitar conceptos en múltiples contextos durante el año.",
+          "Trabajar semanalmente una situación constitucional o histórico-geográfica.",
+          "Medir transferencia a casos no trabajados previamente."
+        ],
+        "instituciones_para_acompanamiento_inicial": [
+          {
+            "numero": 18,
+            "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+            "dane": "276834000704",
+            "zona": "rural",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 8,
+            "nombre": "I.E. JOVITA SANTA COLOMA",
+            "dane": "276834000666",
+            "zona": "rural",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 12,
+            "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+            "dane": "176834000106",
+            "zona": "urbana",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 17,
+            "nombre": "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+            "dane": "176834003989",
+            "zona": "urbana",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 5,
+            "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+            "dane": "276834000941",
+            "zona": "rural",
+            "categoria": "prioridad"
+          },
+          {
+            "numero": 6,
+            "nombre": "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+            "dane": "176834000351",
+            "zona": "urbana",
+            "categoria": "prioridad"
+          }
+        ]
+      }
+    },
+    "ciencias_naturales": {
+      "nombre": "Ciencias Naturales",
+      "cohorte_prioritaria_2027": {
+        "grado": 10,
+        "prueba": "2-02 SIGMA 10 SABER",
+        "promedio_municipal_ponderado": 41.91,
+        "total_evaluados_area": 1528,
+        "niveles_1_2": {
+          "cantidad": 1289,
+          "porcentaje": 84.36
+        },
+        "distribucion_completa_niveles": {
+          "nivel_1": {
+            "cantidad": 735,
+            "porcentaje": 48.1
+          },
+          "nivel_2": {
+            "cantidad": 554,
+            "porcentaje": 36.26
+          },
+          "nivel_3": {
+            "cantidad": 196,
+            "porcentaje": 12.83
+          },
+          "nivel_4": {
+            "cantidad": 43,
+            "porcentaje": 2.81
+          }
+        },
+        "instituciones_con_prioridad_o_alta_prioridad": {
+          "cantidad": 6,
+          "porcentaje": 33.33,
+          "detalle": [
+            {
+              "numero": 18,
+              "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+              "dane": "276834000704",
+              "zona": "rural",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 31.5,
+              "porcentaje_niveles_1_2": 100.0,
+              "percentil_promedio_area": 2.78,
+              "percentil_concentracion_niveles_1_2": 88.89
+            },
+            {
+              "numero": 1,
+              "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+              "dane": "27683400123901",
+              "zona": "rural",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 31.7,
+              "porcentaje_niveles_1_2": 100.0,
+              "percentil_promedio_area": 8.33,
+              "percentil_concentracion_niveles_1_2": 88.89
+            },
+            {
+              "numero": 16,
+              "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "dane": "276834002243",
+              "zona": "rural",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 32.3,
+              "porcentaje_niveles_1_2": 98.0,
+              "percentil_promedio_area": 13.89,
+              "percentil_concentracion_niveles_1_2": 75.0
+            },
+            {
+              "numero": 13,
+              "nombre": "INSTITUCION EDUCATIVA MONTELORO",
+              "dane": "276834000917",
+              "zona": "rural",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 34.0,
+              "porcentaje_niveles_1_2": 100.0,
+              "percentil_promedio_area": 19.44,
+              "percentil_concentracion_niveles_1_2": 88.89
+            },
+            {
+              "numero": 17,
+              "nombre": "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "dane": "176834003989",
+              "zona": "urbana",
+              "categoria": "prioridad",
+              "etiqueta_categoria": "Prioridad",
+              "promedio": 36.2,
+              "porcentaje_niveles_1_2": 95.04,
+              "percentil_promedio_area": 25.0,
+              "percentil_concentracion_niveles_1_2": 58.33
+            },
+            {
+              "numero": 5,
+              "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "dane": "276834000941",
+              "zona": "rural",
+              "categoria": "prioridad",
+              "etiqueta_categoria": "Prioridad",
+              "promedio": 37.6,
+              "porcentaje_niveles_1_2": 100.0,
+              "percentil_promedio_area": 44.44,
+              "percentil_concentracion_niveles_1_2": 88.89
+            }
+          ]
+        },
+        "brecha_territorial_observada": {
+          "promedio_urbano": 42.55,
+          "promedio_rural": 38.65,
+          "diferencia_urbano_menos_rural": 3.9,
+          "interpretacion": "Diferencia descriptiva entre zonas. No permite atribuir causalidad a la condición urbana o rural."
+        }
+      },
+      "foco_municipal_2027": {
+        "criterio": "Indicador que aparece con mayor recurrencia como el menor puntaje observado dentro de las instituciones en esta área. Los empates se distribuyen fraccionalmente.",
+        "competencia": {
+          "nombre": "Indagación",
+          "recurrencia_equivalente": 17.0,
+          "porcentaje_instituciones_equivalente": 94.44,
+          "instituciones_en_las_que_aparece_como_menor_puntaje": [
+            "INSTITUCION EDUCATIVA LA MORALIA",
+            "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+            "INSTITUCION EDUCATIVA AGUACLARA",
+            "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+            "INSTITUCION EDUCATIVA ALTO ROCIO",
+            "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+            "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+            "I.E. JOVITA SANTA COLOMA",
+            "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+            "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+            "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+            "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+            "INSTITUCION EDUCATIVA MONTELORO",
+            "INSTITUCION EDUCATIVA SAN RAFAEL",
+            "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+            "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+            "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+          ],
+          "promedio_municipal_ponderado": 39.26
+        },
+        "componente": {
+          "nombre": "Entorno biológico",
+          "recurrencia_equivalente": 8.0,
+          "porcentaje_instituciones_equivalente": 44.44,
+          "instituciones_en_las_que_aparece_como_menor_puntaje": [
+            "I.E. JOVITA SANTA COLOMA",
+            "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+            "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+            "INSTITUCION EDUCATIVA SAN RAFAEL",
+            "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+            "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+            "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+            "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+          ],
+          "promedio_municipal_ponderado": 42.02
+        },
+        "distribucion_recurrencia_competencias": [
+          {
+            "nombre": "Indagación",
+            "recurrencia_equivalente": 17.0,
+            "porcentaje_instituciones_equivalente": 94.44,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          },
+          {
+            "nombre": "Uso comprensivo del conocimiento científico",
+            "recurrencia_equivalente": 1.0,
+            "porcentaje_instituciones_equivalente": 5.56,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        ],
+        "distribucion_recurrencia_componentes": [
+          {
+            "nombre": "Entorno biológico",
+            "recurrencia_equivalente": 8.0,
+            "porcentaje_instituciones_equivalente": 44.44,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          {
+            "nombre": "Entorno químico",
+            "recurrencia_equivalente": 7.0,
+            "porcentaje_instituciones_equivalente": 38.89,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "INSTITUCION EDUCATIVA MONTELORO"
+            ]
+          },
+          {
+            "nombre": "Entorno físico",
+            "recurrencia_equivalente": 3.0,
+            "porcentaje_instituciones_equivalente": 16.67,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA"
+            ]
+          }
+        ],
+        "advertencia": "La recurrencia identifica un foco operativo para intervención dentro del área. No constituye una estimación de dificultad psicométrica de las subescalas."
+      },
+      "evidencia_complementaria_grado_11": {
+        "sigma11": {
+          "promedio_municipal": 42.0,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Explicación de fenómenos",
+            "recurrencia_equivalente": 14.0,
+            "porcentaje_instituciones_equivalente": 77.78,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Entorno físico",
+            "recurrencia_equivalente": 15.0,
+            "porcentaje_instituciones_equivalente": 83.33,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        },
+        "masterpro11": {
+          "promedio_municipal": 53.86,
+          "diferencia_frente_sigma11": 11.86,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Indagación",
+            "recurrencia_equivalente": 7.0,
+            "porcentaje_instituciones_equivalente": 38.89,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Entorno químico",
+            "recurrencia_equivalente": 13.0,
+            "porcentaje_instituciones_equivalente": 72.22,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA"
+            ]
+          }
+        },
+        "regla": "Grado 11 funciona como evidencia complementaria de contexto. No modifica automáticamente el foco definido para la cohorte de grado 10."
+      },
+      "vinculo_pedagogico": {
+        "archivo_recomendaciones": "recomendaciones_ciencias_naturales_saber11_2026.json",
+        "competencia": {
+          "id_json": "indagacion",
+          "nombre": "Indagación",
+          "coincidencia_nombre": 1.0,
+          "diagnostico_pedagogico": "Una debilidad en Indagación puede manifestarse en dificultad para formular preguntas investigables, identificar variables, analizar diseños experimentales, interpretar datos, reconocer patrones, hacer predicciones o derivar conclusiones sustentadas. Dado su peso referencial, debe recibir especial atención cuando aparece comprometida.",
+          "objetivo_de_mejoramiento": "Fortalecer el razonamiento basado en evidencia mediante preguntas investigables, diseño y evaluación de procedimientos, análisis de datos, predicción y elaboración de conclusiones válidas.",
+          "estrategias_metodologicas_destacadas": [
+            "Pregunta investigable o no investigable",
+            "Auditoría experimental",
+            "Dato–patrón–conclusión"
+          ],
+          "acciones_especificas_grado_10": [
+            "Implementar al menos una miniinvestigación o análisis experimental cada dos semanas.",
+            "Usar datos reales y simulados de Biología, Física y Química.",
+            "Registrar errores por variables, datos, evidencia y conclusión.",
+            "Aplicar mediciones comparables cada 6 a 8 semanas.",
+            "Aumentar gradualmente complejidad de diseños y conjuntos de datos."
+          ],
+          "observacion_grado_10": "Por su peso referencial del 40 % y su carácter transversal, Indagación debe trabajarse sostenidamente en grado 10, no como unidad aislada de método científico.",
+          "nota": "El diagnóstico es una hipótesis pedagógica orientadora y debe contrastarse con evidencias de aula."
+        },
+        "componente": {
+          "id_json": "biologico",
+          "nombre": "Entorno biológico",
+          "coincidencia_nombre": 1.0,
+          "diagnostico_pedagogico": "Una debilidad puede relacionarse con dificultades para comprender funcionamiento de organismos, relaciones entre estructuras y funciones, genética, evolución, ecosistemas e interacciones bióticas y abióticas.",
+          "focos_de_trabajo": [
+            "Célula, organismo y niveles de organización.",
+            "Homeostasis y funciones vitales.",
+            "Genética y herencia.",
+            "Evolución y adaptación.",
+            "Ecosistemas, poblaciones y comunidades.",
+            "Flujo de materia y energía."
+          ],
+          "estrategias_destacadas": [
+            "Trabajar relaciones estructura–función.",
+            "Usar modelos de sistemas biológicos.",
+            "Analizar cambios en una variable y consecuencias en el sistema.",
+            "Interpretar datos de poblaciones, herencia y ecosistemas."
+          ],
+          "acciones_especificas_grado_10": [],
+          "observacion_grado_10": null
+        }
+      },
+      "salida_para_plan_mejoramiento": {
+        "foco_competencia": "Indagación",
+        "foco_componente": "Entorno biológico",
+        "objetivo": "Fortalecer el razonamiento basado en evidencia mediante preguntas investigables, diseño y evaluación de procedimientos, análisis de datos, predicción y elaboración de conclusiones válidas.",
+        "acciones_iniciales": [
+          "Implementar al menos una miniinvestigación o análisis experimental cada dos semanas.",
+          "Usar datos reales y simulados de Biología, Física y Química.",
+          "Registrar errores por variables, datos, evidencia y conclusión.",
+          "Aplicar mediciones comparables cada 6 a 8 semanas."
+        ],
+        "instituciones_para_acompanamiento_inicial": [
+          {
+            "numero": 18,
+            "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+            "dane": "276834000704",
+            "zona": "rural",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 1,
+            "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+            "dane": "27683400123901",
+            "zona": "rural",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 16,
+            "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+            "dane": "276834002243",
+            "zona": "rural",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 13,
+            "nombre": "INSTITUCION EDUCATIVA MONTELORO",
+            "dane": "276834000917",
+            "zona": "rural",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 17,
+            "nombre": "INSTITUCION EDUCATIVA TECNICA OCCIDENTE",
+            "dane": "176834003989",
+            "zona": "urbana",
+            "categoria": "prioridad"
+          },
+          {
+            "numero": 5,
+            "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+            "dane": "276834000941",
+            "zona": "rural",
+            "categoria": "prioridad"
+          }
+        ]
+      }
+    },
+    "ingles": {
+      "nombre": "Inglés",
+      "cohorte_prioritaria_2027": {
+        "grado": 10,
+        "prueba": "2-02 SIGMA 10 SABER",
+        "promedio_municipal_ponderado": 46.84,
+        "total_evaluados_area": 1499,
+        "niveles_1_2": {
+          "cantidad": 1026,
+          "porcentaje": 68.45
+        },
+        "distribucion_completa_niveles": {
+          "nivel_1": {
+            "cantidad": 619,
+            "porcentaje": 41.29
+          },
+          "nivel_2": {
+            "cantidad": 407,
+            "porcentaje": 27.15
+          },
+          "nivel_3": {
+            "cantidad": 253,
+            "porcentaje": 16.88
+          },
+          "nivel_4": {
+            "cantidad": 220,
+            "porcentaje": 14.68
+          }
+        },
+        "instituciones_con_prioridad_o_alta_prioridad": {
+          "cantidad": 6,
+          "porcentaje": 33.33,
+          "detalle": [
+            {
+              "numero": 1,
+              "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+              "dane": "27683400123901",
+              "zona": "rural",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 26.9,
+              "porcentaje_niveles_1_2": 100.0,
+              "percentil_promedio_area": 2.78,
+              "percentil_concentracion_niveles_1_2": 88.89
+            },
+            {
+              "numero": 14,
+              "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "dane": "276834000852",
+              "zona": "rural",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 29.7,
+              "porcentaje_niveles_1_2": 100.0,
+              "percentil_promedio_area": 8.33,
+              "percentil_concentracion_niveles_1_2": 88.89
+            },
+            {
+              "numero": 18,
+              "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+              "dane": "276834000704",
+              "zona": "rural",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 30.3,
+              "porcentaje_niveles_1_2": 100.0,
+              "percentil_promedio_area": 13.89,
+              "percentil_concentracion_niveles_1_2": 88.89
+            },
+            {
+              "numero": 16,
+              "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "dane": "276834002243",
+              "zona": "rural",
+              "categoria": "alta_prioridad",
+              "etiqueta_categoria": "Alta prioridad",
+              "promedio": 31.2,
+              "porcentaje_niveles_1_2": 95.92,
+              "percentil_promedio_area": 19.44,
+              "percentil_concentracion_niveles_1_2": 75.0
+            },
+            {
+              "numero": 12,
+              "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "dane": "176834000106",
+              "zona": "urbana",
+              "categoria": "prioridad",
+              "etiqueta_categoria": "Prioridad",
+              "promedio": 37.6,
+              "porcentaje_niveles_1_2": 87.95,
+              "percentil_promedio_area": 25.0,
+              "percentil_concentracion_niveles_1_2": 69.44
+            },
+            {
+              "numero": 5,
+              "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "dane": "276834000941",
+              "zona": "rural",
+              "categoria": "prioridad",
+              "etiqueta_categoria": "Prioridad",
+              "promedio": 43.0,
+              "porcentaje_niveles_1_2": 100.0,
+              "percentil_promedio_area": 63.89,
+              "percentil_concentracion_niveles_1_2": 88.89
+            }
+          ]
+        },
+        "brecha_territorial_observada": {
+          "promedio_urbano": 47.55,
+          "promedio_rural": 43.2,
+          "diferencia_urbano_menos_rural": 4.35,
+          "interpretacion": "Diferencia descriptiva entre zonas. No permite atribuir causalidad a la condición urbana o rural."
+        }
+      },
+      "foco_municipal_2027": {
+        "criterio": "Indicador que aparece con mayor recurrencia como el menor puntaje observado dentro de las instituciones en esta área. Los empates se distribuyen fraccionalmente.",
+        "competencia": {
+          "nombre": "Pragmática",
+          "recurrencia_equivalente": 8.0,
+          "porcentaje_instituciones_equivalente": 44.44,
+          "instituciones_en_las_que_aparece_como_menor_puntaje": [
+            "INSTITUCION EDUCATIVA AGUACLARA",
+            "INSTITUCION EDUCATIVA ALTO ROCIO",
+            "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+            "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+            "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+            "INSTITUCION EDUCATIVA MONTELORO",
+            "INSTITUCION EDUCATIVA SAN RAFAEL",
+            "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+            "INSTITUCION EDUCATIVA TECNICA LA MARINA"
+          ],
+          "promedio_municipal_ponderado": 46.18
+        },
+        "componente": {
+          "nombre": "Gramatical",
+          "recurrencia_equivalente": 14.0,
+          "porcentaje_instituciones_equivalente": 77.78,
+          "instituciones_en_las_que_aparece_como_menor_puntaje": [
+            "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+            "INSTITUCION EDUCATIVA AGUACLARA",
+            "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+            "INSTITUCION EDUCATIVA ALTO ROCIO",
+            "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+            "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+            "I.E. JOVITA SANTA COLOMA",
+            "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+            "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+            "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+            "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+            "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+            "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+            "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+          ],
+          "promedio_municipal_ponderado": 40.99
+        },
+        "distribucion_recurrencia_competencias": [
+          {
+            "nombre": "Pragmática",
+            "recurrencia_equivalente": 8.0,
+            "porcentaje_instituciones_equivalente": 44.44,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA SAN RAFAEL",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA"
+            ]
+          },
+          {
+            "nombre": "Lingüística",
+            "recurrencia_equivalente": 7.0,
+            "porcentaje_instituciones_equivalente": 38.89,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          },
+          {
+            "nombre": "Sociolingüístico",
+            "recurrencia_equivalente": 3.0,
+            "porcentaje_instituciones_equivalente": 16.67,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        ],
+        "distribucion_recurrencia_componentes": [
+          {
+            "nombre": "Gramatical",
+            "recurrencia_equivalente": 14.0,
+            "porcentaje_instituciones_equivalente": 77.78,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          },
+          {
+            "nombre": "Conversacional",
+            "recurrencia_equivalente": 2.0,
+            "porcentaje_instituciones_equivalente": 11.11,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA MONTELORO",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          },
+          {
+            "nombre": "Lectura",
+            "recurrencia_equivalente": 1.0,
+            "porcentaje_instituciones_equivalente": 5.56,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA SAN RAFAEL"
+            ]
+          },
+          {
+            "nombre": "Lexical",
+            "recurrencia_equivalente": 1.0,
+            "porcentaje_instituciones_equivalente": 5.56,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA"
+            ]
+          }
+        ],
+        "advertencia": "La recurrencia identifica un foco operativo para intervención dentro del área. No constituye una estimación de dificultad psicométrica de las subescalas."
+      },
+      "evidencia_complementaria_grado_11": {
+        "sigma11": {
+          "promedio_municipal": 47.75,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Lingüística",
+            "recurrencia_equivalente": 12.0,
+            "porcentaje_instituciones_equivalente": 66.67,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Gramatical",
+            "recurrencia_equivalente": 15.0,
+            "porcentaje_instituciones_equivalente": 83.33,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JUAN MARIA CESPEDES",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          }
+        },
+        "masterpro11": {
+          "promedio_municipal": 50.85,
+          "diferencia_frente_sigma11": 3.1,
+          "competencia_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Pragmática",
+            "recurrencia_equivalente": 9.0,
+            "porcentaje_instituciones_equivalente": 50.0,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "INSTITUCION EDUCATIVA GIMNASIO DEL PACIFICO",
+              "I.E. JOVITA SANTA COLOMA",
+              "INSTITUCION EDUCATIVA JULIO CESAR ZULUAGA",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA TECNICA OCCIDENTE"
+            ]
+          },
+          "componente_mas_recurrente_como_menor_puntaje": {
+            "nombre": "Lectura",
+            "recurrencia_equivalente": 9.0,
+            "porcentaje_instituciones_equivalente": 50.0,
+            "instituciones_en_las_que_aparece_como_menor_puntaje": [
+              "INSTITUCION EDUCATIVA LA MORALIA",
+              "SEDE PRINCIPAL NO. 7 MARIA ANTONIA RUIZ",
+              "INSTITUCION EDUCATIVA AGUACLARA",
+              "INSTITUCION EDUCATIVA ALTO ROCIO",
+              "INSTITUCION EDUCATIVA CORAZON DEL VALLE",
+              "SEDE PRINCIPAL INSTITUTO JULIA RESTREPO",
+              "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+              "INSTITUCION EDUCATIVA TECNICO INDUSTRIAL CARLOS SARMIENTO LORA",
+              "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN"
+            ]
+          }
+        },
+        "regla": "Grado 11 funciona como evidencia complementaria de contexto. No modifica automáticamente el foco definido para la cohorte de grado 10."
+      },
+      "vinculo_pedagogico": {
+        "archivo_recomendaciones": "recomendaciones_ingles_saber11_2026.json",
+        "competencia": {
+          "id_json": "pragmatica",
+          "nombre": "Pragmática",
+          "coincidencia_nombre": 1.0,
+          "diagnostico_pedagogico": "Una debilidad puede manifestarse en dificultad para construir sentido más allá de palabras aisladas, identificar intención, mantener coherencia entre partes del texto, interpretar información implícita o usar contexto para decidir qué opción encaja mejor.",
+          "objetivo_de_mejoramiento": "Fortalecer la construcción global de significado, la inferencia y el reconocimiento de intención y coherencia discursiva.",
+          "estrategias_metodologicas_destacadas": [
+            "Context before option",
+            "Author intention",
+            "Inference ladder"
+          ],
+          "acciones_especificas_grado_10": [
+            "Mantener lectura breve semanal.",
+            "Aumentar longitud gradualmente.",
+            "Combinar literal, inferencial e intención.",
+            "Registrar velocidad solo después de asegurar comprensión."
+          ],
+          "observacion_grado_10": "La autonomía lectora debe crecer durante todo el ciclo 2026-2027 mediante textos accesibles y dificultad progresiva.",
+          "nota": "El diagnóstico es una hipótesis pedagógica orientadora y debe contrastarse con evidencias de aula."
+        },
+        "componente": {
+          "id_json": "gramatical",
+          "nombre": "Gramatical",
+          "coincidencia_nombre": 1.0,
+          "diagnostico_pedagogico": "Una debilidad puede indicar que las estructuras no están suficientemente automatizadas o que el estudiante conoce reglas pero no las integra con el significado del texto.",
+          "focos_de_trabajo": [
+            "Tiempos verbales frecuentes.",
+            "Concordancia.",
+            "Pronombres y referentes.",
+            "Preposiciones.",
+            "Conectores.",
+            "Comparativos y cuantificadores."
+          ],
+          "estrategias_destacadas": [
+            "Cloze contextual.",
+            "Noticing de formas dentro de textos.",
+            "Contraste de estructuras cercanas.",
+            "Reciclaje acumulativo."
+          ],
+          "acciones_especificas_grado_10": [],
+          "observacion_grado_10": null
+        }
+      },
+      "salida_para_plan_mejoramiento": {
+        "foco_competencia": "Pragmática",
+        "foco_componente": "Gramatical",
+        "objetivo": "Fortalecer la construcción global de significado, la inferencia y el reconocimiento de intención y coherencia discursiva.",
+        "acciones_iniciales": [
+          "Mantener lectura breve semanal.",
+          "Aumentar longitud gradualmente.",
+          "Combinar literal, inferencial e intención.",
+          "Registrar velocidad solo después de asegurar comprensión."
+        ],
+        "instituciones_para_acompanamiento_inicial": [
+          {
+            "numero": 1,
+            "nombre": "INSTITUCION EDUCATIVA LA MORALIA",
+            "dane": "27683400123901",
+            "zona": "rural",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 14,
+            "nombre": "INSTITUCION EDUCATIVA SAN RAFAEL",
+            "dane": "276834000852",
+            "zona": "rural",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 18,
+            "nombre": "INSTITUCION EDUCATIVA TECNICA SAN JUAN DE BARRAGAN",
+            "dane": "276834000704",
+            "zona": "rural",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 16,
+            "nombre": "INSTITUCION EDUCATIVA TECNICA LA MARINA",
+            "dane": "276834002243",
+            "zona": "rural",
+            "categoria": "alta_prioridad"
+          },
+          {
+            "numero": 12,
+            "nombre": "INSTITUCION EDUCATIVA MODERNA DE TULUA",
+            "dane": "176834000106",
+            "zona": "urbana",
+            "categoria": "prioridad"
+          },
+          {
+            "numero": 5,
+            "nombre": "INSTITUCION EDUCATIVA ALTO ROCIO",
+            "dane": "276834000941",
+            "zona": "rural",
+            "categoria": "prioridad"
+          }
+        ]
+      }
+    }
+  },
+  "orientacion_secretaria": {
+    "uso_recomendado": [
+      "Definir líneas de formación docente por área a partir de los focos recurrentes.",
+      "Priorizar acompañamiento inicial en instituciones clasificadas con prioridad o alta prioridad.",
+      "Mantener seguimiento diferenciado urbano-rural sin atribuir causalidad automática.",
+      "Aplicar nuevas mediciones comparables a la cohorte 2027.",
+      "Ajustar los focos pedagógicos cuando la evidencia de seguimiento muestre cambios."
+    ],
+    "continuidad": "Este módulo convierte la línea base 2026 en una agenda de intervención 2027. Su valor depende de implementar, acompañar y volver a medir."
+  },
+  "integridad": {
+    "areas": 5,
+    "instituciones_grado10": 18,
+    "instituciones_grado11_por_aplicacion": 18,
+    "focos_generados": 5,
+    "clasificacion_municipal_absoluta_creada": false,
+    "ranking_areas_creado": false,
+    "datos_faltantes_reemplazados_por_cero": false
+  }
+}
