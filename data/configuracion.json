@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "tipo_archivo": "configuracion_aplicacion_informe_tulua",
   "aplicacion": {
     "id": "informe-tulua",
@@ -19,7 +19,9 @@
     "recomendaciones": "./json-recomendaciones-areas/",
     "assets": "./assets/",
     "css": "./css/",
-    "js": "./js/"
+    "js": "./js/",
+    "metodologia": "./data/metodologia/",
+    "clasificacion": "./data/metodologia/clasificacion.json"
   },
   "narrativa_estrategica": {
     "lema": "Evaluar para comprender. Intervenir para mejorar. Medir para verificar.",
@@ -262,7 +264,7 @@
       "puntaje_competencia",
       "puntaje_componente",
       "niveles_desempeno",
-      "nivel_necesidad"
+      "categoria_priorizacion"
     ],
     "salida_esperada": [
       "hallazgo",
@@ -291,24 +293,26 @@
       "Toda recomendación debe incluir una evidencia o indicador de seguimiento.",
       "En grado 10 siempre debe mostrarse el bloque específico de cohorte Saber 11 2027.",
       "En grado 11 debe aprovecharse la comparación entre Sigma 11 y Master Pro 11 cuando exista."
-    ]
+    ],
+    "archivo_clasificacion": "./data/metodologia/clasificacion.json"
   },
   "clasificacion_necesidad": {
-    "estado": "pendiente_definicion_metodologica",
-    "aplica_a": [
-      "promedio_area",
-      "competencias",
-      "componentes"
-    ],
-    "categorias_previstas": [
-      "fortaleza",
+    "estado": "definido",
+    "archivo_metodologia": "./data/metodologia/clasificacion.json",
+    "version_metodologica": "1.0",
+    "categorias": [
+      "fortaleza_relativa",
       "seguimiento",
       "prioridad",
       "alta_prioridad"
     ],
-    "regla": "No utilizar cortes arbitrarios. Los umbrales deberán definirse en un módulo metodológico común y documentado para las cinco áreas.",
-    "usar_desviacion_estandar": true,
-    "nota_desviacion": "Por ahora se utiliza la desviación estándar como dato descriptivo. Cualquier clasificación de dispersión debe estar respaldada por una metodología independiente."
+    "principio": "La clasificación es relativa al conjunto municipal y se calcula únicamente entre instituciones sobre el mismo indicador, grado y prueba.",
+    "reglas_resumen": {
+      "area_institucional": "Triangulación entre percentil del promedio del área y percentil de concentración en niveles 1 y 2.",
+      "competencias_componentes": "Clasificación por percentil relativo del mismo indicador entre instituciones.",
+      "desviacion_estandar": "Se utiliza como descriptor de heterogeneidad y no determina por sí sola la categoría."
+    },
+    "advertencia": "Estas categorías son operativas para priorización pedagógica y no corresponden a niveles de desempeño oficiales del Icfes."
   },
   "consolidados": {
     "archivos_previstos": {
@@ -350,7 +354,6 @@
     ]
   },
   "textos_interfaz": {
-    "fortalezas": "Fortalezas",
     "oportunidades": "Oportunidades de fortalecimiento",
     "prioridad": "Prioridad pedagógica",
     "alta_prioridad": "Alta prioridad pedagógica",
@@ -361,7 +364,8 @@
     "referente_municipal": "Referente municipal",
     "cohorte_2027": "Cohorte Saber 11 — 2027",
     "recomendaciones": "Recomendaciones metodológicas",
-    "seguimiento": "Seguimiento sugerido"
+    "seguimiento": "Seguimiento sugerido",
+    "fortaleza_relativa": "Fortaleza relativa"
   },
   "privacidad_y_visualizacion_estudiantes": {
     "conservar_nombres_reales_en_datos": true,
@@ -385,8 +389,11 @@
       "No inferir causalidad sin evidencia.",
       "No convertir diferencias pequeñas entre mediciones en conclusiones de impacto.",
       "Mantener trazabilidad entre resultado, competencia, componente y recomendación.",
-      "Documentar cualquier criterio de clasificación que se incorpore."
-    ]
+      "Documentar cualquier criterio de clasificación que se incorpore.",
+      "Las categorías de priorización son relativas al conjunto municipal y no constituyen niveles oficiales del Icfes."
+    ],
+    "archivo_clasificacion": "./data/metodologia/clasificacion.json",
+    "version_clasificacion": "1.0"
   },
   "alineacion_plan_desarrollo": {
     "mostrar": true,
@@ -487,7 +494,8 @@
       "No forzar total_evaluados_area a coincidir con total_estudiantes_grado.",
       "Conservar DANE como texto.",
       "Mostrar advertencia cuando un área tenga menos evaluados que el total del grado.",
-      "No modificar los nombres de competencias o componentes provenientes del esquema validado."
+      "No modificar los nombres de competencias o componentes provenientes del esquema validado.",
+      "Toda clasificación visible debe registrar el percentil, N válido, categoría y regla metodológica aplicada."
     ]
   },
   "estado_desarrollo": {
@@ -498,7 +506,8 @@
     "consolidado_municipal": "pendiente",
     "consolidado_grado_10": "pendiente",
     "consolidado_grado_11": "pendiente",
-    "motor_clasificacion_necesidad": "pendiente",
-    "html": "pendiente"
+    "motor_clasificacion_necesidad": "completado",
+    "html": "pendiente",
+    "metodologia_clasificacion": "completado"
   }
 }
